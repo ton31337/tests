@@ -1,9 +1,9 @@
 name: Labeler
 
 on: 
-  - pull_request_target
-  - pull_request_comment
-  - pull_request_review_comment
+  pull_request_target:
+  pull_request_comment:
+  pull_request_review_comment:
 
 jobs:
   labeler:
