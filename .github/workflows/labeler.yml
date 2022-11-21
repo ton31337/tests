@@ -3,7 +3,7 @@ name: Labeler
 on:
   pull_request_target:
     types: [opened, reopened]
-  pull_request_comment:
+  issue_comment:
     types: [edited, submitted, dismissed]
   pull_request_review_comment:
     types: [edited, submitted, dismissed]
