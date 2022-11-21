@@ -1,15 +1,21 @@
 name: Add Label
 
-on:
-  pull_request_target:
-    types: [opened, reopened]
+on: [issue_comment]
 
 jobs:
   add_label:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions-ecosystem/action-add-labels@v1
-        if: ${{ startsWith(github.event.comment.body, 'Mergifyio backport') }}
+
+      - uses: actions-ecosystem/action-regex-match@v2
+        id: regex-match
         with:
-          labels: bug
+          text: ${{ github.event.comment.body }}
+          regex: '[Mm]ergifyio backport '
+
+      - uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ steps.regex-match.outputs.match != '' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          labels: backport
