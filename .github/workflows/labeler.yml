@@ -6,7 +6,7 @@ on:
   issue_comment:
     types: [edited, submitted, dismissed]
   pull_request_review_comment:
-    types: [edited, submitted, dismissed]
+    types: [created ,edited, deleted]
 
 jobs:
   labeler:
