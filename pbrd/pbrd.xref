@@ -1,0 +1,1551 @@
+{
+  "cli": {
+    "debug_pbr_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "debug_pbr",
+          "line": 1215
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nPolicy Based Routing\nPolicy maps\nPBRD <-> Zebra communications\nNexthop tracking\nEvents\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1402
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1401
+            },
+            "node": 3
+          }
+        ],
+        "string": "[no] debug pbr [{map$map|zebra$zebra|nht$nht|events$events}]"
+      }
+    },
+    "no_pbr_map_cmd": {
+      "pbrd/pbrd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "no_pbr_map",
+          "line": 64
+        },
+        "doc": "Negate a command or set its defaults\nDelete pbr-map\nThe name of the PBR MAP\nSequence to delete from existing pbr-map entry\nSequence number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1408
+            },
+            "node": 4
+          }
+        ],
+        "string": "no pbr-map PBRMAP [seq (1-700)]"
+      }
+    },
+    "no_pbr_map_nexthop_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "no_pbr_map_nexthop",
+          "line": 714
+        },
+        "doc": "Negate a command or set its defaults\nSet for the PBR-MAP\nSpecify one of the nexthops in this map\nv4 Address\nv6 Address\nInterface to use\nInterface to use\nIf the nexthop is in a different vrf tell us\nThe nexthop-vrf Name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1427
+            },
+            "node": 60
+          }
+        ],
+        "string": "no set nexthop        [<\t  <A.B.C.D|X:X::X:X>$addr [INTERFACE$intf]\t  |INTERFACE$intf\t>        [nexthop-vrf NAME$vrf_name]]"
+      }
+    },
+    "no_pbr_map_nexthop_group_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "no_pbr_map_nexthop_group",
+          "line": 560
+        },
+        "doc": "Negate a command or set its defaults\nSet for the PBR-MAP\nnexthop-group to use\nThe name of the nexthop-group\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1425
+            },
+            "node": 60
+          }
+        ],
+        "string": "no set nexthop-group [NHGNAME$name]"
+      }
+    },
+    "no_pbr_map_vrf_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "no_pbr_map_vrf",
+          "line": 772
+        },
+        "doc": "Negate a command or set its defaults\nSet for the PBR-MAP\nSpecify the VRF for this map\nThe VRF Name\nUse the interface's VRF for lookup\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1429
+            },
+            "node": 60
+          }
+        ],
+        "string": "no set vrf [<NAME$vrf_name|unchanged>]"
+      }
+    },
+    "no_pbr_set_table_range_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "no_pbr_set_table_range",
+          "line": 123
+        },
+        "doc": "Negate a command or set its defaults\nPolicy Based Routing\nSet table ID range\nSet table ID range\nLower bound for table ID range\nUpper bound for table ID range\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1410
+            },
+            "node": 4
+          }
+        ],
+        "string": "no pbr table range [(10000-4294966272)$lb (10000-4294966272)$ub]"
+      }
+    },
+    "pbr_map_action_pcp_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_action_pcp",
+          "line": 461
+        },
+        "doc": "Negate a command or set its defaults\nSet the rest of the command\nSet based on 802.1p Priority Code Point (PCP) value\nA valid value in range 0..7\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1423
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] set pcp <(0-7)$pcp>"
+      }
+    },
+    "pbr_map_action_queue_id_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_action_queue_id",
+          "line": 440
+        },
+        "doc": "Negate a command or set its defaults\nSet the rest of the command\nSet based on egress port queue id\nA valid value in range 1..65535 \n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1420
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] set queue-id <(1-65535)$queue_id>"
+      }
+    },
+    "pbr_map_action_strip_vlan_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_action_strip_vlan",
+          "line": 504
+        },
+        "doc": "Negate a command or set its defaults\nStrip the vlan tags from frame\nStrip any inner vlan tag \n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1421
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] strip vlan"
+      }
+    },
+    "pbr_map_action_vlan_id_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_action_vlan_id",
+          "line": 483
+        },
+        "doc": "Negate a command or set its defaults\nSet the rest of the command\nSet action for VLAN tagging\nA valid value in range 1..4094\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1422
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] set vlan <(1-4094)$vlan_id>"
+      }
+    },
+    "pbr_map_cmd": {
+      "pbrd/pbrd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map",
+          "line": 47
+        },
+        "doc": "Create pbr-map or enter pbr-map command mode\nThe name of the PBR MAP\nSequence to insert in existing pbr-map entry\nSequence number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1407
+            },
+            "node": 4
+          }
+        ],
+        "string": "pbr-map PBRMAP seq (1-700)"
+      }
+    },
+    "pbr_map_match_dscp_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_match_dscp",
+          "line": 286
+        },
+        "doc": "Negate a command or set its defaults\nMatch the rest of the command\nMatch based on IP DSCP field\nDSCP value (below 64) or standard codepoint name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1417
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] match dscp DSCP$dscp"
+      }
+    },
+    "pbr_map_match_dst_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_match_dst",
+          "line": 172
+        },
+        "doc": "Negate a command or set its defaults\nMatch the rest of the command\nChoose the dst ip or ipv6 prefix to use\nv4 Prefix\nv6 Prefix\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1416
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] match dst-ip <A.B.C.D/M|X:X::X:X/M>$prefix"
+      }
+    },
+    "pbr_map_match_dst_port_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_match_dst_port",
+          "line": 261
+        },
+        "doc": "Negate a command or set its defaults\nMatch the rest of the command\nChoose the destination port to use\nThe Destination Port\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1414
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] match dst-port (1-65535)$port"
+      }
+    },
+    "pbr_map_match_ecn_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_match_ecn",
+          "line": 350
+        },
+        "doc": "Negate a command or set its defaults\nMatch the rest of the command\nMatch based on IP ECN field\nExplicit Congestion Notification\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1418
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] match ecn (0-3)$ecn"
+      }
+    },
+    "pbr_map_match_ip_proto_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_match_ip_proto",
+          "line": 208
+        },
+        "doc": "Negate a command or set its defaults\nMatch the rest of the command\nChoose an ip-protocol\nMatch on tcp flows\nMatch on udp flows\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1412
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] match ip-protocol [tcp|udp]$ip_proto"
+      }
+    },
+    "pbr_map_match_mark_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_match_mark",
+          "line": 377
+        },
+        "doc": "Negate a command or set its defaults\nMatch the rest of the command\nChoose the mark value to use\nmark\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1419
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] match mark (1-4294967295)$mark"
+      }
+    },
+    "pbr_map_match_src_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_match_src",
+          "line": 136
+        },
+        "doc": "Negate a command or set its defaults\nMatch the rest of the command\nChoose the src ip or ipv6 prefix to use\nv4 Prefix\nv6 Prefix\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1415
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] match src-ip <A.B.C.D/M|X:X::X:X/M>$prefix"
+      }
+    },
+    "pbr_map_match_src_port_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_match_src_port",
+          "line": 236
+        },
+        "doc": "Negate a command or set its defaults\nMatch the rest of the command\nChoose the source port to use\nThe Source Port\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1413
+            },
+            "node": 60
+          }
+        ],
+        "string": "[no] match src-port (1-65535)$port"
+      }
+    },
+    "pbr_map_nexthop_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_nexthop",
+          "line": 586
+        },
+        "doc": "Set for the PBR-MAP\nSpecify one of the nexthops in this map\nv4 Address\nv6 Address\nInterface to use\nInterface to use\nIf the nexthop is in a different vrf tell us\nThe nexthop-vrf Name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1426
+            },
+            "node": 60
+          }
+        ],
+        "string": "set nexthop        <\t  <A.B.C.D|X:X::X:X>$addr [INTERFACE$intf]\t  |INTERFACE$intf\t>        [nexthop-vrf NAME$vrf_name]"
+      }
+    },
+    "pbr_map_nexthop_group_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_nexthop_group",
+          "line": 526
+        },
+        "doc": "Set for the PBR-MAP\nnexthop-group to use\nThe name of the nexthop-group\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1424
+            },
+            "node": 60
+          }
+        ],
+        "string": "set nexthop-group NHGNAME$name"
+      }
+    },
+    "pbr_map_vrf_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_map_vrf",
+          "line": 731
+        },
+        "doc": "Set for the PBR-MAP\nSpecify the VRF for this map\nThe VRF Name\nUse the interface's VRF for lookup\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1428
+            },
+            "node": 60
+          }
+        ],
+        "string": "set vrf <NAME$vrf_name|unchanged>"
+      }
+    },
+    "pbr_policy_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_policy",
+          "line": 789
+        },
+        "doc": "Negate a command or set its defaults\nPolicy to use\nName of the pbr-map to apply\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1411
+            },
+            "node": 17
+          }
+        ],
+        "string": "[no] pbr-policy PBRMAP$mapname"
+      }
+    },
+    "pbr_set_table_range_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "pbr_set_table_range",
+          "line": 97
+        },
+        "doc": "Policy Based Routing\nSet table ID range\nSet table ID range\nLower bound for table ID range\nUpper bound for table ID range\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1409
+            },
+            "node": 4
+          }
+        ],
+        "string": "pbr table range (10000-4294966272)$lb (10000-4294966272)$ub"
+      }
+    },
+    "show_debugging_pbr_cmd": {
+      "pbrd/pbrd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "show_debugging_pbr",
+          "line": 1240
+        },
+        "doc": "Show running system information\nDebugging functions\nPolicy Based Routing\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1403
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging [pbr]"
+      }
+    },
+    "show_pbr_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "show_pbr",
+          "line": 843
+        },
+        "doc": "Show running system information\nPolicy Based Routing\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1430
+            },
+            "node": 1
+          }
+        ],
+        "string": "show pbr"
+      }
+    },
+    "show_pbr_interface_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "show_pbr_interface",
+          "line": 1132
+        },
+        "doc": "Show running system information\nPolicy Based Routing\nPBR Interface\nPBR Interface Name\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1432
+            },
+            "node": 1
+          }
+        ],
+        "string": "show pbr interface [NAME$name] [json$json]"
+      }
+    },
+    "show_pbr_map_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "show_pbr_map",
+          "line": 1068
+        },
+        "doc": "Show running system information\nPolicy Based Routing\nPBR Map\nPBR Map Name\nDetailed information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1431
+            },
+            "node": 1
+          }
+        ],
+        "string": "show pbr map [NAME$name] [detail$detail|json$json]"
+      }
+    },
+    "show_pbr_nexthop_group_cmd": {
+      "pbrd/pbrd": {
+        "defun": {
+          "file": "pbrd/pbr_vty.c",
+          "func": "show_pbr_nexthop_group",
+          "line": 1107
+        },
+        "doc": "Show running system information\nPolicy Based Routing\nNexthop Groups\nOptional Name of the nexthop group\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pbrd/pbr_vty.c",
+              "func": "pbr_vty_init",
+              "line": 1433
+            },
+            "node": 1
+          }
+        ],
+        "string": "show pbr nexthop-groups [WORD$word] [json$json]"
+      }
+    }
+  },
+  "refs": {
+    "G1RRD-0MEC9": [
+      {
+        "args": "pnhi->ifp->name, old_valid, pnhc->valid",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "    Found %s: old: %d new: %d",
+        "func": "pbr_nht_individual_nexthop_interface_update_lookup",
+        "line": 1175,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GW91D-R4JM0": [
+      {
+        "args": "__func__, pbrm->name, pbrms->seqno",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: for %s(%u)",
+        "func": "pbr_map_check",
+        "line": 884,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GWP3F-ERF11": [
+      {
+        "args": "__func__, afi2str(install_afi)",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Saw both V6 and V4 nexthops...using %s",
+        "func": "pbr_nht_which_afi",
+        "line": 447,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HJ626-T5NH9": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: Asked to delete unspecified route type",
+        "func": "route_delete",
+        "line": 394,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HPBJ8-E0V7J": [
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Exhausted all table identifiers; cannot create nexthop-group cache for nexthop-group '%s'",
+        "func": "pbr_nht_add_group",
+        "line": 673,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, find.name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Exhausted all table identifiers; cannot create nexthop-group cache for nexthop-group '%s'",
+        "func": "pbr_nht_add_individual_nexthop",
+        "line": 596,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, nhgc->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Exhausted all table identifiers; cannot create nexthop-group cache for nexthop-group '%s'",
+        "func": "pbr_nhgroup_add_nexthop_cb",
+        "line": 250,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "J2AAG-9VF1H": [
+      {
+        "args": "__func__, &p, table_id",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: [%pFX] Route install failure for table: %u",
+        "func": "route_notify_owner",
+        "line": 178,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J2HHK-2JER0": [
+      {
+        "args": "__func__, &p, table_id",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: [%pFX] Route installed succeeded for table: %u",
+        "func": "route_notify_owner",
+        "line": 188,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J7BGN-CNJRE": [
+      {
+        "args": "__func__, pbrm->name, pbrms->seqno, pbrms->reason",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: Installing %s(%u) reason: %llu",
+        "func": "pbr_map_check",
+        "line": 892,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J7TPQ-SZJ1T": [
+      {
+        "args": "__func__, vrf->vrf_id, vrf->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_vrf.c",
+        "fmtstring": "%s: %u (%s)",
+        "func": "pbr_vrf_delete",
+        "line": 81,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, vrf->vrf_id, vrf->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_vrf.c",
+        "fmtstring": "%s: %u (%s)",
+        "func": "pbr_vrf_disable",
+        "line": 72,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, vrf->vrf_id, vrf->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_vrf.c",
+        "fmtstring": "%s: %u (%s)",
+        "func": "pbr_vrf_enable",
+        "line": 62,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, vrf->vrf_id, vrf->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_vrf.c",
+        "fmtstring": "%s: %u (%s)",
+        "func": "pbr_vrf_new",
+        "line": 51,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JA4A6-ABGC5": [
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Could not find nexthop-group cache w/ name '%s'",
+        "func": "pbr_nht_get_table",
+        "line": 1353,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Could not find nexthop-group cache w/ name '%s'",
+        "func": "pbr_nht_change_group",
+        "line": 500,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JHDWX-111EV": [
+      {
+        "args": "__func__, c->ifp->name, c->address",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: %s deleted %pFX",
+        "func": "interface_address_delete",
+        "line": 117,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JJESZ-Y7HH1": [
+      {
+        "args": "__func__, v4 ? \"v4\" : \"\", (v4 && v6) ? \" and \" : \"\", v6 ? \"v6\" : \"\"",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Saw blackhole nexthop(s) with %s%s%s nexthop(s), using AFI_MAX.",
+        "func": "pbr_nht_which_afi",
+        "line": 452,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JPR3H-C30G7": [
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: %s",
+        "func": "pbr_nht_nexthop_group_valid",
+        "line": 752,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JS861-9FE99": [
+      {
+        "args": "__func__, nhg",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: %p",
+        "func": "pbr_nht_nexthop_valid",
+        "line": 743,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JSPXE-M51MC": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: VRF change interface not found",
+        "func": "interface_vrf_update",
+        "line": 151,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K5D2Y-JFCPC": [
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: for %s",
+        "func": "pbr_map_policy_install",
+        "line": 722,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KVTS2-56YE9": [
+      {
+        "args": "__func__, &p, table_id",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: [%pFX] Route remove fail for table: %u",
+        "func": "route_notify_owner",
+        "line": 200,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KXT2M-8WRME": [
+      {
+        "args": "__func__, &matched, &nhr.prefix",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: Received Nexthop update: %pFX against %pFX",
+        "func": "pbr_zebra_nexthop_update",
+        "line": 414,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MA906-Q2BD0": [
+      {
+        "args": "__func__, zapi_rule_notify_owner2str(note), pbrms->installed",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: Received %s: %llu",
+        "func": "rule_notify_owner",
+        "line": 247,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MAD7T-RQ4YK": [
+      {
+        "args": "__func__, debugstr, nhgc->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Added %s to nexthop-group %s",
+        "func": "pbr_nhgroup_add_nexthop_cb",
+        "line": 268,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MHPZV-TDSKK": [
+      {
+        "args": "__func__, ifp->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: %s",
+        "func": "pbr_ifp_destroy",
+        "line": 86,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, ifp->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: %s",
+        "func": "pbr_ifp_create",
+        "line": 70,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P0JN0-XCF2E": [
+      {
+        "args": "__func__, debugstr, nhgc->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Removed %s from nexthop-group %s",
+        "func": "pbr_nhgroup_del_nexthop_cb",
+        "line": 316,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PNZ4F-SKYG0": [
+      {
+        "args": "__func__, ifp->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: %s is down",
+        "func": "pbr_ifp_down",
+        "line": 134,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PV5VB-0S15X": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: Registering for fun and profit",
+        "func": "zebra_connected",
+        "line": 256,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q2P3R-3W5T7": [
+      {
+        "args": "__func__, nhr.nexthop_num",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s:   (Nexthops(%u)",
+        "func": "pbr_zebra_nexthop_update",
+        "line": 417,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QF20S-3F0A4": [
+      {
+        "args": "__func__, nhr.nexthops[i].type, nhr.nexthops[i].vrf_id, nhr.nexthops[i].ifindex, &nhr.nexthops[i].gate.ipv4",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s:     Type: %d: vrf: %d, ifindex: %d gate: %pI4",
+        "func": "pbr_zebra_nexthop_update",
+        "line": 424,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QH2X2-YEJPQ": [
+      {
+        "args": "__func__, c ? c->ifp->name : \"Unknown\", c ? prefix2str(c->address, buf, sizeof(buf)) : \"Unknown\"",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: %s added %s",
+        "func": "interface_address_add",
+        "line": 102,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QJDXB-X9TA1": [
+      {
+        "args": "__func__, ifp->name, vrf_id, new_vrf_id",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: %s VRF change %u -> %u",
+        "func": "interface_vrf_update",
+        "line": 157,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QNMK0-0K459": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: Asked to delete unsupported route type: L2VPN",
+        "func": "route_delete",
+        "line": 390,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QRPZD-G13XQ": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: Asked to install unspecified route type",
+        "func": "route_add",
+        "line": 349,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QZ7QT-89EGY": [
+      {
+        "args": "__func__, new->name, new->table_id",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: NHT: %s assigned Table ID: %u",
+        "func": "pbr_nhgc_alloc",
+        "line": 201,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R2SSF-NKV5H": [
+      {
+        "args": "",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_main.c",
+        "fmtstring": "Terminating on signal",
+        "func": "sigint",
+        "line": 83,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "R71KR-FE3D7": [
+      {
+        "args": "__func__, &p, table_id",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: [%pFX] Route Removed succeeded for table: %u",
+        "func": "route_notify_owner",
+        "line": 194,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RB2FF-12V5N": [
+      {
+        "args": "pbrms->nhgrp_name ? pbrms->nhgrp_name : pbrms->internal_nhg_name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "    NH Grp name: %s",
+        "func": "pbr_map_schedule_policy_from_nhg",
+        "line": 695,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RJ7JX-0SPH2": [
+      {
+        "args": "__func__, &p, table_id",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: [%pFX] Route better admin distance won for table: %u",
+        "func": "route_notify_owner",
+        "line": 183,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RMBMH-DXP5W": [
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Could not find nhgc with name: %s",
+        "func": "pbr_nht_add_group",
+        "line": 681,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Could not find nhgc with name: %s",
+        "func": "pbr_nhgroup_add_cb",
+        "line": 218,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RVAJN-W74DB": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Sending nexthop to Zebra",
+        "func": "pbr_nh_alloc",
+        "line": 101,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SBTRN-2TJPB": [
+      {
+        "args": "__func__, pnhgc->valid, pnhgc->installed",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s:    %d %d",
+        "func": "pbr_nht_nexthop_group_valid",
+        "line": 759,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SE08R-KYGSY": [
+      {
+        "args": "pbrms->seqno, vrf_name, pbr_vrf_id(pbr_vrf)",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "    Seq %u uses vrf %s (%u), updating map",
+        "func": "pbrms_vrf_update",
+        "line": 308,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SFVS4-HQ7RM": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: Asked to install unsupported route type: L2VPN",
+        "func": "route_add",
+        "line": 345,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SZRM4-14G76": [
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: Specified PBR-MAP(%s) does not exist?",
+        "func": "pbr_map_check_valid",
+        "line": 676,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TS0NM-BCQR4": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: Failure to send nexthop to zebra",
+        "func": "pbr_send_rnh",
+        "line": 491,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "TS6MY-TYG7W": [
+      {
+        "args": "__func__, (installed ? \"install\" : \"remove\"), table_id, pnhgc->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: %s: Table ID (%u) matches %s",
+        "func": "pbr_nht_find_nhg_from_table_update",
+        "line": 344,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TZ6R3-F6RVQ": [
+      {
+        "args": "__func__, pnhgc",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Retrieved NHGC @ %p",
+        "func": "pbr_nht_add_group",
+        "line": 687,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V3AXS-YJZGB": [
+      {
+        "args": "&api->prefix",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "    Encoding %pFX",
+        "func": "route_add_helper",
+        "line": 269,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V6Y5G-674B4": [
+      {
+        "args": "pbrm->name, pbrms->seqno",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "    Installing %s %u",
+        "func": "pbr_map_policy_install",
+        "line": 735,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VEZHQ-66NRY": [
+      {
+        "args": "",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "Failure to decode Nexthop update message",
+        "func": "pbr_zebra_nexthop_update",
+        "line": 406,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "VJYM2-SBKGE": [
+      {
+        "args": "__func__, unique",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: Failure to lookup pbrms based upon %u",
+        "func": "rule_notify_owner",
+        "line": 225,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VP11P-B75EC": [
+      {
+        "args": "__func__, install ? \"Installing\" : \"Deleting\", pbrm->name, pbrms->seqno, install, pmi->ifp->name, pmi->delete",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s:    %s %s seq %u %d %s %u",
+        "func": "pbr_send_pbr_map",
+        "line": 607,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VSKD8-FB4VY": [
+      {
+        "args": "__func__, ifp->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: %s is up",
+        "func": "pbr_ifp_up",
+        "line": 125,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VYPDP-H8YST": [
+      {
+        "args": "__func__, pbr_ifp->mapname, (state_up ? \"installing\" : \"removing\"), ifp->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: %s %s rules on interface %s",
+        "func": "pbr_map_policy_interface_update",
+        "line": 288,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VYQC6-WFVZP": [
+      {
+        "args": "__func__, ifp->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: %s has no pbr_interface info",
+        "func": "pbr_map_policy_interface_update_common",
+        "line": 258,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WHDZM-Y1GZ2": [
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Added nexthop-group %s",
+        "func": "pbr_nhgroup_add_cb",
+        "line": 227,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WQRAE-22PSR": [
+      {
+        "args": "&pnhi->nhr->prefix, old_valid, pnhc->valid",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "    Found %pFX: old: %d new: %d",
+        "func": "pbr_nht_individual_nexthop_update_lookup",
+        "line": 922,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WVXV7-KF4QP": [
+      {
+        "args": "__func__, name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Removed nexthop-group %s",
+        "func": "pbr_nhgroup_delete_cb",
+        "line": 329,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "X609K-E6C24": [
+      {
+        "args": "__func__, pbrms->unique, unique",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: Comparing %u to %u",
+        "func": "pbrms_lookup_unique",
+        "line": 420,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XWA8R-TSSEE": [
+      {
+        "args": "__func__, pbrm->name, install, is_installed",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: for %s %d(%llu)",
+        "func": "pbr_send_pbr_map",
+        "line": 578,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XXRQD-65DGR": [
+      {
+        "args": "",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_main.c",
+        "fmtstring": "SIGHUP received",
+        "func": "sighup",
+        "line": 77,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "Y01V8-9XFSF": [
+      {
+        "args": "pbrm->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "We are totally valid %s",
+        "func": "pbr_map_check",
+        "line": 887,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YBCJF-T527P": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_nht.c",
+        "fmtstring": "%s: Removing nexthop from Zebra",
+        "func": "pbr_nh_delete",
+        "line": 119,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YBF09-9WNVG": [
+      {
+        "args": "__func__",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s: VRF not found",
+        "func": "pbr_encode_pbr_map_sequence_vrf",
+        "line": 525,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YN3AG-1X16W": [
+      {
+        "args": "__func__, name, pbrms->seqno, pbrm->valid, pbrms->nhs_installed",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: Looking at what to install %s(%u) %d %d",
+        "func": "pbr_map_policy_install",
+        "line": 730,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YP7YB-496T2": [
+      {
+        "args": "__func__, pnhgc->table_id",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s for Table: %d",
+        "func": "route_delete",
+        "line": 362,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, pnhgc->table_id",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_zebra.c",
+        "fmtstring": "%s for Table: %d",
+        "func": "route_add",
+        "line": 317,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YRTFB-JAHDN": [
+      {
+        "args": "__func__, (*pbr_ifp)->mapname",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: applied PBR-MAP(%s) does not exist?",
+        "func": "pbr_map_policy_interface_update_common",
+        "line": 268,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YS6DM-KHTEW": [
+      {
+        "args": "",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "    Sending PBR_MAP_POLICY_INSTALL event",
+        "func": "pbr_map_check",
+        "line": 894,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZCQ5V-R418P": [
+      {
+        "args": "__func__, pbr_vrf_name(pbr_vrf), pbr_vrf_id(pbr_vrf), enabled ? \"enabled\" : \"disabled\"",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: %s (%u) %s, updating pbr maps",
+        "func": "pbr_map_vrf_update",
+        "line": 328,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZHY8B-880QR": [
+      {
+        "args": "__func__, pbrm->name, pbrms->seqno, pbrms->reason",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: Removing %s(%u) reason: %llu",
+        "func": "pbr_map_check",
+        "line": 898,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZY4MA-0EGZN": [
+      {
+        "args": "__func__, pbrm->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: Looking at %s",
+        "func": "pbr_map_schedule_policy_from_nhg",
+        "line": 691,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, pbrm->name",
+        "binary": "pbrd/pbrd",
+        "file": "pbrd/pbr_map.c",
+        "fmtstring": "%s: Looking at %s",
+        "func": "pbr_map_vrf_update",
+        "line": 331,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

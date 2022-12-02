@@ -1,0 +1,2319 @@
+{
+  "cli": {
+    "clear_nhrp_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "clear_nhrp",
+          "line": 1081
+        },
+        "doc": "Reset functions\nIP information\nIPv6 information\nNext Hop Resolution Protocol functions\nDynamic cache entries\nShortcut entries\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1234
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear <ip|ipv6> nhrp <cache|shortcut>"
+      }
+    },
+    "debug_nhrp_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "debug_nhrp",
+          "line": 138
+        },
+        "doc": "Enable debug messages for specific or all parts.\nNHRP information\nAll messages\nCommon messages (default)\nEvent manager messages\nInterface messages\nKernel messages\nRoute messages\nVICI messages\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1241
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1238
+            },
+            "node": 3
+          }
+        ],
+        "string": "debug nhrp <all|common|event|interface|kernel|route|vici>"
+      }
+    },
+    "if_nhrp_flags_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_nhrp_flags",
+          "line": 372
+        },
+        "doc": "IP information\nIPv6 information\nNext Hop Resolution Protocol functions\nAllow shortcut establishment\nSend redirect notifications\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1265
+            },
+            "node": 17
+          }
+        ],
+        "string": "<ip|ipv6> nhrp <shortcut|redirect>"
+      }
+    },
+    "if_nhrp_holdtime_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_nhrp_holdtime",
+          "line": 436
+        },
+        "doc": "IP information\nIPv6 information\nNext Hop Resolution Protocol functions\nSpecify NBMA address validity time\nTime in seconds that NBMA addresses are advertised valid\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1261
+            },
+            "node": 17
+          }
+        ],
+        "string": "<ip|ipv6> nhrp holdtime (1-65000)"
+      }
+    },
+    "if_nhrp_map_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_nhrp_map",
+          "line": 513
+        },
+        "doc": "IP information\nIPv6 information\nNext Hop Resolution Protocol functions\nNexthop Server configuration\nIPv4 protocol address\nIPv6 protocol address\nIPv4 NBMA address\nHandle protocol address locally\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1269
+            },
+            "node": 17
+          }
+        ],
+        "string": "<ip|ipv6> nhrp map <A.B.C.D|X:X::X:X> <A.B.C.D|local>"
+      }
+    },
+    "if_nhrp_map_multicast_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_nhrp_map_multicast",
+          "line": 602
+        },
+        "doc": "IP information\nIPv6 information\nNext Hop Resolution Protocol functions\nMulticast NBMA Configuration\nUse this NBMA mapping for multicasts\nIPv4 NBMA address\nIPv6 NBMA address\nDynamically learn destinations from client registrations on hub\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1271
+            },
+            "node": 17
+          }
+        ],
+        "string": "<ip|ipv6> nhrp map multicast <A.B.C.D|X:X::X:X|dynamic>"
+      }
+    },
+    "if_nhrp_mtu_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_nhrp_mtu",
+          "line": 472
+        },
+        "doc": "IP information\nNext Hop Resolution Protocol functions\nConfigure NHRP advertised MTU\nMTU value\nAdvertise bound interface MTU similar to OpenNHRP\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1263
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip nhrp mtu <(576-1500)|opennhrp>"
+      }
+    },
+    "if_nhrp_network_id_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_nhrp_network_id",
+          "line": 337
+        },
+        "doc": "IP information\nIPv6 information\nNext Hop Resolution Protocol functions\nEnable NHRP and specify network-id\nSystem local ID to specify interface group\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1259
+            },
+            "node": 17
+          }
+        ],
+        "string": "<ip|ipv6> nhrp network-id (1-4294967295)"
+      }
+    },
+    "if_nhrp_nhs_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_nhrp_nhs",
+          "line": 651
+        },
+        "doc": "IP information\nIPv6 information\nNext Hop Resolution Protocol functions\nNexthop Server configuration\nIPv4 protocol address\nIPv6 protocol address\nAutomatic detection of protocol address\nNBMA address\nIPv4 NBMA address\nFully qualified domain name for NBMA address(es)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1273
+            },
+            "node": 17
+          }
+        ],
+        "string": "<ip|ipv6> nhrp nhs <A.B.C.D|X:X::X:X|dynamic> nbma <A.B.C.D|FQDN>"
+      }
+    },
+    "if_nhrp_reg_flags_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_nhrp_reg_flags",
+          "line": 403
+        },
+        "doc": "IP information\nIPv6 information\nNext Hop Resolution Protocol functions\nRegistration configuration\nDon't set unique flag\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1267
+            },
+            "node": 17
+          }
+        ],
+        "string": "<ip|ipv6> nhrp registration no-unique"
+      }
+    },
+    "if_no_nhrp_flags_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_no_nhrp_flags",
+          "line": 388
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nIPv6 information\nNext Hop Resolution Protocol functions\nAllow shortcut establishment\nSend redirect notifications\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1266
+            },
+            "node": 17
+          }
+        ],
+        "string": "no <ip|ipv6> nhrp <shortcut|redirect>"
+      }
+    },
+    "if_no_nhrp_holdtime_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_no_nhrp_holdtime",
+          "line": 454
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nIPv6 information\nNext Hop Resolution Protocol functions\nSpecify NBMA address validity time\nTime in seconds that NBMA addresses are advertised valid\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1262
+            },
+            "node": 17
+          }
+        ],
+        "string": "no <ip|ipv6> nhrp holdtime [(1-65000)]"
+      }
+    },
+    "if_no_nhrp_map_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_no_nhrp_map",
+          "line": 566
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nIPv6 information\nNext Hop Resolution Protocol functions\nNexthop Server configuration\nIPv4 protocol address\nIPv6 protocol address\nIPv4 NBMA address\nHandle protocol address locally\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1270
+            },
+            "node": 17
+          }
+        ],
+        "string": "no <ip|ipv6> nhrp map <A.B.C.D|X:X::X:X> [<A.B.C.D|local>]"
+      }
+    },
+    "if_no_nhrp_map_multicast_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_no_nhrp_map_multicast",
+          "line": 626
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nIPv6 information\nNext Hop Resolution Protocol functions\nMulticast NBMA Configuration\nUse this NBMA mapping for multicasts\nIPv4 NBMA address\nIPv6 NBMA address\nDynamically learn destinations from client registrations on hub\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1272
+            },
+            "node": 17
+          }
+        ],
+        "string": "no <ip|ipv6> nhrp map multicast <A.B.C.D|X:X::X:X|dynamic>"
+      }
+    },
+    "if_no_nhrp_mtu_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_no_nhrp_mtu",
+          "line": 495
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nNext Hop Resolution Protocol functions\nConfigure NHRP advertised MTU\nMTU value\nAdvertise bound interface MTU similar to OpenNHRP\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1264
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip nhrp mtu [(576-1500)|opennhrp]"
+      }
+    },
+    "if_no_nhrp_network_id_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_no_nhrp_network_id",
+          "line": 355
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nIPv6 information\nNext Hop Resolution Protocol functions\nEnable NHRP and specify network-id\nSystem local ID to specify interface group\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1260
+            },
+            "node": 17
+          }
+        ],
+        "string": "no <ip|ipv6> nhrp network-id [(1-4294967295)]"
+      }
+    },
+    "if_no_nhrp_nhs_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_no_nhrp_nhs",
+          "line": 676
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nIPv6 information\nNext Hop Resolution Protocol functions\nNexthop Server configuration\nIPv4 protocol address\nIPv6 protocol address\nAutomatic detection of protocol address\nNBMA address\nIPv4 NBMA address\nFully qualified domain name for NBMA address(es)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1274
+            },
+            "node": 17
+          }
+        ],
+        "string": "no <ip|ipv6> nhrp nhs <A.B.C.D|X:X::X:X|dynamic> nbma <A.B.C.D|FQDN>"
+      }
+    },
+    "if_no_nhrp_reg_flags_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "if_no_nhrp_reg_flags",
+          "line": 420
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nIPv6 information\nNext Hop Resolution Protocol functions\nRegistration configuration\nDon't set unique flag\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1268
+            },
+            "node": 17
+          }
+        ],
+        "string": "no <ip|ipv6> nhrp registration no-unique"
+      }
+    },
+    "nhrp_event_socket_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "nhrp_event_socket",
+          "line": 213
+        },
+        "doc": "Next Hop Resolution Protocol functions\nEvent Manager commands\nEvent Manager unix socket path\nUnix path for the socket\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1244
+            },
+            "node": 4
+          }
+        ],
+        "string": "nhrp event socket SOCKET"
+      }
+    },
+    "nhrp_multicast_nflog_group_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "nhrp_multicast_nflog_group",
+          "line": 260
+        },
+        "doc": "Next Hop Resolution Protocol functions\nSpecify NFLOG group number for Multicast Packets\nNFLOG group number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1248
+            },
+            "node": 4
+          }
+        ],
+        "string": "nhrp multicast-nflog-group (1-65535)"
+      }
+    },
+    "nhrp_nflog_group_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "nhrp_nflog_group",
+          "line": 235
+        },
+        "doc": "Next Hop Resolution Protocol functions\nSpecify NFLOG group number\nNFLOG group number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1246
+            },
+            "node": 4
+          }
+        ],
+        "string": "nhrp nflog-group (1-65535)"
+      }
+    },
+    "no_debug_nhrp_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "no_debug_nhrp",
+          "line": 149
+        },
+        "doc": "Negate a command or set its defaults\nDisable debug messages for specific or all parts.\nNHRP information\nAll messages\nCommon messages (default)\nEvent manager messages\nInterface messages\nKernel messages\nRoute messages\nVICI messages\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1242
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1239
+            },
+            "node": 3
+          }
+        ],
+        "string": "no debug nhrp <all|common|event|interface|kernel|route|vici>"
+      }
+    },
+    "no_nhrp_event_socket_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "no_nhrp_event_socket",
+          "line": 225
+        },
+        "doc": "Negate a command or set its defaults\nNext Hop Resolution Protocol functions\nEvent Manager commands\nEvent Manager unix socket path\nUnix path for the socket\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1245
+            },
+            "node": 4
+          }
+        ],
+        "string": "no nhrp event socket [SOCKET]"
+      }
+    },
+    "no_nhrp_multicast_nflog_group_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "no_nhrp_multicast_nflog_group",
+          "line": 275
+        },
+        "doc": "Negate a command or set its defaults\nNext Hop Resolution Protocol functions\nSpecify NFLOG group number\nNFLOG group number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1249
+            },
+            "node": 4
+          }
+        ],
+        "string": "no nhrp multicast-nflog-group [(1-65535)]"
+      }
+    },
+    "no_nhrp_nflog_group_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "no_nhrp_nflog_group",
+          "line": 250
+        },
+        "doc": "Negate a command or set its defaults\nNext Hop Resolution Protocol functions\nSpecify NFLOG group number\nNFLOG group number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1247
+            },
+            "node": 4
+          }
+        ],
+        "string": "no nhrp nflog-group [(1-65535)]"
+      }
+    },
+    "no_tunnel_protection_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "no_tunnel_protection",
+          "line": 302
+        },
+        "doc": "Negate a command or set its defaults\nNHRP/GRE integration\nIPsec protection\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1256
+            },
+            "node": 17
+          }
+        ],
+        "string": "no tunnel protection"
+      }
+    },
+    "no_tunnel_source_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "no_tunnel_source",
+          "line": 325
+        },
+        "doc": "NHRP/GRE integration\nTunnel device binding tracking\nInterface name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1258
+            },
+            "node": 17
+          }
+        ],
+        "string": "no tunnel source"
+      }
+    },
+    "show_debugging_nhrp_cmd": {
+      "nhrpd/nhrpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "show_debugging_nhrp",
+          "line": 113
+        },
+        "doc": "Show running system information\nDebugging information\nNHRP configuration\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1236
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging [nhrp]"
+      }
+    },
+    "show_dmvpn_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "show_dmvpn",
+          "line": 1036
+        },
+        "doc": "Show running system information\nDMVPN information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1233
+            },
+            "node": 1
+          }
+        ],
+        "string": "show dmvpn [json]"
+      }
+    },
+    "show_ip_nhrp_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "show_ip_nhrp",
+          "line": 945
+        },
+        "doc": "Show running system information\nIP information\nIPv6 information\nNHRP information\nForwarding cache information\nNext hop server information\nShortcut information\nopennhrpctl style cache dump\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1232
+            },
+            "node": 1
+          }
+        ],
+        "string": "show <ip|ipv6> nhrp [cache|nhs|shortcut|opennhrp] [json]"
+      }
+    },
+    "tunnel_protection_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "tunnel_protection",
+          "line": 289
+        },
+        "doc": "NHRP/GRE integration\nIPsec protection\nVICI (StrongSwan)\nIPsec profile\nIPsec profile name\nFallback IPsec profile\nFallback IPsec profile name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1255
+            },
+            "node": 17
+          }
+        ],
+        "string": "tunnel protection vici profile PROFILE [fallback-profile FALLBACK]"
+      }
+    },
+    "tunnel_source_cmd": {
+      "nhrpd/nhrpd": {
+        "defun": {
+          "file": "nhrpd/nhrp_vty.c",
+          "func": "tunnel_source",
+          "line": 314
+        },
+        "doc": "NHRP/GRE integration\nTunnel device binding tracking\nInterface name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "nhrpd/nhrp_vty.c",
+              "func": "nhrp_config_init",
+              "line": 1257
+            },
+            "node": 17
+          }
+        ],
+        "string": "tunnel source INTERFACE"
+      }
+    }
+  },
+  "refs": {
+    "G68G8-7T7EG": [
+      {
+        "args": "p->online, p->requested, nifp->ipsec_profile ? 1 : 0",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "cache (peer check failed: online?%d requested?%d ipsec?%d)",
+        "func": "nhrp_cache_update_route",
+        "line": 271,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "G8KQZ-Y6WJC": [
+      {
+        "args": "s->p, &c->remote_addr, c && c->ifp ? c->ifp->name : \"<unk>\"",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: route install %pFX nh %pSU dev %s",
+        "func": "nhrp_shortcut_cache_notify",
+        "line": 61,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GGC3G-18YBF": [
+      {
+        "args": "nbma_addr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "shortcut res_rep: updating binding for nmba addr %pSU",
+        "func": "nhrp_handle_resolution_req",
+        "line": 550,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GHVNG-AC5D2": [
+      {
+        "args": "msgtype",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Unrecognized message type %d",
+        "func": "vici_recv_message",
+        "line": 353,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "GJH0M-6S1HG": [
+      {
+        "args": "ifp->name, nbmaifp->name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "%s: bound to %s",
+        "func": "nhrp_interface_update_nbma",
+        "line": 238,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GVZF0-990Z5": [
+      {
+        "args": "&lookup, ri->nhrp_ifp->name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_route.c",
+        "fmtstring": "lookup %pFX: nhrp_if=%s",
+        "func": "nhrp_route_get_nexthop",
+        "line": 280,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "H2SEN-AXZRD": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_main.c",
+        "fmtstring": "Done.",
+        "func": "nhrp_request_stop",
+        "line": 98,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "H5N0C-FRER6": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Parsing and replying to Resolution Req",
+        "func": "nhrp_handle_resolution_req",
+        "line": 460,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HEJ78-GDBV7": [
+      {
+        "args": "mtu",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "NHS: CIE MTU: %d",
+        "func": "nhrp_reg_reply",
+        "line": 62,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HGCDB-MANDB": [
+      {
+        "args": "proto, &pp->peer->vc->remote.nbma, &cie_nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: NAT detected (no NAT Extension) proto %pSU NBMA %pSU claimed-NBMA %pSU",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 305,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HH9AT-C4694": [
+      {
+        "args": "ifc->ifp->name, ifc->address",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "if-addr-del: %s: %pFX",
+        "func": "nhrp_interface_address_delete",
+        "line": 502,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HM4JK-767GR": [
+      {
+        "args": "ifp->name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "%s: NBMA address changed",
+        "func": "nhrp_interface_update_nbma",
+        "line": 252,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HNSEW-AYHEP": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "NHS: Reg.reply received",
+        "func": "nhrp_reg_reply",
+        "line": 47,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HYCCT-V29G5": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Shortcut to more generic than /8 dropped",
+        "func": "nhrp_handle_resolution_req",
+        "line": 456,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HZ3CK-PAKGM": [
+      {
+        "args": "ifp->name, ifp->ifindex, ifp->ll_type, if_link_type_str(ifp->ll_type)",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "if-add: %s, ifindex: %u, hw_type: %d %s",
+        "func": "nhrp_ifp_create",
+        "line": 381,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J0Y1F-TGYD3": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: cache found, update binding",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 338,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: cache found, update binding",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 321,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J1968-N9N46": [
+      {
+        "args": "buf",
+        "binary": "nhrpd/nhrpd",
+        "ec": 117440513,
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: bad strongSwan remote-host: %s",
+        "func": "parse_sa_message",
+        "line": 244,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "JH20W-CR6RH": [
+      {
+        "args": "&r->peer->vc->remote.nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "NHS: Waiting link for %pSU",
+        "func": "nhrp_reg_send_req",
+        "line": 177,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JPXWD-603QG": [
+      {
+        "args": "&p->src_proto, &dst, (p->if_ad->flags & 0x0001) ? \"trying shortcut\" : \"ignored\"",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Traffic Indication from %pSU about packet to %pSU: %s",
+        "func": "nhrp_handle_traffic_ind",
+        "line": 861,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JT71Y-7VYHQ": [
+      {
+        "args": "ctx.ifp->name, zbuf_used(ctx.pkt)",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_multicast.c",
+        "fmtstring": "Intercepted multicast packet leaving %s len %zu",
+        "func": "netlink_mcast_log_handler",
+        "line": 137,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JVF4V-9REV8": [
+      {
+        "args": "netlink_mcast_nflog_group",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_multicast.c",
+        "fmtstring": "Register nflog group: %d",
+        "func": "netlink_mcast_set_nflog_group",
+        "line": 213,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JWJ84-V5ECA": [
+      {
+        "args": "proto_addr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "shortcut res_rep: No NAT Extension for %pSU",
+        "func": "nhrp_handle_resolution_req",
+        "line": 508,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K0534-5VD2M": [
+      {
+        "args": "&vc->remote.nbma, &vc->local.nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "PACKET: Recv %pSU -> %pSU",
+        "func": "nhrp_peer_recv",
+        "line": 1138,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K7TCP-ZMJD1": [
+      {
+        "args": "&c->remote_addr, p->ifp->name, &p->vc->remote.nbma, &c->cur.remote_nbma_natoa",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "cache (remote_nbma_natoa set): Update binding for %pSU dev %s from (deleted) peer.vc.nbma %pSU to %pSU",
+        "func": "nhrp_cache_update_route",
+        "line": 236,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K9V86-ENXT2": [
+      {
+        "args": "proto, &nat_nbma, &cie_nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: NAT detected (NAT extension) proto %pSU NBMA %pSU claimed-NBMA %pSU",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 295,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KA3BR-6AZZN": [
+      {
+        "args": "buf",
+        "binary": "nhrpd/nhrpd",
+        "ec": 117440513,
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: bad strongSwan local-host: %s",
+        "func": "parse_sa_message",
+        "line": 225,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "KBRW1-VCH1W": [
+      {
+        "args": "c->ifp->name, &c->remote_addr, (const char *)arg",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "cache: %s %pSU: %s",
+        "func": "nhrp_cache_authorize_binding",
+        "line": 348,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KCKXM-TF1BY": [
+      {
+        "args": "ifp->name, nifp->i_grekey, nifp->link_idx, saddr.s_addr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "%s: GRE: %x %x %x",
+        "func": "nhrp_interface_update_nbma",
+        "line": 208,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KE0C8-W91C2": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Connected",
+        "func": "vici_reconnect",
+        "line": 525,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KGC8R-MMQKN": [
+      {
+        "args": "proto",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "No cache entry for proto %pSU",
+        "func": "nhrp_peer_forward",
+        "line": 1048,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KNPB6-NP2Y4": [
+      {
+        "args": "&lookup, ri->ifp ? ri->ifp->name : \"(none)\"",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_route.c",
+        "fmtstring": "lookup %pFX: zebra route dev %s",
+        "func": "nhrp_route_get_nexthop",
+        "line": 288,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KY6Z4-T8NV0": [
+      {
+        "args": "ifp->name, &nifp->nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "%s: NAT detected, real NBMA address: %pSU",
+        "func": "nhrp_reg_reply",
+        "line": 81,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KYY9X-HH6ET": [
+      {
+        "args": "s->p",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut %pFX created",
+        "func": "nhrp_shortcut_get",
+        "line": 184,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KZFC5-JYQF6": [
+      {
+        "args": "&prefix, proto, &pp->dst_proto, nbma, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (cie->holding_time); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: %pFX is at proto %pSU dst_proto %pSU NBMA %pSU cie-holdtime %d",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 315,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "M78NA-AFP11": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Processing NHRP_EXTENSION_NAT_ADDRESS while forwarding the request packet",
+        "func": "nhrp_peer_forward",
+        "line": 1007,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MA774-4RDW4": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_main.c",
+        "fmtstring": "Exiting...",
+        "func": "nhrp_request_stop",
+        "line": 87,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MBHYC-J3KS6": [
+      {
+        "args": "&vc->remote.nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "IPsec connection to %pSU already established",
+        "func": "nhrp_peer_defer_vici_request",
+        "line": 295,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MFKFP-TR5FR": [
+      {
+        "args": "&c->cur.remote_nbma_natoa",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "c->cur.remote_nbma_natoa is %pSU",
+        "func": "nhrp_peer_forward",
+        "line": 1033,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MQNNE-83D4E": [
+      {
+        "args": "&sa->vc->remote.nbma, &vc->remote.nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_vc.c",
+        "fmtstring": "IPsec NBMA change of %pSU to %pSU",
+        "func": "nhrp_vc_ipsec_updown",
+        "line": 143,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MT5BE-A439Z": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Shortcuts disabled",
+        "func": "nhrp_handle_resolution_req",
+        "line": 448,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MW4XC-TQES8": [
+      {
+        "args": "holdtime, pp->if_ad->holdtime",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "shortcut res_rep: holdtime is %u (if 0, using %u)",
+        "func": "nhrp_handle_resolution_req",
+        "line": 536,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MWP37-NGEEE": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: calling update_binding",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 360,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MWZVC-TJHTJ": [
+      {
+        "args": "ifp->name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "Deleted interface (%s)",
+        "func": "nhrp_if_delete_hook",
+        "line": 93,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MXJ4A-G3VW7": [
+      {
+        "args": "nhrp_nhslist_count(&nifp->afi[afi].nhslist_head)",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "Cleaning up nhs entries (%zu)",
+        "func": "nhrp_nhs_interface_del",
+        "line": 405,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MXYEK-B1EBT": [
+      {
+        "args": "proto",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "shortcut res_resp: Processing NAT Extension for %pSU",
+        "func": "nhrp_process_nat_extension",
+        "line": 412,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "N1KC7-2NVG2": [
+      {
+        "args": "p->ref, &p->vc->remote.nbma, &p->vc->local.nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Deleting peer ref:%d remote:%pSU local:%pSU",
+        "func": "nhrp_peer_check_delete",
+        "line": 48,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "N2D3R-FSGYB": [
+      {
+        "args": "ifp->name, afi == AFI_IP ? 4 : 6, best ? prefix2str(best->address, buf, sizeof(buf)) : \"(none)\"",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "%s: IPv%d address changed to %s",
+        "func": "nhrp_interface_update_address",
+        "line": 323,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "N2DYA-X9XRS": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_event.c",
+        "fmtstring": "%s: failure connecting nhrp-event socket: %s",
+        "func": "evmgr_reconnect",
+        "line": 197,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "N3T6G-P90HH": [
+      {
+        "args": "s->cache ? \"yes\" : \"no\", s->cache ? (s->cache->route_installed ? \"yes\" : \"no\") : \"n/a\"",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: notify cache down because cache?%s or ri?%s",
+        "func": "nhrp_shortcut_update_binding",
+        "line": 117,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NE2QS-E94GN": [
+      {
+        "args": "nbma_addr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_multicast.c",
+        "fmtstring": "Adding multicast entry (%pSU)",
+        "func": "nhrp_multicast_add",
+        "line": 245,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NQNCE-QFC30": [
+      {
+        "args": "ifp->name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "if-down: %s",
+        "func": "nhrp_ifp_down",
+        "line": 470,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NRBEB-5DWCZ": [
+      {
+        "args": "name.len, name.ptr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Event '%.*s'",
+        "func": "vici_recv_message",
+        "line": 330,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NY4CY-Q3FSK": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: List end",
+        "func": "vici_parse_message",
+        "line": 136,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PA74F-R41CV": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "Deleting cache entry",
+        "func": "nhrp_cache_free",
+        "line": 72,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PKEHV-MNXHK": [
+      {
+        "args": "&p->vc->local.nbma, &p->vc->remote.nbma, ret, zbuf_used(zb), addrlen",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_multicast.c",
+        "fmtstring": "Multicast Packet: %pSU -> %pSU, ret = %d, size = %zu, addrlen = %zu",
+        "func": "nhrp_multicast_send",
+        "line": 55,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PRQ0A-R3YY1": [
+      {
+        "args": "&vc->remote.nbma, info",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "From %pSU: error: %s",
+        "func": "nhrp_peer_recv",
+        "line": 1248,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "PTQ80-8JY6C": [
+      {
+        "args": "dir, (packet_types[hdr->type].name ? packet_types[hdr->type].name : \"Unknown\"), hdr->type, reply ? &dst_proto : &src_proto, reply ? &src_proto : &dst_proto",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "%s %s(%d) %pSU -> %pSU",
+        "func": "nhrp_packet_debug",
+        "line": 1103,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q5SCG-KA6PJ": [
+      {
+        "args": "ifp ? ifp->name : \"<none>\", gre_info.ifindex, vrf_id",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_route.c",
+        "fmtstring": "%s: gre interface %d vr %d obtained from system",
+        "func": "nhrp_gre_update",
+        "line": 516,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q70EN-P89TF": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "cache (peer check failed: no p)",
+        "func": "nhrp_cache_update_route",
+        "line": 274,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q7PTC-GQFPF": [
+      {
+        "args": "ifc->ifp->name, ifc->address",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "if-addr-add: %s: %pFX",
+        "func": "nhrp_interface_address_add",
+        "line": 485,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QCDGJ-8DMTG": [
+      {
+        "args": "nifp->cache_hash ? nifp->cache_hash->count : 0",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "Cleaning up undeleted cache entries (%lu)",
+        "func": "nhrp_cache_interface_del",
+        "line": 165,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QKAVD-96T1H": [
+      {
+        "args": "ifp->name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "if-up: %s",
+        "func": "nhrp_ifp_up",
+        "line": 462,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QQ0NK-1H449": [
+      {
+        "args": "(cmd == ZEBRA_NHRP_NEIGH_GET) ? \"who-has\" : (cmd == ZEBRA_NHRP_NEIGH_ADDED) ? \"new-neigh\" : \"del-neigh\", &addr, ifp->name, &lladdr, ndm_state, c->used, c->cur.type",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/netlink_arp.c",
+        "fmtstring": "Netlink: %s %pSU dev %s lladdr %pSU nud 0x%x cache used %u type %u",
+        "func": "nhrp_neighbor_operation",
+        "line": 183,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QVDN3-HZPK6": [
+      {
+        "args": "nifp->ifp->name, &nifp->nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "%s: NBMA change: address %pSU",
+        "func": "nhrp_interface_interface_notifier",
+        "line": 176,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QVXNM-NVHEQ": [
+      {
+        "args": "&addr, ifp->name, &c->cur.remote_nbma_natoa, &c->cur.peer->vc->remote.nbma, &lladdr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/netlink_arp.c",
+        "fmtstring": "Netlink: update binding for %pSU dev %s from c %pSU peer.vc.nbma %pSU to lladdr %pSU",
+        "func": "nhrp_neighbor_operation",
+        "line": 190,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R4TF4-BYXGE": [
+      {
+        "args": "&c->remote_addr, p->ifp->name, &p->vc->remote.nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "cache (remote_nbma_natoa unspec): Update binding for %pSU dev %s from (deleted) to peer.vc.nbma %pSU",
+        "func": "nhrp_cache_update_route",
+        "line": 245,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R9MZ0-BKVRH": [
+      {
+        "args": "__func__",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_route.c",
+        "fmtstring": "%s(): error reading response ..",
+        "func": "nhrp_gre_update",
+        "line": 522,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "R9VJT-P2Z7F": [
+      {
+        "args": "&pp->dst_proto",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: no cache for proto %pSU",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 349,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "proto",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: no cache for proto %pSU",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 330,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RFX78-JMH2T": [
+      {
+        "args": "proto",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Proto is %pSU",
+        "func": "nhrp_peer_forward",
+        "line": 1026,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RQD0X-A6AJP": [
+      {
+        "args": "added ? \"add\" : \"del\", &api.prefix, &nexthop_addr, ifp ? ifp->name : \"(none)\"",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_route.c",
+        "fmtstring": "if-route-%s: %pFX via %pSU dev %s",
+        "func": "nhrp_route_read",
+        "line": 255,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RZK9Z-WW2P8": [
+      {
+        "args": "ifp->name, nifp->link_idx, nifp->link_vrf_id",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "%s: bound device index changed to %d, vr %u",
+        "func": "nhrp_interface_update_source",
+        "line": 154,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "S2H7W-EAHAS": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "%s: failure connecting VICI socket: %s",
+        "func": "vici_reconnect",
+        "line": 519,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SA7F6-TT1FB": [
+      {
+        "args": "add ? \"add\" : \"del\", &api.prefix, nexthop_ref ? inet_ntop(api.prefix.family, &api_nh->gate, buf, sizeof(buf)) : \"<onlink>\", api.metric, api.nexthop_num, ifp ? ifp->name : \"none\"",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_route.c",
+        "fmtstring": "Zebra send: route %s %pFX nexthop %s metric %u count %d dev %s",
+        "func": "nhrp_route_announce",
+        "line": 208,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SC7FW-DRW6R": [
+      {
+        "args": "nhrp_mcastlist_count(&nifp->afi[afi].mcastlist_head)",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_multicast.c",
+        "fmtstring": "Cleaning up multicast entries (%zu)",
+        "func": "nhrp_multicast_interface_del",
+        "line": 279,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SENV5-2F7A8": [
+      {
+        "args": "&c->remote_addr, c->ifp->name, (c->cur.peer ? sockunion2str( &c->cur.peer->vc->remote.nbma, buf[1], sizeof(buf[1])) : \"(no peer)\"), &c->cur.remote_nbma_natoa",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "cache: update binding for %pSU dev %s from (deleted) peer.vc.nbma %s to %pSU",
+        "func": "nhrp_cache_authorize_binding",
+        "line": 376,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SHC80-QNE6S": [
+      {
+        "args": "ike_id_str",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "Terminate ike_id_str = %s",
+        "func": "vici_terminate_vc_by_ike_id",
+        "line": 571,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SM0PC-23FVK": [
+      {
+        "args": "ifp->name, best->address",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "%s: %pFX is not a host prefix",
+        "func": "nhrp_interface_update_address",
+        "line": 301,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "SN95J-310TR": [
+      {
+        "args": "c ? \"no\" : \"yes\", proto && pp && sockunion_same(proto, &pp->dst_proto) ? \"yes\" : \"no\"",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "NO Shortcut because c NULL?%s or same proto?%s",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 373,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SZH1K-ZKNG1": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_event.c",
+        "fmtstring": "Connected to Event Manager",
+        "func": "evmgr_reconnect",
+        "line": 204,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "TP7X1-TKH88": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: Resolution reply handled",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 376,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TPNQ6-77EJG": [
+      {
+        "args": "n->nlmsg_type, n->nlmsg_flags",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_multicast.c",
+        "fmtstring": "Netlink-mcast-log: Received msg_type %u, msg_flags %u",
+        "func": "netlink_mcast_log_recv",
+        "line": 158,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TZGHZ-EV5AB": [
+      {
+        "args": "proto, cie->code",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "NHS: CIE registration: %pSU: %d",
+        "func": "nhrp_reg_reply",
+        "line": 56,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V3XRY-AVPW3": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "NHS: Registration failed",
+        "func": "nhrp_reg_reply",
+        "line": 43,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V6E15-X0469": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Section end",
+        "func": "vici_parse_message",
+        "line": 109,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VK4WZ-SECPY": [
+      {
+        "args": "ctx.ike_uniqueid",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Deleting IKE_SA %u",
+        "func": "vici_recv_sa",
+        "line": 306,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VMRD0-54J88": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "ec": 117440513,
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: StrongSwan does not support mandatory events (unpatched?)",
+        "func": "vici_recv_message",
+        "line": 348,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "VQD6A-9PVZA": [
+      {
+        "args": "eventid, result",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_event.c",
+        "fmtstring": "evmgr: received: eventid=%d result=%s",
+        "func": "evmgr_recv_message",
+        "line": 72,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VR4HF-8SFPD": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_multicast.c",
+        "fmtstring": "De-register nflog group",
+        "func": "netlink_mcast_set_nflog_group",
+        "line": 200,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VXQE1-3WP1J": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Parsing and replying to Registration Req",
+        "func": "nhrp_handle_registration_request",
+        "line": 635,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VZQX2-A5SP9": [
+      {
+        "args": "type, buf[0], nbma_oa ? buf[1] : \"(NULL)\"",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "cache: same type %u, updating expiry and changing nbma addr from %s to %s",
+        "func": "nhrp_cache_update_binding",
+        "line": 457,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W3FAQ-B51V0": [
+      {
+        "args": "n->nlmsg_type, n->nlmsg_flags",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/netlink_arp.c",
+        "fmtstring": "Netlink-log: Received msg_type %u, msg_flags %u",
+        "func": "netlink_log_recv",
+        "line": 116,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W4BGS-9YGBW": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: proto diff but no ps",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 365,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W88TH-3KSTM": [
+      {
+        "args": "&cie_nbma_nat",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "shortcut res_rep: NAT detected using %pSU as cie_nbma",
+        "func": "nhrp_handle_resolution_req",
+        "line": 517,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W9675-TP50J": [
+      {
+        "args": "s->p",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut %pFX purged",
+        "func": "nhrp_shortcut_delete",
+        "line": 147,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W9DFR-9VF4E": [
+      {
+        "args": "val.len, val.ptr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: List item: '%.*s'",
+        "func": "vici_parse_message",
+        "line": 132,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W9HBH-JJPTV": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "shortcut res_rep: no cache found",
+        "func": "nhrp_handle_resolution_req",
+        "line": 543,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WE14X-0AFA8": [
+      {
+        "args": "&pp->src_proto, &dst_proto",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Error Indication from %pSU about packet to %pSU ignored",
+        "func": "nhrp_handle_error_ind",
+        "line": 842,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WM2AK-P90WK": [
+      {
+        "args": "key.len, key.ptr, val.len, val.ptr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Key '%.*s'='%.*s'",
+        "func": "vici_parse_message",
+        "line": 119,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WPDSG-XKZBH": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Processing NHRP_EXTENSION_NAT_ADDRESS while forwarding the reply packet",
+        "func": "nhrp_peer_forward",
+        "line": 1012,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WS9A4-GRJ8G": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: Resolution failed",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 224,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WSA6E-5GM0H": [
+      {
+        "args": "&p->vc->local.nbma, &p->vc->remote.nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "PACKET: Send %pSU -> %pSU",
+        "func": "nhrp_peer_send",
+        "line": 370,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WWKB0-4GM63": [
+      {
+        "args": "paylen",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "shortcut res_rep: paylen %zu",
+        "func": "nhrp_handle_resolution_req",
+        "line": 469,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WWNRT-AF7VC": [
+      {
+        "args": "profile_name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "Terminate profile = %s",
+        "func": "vici_terminate_vc_by_profile_name",
+        "line": 560,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WXKYY-C1D3Q": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "ec": 117440513,
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Failed to retrieve charon file path",
+        "func": "vici_get_charon_filepath",
+        "line": 484,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "X1XA3-EAGPM": [
+      {
+        "args": "nifp->peer_hash ? nifp->peer_hash->count : 0",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Cleaning up undeleted peer entries (%lu)",
+        "func": "nhrp_peer_interface_del",
+        "line": 206,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "X5V60-PWG00": [
+      {
+        "args": "s->p",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut %pFX used and expiring",
+        "func": "nhrp_shortcut_check_use",
+        "line": 33,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "X63KY-QTD8R": [
+      {
+        "args": "nbma_addr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_multicast.c",
+        "fmtstring": "Deleting multicast entry (%pSU)",
+        "func": "nhrp_multicast_del",
+        "line": 261,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XFRVJ-F0E9P": [
+      {
+        "args": "key.len, key.ptr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: List start '%.*s'",
+        "func": "vici_parse_message",
+        "line": 126,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XRMK3-AZSMC": [
+      {
+        "args": "__func__",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_route.c",
+        "fmtstring": "%s : zclient not ready",
+        "func": "nhrp_send_zebra_gre_source_set",
+        "line": 425,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XRSX6-2JRY1": [
+      {
+        "args": "&p->vc->remote.nbma, p->online, &dst",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Send Traffic Indication to %pSU (online=%d) about packet to %pSU",
+        "func": "nhrp_peer_send_indication",
+        "line": 813,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XVSKS-3DJVW": [
+      {
+        "args": "&vc->remote.nbma, r_time_ms",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Initiating IPsec connection request to %pSU after %d ms:",
+        "func": "nhrp_peer_check",
+        "line": 342,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XX61W-MCN54": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (cie->holding_time); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (cie->mtu); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), s->holding_time",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut res_req: set cie ht to %u and mtu to %u. shortcut ht is %u",
+        "func": "nhrp_shortcut_send_resolution_req",
+        "line": 428,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XXH9J-2T98F": [
+      {
+        "args": "*type",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Unsupported message component type %d",
+        "func": "vici_parse_message",
+        "line": 141,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XXHCA-229S7": [
+      {
+        "args": "cie ? cie->code : -1",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: CIE code %d",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 242,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y0CVK-TSAFD": [
+      {
+        "args": "__func__",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_route.c",
+        "fmtstring": "%s() : zclient not ready",
+        "func": "nhrp_send_zebra_configure_arp",
+        "line": 406,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y0HXT-HNP3N": [
+      {
+        "args": "r->peer->vc->ike_uniqueid",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "Terminating IPSec Connection for %d",
+        "func": "nhrp_reg_timeout",
+        "line": 134,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y4AW2-1M7QE": [
+      {
+        "args": "name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_event.c",
+        "fmtstring": "evmgr: sending event %s",
+        "func": "evmgr_notify",
+        "line": 251,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y6T72-82G1P": [
+      {
+        "args": "buf",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_event.c",
+        "fmtstring": "evmgr: msg: %s",
+        "func": "evmgr_recv_message",
+        "line": 65,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y8MQK-M3R2Z": [
+      {
+        "args": "c->cur.type, type, (c->cur.peer == p) ? \"same\" : \"diff\", c->cur.mtu, mtu, buf[0], nbma_oa ? buf[1] : \"(NULL)\", c->map",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_cache.c",
+        "fmtstring": "cache: new type %u/%u, or peer %s, or mtu %u/%u, nbma %s --> %s (map %d)",
+        "func": "nhrp_cache_update_binding",
+        "line": 479,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YAE1W-HP7QH": [
+      {
+        "args": "key.len, key.ptr",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Section start '%.*s'",
+        "func": "vici_parse_message",
+        "line": 104,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YAM6Q-DWA1T": [
+      {
+        "args": "ifp->name, new_mtu",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "%s: MTU changed to %d",
+        "func": "nhrp_interface_update_mtu",
+        "line": 135,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YG1Z1-8FKNX": [
+      {
+        "args": "",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: Resolution: Protocol address unreachable",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 219,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YJY20-VM0HB": [
+      {
+        "args": "buf",
+        "binary": "nhrpd/nhrpd",
+        "ec": 117440513,
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: strongSwan: %s",
+        "func": "parse_cmd_response",
+        "line": 287,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "Z04FX-F22SC": [
+      {
+        "args": "&s->cache->remote_addr, holding_time, &s->cache->cur.remote_nbma_natoa, s->cache->ifp->name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: forcing renewal of zebra announce on prefix change peer %pSU ht %u cur nbma %pSU dev %s",
+        "func": "nhrp_shortcut_update_binding",
+        "line": 106,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z1CW8-FPRQD": [
+      {
+        "args": "msgtype, msglen",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/vici.c",
+        "fmtstring": "VICI: Message %d, %d bytes",
+        "func": "vici_recv_message",
+        "line": 322,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z503Z-70JQW": [
+      {
+        "args": "&r->peer->vc->remote.nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "NHS: Flush timer for %pSU",
+        "func": "nhrp_reg_peer_notify",
+        "line": 154,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z7K3A-GSQPT": [
+      {
+        "args": "&if_ad->addr, dst_proto, r->timeout",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_nhs.c",
+        "fmtstring": "NHS: Register %pSU -> %pSU (timeout %d)",
+        "func": "nhrp_reg_send_req",
+        "line": 192,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZDZE6-06Q3T": [
+      {
+        "args": "&vc->remote.nbma, (int)hdr->type, (int)hdr->version, (int)nbma_afi, (int)(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (hdr->protocol_type); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (int)(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (hdr->packet_size); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (int)realsize",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "From %pSU: error: packet type %d, version %d, AFI %d, proto %x, size %d (real size %d)",
+        "func": "nhrp_peer_recv",
+        "line": 1172,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "ZG0SH-BJWD0": [
+      {
+        "args": "&p->vc->remote.nbma, &dst",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "Send Traffic Indication to %pSU about packet to %pSU ignored",
+        "func": "nhrp_peer_send_indication",
+        "line": 807,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZH126-YPY3K": [
+      {
+        "args": "proto, cie_nbma",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "cie_nbma for proto %pSU is %pSU",
+        "func": "nhrp_process_nat_extension",
+        "line": 422,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZNA0D-6H8SZ": [
+      {
+        "args": "&cie_proto, &pp->dst_proto",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_shortcut.c",
+        "fmtstring": "Shortcut: Warning dst_proto altered from %pSU to %pSU",
+        "func": "nhrp_shortcut_recv_resolution_rep",
+        "line": 234,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZTQA2-EX2H3": [
+      {
+        "args": "prefix_len",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_peer.c",
+        "fmtstring": "shortcut res_rep: parsing CIE with prefixlen=%u",
+        "func": "nhrp_handle_resolution_req",
+        "line": 477,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZZ1RR-NG1NR": [
+      {
+        "args": "ifp->name",
+        "binary": "nhrpd/nhrpd",
+        "file": "nhrpd/nhrp_interface.c",
+        "fmtstring": "if-delete: %s",
+        "func": "nhrp_ifp_destroy",
+        "line": 390,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

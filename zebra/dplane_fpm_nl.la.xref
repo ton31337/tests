@@ -1,0 +1,457 @@
+{
+  "cli": {
+    "fpm_reset_counters_cmd": {
+      "zebra/dplane_fpm_nl.la": {
+        "defun": {
+          "file": "zebra/dplane_fpm_nl.c",
+          "func": "fpm_reset_counters",
+          "line": 299
+        },
+        "doc": "Reset functions\nForwarding Plane Manager configuration\nFPM statistic counters\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/dplane_fpm_nl.c",
+              "func": "fpm_nl_new",
+              "line": 1493
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear fpm counters"
+      }
+    },
+    "fpm_set_address_cmd": {
+      "zebra/dplane_fpm_nl.la": {
+        "defun": {
+          "file": "zebra/dplane_fpm_nl.c",
+          "func": "fpm_set_address",
+          "line": 202
+        },
+        "doc": "Forwarding Plane Manager configuration\nFPM remote listening server address\nRemote IPv4 FPM server\nRemote IPv6 FPM server\nFPM remote listening server port\nRemote FPM server port\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/dplane_fpm_nl.c",
+              "func": "fpm_nl_new",
+              "line": 1494
+            },
+            "node": 4
+          }
+        ],
+        "string": "fpm address <A.B.C.D|X:X::X:X> [port (1-65535)]"
+      }
+    },
+    "fpm_show_counters_cmd": {
+      "zebra/dplane_fpm_nl.la": {
+        "defun": {
+          "file": "zebra/dplane_fpm_nl.c",
+          "func": "fpm_show_counters",
+          "line": 310
+        },
+        "doc": "Show running system information\nForwarding Plane Manager configuration\nFPM statistic counters\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/dplane_fpm_nl.c",
+              "func": "fpm_nl_new",
+              "line": 1491
+            },
+            "node": 3
+          }
+        ],
+        "string": "show fpm counters"
+      }
+    },
+    "fpm_show_counters_json_cmd": {
+      "zebra/dplane_fpm_nl.la": {
+        "defun": {
+          "file": "zebra/dplane_fpm_nl.c",
+          "func": "fpm_show_counters_json",
+          "line": 343
+        },
+        "doc": "Show running system information\nForwarding Plane Manager configuration\nFPM statistic counters\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/dplane_fpm_nl.c",
+              "func": "fpm_nl_new",
+              "line": 1492
+            },
+            "node": 3
+          }
+        ],
+        "string": "show fpm counters json"
+      }
+    },
+    "fpm_use_nhg_cmd": {
+      "zebra/dplane_fpm_nl.la": {
+        "defun": {
+          "file": "zebra/dplane_fpm_nl.c",
+          "func": "fpm_use_nhg",
+          "line": 267
+        },
+        "doc": "Forwarding Plane Manager configuration\nUse netlink next hop groups feature.\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/dplane_fpm_nl.c",
+              "func": "fpm_nl_new",
+              "line": 1496
+            },
+            "node": 4
+          }
+        ],
+        "string": "fpm use-next-hop-groups"
+      }
+    },
+    "no_fpm_set_address_cmd": {
+      "zebra/dplane_fpm_nl.la": {
+        "defun": {
+          "file": "zebra/dplane_fpm_nl.c",
+          "func": "no_fpm_set_address",
+          "line": 257
+        },
+        "doc": "Negate a command or set its defaults\nForwarding Plane Manager configuration\nFPM remote listening server address\nRemote IPv4 FPM server\nRemote IPv6 FPM server\nFPM remote listening server port\nRemote FPM server port\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/dplane_fpm_nl.c",
+              "func": "fpm_nl_new",
+              "line": 1495
+            },
+            "node": 4
+          }
+        ],
+        "string": "no fpm address [<A.B.C.D|X:X::X:X> [port <1-65535>]]"
+      }
+    },
+    "no_fpm_use_nhg_cmd": {
+      "zebra/dplane_fpm_nl.la": {
+        "defun": {
+          "file": "zebra/dplane_fpm_nl.c",
+          "func": "no_fpm_use_nhg",
+          "line": 283
+        },
+        "doc": "Negate a command or set its defaults\nForwarding Plane Manager configuration\nUse netlink next hop groups feature.\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/dplane_fpm_nl.c",
+              "func": "fpm_nl_new",
+              "line": 1497
+            },
+            "node": 4
+          }
+        ],
+        "string": "no fpm use-next-hop-groups"
+      }
+    }
+  },
+  "refs": {
+    "G4TZ9-NR4GR": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: netlink_nexthop_msg_encode failed",
+        "func": "fpm_nl_enqueue",
+        "line": 763,
+        "priority": 3,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: netlink_nexthop_msg_encode failed",
+        "func": "fpm_nl_enqueue",
+        "line": 751,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "GEVVH-G2GJ0": [
+      {
+        "args": "__func__, strerror(status)",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: connection failed: %s",
+        "func": "fpm_write",
+        "line": 521,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "H3KYT-82KX5": [
+      {
+        "args": "__func__, nl_buf_len + 4, ((fnc->obuf)->size - (fnc->obuf)->endp)",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: buffer full: wants to write %zu but has %zu",
+        "func": "fpm_nl_enqueue",
+        "line": 842,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HC25G-KZGF8": [
+      {
+        "args": "prov_name, rv",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s register status: %d",
+        "func": "fpm_nl_new",
+        "line": 1488,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JA1HG-JRPS8": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: LSP walk finished",
+        "func": "fpm_process_event",
+        "line": 1329,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JR3JJ-M08WS": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: manual FPM disable event",
+        "func": "fpm_process_event",
+        "line": 1282,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "KC5RM-D2HE2": [
+      {
+        "args": "__func__, addrstr, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (sin->sin_port); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: attempting to connect to %s:%d",
+        "func": "fpm_connect",
+        "line": 638,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KM016-45JW8": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: fpm connection failed: %s",
+        "func": "fpm_connect",
+        "line": 646,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "KR00E-NET1P": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: fpm socket failed: %s",
+        "func": "fpm_connect",
+        "line": 620,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "KTCTN-3GCEG": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: RMAC walk finished",
+        "func": "fpm_process_event",
+        "line": 1325,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NSK3C-TP0MH": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: connection closed",
+        "func": "fpm_write",
+        "line": 567,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: connection closed",
+        "func": "fpm_read",
+        "line": 481,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PF1MN-0JPJ6": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: netlink_macfdb_update_ctx failed",
+        "func": "fpm_nl_enqueue",
+        "line": 739,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "PPTK9-5G00J": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: next hop groups walk finished",
+        "func": "fpm_process_event",
+        "line": 1317,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q7WA4-4A0DN": [
+      {
+        "args": "__func__, event",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: unhandled event %d",
+        "func": "fpm_process_event",
+        "line": 1334,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QYWS0-1M4AX": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: manual FPM counters reset event",
+        "func": "fpm_process_event",
+        "line": 1300,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "TET1R-6V6PQ": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: RIB walk finished",
+        "func": "fpm_process_event",
+        "line": 1321,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TX1S6-6KVKV": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: netlink_lsp_msg_encoder failed",
+        "func": "fpm_nl_enqueue",
+        "line": 776,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "W0ZRC-M1X65": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: connection failure: %s",
+        "func": "fpm_write",
+        "line": 582,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: connection failure: %s",
+        "func": "fpm_read",
+        "line": 490,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "X4VXS-XMMJ2": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: netlink_route_multipath_msg_encode failed",
+        "func": "fpm_nl_enqueue",
+        "line": 727,
+        "priority": 3,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: netlink_route_multipath_msg_encode failed",
+        "func": "fpm_nl_enqueue",
+        "line": 709,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "Y4ZE9-QTS1P": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: toggle next hop groups support",
+        "func": "fpm_process_event",
+        "line": 1305,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "YR1V7-A4EK7": [
+      {
+        "args": "__func__",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: manual FPM reconnect event",
+        "func": "fpm_process_event",
+        "line": 1292,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "ZPH9N-6SQ8Z": [
+      {
+        "args": "__func__, strerror(status)",
+        "binary": "zebra/dplane_fpm_nl.la",
+        "file": "zebra/dplane_fpm_nl.c",
+        "fmtstring": "%s: SO_ERROR failed: %s",
+        "func": "fpm_write",
+        "line": 524,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

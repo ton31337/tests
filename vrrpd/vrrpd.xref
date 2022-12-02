@@ -1,0 +1,1485 @@
+{
+  "cli": {
+    "debug_vrrp_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "debug_vrrp",
+          "line": 689
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nVirtual Router Redundancy Protocol\nDebug protocol state\nDebug autoconfiguration\nDebug sent and received packets\nDebug socket creation and configuration\nDebug Neighbor Discovery\nDebug ARP\nDebug Zebra events\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 745
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 744
+            },
+            "node": 3
+          }
+        ],
+        "string": "[no] debug vrrp [{protocol$proto|autoconfigure$ac|packets$pkt|sockets$sock|ndisc$ndisc|arp$arp|zebra$zebra}]"
+      }
+    },
+    "no_vrrp_advertisement_interval_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "no_vrrp_advertisement_interval",
+          "line": 186
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Router Redundancy Protocol\nVirtual Router ID\nVirtual Router Advertisement Interval\nAdvertisement interval in milliseconds; must be multiple of 10\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 753
+            },
+            "node": 17
+          }
+        ],
+        "string": "no vrrp (1-255)$vrid advertisement-interval [(10-40950)]"
+      }
+    },
+    "no_vrrp_priority_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "no_vrrp_priority",
+          "line": 141
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Router Redundancy Protocol\nVirtual Router ID\nVirtual Router Priority\nPriority value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 751
+            },
+            "node": 17
+          }
+        ],
+        "string": "no vrrp (1-255)$vrid priority [(1-254)]"
+      }
+    },
+    "show_debugging_vrrp_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "show_debugging_vrrp",
+          "line": 707
+        },
+        "doc": "Show running system information\nDebugging functions\nVRRP information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 743
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging [vrrp]"
+      }
+    },
+    "vrrp_advertisement_interval_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_advertisement_interval",
+          "line": 165
+        },
+        "doc": "Virtual Router Redundancy Protocol\nVirtual Router ID\nVirtual Router Advertisement Interval\nAdvertisement interval in milliseconds; must be multiple of 10\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 752
+            },
+            "node": 17
+          }
+        ],
+        "string": "vrrp (1-255)$vrid advertisement-interval (10-40950)"
+      }
+    },
+    "vrrp_autoconfigure_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_autoconfigure",
+          "line": 294
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Router Redundancy Protocol\nAutomatically set up VRRP instances on VRRP-compatible interfaces\nVersion for automatically configured instances\nVRRP protocol version\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 746
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] vrrp autoconfigure [version (2-3)]"
+      }
+    },
+    "vrrp_default_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_default",
+          "line": 318
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Router Redundancy Protocol\nConfigure defaults for new VRRP instances\nVirtual Router Advertisement Interval\nAdvertisement interval in milliseconds\nPreempt mode\nVirtual Router Priority\nPriority value\nForce VRRP router into administrative shutdown\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 747
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] vrrp default <advertisement-interval$adv (10-40950)$advint|preempt$p|priority$prio (1-254)$prioval|shutdown$s>"
+      }
+    },
+    "vrrp_ip6_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_ip6",
+          "line": 243
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Router Redundancy Protocol\nVirtual Router ID\nAdd IPv6 address\nVirtual Router IP address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 755
+            },
+            "node": 17
+          }
+        ],
+        "string": "[no] vrrp (1-255)$vrid ipv6 X:X::X:X"
+      }
+    },
+    "vrrp_ip_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_ip",
+          "line": 215
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Router Redundancy Protocol\nVirtual Router ID\nAdd IPv4 address\nVirtual Router IP address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 754
+            },
+            "node": 17
+          }
+        ],
+        "string": "[no] vrrp (1-255)$vrid ip A.B.C.D"
+      }
+    },
+    "vrrp_preempt_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_preempt",
+          "line": 269
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Router Redundancy Protocol\nVirtual Router ID\nPreempt mode\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 756
+            },
+            "node": 17
+          }
+        ],
+        "string": "[no] vrrp (1-255)$vrid preempt"
+      }
+    },
+    "vrrp_priority_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_priority",
+          "line": 124
+        },
+        "doc": "Virtual Router Redundancy Protocol\nVirtual Router ID\nVirtual Router Priority\nPriority value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 750
+            },
+            "node": 17
+          }
+        ],
+        "string": "vrrp (1-255)$vrid priority (1-254)"
+      }
+    },
+    "vrrp_shutdown_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_shutdown",
+          "line": 98
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Router Redundancy Protocol\nVirtual Router ID\nForce VRRP router into administrative shutdown\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 749
+            },
+            "node": 17
+          }
+        ],
+        "string": "[no] vrrp (1-255)$vrid shutdown"
+      }
+    },
+    "vrrp_vrid_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_vrid",
+          "line": 62
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Router Redundancy Protocol\nVirtual Router ID\nVRRP protocol version\nVRRP protocol version\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 748
+            },
+            "node": 17
+          }
+        ],
+        "string": "[no] vrrp (1-255)$vrid [version (2-3)]"
+      }
+    },
+    "vrrp_vrid_show_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_vrid_show",
+          "line": 594
+        },
+        "doc": "Show running system information\nVirtual Router Redundancy Protocol\nInterface information\nOnly show VRRP instances on this interface\nVirtual Router ID\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 741
+            },
+            "node": 1
+          }
+        ],
+        "string": "show vrrp [interface INTERFACE$ifn] [(1-255)$vrid] [json$json]"
+      }
+    },
+    "vrrp_vrid_show_summary_cmd": {
+      "vrrpd/vrrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "vrrpd/vrrp_vty.c",
+          "func": "vrrp_vrid_show_summary",
+          "line": 635
+        },
+        "doc": "Show running system information\nVirtual Router Redundancy Protocol\nInterface information\nOnly show VRRP instances on this interface\nVirtual Router ID\nSummarize all VRRP instances\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "vrrpd/vrrp_vty.c",
+              "func": "vrrp_vty_init",
+              "line": 742
+            },
+            "node": 1
+          }
+        ],
+        "string": "show vrrp [interface INTERFACE$ifn] [(1-255)$vrid] summary"
+      }
+    }
+  },
+  "refs": {
+    "G0YHD-GHRP1": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_arp.c",
+        "fmtstring": "[ARP] [VRID %u] [%s] Unable to send gratuitous ARP on %s; has IFF_NOARP",
+        "func": "vrrp_garp_send_all",
+        "line": 174,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "r->vr->vrid, family2str(r->family), ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_arp.c",
+        "fmtstring": "[ARP] [VRID %u] [%s] Unable to send gratuitous ARP on %s; has IFF_NOARP",
+        "func": "vrrp_garp_send",
+        "line": 128,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "G31C0-GNBA0": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), vrrp_event_names[1], vrrp_state_names[0]",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Received '%s' event in '%s' state; ignoring",
+        "func": "vrrp_shutdown",
+        "line": 1635,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "G3YS6-PBCBB": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Setting Virtual IP list to match IPv4 addresses on %s",
+        "func": "vrrp_autoconfig_autoaddrupdate",
+        "line": 1715,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "G5G64-N4F33": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->vr->ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Bound Rx socket to %s",
+        "func": "vrrp_socket",
+        "line": 1267,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->vr->ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Bound Rx socket to %s",
+        "func": "vrrp_socket",
+        "line": 1157,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "G8DMY-6AMS0": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to find address to bind on %s",
+        "func": "vrrp_bind_to_primary_connected",
+        "line": 726,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "GH698-9KTGA": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Could not set %s as outgoing multicast interface",
+        "func": "vrrp_socket",
+        "line": 1316,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Could not set %s as outgoing multicast interface",
+        "func": "vrrp_socket",
+        "line": 1209,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "GKGBP-1KN96": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_arp.c",
+        "fmtstring": "[ARP] Initialized gratuitous ARP subsystem",
+        "func": "vrrp_garp_init",
+        "line": 200,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GMWS8-YMEF7": [
+      {
+        "args": "__func__",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_zebra.c",
+        "fmtstring": "%s: zclient socket initialized",
+        "func": "vrrp_zebra_init",
+        "line": 210,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "HEH72-5BR66": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), selection->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Interface: %s",
+        "func": "vrrp_attach_interface",
+        "line": 588,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "HM47N-X1ZC0": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), ifp->name, astr",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_arp.c",
+        "fmtstring": "[ARP] [VRID %u] [%s] Sending gratuitous ARP on %s for %s",
+        "func": "vrrp_garp_send",
+        "line": 149,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HW064-C7NPP": [
+      {
+        "args": "vrid, family2str(fam), p->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to autoconfigure VRRP on %s",
+        "func": "vrrp_autoconfig_autocreate",
+        "line": 1766,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "J57G7-GEA2V": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_arp.c",
+        "fmtstring": "[ARP] [VRID %u] [%s] Unable to send gratuitous ARP on %s; MAC address unknown",
+        "func": "vrrp_garp_send",
+        "line": 139,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "JB8SW-48PMV": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] No appropriate interface found",
+        "func": "vrrp_startup",
+        "line": 1550,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "JF0F7-DQCF1": [
+      {
+        "args": "vr->vrid, family2str(vr->v4->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Interface up; sending pending gratuitous ARP",
+        "func": "vrrp_if_up",
+        "line": 2128,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JRBPV-P6T29": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Bound Rx socket to VRRP multicast group",
+        "func": "vrrp_socket",
+        "line": 1286,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Bound Rx socket to VRRP multicast group",
+        "func": "vrrp_socket",
+        "line": 1176,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K8GG0-NEB89": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_ndisc.c",
+        "fmtstring": "[NDISC] Deinitialized Neighbor Discovery subsystem",
+        "func": "vrrp_ndisc_fini",
+        "line": 237,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KBB7M-R9QR2": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), ifp->name, astr",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_arp.c",
+        "fmtstring": "[ARP] [VRID %u] [%s] Error sending gratuitous ARP on %s for %s",
+        "func": "vrrp_garp_send",
+        "line": 158,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "KCA6Y-01PPA": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), pkt->hdr.v2.adver_int, (((r->vr->advertisement_interval / 100)>(1))?(r->vr->advertisement_interval / 100):(1))",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Datagram invalid: Received advertisement with advertisement interval %hhu unequal to our configured value %u",
+        "func": "vrrp_recv_advertisement",
+        "line": 887,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KNXWA-JVNVJ": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to bind Tx socket to macvlan device '%s'",
+        "func": "vrrp_socket",
+        "line": 1115,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "KS0W0-ZVNK2": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to join VRRP multicast group",
+        "func": "vrrp_socket",
+        "line": 1299,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "M3XZZ-K2WT2": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), pkt->hdr.vrid",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Datagram invalid: Advertisement contains VRID %hhu which does not match our instance",
+        "func": "vrrp_recv_advertisement",
+        "line": 865,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MCF53-THZ3V": [
+      {
+        "args": "vr->vrid, mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] <-- This instance can probably use interface %s",
+        "func": "vrrp_bind_pending",
+        "line": 2083,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MDJ12-CBVPB": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), ifp->name, ipbuf",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_ndisc.c",
+        "fmtstring": "[NDISC] [VRID %u] [%s] Error sending unsolicited Neighbor Advertisement on %s for %s",
+        "func": "vrrp_ndisc_una_send",
+        "line": 192,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "ME3QN-FGD7Q": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_arp.c",
+        "fmtstring": "[ARP] Deinitialized gratuitous ARP subsystem",
+        "func": "vrrp_garp_fini",
+        "line": 213,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MFK5R-3RH2Y": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to set outgoing multicast TTL count to 255; RFC 5798 compliant implementations will drop our packets",
+        "func": "vrrp_socket",
+        "line": 1131,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "MZG9J-C7D80": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), ethstr",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Interface: None (no interface found w/ MAC %s)",
+        "func": "vrrp_attach_interface",
+        "line": 580,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "N2VG4-BNQDR": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), rxtx",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Can't create VRRP %s socket",
+        "func": "vrrp_socket",
+        "line": 1094,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "N50WA-0KKX6": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_main.c",
+        "fmtstring": "Terminating on signal",
+        "func": "sigint",
+        "line": 81,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "NQHR1-3N2CK": [
+      {
+        "args": "vr->vrid",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] All VRRP interfaces for instance deleted; destroying autoconfigured VRRP router",
+        "func": "vrrp_autoconfig_if_del",
+        "line": 1893,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NVW8K-W0KVY": [
+      {
+        "args": "vrid, family2str(fam), p->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Autoconfiguring VRRP on %s",
+        "func": "vrrp_autoconfig_autocreate",
+        "line": 1759,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P485H-A79BW": [
+      {
+        "args": "vr->vrid, family2str(r->family), whynot",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Refusing to start Virtual Router: %s",
+        "func": "vrrp_check_start",
+        "line": 380,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "vr->vrid, family2str(r->family), whynot",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Refusing to start Virtual Router: %s",
+        "func": "vrrp_check_start",
+        "line": 335,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "P5K04-NYT57": [
+      {
+        "args": "vr->vrid, ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] Interface %s down",
+        "func": "vrrp_if_down",
+        "line": 2177,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P9GC2-KXWHW": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), vrrp_state_names[r->fsm.state]",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Received ADVERTISEMENT in state %s; this is a bug",
+        "func": "vrrp_recv_advertisement",
+        "line": 976,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "PKDHQ-D9GD2": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), pkt->hdr.naddr, r->addrs->count",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Datagram has %hhu addresses, but this VRRP instance has %u",
+        "func": "vrrp_recv_advertisement",
+        "line": 898,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PKVFZ-2FE85": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), ipbuf",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] This VRRP router is not the address owner of %s, but is the address owner of other addresses; this config is unsupported.",
+        "func": "vrrp_add_ip",
+        "line": 432,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "PVBGK-QR9A3": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Adver_Timer expired",
+        "func": "vrrp_adver_timer_expire",
+        "line": 1488,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q4Q1S-YHS1C": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] Failed to join VRRP %s multicast group",
+        "func": "vrrp_socket",
+        "line": 1189,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Q7BNA-3EPTE": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_ndisc.c",
+        "fmtstring": "[NDISC] Initialized Neighbor Discovery subsystem",
+        "func": "vrrp_ndisc_init",
+        "line": 224,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q7FXY-19YJJ": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Datagram invalid: Received advertisement but we are the address owner",
+        "func": "vrrp_recv_advertisement",
+        "line": 874,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QD6ET-YYZ3T": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Virtual IP list is empty; shutting down",
+        "func": "vrrp_autoconfig_autoaddrupdate",
+        "line": 1737,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QTQZF-X9A8P": [
+      {
+        "args": "func, ifp->name, ifp->ifindex, ifp->vrf->name, ifp->vrf->vrf_id, ifp->link_ifindex, ifp->hw_addr[0], ifp->hw_addr[1], ifp->hw_addr[2], ifp->hw_addr[3], ifp->hw_addr[4], ifp->hw_addr[5], (long)ifp->flags, ifp->metric, ifp->mtu, if_is_operative(ifp)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_zebra.c",
+        "fmtstring": "%s: %s index %d vrf %s(%u) parent %d mac %02x:%02x:%02x:%02x:%02x:%02x flags %ld metric %d mtu %d operative %d",
+        "func": "vrrp_zebra_debug_if_state",
+        "line": 45,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QWWVP-4FYKK": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_arp.c",
+        "fmtstring": "[ARP] Error initializing gratuitous ARP subsystem",
+        "func": "vrrp_garp_init",
+        "line": 203,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "QZ0EN-P75RH": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Set %s as outgoing multicast interface",
+        "func": "vrrp_socket",
+        "line": 1323,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Set %s as outgoing multicast interface",
+        "func": "vrrp_socket",
+        "line": 1216,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R3SM7-1JZFQ": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), vrrp_event_names[event]",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] '%s' event",
+        "func": "vrrp_event",
+        "line": 1689,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "RDVJR-9J51Y": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), sipstr, pkt->hdr.priority, r->priority",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Discarding advertisement from %s (%hhu < %hhu & preempt = true)",
+        "func": "vrrp_recv_advertisement",
+        "line": 969,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RM8S2-JHF8A": [
+      {
+        "args": "vr->vrid, family2str(vr->v6->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Interface up; sending pending Unsolicited Neighbor Advertisement",
+        "func": "vrrp_if_up",
+        "line": 2148,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SJE9M-PY481": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Datagram rx: ",
+        "func": "vrrp_read",
+        "line": 1026,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SN55S-ESQ86": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Master_Down_Timer expired",
+        "func": "vrrp_master_down_timer_expire",
+        "line": 1515,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "T2F7H-N7T8K": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), sipstr, pkt->hdr.priority, r->priority, sipstr, dipstr",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Discarding advertisement from %s (%hhu <= %hhu & %s <= %s)",
+        "func": "vrrp_recv_advertisement",
+        "line": 941,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "T6EW0-CGK88": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to set outgoing multicast hop count to 255; RFC 5798 compliant implementations will drop our packets",
+        "func": "vrrp_socket",
+        "line": 1231,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "T81B5-0TZTF": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), safe_strerror((*__errno_location ()))",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to bind Rx socket to VRRP multicast group: %s",
+        "func": "vrrp_socket",
+        "line": 1279,
+        "priority": 3,
+        "type": "logmsg"
+      },
+      {
+        "args": "r->vr->vrid, family2str(r->family), safe_strerror((*__errno_location ()))",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to bind Rx socket to VRRP multicast group: %s",
+        "func": "vrrp_socket",
+        "line": 1169,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "TE0EM-RN6HQ": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), sipstr, pkt->hdr.priority",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Received advertisement from %s w/ priority %hhu; switching to Backup",
+        "func": "vrrp_recv_advertisement",
+        "line": 922,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "TPBS6-2AT5D": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to request IPv6 Hop Limit delivery",
+        "func": "vrrp_socket",
+        "line": 1242,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "TWYTK-KJXK7": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_main.c",
+        "fmtstring": "SIGHUP received",
+        "func": "sighup",
+        "line": 73,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "VN2ZX-FN1RJ": [
+      {
+        "args": "mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] Interface %s has no parent ifindex; disregarding",
+        "func": "vrrp_lookup_by_if_mvl",
+        "line": 210,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VQG61-65MG9": [
+      {
+        "args": "func, ifp->name, p, ((ifc->flags) & ((1 << 0))) ? \"secondary\" : \"primary\"",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_zebra.c",
+        "fmtstring": "%s: interface %s address %pFX %s",
+        "func": "vrrp_zebra_debug_if_dump_address",
+        "line": 62,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W23ZH-NY264": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), vrrp_state_names[r->fsm.state], vrrp_state_names[to]",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] %s -> %s",
+        "func": "vrrp_change_state",
+        "line": 1472,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "W5JS7-927JB": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), ifp->name, ipbuf",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_ndisc.c",
+        "fmtstring": "[NDISC] [VRID %u] [%s] Sending unsolicited Neighbor Advertisement on %s for %s",
+        "func": "vrrp_ndisc_una_send",
+        "line": 179,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WFH23-9N6S9": [
+      {
+        "args": "mvl_ifp->link_ifindex, mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] Tried to lookup interface %d, parent of %s, but it doesn't exist",
+        "func": "vrrp_lookup_by_if_mvl",
+        "line": 225,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WKAJ3-FCQQ1": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), c->address",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Adding %pFX",
+        "func": "vrrp_autoconfig_autoaddrupdate",
+        "line": 1723,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "X8VV9-XMCB6": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_ndisc.c",
+        "fmtstring": "[NDISC] Error initializing Neighbor Discovery socket",
+        "func": "vrrp_ndisc_init",
+        "line": 227,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XCS4Y-2RC1M": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->vr->ifp->name, ipbuf",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] %s has priority set to 255 or owns primary Virtual Router IP %s; electing self as Master",
+        "func": "vrrp_startup",
+        "line": 1587,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "XJ2DK-SKGZR": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->vr->ifp->name, safe_strerror((*__errno_location ()))",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to bind Rx socket to %s: %s",
+        "func": "vrrp_socket",
+        "line": 1260,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "r->vr->vrid, family2str(r->family), r->vr->ifp->name, safe_strerror((*__errno_location ()))",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to bind Rx socket to %s: %s",
+        "func": "vrrp_socket",
+        "line": 1150,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "XPK1B-TYNFM": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), c->address",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Bound Tx socket to primary IP address %pFX",
+        "func": "vrrp_bind_to_primary_connected",
+        "line": 764,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XRZWG-7KMVE": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_arp.c",
+        "fmtstring": "[ARP] Initialized gratuitous ARP socket",
+        "func": "vrrp_garp_init",
+        "line": 198,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XXC27-8A5TE": [
+      {
+        "args": "ifp->name, down ? \"on\" : \"off\"",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_zebra.c",
+        "fmtstring": "[ZEBRA] Requesting Zebra to set %s protodown %s",
+        "func": "vrrp_zclient_send_interface_protodown",
+        "line": 186,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XY5BK-RG522": [
+      {
+        "args": "mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] Searching for instances that could use interface %s",
+        "func": "vrrp_bind_pending",
+        "line": 2075,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y0NMW-NTT6B": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Joined VRRP multicast group",
+        "func": "vrrp_socket",
+        "line": 1306,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Joined VRRP multicast group",
+        "func": "vrrp_socket",
+        "line": 1196,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y1VPT-88E9K": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), safe_strerror((*__errno_location ()))",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to send VRRP Advertisement: %s",
+        "func": "vrrp_send_advertisement",
+        "line": 810,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Y70HE-JS6S4": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Delaying VRRP unsolicited neighbor advertisement until interface is up",
+        "func": "vrrp_change_state_master",
+        "line": 1394,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YACED-1YY48": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), errbuf",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Datagram invalid: %s",
+        "func": "vrrp_read",
+        "line": 1037,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YCXWB-S2QQK": [
+      {
+        "args": "r->vr->vrid, enable ? \"on\" : \"off\", r->mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_zebra.c",
+        "fmtstring": "[ZEBRA] [VRID %u] Requesting Zebra to turn router advertisements %s for %s",
+        "func": "vrrp_zebra_radv_set",
+        "line": 176,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YE8SJ-8ZMQ8": [
+      {
+        "args": "vr->vrid, family2str(vr->v6->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Interface up; sending pending advertisement",
+        "func": "vrrp_if_up",
+        "line": 2139,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "vr->vrid, family2str(vr->v4->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Interface up; sending pending advertisement",
+        "func": "vrrp_if_up",
+        "line": 2119,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z02W5-YHB2V": [
+      {
+        "args": "",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_ndisc.c",
+        "fmtstring": "[NDISC] Initialized Neighbor Discovery socket",
+        "func": "vrrp_ndisc_init",
+        "line": 222,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z1J8X-41ZWX": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), selection->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Interface: Multiple interfaces found; using %s",
+        "func": "vrrp_attach_interface",
+        "line": 584,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Z4BWX-E7EPM": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), sipstr, dumpbuf",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Received VRRP Advertisement from %s: %s",
+        "func": "vrrp_recv_advertisement",
+        "line": 858,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z84F2-NYEBY": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), vrrp_state_names[r->fsm.state]",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Adver_Timer expired in state '%s'; this is a bug",
+        "func": "vrrp_adver_timer_expire",
+        "line": 1502,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "ZGYT9-P3C3Z": [
+      {
+        "args": "r->vr->vrid, family2str(r->family), c->address, safe_strerror((*__errno_location ()))",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to bind Tx socket to primary IP address %pFX: %s",
+        "func": "vrrp_bind_to_primary_connected",
+        "line": 758,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "ZHHSG-NSQPF": [
+      {
+        "args": "func, ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp_zebra.c",
+        "fmtstring": "%s: interface %s addresses:",
+        "func": "vrrp_zebra_debug_if_dump_address",
+        "line": 54,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZRKCQ-BJHYX": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Delaying VRRP gratuitous ARPs until interface is up",
+        "func": "vrrp_change_state_master",
+        "line": 1388,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZSJEW-4RZ0P": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Failed to initialize VRRP router",
+        "func": "vrrp_socket",
+        "line": 1331,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZVPC0-919H6": [
+      {
+        "args": "mvl_ifp->name",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] Interface %s has a non-VRRP MAC; disregarding",
+        "func": "vrrp_lookup_by_if_mvl",
+        "line": 215,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZX2KA-BY42F": [
+      {
+        "args": "r->vr->vrid, family2str(r->family)",
+        "binary": "vrrpd/vrrpd",
+        "file": "vrrpd/vrrp.c",
+        "fmtstring": "[CORE] [VRID %u] [%s] Delaying VRRP advertisement until interface is up",
+        "func": "vrrp_change_state_master",
+        "line": 1381,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

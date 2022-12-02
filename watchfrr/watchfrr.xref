@@ -1,0 +1,753 @@
+{
+  "cli": {
+    "config_write_integrated_cmd": {
+      "watchfrr/watchfrr": {
+        "defun": {
+          "file": "watchfrr/watchfrr_vty.c",
+          "func": "config_write_integrated",
+          "line": 39
+        },
+        "doc": "Write running configuration to memory, network, or terminal\nWrite integrated all-daemon frr.conf file\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "watchfrr/watchfrr_vty.c",
+              "func": "watchfrr_vty_init",
+              "line": 205
+            },
+            "node": 3
+          }
+        ],
+        "string": "write integrated"
+      }
+    },
+    "show_debugging_watchfrr_cmd": {
+      "watchfrr/watchfrr": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "watchfrr/watchfrr_vty.c",
+          "func": "show_debugging_watchfrr",
+          "line": 126
+        },
+        "doc": "Show running system information\nDebugging functions\nwatchfrr information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "watchfrr/watchfrr_vty.c",
+              "func": "watchfrr_vty_init",
+              "line": 210
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "watchfrr/watchfrr_vty.c",
+              "func": "watchfrr_vty_init",
+              "line": 206
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging [watchfrr]"
+      }
+    },
+    "show_logging_cmd": {
+      "watchfrr/watchfrr": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "watchfrr/watchfrr_vty.c",
+          "func": "show_logging",
+          "line": 150
+        },
+        "doc": "Show running system information\nShow current logging configuration\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "watchfrr/watchfrr_vty.c",
+              "func": "watchfrr_vty_init",
+              "line": 212
+            },
+            "node": 1
+          }
+        ],
+        "string": "show logging"
+      }
+    },
+    "show_watchfrr_cmd": {
+      "watchfrr/watchfrr": {
+        "defun": {
+          "file": "watchfrr/watchfrr_vty.c",
+          "func": "show_watchfrr",
+          "line": 137
+        },
+        "doc": "Show running system information\nwatchfrr information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "watchfrr/watchfrr_vty.c",
+              "func": "watchfrr_vty_init",
+              "line": 211
+            },
+            "node": 1
+          }
+        ],
+        "string": "show watchfrr"
+      }
+    },
+    "watchfrr_ignore_daemon_cmd": {
+      "watchfrr/watchfrr": {
+        "defun": {
+          "file": "watchfrr/watchfrr_vty.c",
+          "func": "watchfrr_ignore_daemon",
+          "line": 166
+        },
+        "doc": "Negate a command or set its defaults\nWatchfrr Specific sub-command\nIgnore a specified daemon when it does not respond to echo request\nThe daemon to ignore\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "watchfrr/watchfrr_vty.c",
+              "func": "watchfrr_vty_init",
+              "line": 208
+            },
+            "node": 3
+          }
+        ],
+        "string": "[no] watchfrr ignore DAEMON$dname"
+      }
+    }
+  },
+  "refs": {
+    "GAP8Y-C4WAS": [
+      {
+        "args": "dmn->name, (long)delay.tv_sec, (long)delay.tv_usec",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s: echo response received after %ld.%06ld seconds",
+        "func": "handle_read",
+        "line": 686,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GHFT3-RBYE3": [
+      {
+        "args": "what, name, (int)child, status",
+        "binary": "watchfrr/watchfrr",
+        "ec": 100663303,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "cannot interpret %s %s process %d wait status 0x%x",
+        "func": "sigchild",
+        "line": 460,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "HBG4D-3YNP1": [
+      {
+        "args": "gs.special->name",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "Phased restart: %s is now up.",
+        "func": "phase_check",
+        "line": 932,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "HD38Q-0HBRT": [
+      {
+        "args": "dmn->name, why",
+        "binary": "watchfrr/watchfrr",
+        "ec": 268435457,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s state -> down : %s",
+        "func": "daemon_down",
+        "line": 603,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "HNEBM-F61BZ": [
+      {
+        "args": "dmn->name",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s: connection in progress",
+        "func": "try_connect",
+        "line": 846,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HP0XY-Z3VSP": [
+      {
+        "args": "progname, \"8.5-dev-MyOwnFRRVersion\" \"-g7def2d3860\", alldaemons, watch_only ? \", monitor mode\" : \"\"",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s %s watching [%s]%s",
+        "func": "watchfrr_init",
+        "line": 1312,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "JNFPJ-VQRVW": [
+      {
+        "args": "",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr_vty.c",
+        "fmtstring": "configuration write terminated",
+        "func": "integrated_write_sigchld",
+        "line": 185,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "JWX4V-MVV6K": [
+      {
+        "args": "dmn->name, (long)delay.tv_sec, (long)delay.tv_usec",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s state -> up : echo response received after %ld.%06ld seconds",
+        "func": "handle_read",
+        "line": 678,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "K54RW-4APGS": [
+      {
+        "args": "gs.numdaemons - gs.numdown, gs.numdaemons",
+        "binary": "watchfrr/watchfrr",
+        "ec": 268435457,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "startup did not complete within timeout (%d/%d daemons running)",
+        "func": "daemon_send_ready",
+        "line": 711,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "KHCE5-C3Z99": [
+      {
+        "args": "restart->name, restart->interval",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "restart %s interval is now %ld",
+        "func": "run_job",
+        "line": 522,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KWE5Q-QNGFC": [
+      {
+        "args": "",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "all daemons up, doing startup-complete notify",
+        "func": "daemon_send_ready",
+        "line": 707,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "M297P-SH4GY": [
+      {
+        "args": "what, name, (int)child",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s %s process %d exited normally",
+        "func": "sigchild",
+        "line": 446,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MWKBG-7BCXT": [
+      {
+        "args": "__func__, addr.sun_path, sock",
+        "binary": "watchfrr/watchfrr",
+        "ec": 100663303,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s(%s): set_nonblocking/cloexec(%d) failed",
+        "func": "try_connect",
+        "line": 831,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "N6KTA-K4PJV": [
+      {
+        "args": "",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "Phased global restart has completed.",
+        "func": "phase_check",
+        "line": 943,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "NG1AJ-FP2TQ": [
+      {
+        "args": "",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "Terminating on signal",
+        "func": "sigint",
+        "line": 1084,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "P64RG-BK5KC": [
+      {
+        "args": "cmdtype, restart->name, (int)restart->pid",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "cannot %s %s, previous pid %d still running",
+        "func": "run_job",
+        "line": 476,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P7HCW-P0TYE": [
+      {
+        "args": "cmdtype, restart->name, (long)delay.tv_sec, restart->interval",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "postponing %s %s: elapsed time %ld < retry interval %ld",
+        "func": "run_job",
+        "line": 496,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PG73Y-P1HDV": [
+      {
+        "args": "dmn->name, safe_strerror((*__errno_location ()))",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s: check_connect: getsockopt failed: %s",
+        "func": "check_connect",
+        "line": 761,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PPBA7-K4VTA": [
+      {
+        "args": "dmn->name, gs.special->name, state_str[gs.special->state]",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s: postponing restart attempt because master %s daemon not up [%s], or phased restart in progress",
+        "func": "try_restart",
+        "line": 962,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q1V53-P91NK": [
+      {
+        "args": "__func__, addr.sun_path, safe_strerror((*__errno_location ()))",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s(%s): connect failed: %s",
+        "func": "try_connect",
+        "line": 841,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QAX89-F6BAQ": [
+      {
+        "args": "phase_str[gs.phase], PHASE_TIMEOUT",
+        "binary": "watchfrr/watchfrr",
+        "ec": 268435457,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "Phase [%s] hanging for %ld seconds, aborting phased restart",
+        "func": "phase_hanging",
+        "line": 868,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "QDG3Y-BY5TN": [
+      {
+        "args": "dmn->name, why",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s state -> up : %s",
+        "func": "daemon_up",
+        "line": 737,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "QFGM0-2MMTY": [
+      {
+        "args": "dmn->name, why",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s still down : %s",
+        "func": "daemon_down",
+        "line": 605,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RKHTV-CNGEG": [
+      {
+        "args": "dmn->name, state_str[dmn->state]",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "Daemon: %s: is in %s state but expected it to be in DAEMON_DOWN state",
+        "func": "restart_done",
+        "line": 585,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "RSFPV-PSF7H": [
+      {
+        "args": "phase_str[gs.phase], gs.numpids",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "postponing phased global restart: restart already in progress [%s], or outstanding child processes [%d]",
+        "func": "try_restart",
+        "line": 970,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "S35NY-PNJ2Y": [
+      {
+        "args": "dmn->name, (long)delay.tv_sec, (long)delay.tv_usec",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s: slow echo response finally received after %ld.%06ld seconds",
+        "func": "handle_read",
+        "line": 683,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "S8YFB-Z23M0": [
+      {
+        "args": "gs.special->name",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "Phased restart: %s restart job completed.",
+        "func": "phase_check",
+        "line": 925,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "S93YV-297WA": [
+      {
+        "args": "dmn->name, addr.sun_path, safe_strerror(errno)",
+        "binary": "watchfrr/watchfrr",
+        "ec": 100663303,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s: access to socket %s denied: %s",
+        "func": "try_connect",
+        "line": 818,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "SK7QP-A2GT9": [
+      {
+        "args": "what, name, (int)child, ((status) & 0x7f)",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s %s process %d terminated due to signal %d",
+        "func": "sigchild",
+        "line": 438,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "T58XM-TP956": [
+      {
+        "args": "dmn->name, gs.timeout",
+        "binary": "watchfrr/watchfrr",
+        "ec": 268435457,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s state -> unresponsive : no response yet to ping sent %ld seconds ago",
+        "func": "wakeup_no_answer",
+        "line": 1014,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "TR1AK-3ZM78": [
+      {
+        "args": "(int)child",
+        "binary": "watchfrr/watchfrr",
+        "ec": 100663303,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "waitpid returned status for an unknown child process %d",
+        "func": "sigchild",
+        "line": 429,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "TR7RY-KCWVV": [
+      {
+        "args": "",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "Phased restart: all routing daemon stop jobs have completed.",
+        "func": "phase_check",
+        "line": 906,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "TVHF3-6284Y": [
+      {
+        "args": "(long)delay.tv_sec, gs.special->restart.interval",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "postponing phased global restart: elapsed time %ld < retry interval %ld",
+        "func": "try_restart",
+        "line": 982,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TWJ0V-CD8JZ": [
+      {
+        "args": "dmn->name",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s: attempting to connect",
+        "func": "try_connect",
+        "line": 798,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V4Y6J-XF70E": [
+      {
+        "args": "what, name, (int)child",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s %s process %d is stopped",
+        "func": "sigchild",
+        "line": 435,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "W9AN2-A97FD": [
+      {
+        "args": "",
+        "binary": "watchfrr/watchfrr",
+        "ec": 268435457,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "all configured daemons failed to start -- exiting watchfrr",
+        "func": "daemon_send_ready",
+        "line": 714,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "WFP93-1D146": [
+      {
+        "args": "(((status) & 0xff00) >> 8)",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr_vty.c",
+        "fmtstring": "configuration write completed with exit code %d",
+        "func": "integrated_write_sigchld",
+        "line": 179,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "WKE0S-B6HC1": [
+      {
+        "args": "dmn->name, state_str[dmn->state]",
+        "binary": "watchfrr/watchfrr",
+        "ec": 268435457,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s: no longer unresponsive (now %s), wakeup should have been cancelled!",
+        "func": "wakeup_unresponsive",
+        "line": 997,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "WVTJ6-AYS13": [
+      {
+        "args": "safe_strerror(errno)",
+        "binary": "watchfrr/watchfrr",
+        "ec": 100663303,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "waitpid failed: %s",
+        "func": "sigchild",
+        "line": 403,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "X9M5M-0DNSV": [
+      {
+        "args": "safe_strerror((*__errno_location ()))",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "setpgid(0,0) failed: %s",
+        "func": "run_background",
+        "line": 330,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "XCYXJ-2FKFG": [
+      {
+        "args": "cmdtype, restart->name",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "attempting to %s %s",
+        "func": "run_job",
+        "line": 470,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XG49W-37JMW": [
+      {
+        "args": "shell_cmd, safe_strerror(errno)",
+        "binary": "watchfrr/watchfrr",
+        "ec": 100663303,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "fork failed, cannot run command [%s]: %s",
+        "func": "run_background",
+        "line": 322,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XNGR3-04C76": [
+      {
+        "args": "__func__, addr.sun_path, safe_strerror(errno)",
+        "binary": "watchfrr/watchfrr",
+        "ec": 100663299,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s(%s): cannot make socket: %s",
+        "func": "try_connect",
+        "line": 824,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "YFT0P-5Q5YX": [
+      {
+        "args": "(int)child, shell_cmd",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "Forked background command [pid %d]: %s",
+        "func": "run_background",
+        "line": 344,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "Z75KA-456CS": [
+      {
+        "args": "",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "Phased restart: all routing daemons now down.",
+        "func": "phase_check",
+        "line": 914,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "ZB28Q-B62RD": [
+      {
+        "args": "",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "SIGCHLD received, but waitpid did not reap a child",
+        "func": "sigchild",
+        "line": 406,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZC5ZX-HV448": [
+      {
+        "args": "((status) & 0x7f)",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr_vty.c",
+        "fmtstring": "configuration write terminated by signal %d",
+        "func": "integrated_write_sigchld",
+        "line": 183,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZCJ3S-SPH5S": [
+      {
+        "args": "dmn->name",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s state -> down : initial connection attempt failed",
+        "func": "wakeup_init",
+        "line": 574,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "ZE9RA-19PS5": [
+      {
+        "args": "restart->what, restart->name, (int)restart->pid, (long)delay.tv_sec, (restart->kills ? 9 : 15)",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s %s child process %d still running after %ld seconds, sending signal %d",
+        "func": "restart_kill",
+        "line": 371,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZJW5C-1EHNT": [
+      {
+        "args": "what, name, (int)child, (((status) & 0xff00) >> 8)",
+        "binary": "watchfrr/watchfrr",
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "%s %s process %d exited with non-zero status %d",
+        "func": "sigchild",
+        "line": 443,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZQ3W8-ZJQ7W": [
+      {
+        "args": "shell_cmd, safe_strerror(errno)",
+        "binary": "watchfrr/watchfrr",
+        "ec": 100663303,
+        "file": "watchfrr/watchfrr.c",
+        "fmtstring": "execv(/bin/sh -c '%s') failed: %s",
+        "func": "run_background",
+        "line": 338,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

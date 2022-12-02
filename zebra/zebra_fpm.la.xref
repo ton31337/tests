@@ -1,0 +1,358 @@
+{
+  "cli": {
+    "clear_zebra_fpm_stats_cmd": {
+      "zebra/zebra_fpm.la": {
+        "defun": {
+          "file": "zebra/zebra_fpm.c",
+          "func": "clear_zebra_fpm_stats",
+          "line": 1835
+        },
+        "doc": "Reset functions\nZebra information\nClear Forwarding Path Manager information\nStatistics\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/zebra_fpm.c",
+              "func": "zfpm_init",
+              "line": 2026
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear zebra fpm stats"
+      }
+    },
+    "fpm_remote_ip_cmd": {
+      "zebra/zebra_fpm.la": {
+        "defun": {
+          "file": "zebra/zebra_fpm.c",
+          "func": "fpm_remote_ip",
+          "line": 1852
+        },
+        "doc": "Forwarding Path Manager\nConfigure FPM connection\nConnect to IPv4 address\nConnect to IPv4 address\nTCP port number\nTCP port number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/zebra_fpm.c",
+              "func": "zfpm_init",
+              "line": 2027
+            },
+            "node": 4
+          }
+        ],
+        "string": "fpm connection ip A.B.C.D port (1-65535)"
+      }
+    },
+    "no_fpm_remote_ip_cmd": {
+      "zebra/zebra_fpm.la": {
+        "defun": {
+          "file": "zebra/zebra_fpm.c",
+          "func": "no_fpm_remote_ip",
+          "line": 1882
+        },
+        "doc": "Negate a command or set its defaults\nForwarding Path Manager\nRemove configured FPM connection\nConnect to IPv4 address\nConnect to IPv4 address\nTCP port number\nTCP port number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/zebra_fpm.c",
+              "func": "zfpm_init",
+              "line": 2028
+            },
+            "node": 4
+          }
+        ],
+        "string": "no fpm connection ip A.B.C.D port (1-65535)"
+      }
+    },
+    "show_zebra_fpm_stats_cmd": {
+      "zebra/zebra_fpm.la": {
+        "defun": {
+          "file": "zebra/zebra_fpm.c",
+          "func": "show_zebra_fpm_stats",
+          "line": 1820
+        },
+        "doc": "Show running system information\nZebra information\nForwarding Path Manager information\nStatistics\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/zebra_fpm.c",
+              "func": "zfpm_init",
+              "line": 2025
+            },
+            "node": 3
+          }
+        ],
+        "string": "show zebra fpm stats"
+      }
+    }
+  },
+  "refs": {
+    "G0FGJ-8MNHV": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "Failed to create socket for connect(): %s",
+        "func": "zfpm_connect_cb",
+        "line": 1263,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "HETS6-2SV0X": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_fpm.la",
+        "ec": 4043309077,
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM netlink message format is not available",
+        "func": "zfpm_init_message_format",
+        "line": 1927,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "HH099-QVHX9": [
+      {
+        "args": "detail",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "connection to the FPM has gone down: %s",
+        "func": "zfpm_connection_down",
+        "line": 712,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "JZ1PK-CTFDZ": [
+      {
+        "args": "reason, &rmac->macaddr",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM: triggering update to FPM - Reason: %s - %pEA",
+        "func": "zfpm_trigger_rmac_update",
+        "line": 1596,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KPFVA-7JTXF": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM: Starting conn_up thread",
+        "func": "zfpm_connection_up",
+        "line": 591,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "M6PFJ-E0PZS": [
+      {
+        "args": "__func__, dest->rnode",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "%s: Encoding Prefix: %pRN No valid nexthops",
+        "func": "zfpm_build_route_updates",
+        "line": 1017,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "MM7DS-X8VXS": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm_netlink.c",
+        "fmtstring": "FPM: netlink_encode_route(): No useful nexthop.",
+        "func": "netlink_route_info_fill",
+        "line": 348,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "N86SX-E78TM": [
+      {
+        "args": "label, nl_msg_type_to_str(ri->nlmsg_type), ri->prefix, nl_rtproto_to_str(ri->rtm_protocol), ri->metric ? *ri->metric : 0",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm_netlink.c",
+        "fmtstring": "FPM: %s : %s %pFX, Proto: %s, Metric: %u",
+        "func": "zfpm_log_route_info",
+        "line": 537,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q6EH8-7WCSC": [
+      {
+        "args": "zfpm_state_to_str(cur_state), zfpm_state_to_str(state), reason",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM: beginning state transition %s -> %s. Reason: %s",
+        "func": "zfpm_set_state",
+        "line": 1331,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q7TXG-PBDR8": [
+      {
+        "args": "__func__",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm_netlink.c",
+        "fmtstring": "FPM: %s: Expected non-NULL re pointer",
+        "func": "netlink_route_info_fill",
+        "line": 301,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TGJMZ-2A0A3": [
+      {
+        "args": "format",
+        "binary": "zebra/zebra_fpm.la",
+        "ec": 4043309120,
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "Unknown fpm format '%s'",
+        "func": "zfpm_init_message_format",
+        "line": 1948,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "TS2V6-JKENT": [
+      {
+        "args": "nhi->if_index, buf, nhi->recursive ? \"yes\" : \"no\", nexthop_type_to_str(nhi->type), fpm_nh_encap_type_to_str(nhi->encap_info.encap_type)",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm_netlink.c",
+        "fmtstring": "FPM:   Intf: %u, Gateway: %s, Recursive: %s, Type: %s, Encap type: %s",
+        "func": "zfpm_log_route_info",
+        "line": 551,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TS623-WZ5ZP": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_fpm.la",
+        "ec": 4043309078,
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM protobuf message format is deprecated and scheduled to be removed. Please convert to using netlink format or contact dev@lists.frrouting.org with your use case.",
+        "func": "zfpm_init_message_format",
+        "line": 1942,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "V0MC9-BAJTB": [
+      {
+        "args": "&rn->p, reason",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM: %pFX triggering update to FPM - Reason: %s",
+        "func": "zfpm_trigger_update",
+        "line": 1463,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VB8PR-3PYKV": [
+      {
+        "args": "nl_msg_type_to_str(req->hdr.nlmsg_type), nl_family_to_str(req->ndm.ndm_family), req->ndm.ndm_ifindex, &mac->macaddr, &mac->r_vtep_ip",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm_netlink.c",
+        "fmtstring": "FPM: Tx %s family %s ifindex %u MAC %pEA DEST %pI4",
+        "func": "zfpm_netlink_encode_mac",
+        "line": 635,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VQ0GR-2H7PC": [
+      {
+        "args": "ipv4_ll_buf",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "inet_pton failed for %s",
+        "func": "zfpm_init",
+        "line": 2022,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VXSJ4-KE34J": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM: Connection not up anymore, conn_up thread aborting",
+        "func": "zfpm_conn_up_thread_cb",
+        "line": 531,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "X4BP1-FC70R": [
+      {
+        "args": "sock, safe_strerror((*__errno_location ()))",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "can't connect to FPM %d: %s",
+        "func": "zfpm_connect_cb",
+        "line": 1305,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "X7NA6-3T7E2": [
+      {
+        "args": "delay_secs",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM: scheduling connect in %ld seconds",
+        "func": "zfpm_start_connect_timer",
+        "line": 1405,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y4P9X-ZEABW": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM: Stopping existing stats timer",
+        "func": "zfpm_stop_stats_timer",
+        "line": 1715,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YCRA7-HQQ0C": [
+      {
+        "args": "rn",
+        "binary": "zebra/zebra_fpm.la",
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM: %pRN Removing from update queue shutting down",
+        "func": "zfpm_trigger_remove",
+        "line": 1498,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YGG9Y-F45YY": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_fpm.la",
+        "ec": 4043309078,
+        "file": "zebra/zebra_fpm.c",
+        "fmtstring": "FPM protobuf message format is not available",
+        "func": "zfpm_init_message_format",
+        "line": 1938,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

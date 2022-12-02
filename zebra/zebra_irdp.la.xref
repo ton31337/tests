@@ -1,0 +1,783 @@
+{
+  "cli": {
+    "ip_irdp_address_preference_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_address_preference",
+          "line": 568
+        },
+        "doc": "IP information\nAlter ICMP Router discovery preference on this interface\nSet IRDP address for advertise\nIPv4 address\nSpecify IRDP non-default preference to advertise\nPreference level\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 724
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp address A.B.C.D preference (0-2147483647)"
+      }
+    },
+    "ip_irdp_broadcast_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_broadcast",
+          "line": 422
+        },
+        "doc": "IP information\nICMP Router discovery on this interface\nUse broadcast mode\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 715
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp broadcast"
+      }
+    },
+    "ip_irdp_debug_disable_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_debug_disable",
+          "line": 696
+        },
+        "doc": "IP information\nICMP Router discovery debug Averts. and Solicits (short)\nIRDP debugging options\nDisable debugging for all IRDP events\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 730
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp debug disable"
+      }
+    },
+    "ip_irdp_debug_messages_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_debug_messages",
+          "line": 641
+        },
+        "doc": "IP information\nICMP Router discovery debug Averts. and Solicits (short)\nIRDP debugging options\nEnable debugging for IRDP messages\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 727
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp debug messages"
+      }
+    },
+    "ip_irdp_debug_misc_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_debug_misc",
+          "line": 659
+        },
+        "doc": "IP information\nICMP Router discovery debug Averts. and Solicits (short)\nIRDP debugging options\nEnable debugging for miscellaneous IRDP events\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 728
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp debug misc"
+      }
+    },
+    "ip_irdp_debug_packet_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_debug_packet",
+          "line": 677
+        },
+        "doc": "IP information\nICMP Router discovery debug Averts. and Solicits (short)\nIRDP debugging options\nEnable debugging for IRDP packets\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 729
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp debug packet"
+      }
+    },
+    "ip_irdp_holdtime_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_holdtime",
+          "line": 477
+        },
+        "doc": "IP information\nICMP Router discovery on this interface\nSet holdtime value\nHoldtime value in seconds. Default is 1800 seconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 720
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp holdtime (0-9000)"
+      }
+    },
+    "ip_irdp_maxadvertinterval_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_maxadvertinterval",
+          "line": 519
+        },
+        "doc": "IP information\nICMP Router discovery on this interface\nSet maximum time between advertisement\nMaximum advertisement interval in seconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 721
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp maxadvertinterval (4-1800)"
+      }
+    },
+    "ip_irdp_minadvertinterval_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_minadvertinterval",
+          "line": 495
+        },
+        "doc": "IP information\nICMP Router discovery on this interface\nSet minimum time between advertisement\nMinimum advertisement interval in seconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 722
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp minadvertinterval (3-1800)"
+      }
+    },
+    "ip_irdp_multicast_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_multicast",
+          "line": 408
+        },
+        "doc": "IP information\nICMP Router discovery on this interface\nUse multicast mode\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 716
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp multicast"
+      }
+    },
+    "ip_irdp_preference_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_preference",
+          "line": 548
+        },
+        "doc": "IP information\nICMP Router discovery on this interface\nSet default preference level for this interface\nPreference level\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 723
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp preference (0-2147483647)"
+      }
+    },
+    "ip_irdp_shutdown_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "ip_irdp_shutdown",
+          "line": 449
+        },
+        "doc": "IP information\nICMP Router discovery on this interface\nICMP Router discovery shutdown on this interface\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 718
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip irdp shutdown"
+      }
+    },
+    "no_ip_irdp_address_preference_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "no_ip_irdp_address_preference",
+          "line": 609
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nAlter ICMP Router discovery preference on this interface\nSelect IRDP address\nIPv4 address\nReset ICMP Router discovery preference on this interface\nOld preference level\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 725
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip irdp address A.B.C.D preference (0-2147483647)"
+      }
+    },
+    "no_ip_irdp_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "no_ip_irdp",
+          "line": 436
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nDisable ICMP Router discovery on this interface\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 717
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip irdp"
+      }
+    },
+    "no_ip_irdp_shutdown_cmd": {
+      "zebra/zebra_irdp.la": {
+        "defun": {
+          "file": "zebra/irdp_interface.c",
+          "func": "no_ip_irdp_shutdown",
+          "line": 463
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nICMP Router discovery on this interface\nICMP Router discovery no shutdown on this interface\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "zebra/irdp_interface.c",
+              "func": "irdp_if_init",
+              "line": 719
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip irdp shutdown"
+      }
+    }
+  },
+  "refs": {
+    "G07NQ-50YXP": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "Interface is not active %s",
+        "func": "irdp_if_stop",
+        "line": 305,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HD5TD-98PKX": [
+      {
+        "args": "safe_strerror(errno), errno, ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: Cannot set SO_BROADCAST %s(%d) on %s",
+        "func": "send_packet",
+        "line": 332,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "HT3X8-EZQP7": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: Interface is already shutdown %s",
+        "func": "irdp_if_shutdown",
+        "line": 329,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JVFW9-SY3TG": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: Interface is not shutdown %s",
+        "func": "irdp_if_no_shutdown",
+        "line": 351,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KMV0S-9X10X": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "Interface %s structure is NULL",
+        "func": "irdp_if_stop",
+        "line": 300,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MFQ5K-NSN4C": [
+      {
+        "args": "&src",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309072,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX ICMP packet too long from %pI4",
+        "func": "parse_irdp_packet",
+        "line": 119,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "MMG8R-DT2KN": [
+      {
+        "args": "ifp->name, timer",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_main.c",
+        "fmtstring": "IRDP: New timer for %s set to %u",
+        "func": "irdp_send_thread",
+        "line": 244,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "N22AJ-AS13M": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309139,
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: Cannot activate interface %s (cannot create IRDP socket)",
+        "func": "irdp_if_start",
+        "line": 230,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "N4D1V-DRQ46": [
+      {
+        "args": "inet_2a(__bswap_32 (((in_addr_t) 0xe0000002)), b1, sizeof(b1)), ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: Adding group %s for %s",
+        "func": "if_add_group",
+        "line": 166,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P208P-G7Q51": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309140,
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: Interface is down %s",
+        "func": "irdp_if_start",
+        "line": 242,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "P2ZCZ-0HKJM": [
+      {
+        "args": "&src",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309115,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX ICMP packet from %pI4 Bad checksum, silently ignored",
+        "func": "parse_irdp_packet",
+        "line": 132,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PJMMR-WAC3N": [
+      {
+        "args": "safe_strerror(errno)",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: recvmsg: read error %s",
+        "func": "irdp_recvmsg",
+        "line": 208,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PJWAP-3VJ44": [
+      {
+        "args": "ifp->name, timer",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: Init timer for %s set to %u",
+        "func": "irdp_if_start",
+        "line": 287,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PT1Q6-V4PTT": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309072,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX length doesn't match IP length",
+        "func": "parse_irdp_packet",
+        "line": 101,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "Q14RT-K3SFM": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: recvmsg: truncated message",
+        "func": "irdp_recvmsg",
+        "line": 213,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "QC685-JMNHX": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX ICMP for disabled interface %s",
+        "func": "irdp_read_raw",
+        "line": 260,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QJXRC-EW93Q": [
+      {
+        "args": "add_leave == IP_ADD_MEMBERSHIP ? \"join group\" : \"leave group\", inet_2a(group, b1, sizeof(b1)), safe_strerror(errno)",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: %s can't setsockopt %s: %s",
+        "func": "if_group",
+        "line": 143,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "QR9BP-X1F91": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: Interface is already active %s",
+        "func": "irdp_if_start",
+        "line": 224,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QZX77-7KQ3D": [
+      {
+        "args": "ret",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX Error length = %d",
+        "func": "irdp_read_raw",
+        "line": 242,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "RB16Q-MEZZP": [
+      {
+        "args": "&src, ntohl(ip->ip_dst.s_addr) == INADDR_ALLRTRS_GROUP ? \"multicast\" : inet_ntop(AF_INET, &ip->ip_dst, buf, sizeof(buf)), ifp->name, irdp->flags & IF_BROADCAST ? \"broadcast\" : \"multicast\"",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309117,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX illegal from %pI4 to %s while %s operates in %s; Please correct settings",
+        "func": "parse_irdp_packet",
+        "line": 162,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "RSKV5-GXW9H": [
+      {
+        "args": "&src",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309072,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX ICMP packet too short from %pI4",
+        "func": "parse_irdp_packet",
+        "line": 108,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "RSZPK-NG50B": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309141,
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: Interface not multicast enabled %s",
+        "func": "irdp_if_start",
+        "line": 253,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "SDJFW-06YGK": [
+      {
+        "args": "ifp->name, p, irdp->flags & (1<<6) ? 0 : irdp->Lifetime, get_pref(irdp, p)",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_main.c",
+        "fmtstring": "IRDP: TX Advert on %s %pFX Holdtime=%d Preference=%d",
+        "func": "irdp_send",
+        "line": 194,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SDZEQ-HHY5B": [
+      {
+        "args": "ifindex",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX (idx %d) ",
+        "func": "irdp_read_raw",
+        "line": 266,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SGWZG-KH399": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_main.c",
+        "fmtstring": "IRDP: Received shutdown notification.",
+        "func": "irdp_finish",
+        "line": 314,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "T4VMR-Z01SG": [
+      {
+        "args": "safe_strerror(errno), errno, ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: sendmsg send failure %s(%d) on %s",
+        "func": "send_packet",
+        "line": 366,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "T6SCE-WYCA2": [
+      {
+        "args": "safe_strerror(save_errno)",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_main.c",
+        "fmtstring": "IRDP: can't create irdp socket %s",
+        "func": "irdp_sock_init",
+        "line": 94,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "TGXXQ-2ZPQ1": [
+      {
+        "args": "",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: recvmsg: truncated control message",
+        "func": "irdp_recvmsg",
+        "line": 218,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "V93F9-PYY7W": [
+      {
+        "args": "icmp->type, &src",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309116,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX packet type %d from %pI4 Bad ICMP type code, silently ignored",
+        "func": "parse_irdp_packet",
+        "line": 183,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "icmp->type, &src",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309116,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX packet type %d from %pI4 Bad ICMP type code, silently ignored",
+        "func": "parse_irdp_packet",
+        "line": 145,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VDK8P-1GM1M": [
+      {
+        "args": "ifp->name, &src",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX Solicit on %s from %pI4",
+        "func": "parse_irdp_packet",
+        "line": 174,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W5Z70-56ZTR": [
+      {
+        "args": "safe_strerror(errno)",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_main.c",
+        "fmtstring": "IRDP: can't do irdp sockopt %s",
+        "func": "irdp_sock_init",
+        "line": 110,
+        "priority": 3,
+        "type": "logmsg"
+      },
+      {
+        "args": "safe_strerror(errno)",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_main.c",
+        "fmtstring": "IRDP: can't do irdp sockopt %s",
+        "func": "irdp_sock_init",
+        "line": 102,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "WWZJD-JJSRV": [
+      {
+        "args": "safe_strerror(errno), errno, ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 100663299,
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: Cannot set IP_HDRINCLU %s(%d) on %s",
+        "func": "send_packet",
+        "line": 321,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "YKA7W-ZCJ3F": [
+      {
+        "args": "buf[i] & 0xFF",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_packet.c",
+        "fmtstring": "IRDP: RX %x ",
+        "func": "irdp_read_raw",
+        "line": 268,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z7SM9-CGJ2T": [
+      {
+        "args": "ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "ec": 4043309137,
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: can't get address for %s",
+        "func": "if_group",
+        "line": 130,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZA8N5-EV556": [
+      {
+        "args": "inet_2a(__bswap_32 (((in_addr_t) 0xe0000002)), b1, sizeof(b1)), ifp->name",
+        "binary": "zebra/zebra_irdp.la",
+        "file": "zebra/irdp_interface.c",
+        "fmtstring": "IRDP: Leaving group %s for %s",
+        "func": "if_drop_group",
+        "line": 188,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

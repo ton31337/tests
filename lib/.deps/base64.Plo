@@ -1,0 +1,8 @@
+lib/base64.lo: lib/base64.c /usr/include/stdc-predef.h config.h \
+ lib/base64.h
+
+/usr/include/stdc-predef.h:
+
+config.h:
+
+lib/base64.h:

@@ -1,0 +1,3058 @@
+{
+  "cli": {
+    "bfd_clear_peer_counters_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_clear_peer_counters",
+          "line": 769
+        },
+        "doc": "Show running system information\nBidirection Forwarding Detection\nSpecify the VRF\nThe VRF name\nBFD peers status\nPeer label\nIPv4 peer address\nIPv6 peer address\nConfigure multihop\nConfigure local address\nIPv4 local address\nIPv6 local address\nInterface information\nConfigure local interface name to use\nclear BFD peer counters information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1035
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear bfd [vrf <NAME$vrfname>] peer <WORD$label|<A.B.C.D|X:X::X:X>$peer [{multihop|local-address <A.B.C.D|X:X::X:X>$local|interface IFNAME$ifname}]> counters"
+      }
+    },
+    "bfd_config_reset_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_config_reset",
+          "line": 88
+        },
+        "doc": "Negate a command or set its defaults\nConfigure BFD peers\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 696
+            },
+            "node": 4
+          }
+        ],
+        "string": "no bfd"
+      }
+    },
+    "bfd_debug_distributed_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_debug_distributed",
+          "line": 820
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nBidirection Forwarding Detection\nBFD data plane (distributed BFD) debugging\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1047
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1042
+            },
+            "node": 3
+          }
+        ],
+        "string": "[no] debug bfd distributed"
+      }
+    },
+    "bfd_debug_network_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_debug_network",
+          "line": 856
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nBidirection Forwarding Detection\nNetwork layer debugging\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1050
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1045
+            },
+            "node": 3
+          }
+        ],
+        "string": "[no] debug bfd network"
+      }
+    },
+    "bfd_debug_peer_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_debug_peer",
+          "line": 832
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nBidirection Forwarding Detection\nPeer events debugging\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1048
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1043
+            },
+            "node": 3
+          }
+        ],
+        "string": "[no] debug bfd peer"
+      }
+    },
+    "bfd_debug_zebra_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_debug_zebra",
+          "line": 844
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nBidirection Forwarding Detection\nZebra events debugging\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1049
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1044
+            },
+            "node": 3
+          }
+        ],
+        "string": "[no] debug bfd zebra"
+      }
+    },
+    "bfd_enter_cmd": {
+      "bfdd/bfdd": {
+        "attr": 9,
+        "attrs": [
+          "yang",
+          "nosh"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_enter",
+          "line": 72
+        },
+        "doc": "Configure BFD peers\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 695
+            },
+            "node": 4
+          }
+        ],
+        "string": "bfd"
+      }
+    },
+    "bfd_no_peer_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_no_peer",
+          "line": 190
+        },
+        "doc": "Negate a command or set its defaults\nConfigure peer\nIPv4 peer address\nIPv6 peer address\nConfigure multihop\nConfigure local address\nIPv4 local address\nIPv6 local address\nInterface information\nConfigure local interface name to use\nConfigure VRF\nConfigure VRF name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 699
+            },
+            "node": 86
+          }
+        ],
+        "string": "no peer <A.B.C.D|X:X::X:X> [{multihop$multihop|local-address <A.B.C.D|X:X::X:X>|interface IFNAME$ifname|vrf NAME}]"
+      }
+    },
+    "bfd_peer_echo_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_echo",
+          "line": 423
+        },
+        "doc": "Negate a command or set its defaults\nConfigure echo mode\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 705
+            },
+            "node": 87
+          }
+        ],
+        "string": "[no] echo-mode"
+      }
+    },
+    "bfd_peer_echo_interval_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_echo_interval",
+          "line": 457
+        },
+        "doc": "Configure peer echo intervals\nConfigure peer echo rx/tx intervals value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 706
+            },
+            "node": 87
+          }
+        ],
+        "string": "echo-interval (10-60000)$interval"
+      }
+    },
+    "bfd_peer_echo_receive_interval_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_echo_receive_interval",
+          "line": 510
+        },
+        "doc": "Configure peer echo intervals\nConfigure required receive interval\nDisable echo packets receive\nConfigure interval value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 708
+            },
+            "node": 87
+          }
+        ],
+        "string": "echo receive-interval <disabled$disabled|(10-60000)$interval>"
+      }
+    },
+    "bfd_peer_echo_transmit_interval_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_echo_transmit_interval",
+          "line": 480
+        },
+        "doc": "Configure peer echo intervals\nConfigure desired transmit interval\nConfigure interval value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 707
+            },
+            "node": 87
+          }
+        ],
+        "string": "echo transmit-interval (10-60000)$interval"
+      }
+    },
+    "bfd_peer_enter_cmd": {
+      "bfdd/bfdd": {
+        "attr": 9,
+        "attrs": [
+          "yang",
+          "nosh"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_enter",
+          "line": 122
+        },
+        "doc": "Configure peer\nIPv4 peer address\nIPv6 peer address\nConfigure multihop\nConfigure local address\nIPv4 local address\nIPv6 local address\nInterface information\nConfigure local interface name to use\nConfigure VRF\nConfigure VRF name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 698
+            },
+            "node": 86
+          }
+        ],
+        "string": "peer <A.B.C.D|X:X::X:X> [{multihop$multihop|local-address <A.B.C.D|X:X::X:X>|interface IFNAME$ifname|vrf NAME}]"
+      }
+    },
+    "bfd_peer_minimum_ttl_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_minimum_ttl",
+          "line": 323
+        },
+        "doc": "Negate a command or set its defaults\nExpect packets with at least this TTL\nMinimum TTL expected\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 711
+            },
+            "node": 87
+          }
+        ],
+        "string": "[no] minimum-ttl (1-254)$ttl"
+      }
+    },
+    "bfd_peer_mult_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_mult",
+          "line": 359
+        },
+        "doc": "Configure peer detection multiplier\nConfigure peer detection multiplier value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 702
+            },
+            "node": 87
+          }
+        ],
+        "string": "detect-multiplier (2-255)$multiplier"
+      }
+    },
+    "bfd_peer_passive_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_passive",
+          "line": 304
+        },
+        "doc": "Negate a command or set its defaults\nDon't attempt to start sessions\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 710
+            },
+            "node": 87
+          }
+        ],
+        "string": "[no] passive-mode"
+      }
+    },
+    "bfd_peer_profile_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_profile",
+          "line": 654
+        },
+        "doc": "Negate a command or set its defaults\nUse BFD profile settings\nBFD profile name.\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 709
+            },
+            "node": 87
+          }
+        ],
+        "string": "[no] profile BFDPROF$pname"
+      }
+    },
+    "bfd_peer_rx_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_rx",
+          "line": 377
+        },
+        "doc": "Configure peer receive interval\nConfigure peer receive interval value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 703
+            },
+            "node": 87
+          }
+        ],
+        "string": "receive-interval (10-60000)$interval"
+      }
+    },
+    "bfd_peer_shutdown_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_shutdown",
+          "line": 286
+        },
+        "doc": "Negate a command or set its defaults\nDisable BFD peer\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 701
+            },
+            "node": 87
+          }
+        ],
+        "string": "[no] shutdown"
+      }
+    },
+    "bfd_peer_tx_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_tx",
+          "line": 400
+        },
+        "doc": "Configure peer transmit interval\nConfigure peer transmit interval value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 704
+            },
+            "node": 87
+          }
+        ],
+        "string": "transmit-interval (10-60000)$interval"
+      }
+    },
+    "bfd_profile_cmd": {
+      "bfdd/bfdd": {
+        "attr": 9,
+        "attrs": [
+          "yang",
+          "nosh"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_profile",
+          "line": 548
+        },
+        "doc": "BFD profile.\nBFD profile name.\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 720
+            },
+            "node": 86
+          }
+        ],
+        "string": "profile BFDPROF$name"
+      }
+    },
+    "bfd_profile_echo_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_echo",
+          "line": 628
+        },
+        "doc": "Negate a command or set its defaults\nConfigure echo mode\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 727
+            },
+            "node": 88
+          }
+        ],
+        "string": "[no] echo-mode"
+      }
+    },
+    "bfd_profile_echo_interval_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_echo_interval",
+          "line": 633
+        },
+        "doc": "Configure peer echo interval\nConfigure peer echo interval value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 728
+            },
+            "node": 88
+          }
+        ],
+        "string": "echo-interval (10-60000)$interval"
+      }
+    },
+    "bfd_profile_echo_receive_interval_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_echo_receive_interval",
+          "line": 648
+        },
+        "doc": "Configure peer echo intervals\nConfigure required receive interval\nDisable echo packets receive\nConfigure interval value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 730
+            },
+            "node": 88
+          }
+        ],
+        "string": "echo receive-interval <disabled$disabled|(10-60000)$interval>"
+      }
+    },
+    "bfd_profile_echo_transmit_interval_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_echo_transmit_interval",
+          "line": 640
+        },
+        "doc": "Configure peer echo intervals\nConfigure desired transmit interval\nConfigure interval value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 729
+            },
+            "node": 88
+          }
+        ],
+        "string": "echo transmit-interval (10-60000)$interval"
+      }
+    },
+    "bfd_profile_minimum_ttl_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_minimum_ttl",
+          "line": 618
+        },
+        "doc": "Negate a command or set its defaults\nExpect packets with at least this TTL\nMinimum TTL expected\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 732
+            },
+            "node": 88
+          }
+        ],
+        "string": "[no] minimum-ttl (1-254)$ttl"
+      }
+    },
+    "bfd_profile_mult_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_mult",
+          "line": 592
+        },
+        "doc": "Configure peer detection multiplier\nConfigure peer detection multiplier value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 723
+            },
+            "node": 88
+          }
+        ],
+        "string": "detect-multiplier (2-255)$multiplier"
+      }
+    },
+    "bfd_profile_passive_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_passive",
+          "line": 612
+        },
+        "doc": "Negate a command or set its defaults\nDon't attempt to start sessions\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 731
+            },
+            "node": 88
+          }
+        ],
+        "string": "[no] passive-mode"
+      }
+    },
+    "bfd_profile_rx_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_rx",
+          "line": 602
+        },
+        "doc": "Configure peer receive interval\nConfigure peer receive interval value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 725
+            },
+            "node": 88
+          }
+        ],
+        "string": "receive-interval (10-60000)$interval"
+      }
+    },
+    "bfd_profile_shutdown_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_shutdown",
+          "line": 607
+        },
+        "doc": "Negate a command or set its defaults\nDisable BFD peer\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 726
+            },
+            "node": 88
+          }
+        ],
+        "string": "[no] shutdown"
+      }
+    },
+    "bfd_profile_tx_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "bfd_peer_tx",
+          "line": 597
+        },
+        "doc": "Configure peer transmit interval\nConfigure peer transmit interval value in milliseconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 724
+            },
+            "node": 88
+          }
+        ],
+        "string": "transmit-interval (10-60000)$interval"
+      }
+    },
+    "bfd_show_peer_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_show_peer",
+          "line": 680
+        },
+        "doc": "Show running system information\nBidirection Forwarding Detection\nSpecify the VRF\nThe VRF name\nBFD peers status\nPeer label\nIPv4 peer address\nIPv6 peer address\nConfigure multihop\nConfigure local address\nIPv4 local address\nIPv6 local address\nInterface information\nConfigure local interface name to use\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1037
+            },
+            "node": 3
+          }
+        ],
+        "string": "show bfd [vrf NAME$vrf_name] peer <WORD$label|<A.B.C.D|X:X::X:X>$peer [{multihop|local-address <A.B.C.D|X:X::X:X>$local|interface IFNAME$ifname}]> [json]"
+      }
+    },
+    "bfd_show_peer_counters_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_show_peer_counters",
+          "line": 716
+        },
+        "doc": "Show running system information\nBidirection Forwarding Detection\nSpecify the VRF\nThe VRF name\nBFD peers status\nPeer label\nIPv4 peer address\nIPv6 peer address\nConfigure multihop\nConfigure local address\nIPv4 local address\nIPv6 local address\nInterface information\nConfigure local interface name to use\nShow BFD peer counters information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1034
+            },
+            "node": 3
+          }
+        ],
+        "string": "show bfd [vrf NAME$vrf_name] peer <WORD$label|<A.B.C.D|X:X::X:X>$peer [{multihop|local-address <A.B.C.D|X:X::X:X>$local|interface IFNAME$ifname}]> counters [json]"
+      }
+    },
+    "bfd_show_peers_brief_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_show_peers_brief",
+          "line": 791
+        },
+        "doc": "Show running system information\nBidirection Forwarding Detection\nSpecify the VRF\nThe VRF name\nBFD peers status\nShow BFD peer information in tabular form\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1038
+            },
+            "node": 3
+          }
+        ],
+        "string": "show bfd [vrf <NAME$vrfname>] peers brief [json]"
+      }
+    },
+    "bfd_show_peers_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_show_peers",
+          "line": 660
+        },
+        "doc": "Show running system information\nBidirection Forwarding Detection\nSpecify the VRF\nThe VRF name\nBFD peers status\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1036
+            },
+            "node": 3
+          }
+        ],
+        "string": "show bfd [vrf NAME] peers [json]"
+      }
+    },
+    "bfd_show_peers_counters_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "bfd_show_peers_counters",
+          "line": 741
+        },
+        "doc": "Show running system information\nBidirection Forwarding Detection\nSpecify the VRF\nThe VRF name\nBFD peers status\nShow BFD peer counters information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1033
+            },
+            "node": 3
+          }
+        ],
+        "string": "show bfd [vrf NAME] peers counters [json]"
+      }
+    },
+    "no_bfd_peer_minimum_ttl_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "no_bfd_peer_minimum_ttl",
+          "line": 343
+        },
+        "doc": "Negate a command or set its defaults\nExpect packets with at least this TTL\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 712
+            },
+            "node": 87
+          }
+        ],
+        "string": "no minimum-ttl"
+      }
+    },
+    "no_bfd_profile_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "no_bfd_profile",
+          "line": 570
+        },
+        "doc": "Negate a command or set its defaults\nBFD profile.\nBFD profile name.\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 721
+            },
+            "node": 86
+          }
+        ],
+        "string": "no profile BFDPROF$name"
+      }
+    },
+    "no_bfd_profile_minimum_ttl_cmd": {
+      "bfdd/bfdd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_cli.c",
+          "func": "no_bfd_peer_minimum_ttl",
+          "line": 623
+        },
+        "doc": "Negate a command or set its defaults\nExpect packets with at least this TTL\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_cli.c",
+              "func": "bfdd_cli_init",
+              "line": 733
+            },
+            "node": 88
+          }
+        ],
+        "string": "no minimum-ttl"
+      }
+    },
+    "show_bfd_distributed_cmd": {
+      "bfdd/bfdd": {
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "show_bfd_distributed",
+          "line": 808
+        },
+        "doc": "Show running system information\nBidirection Forwarding Detection\nShow BFD data plane (distributed BFD) statistics\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1039
+            },
+            "node": 3
+          }
+        ],
+        "string": "show bfd distributed"
+      }
+    },
+    "show_debugging_bfd_cmd": {
+      "bfdd/bfdd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "bfdd/bfdd_vty.c",
+          "func": "show_debugging_bfd",
+          "line": 964
+        },
+        "doc": "Show running system information\nDebugging functions\nBFD daemon\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bfdd/bfdd_vty.c",
+              "func": "bfdd_vty_init",
+              "line": 1040
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging [bfd]"
+      }
+    }
+  },
+  "refs": {
+    "G4CVK-HRWSX": [
+      {
+        "args": "__func__, bs->ses_state",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: unhandled new state %d",
+        "func": "bfd_dplane_session_state_change",
+        "line": 396,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "G5AD9-2MRAN": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: config_response: failed to get JSON str",
+        "func": "control_response",
+        "line": 703,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "GCWEX-N0BBE": [
+      {
+        "args": "ifp->name, ifp->vrf->name, ifp->vrf->vrf_id",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "zclient: add interface %s (VRF %s(%u))",
+        "func": "bfd_ifp_create",
+        "line": 835,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GFCAT-3SWGH": [
+      {
+        "args": "nstate",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "state-change: unhandled neighbor state: %d",
+        "func": "bs_up_handler",
+        "line": 1088,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "nstate",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "state-change: unhandled neighbor state: %d",
+        "func": "bs_init_handler",
+        "line": 1066,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "nstate",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "state-change: unhandled neighbor state: %d",
+        "func": "bs_down_handler",
+        "line": 1037,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GG5VB-EP1K2": [
+      {
+        "args": "rcvttl, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-ipopts: setsockopt(IP_RECVTTL, %d): %s",
+        "func": "bp_set_ipopts",
+        "line": 1286,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "GHCK9-F4VYR": [
+      {
+        "args": "__func__, sock",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: server connection in progress: %d",
+        "func": "bfd_dplane_client_connect",
+        "line": 950,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GMDFH-GEXVJ": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: socket: %s",
+        "func": "control_init",
+        "line": 119,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "GNH8G-21Z7N": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfdd.c",
+        "fmtstring": "SIGHUP received",
+        "func": "sighup_handler",
+        "line": 100,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "GPSMZ-YVD8Q": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: failed to find session to update",
+        "func": "bfd_dplane_session_state_change",
+        "line": 352,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GS0HE-3FYG1": [
+      {
+        "args": "bpc->bpc_createonly ? \"true\" : \"false\"",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        create-only: %s",
+        "func": "parse_peer_config",
+        "line": 267,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "H0Z9Z-08F0T": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-read: interface name is too big",
+        "func": "_ptm_msg_read",
+        "line": 421,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "H1VDY-QB95A": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "udp6-mhop: socket: %s",
+        "func": "bp_udp6_mhop",
+        "line": 1595,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "H37AJ-CB68Y": [
+      {
+        "args": "sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        local-interface: %s (truncated)",
+        "func": "parse_peer_config",
+        "line": 221,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HFWJC-B21Y4": [
+      {
+        "args": "bs_to_string(bs), nstate",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "state-change: [%s] is in invalid state: %d",
+        "func": "bs_state_handler",
+        "line": 1112,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HHAB3-FC850": [
+      {
+        "args": "pid",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-del-client: client pid %u",
+        "func": "bfdd_client_deregister",
+        "line": 595,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J0CCK-WVFWF": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "packet-send: send partial: %s",
+        "func": "_ptm_bfd_send",
+        "line": 137,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J1C6V-VMRW5": [
+      {
+        "args": "bs_to_string(bfd), state_list[old_state].str, state_list[bfd->ses_state].str",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "state-change: [%s] %s -> %s",
+        "func": "ptm_bfd_sess_up",
+        "line": 525,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J3GCS-V1TV0": [
+      {
+        "args": "__bswap_32 (msg->data.counters_req.lid)",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "  [lid=%u]",
+        "func": "bfd_dplane_debug_message",
+        "line": 234,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J4X3H-VD2DB": [
+      {
+        "args": "allen",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "ipv4 peers %d:",
+        "func": "parse_list",
+        "line": 143,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J7DV1-GMXFA": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-del-dest: failed to find BFD session",
+        "func": "bfdd_dest_deregister",
+        "line": 545,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-del-dest: failed to find BFD session",
+        "func": "bfdd_dest_deregister",
+        "line": 533,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J7QH3-773JH": [
+      {
+        "args": "ifp->name, ifp->vrf->name, ifp->vrf->vrf_id",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "zclient: delete interface %s (VRF %s(%u))",
+        "func": "bfd_ifp_destroy",
+        "line": 765,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J86FC-0N1BB": [
+      {
+        "args": "sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        vrf-name: %s (truncated)",
+        "func": "parse_peer_config",
+        "line": 233,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JAF8C-S9BDB": [
+      {
+        "args": "bs_to_string(bs), state_list[old_state].str, state_list[bs->ses_state].str",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "state-change: [data plane: %s] %s -> %s",
+        "func": "bfd_dplane_session_state_change",
+        "line": 403,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JCG1D-X7VTW": [
+      {
+        "args": "ifp->name, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "BFD: getting peer's mac on %s failed error %s",
+        "func": "bfd_peer_mac_set",
+        "line": 1729,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "JD982-R27HZ": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: socket closed",
+        "func": "bfd_dplane_expect",
+        "line": 540,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "JKB60-PFYWW": [
+      {
+        "args": "__func__, bh->version",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: bad data plane client version: %d",
+        "func": "bfd_dplane_expect",
+        "line": 578,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "JPGV6-GNBW7": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-reuse-addr: failed",
+        "func": "bp_set_ipv6opts",
+        "line": 1522,
+        "priority": 3,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-reuse-addr: failed",
+        "func": "bp_set_ipopts",
+        "line": 1275,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "JQ2FF-9GP14": [
+      {
+        "args": "vrf->name, vrf->vrf_id",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "VRF disable %s id %d",
+        "func": "bfd_vrf_disable",
+        "line": 2012,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JRV6D-QE6EP": [
+      {
+        "args": "sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        label: %s (truncated)",
+        "func": "parse_peer_config",
+        "line": 283,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JYK95-PZFVY": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "bind-ip: bind: %s",
+        "func": "bp_bind_ip",
+        "line": 1321,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "K25V3-QMX3A": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: accept failed: %s",
+        "func": "bfd_dplane_accept",
+        "line": 844,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "K45VF-7WS8M": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: connection failed: %s",
+        "func": "bfd_dplane_client_connecting",
+        "line": 909,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "K880F-QRW5M": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: data plane connection failed: %s",
+        "func": "bfd_dplane_client_connect",
+        "line": 942,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "KAWYN-X97Z1": [
+      {
+        "args": "__bswap_32 (msg->data.state.lid), __bswap_32 (msg->data.state.rid), flags, buf, state_list[msg->data.state.state].str, diag2str(msg->data.state.diagnostics), msg->data.state.detection_multiplier, __bswap_32 (msg->data.state.desired_tx), __bswap_32 (msg->data.state.required_rx), __bswap_32 (msg->data.state.required_echo_rx)",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "  [lid=%u rid=%u flags=0x%02x{%s} state=%s diagnostics=%s mult=%d tx=%u rx=%u erx=%u]",
+        "func": "bfd_dplane_debug_message",
+        "line": 230,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KCBWH-78811": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: terminating distributed BFD",
+        "func": "bfd_dplane_finish_late",
+        "line": 1006,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KHS0R-YY4GD": [
+      {
+        "args": "my_discr",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "echo-packet: no matching session (id:%u)",
+        "func": "ptm_bfd_process_echo_pkt",
+        "line": 359,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KM1XJ-P14M6": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "udp-mhop: socket: %s",
+        "func": "bp_udp_mhop",
+        "line": 1349,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "KS10A-RXM3N": [
+      {
+        "args": "__func__, bdc->sock",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: connected to server: %d",
+        "func": "bfd_dplane_client_connecting",
+        "line": 893,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KS7SG-H2KZQ": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: accept: %s",
+        "func": "control_accept",
+        "line": 164,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "KVF2C-0RNGY": [
+      {
+        "args": "sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        vrf-name: %s",
+        "func": "parse_peer_config",
+        "line": 236,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "M9V7B-K0ZB6": [
+      {
+        "args": "bpc->bpc_ipv4 ? \"ipv4\" : \"ipv6\"",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        peer: %s",
+        "func": "parse_peer_config",
+        "line": 182,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MEK74-Z8XR2": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "echo-socket: socket: %s",
+        "func": "bp_echo_socket",
+        "line": 1631,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "MHRXS-Q4Z2C": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "udp6-mhop: V6 is not supported, continuing",
+        "func": "bp_udp6_mhop",
+        "line": 1597,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "MNM0S-P9JK2": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-ipopts: TTL configuration failed",
+        "func": "bp_set_ipopts",
+        "line": 1281,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "MSVDW-Y8Z5Q": [
+      {
+        "args": "msgbuf, bpc->bpc_mhop ? \"yes\" : \"no\", addr[0], addr[1], addr[2], timers[0], timers[1], timers[2], cbit_str, minttl_str, profile",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "%s [mhop:%s %s%s%s%s%s%s%s%s%s]",
+        "func": "debug_printbpc",
+        "line": 139,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MXW83-34ARM": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-add-dest: failed to create BFD session",
+        "func": "bfdd_dest_register",
+        "line": 492,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MYD6Y-NY7MV": [
+      {
+        "args": "__func__, 96, sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "%s:%d invalid configuration: %s",
+        "func": "parse_config_json",
+        "line": 96,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "MZK43-QSF1K": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "ipv4-new: failed to create socket: %s",
+        "func": "bp_peer_socket",
+        "line": 1377,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "N0B2T-TJNYF": [
+      {
+        "args": "__func__, checksum, recv_checksum",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: invalid udphdr checksum expected 0x%x rcvd 0x%x",
+        "func": "bfd_recv_ipv4_fp",
+        "line": 526,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "N5E7N-61H6W": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "echov6-socket: V6 is not supported, continuing",
+        "func": "bp_echov6_socket",
+        "line": 1690,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "N9GWP-DD0B6": [
+      {
+        "args": "bs->refcount",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "session-delete: refcount failure: %llu references",
+        "func": "ptm_bfd_sess_del",
+        "line": 950,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "NAVFY-CBJS8": [
+      {
+        "args": "__func__, *s, (*__errno_location ()), strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfdd.c",
+        "fmtstring": "%s: close(%d): (%d) %s",
+        "func": "socket_close",
+        "line": 64,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "NCEW1-KFZ7Z": [
+      {
+        "args": "__func__, 291, key, sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "%s:%d invalid configuration: '%s: %s'",
+        "func": "parse_peer_config",
+        "line": 291,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NFERA-4WT04": [
+      {
+        "args": "safe_strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "Failed to bind echo socket: %s",
+        "func": "bp_echo_socket",
+        "line": 1653,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NFY6R-JZMJH": [
+      {
+        "args": "bpc->bpc_txinterval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        transmit-interval: %llu",
+        "func": "parse_peer_config",
+        "line": 253,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NJZ17-C4D0M": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: failed to set reuseaddr: %s",
+        "func": "bfd_dplane_init",
+        "line": 1059,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NMDY8-ZN2EY": [
+      {
+        "args": "__func__, wlen, datalen",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: partial send: %zd expected %zu",
+        "func": "bp_udp_send",
+        "line": 1203,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, wlen, datalen",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: partial send: %zd expected %zu",
+        "func": "bp_udp_send_fp",
+        "line": 1136,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NP5NG-ZNRJD": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: failed to bind socket: %s",
+        "func": "bfd_dplane_init",
+        "line": 1070,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NQGPY-2BQ62": [
+      {
+        "args": "__func__, 585",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "%s:%d: label was truncated",
+        "func": "pl_new",
+        "line": 585,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NW21R-MRYNT": [
+      {
+        "args": "bs_to_string(bs)",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "session-delete: %s",
+        "func": "_ptm_bfd_session_del",
+        "line": 145,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NYF5K-SE3NS": [
+      {
+        "args": "bs_to_string(bs), bs->refcount",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-del-session: [%s] refcount=%llu",
+        "func": "pcn_free",
+        "line": 999,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P6G0W-E9VYQ": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "ipv4-recv: recv failed: %s",
+        "func": "bfd_recv_ipv4",
+        "line": 559,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "P6Q6Y-EC5QM": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: failed to put socket on listen: %s",
+        "func": "bfd_dplane_init",
+        "line": 1077,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PBBTE-TKRX3": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-add-client: failed to register client",
+        "func": "bfdd_client_register",
+        "line": 571,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "PG3JA-DK5GY": [
+      {
+        "args": "__func__, 198, sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "%s:%d failed to parse peer-address '%s'",
+        "func": "parse_peer_config",
+        "line": 198,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PJ96W-N45DR": [
+      {
+        "args": "bpc->bpc_recvinterval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        receive-interval: %llu",
+        "func": "parse_peer_config",
+        "line": 248,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PM60P-GG8CQ": [
+      {
+        "args": "__func__, bcm.bcm_ver",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: client closed due bad version: %d",
+        "func": "control_read",
+        "line": 440,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PSB4R-8T1TJ": [
+      {
+        "args": "bs_to_string(bfd)",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "session-new: %s",
+        "func": "bs_registrate",
+        "line": 931,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PSHFF-5ET4N": [
+      {
+        "args": "pktinfo, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-ipopts: setsockopt(IP_PKTINFO, %d): %s",
+        "func": "bp_set_ipopts",
+        "line": 1295,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "Q3717-GE55D": [
+      {
+        "args": "__func__, bmt",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: unhandled message type %d",
+        "func": "bfd_dplane_handle_message",
+        "line": 504,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q42XY-M09HE": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "packet-send: send failure: %s",
+        "func": "_ptm_bfd_send",
+        "line": 131,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q5R7A-HZ942": [
+      {
+        "args": "sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        peer-address: %s",
+        "func": "parse_peer_config",
+        "line": 201,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q606J-8GX8G": [
+      {
+        "args": "__func__, one, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: setsockopt(SO_REUSEADDR, %d): %s",
+        "func": "bp_set_reuse_addr",
+        "line": 1251,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Q9MM5-C3M7E": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: setsockopt(SO_ATTACH_FILTER): %s",
+        "func": "bp_echo_socket",
+        "line": 1642,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "QBE5H-E16W8": [
+      {
+        "args": "__func__, checksum, recv_checksum",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: invalid iphdr checksum expected 0x%x rcvd 0x%x",
+        "func": "bfd_recv_ipv4_fp",
+        "line": 491,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QDXN5-TYJKY": [
+      {
+        "args": "__func__, one, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: setsockopt(SO_REUSEPORT, %d): %s",
+        "func": "bp_set_reuse_port",
+        "line": 1263,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "QGG0N-HMC46": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfdd_vty.c",
+        "fmtstring": "%s: not enough memory",
+        "func": "_display_peer_counter_json_iter",
+        "line": 464,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfdd_vty.c",
+        "fmtstring": "%s: not enough memory",
+        "func": "_display_peer_json_iter",
+        "line": 346,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "QP007-0B7JJ": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "udp-shop: socket: %s",
+        "func": "bp_udp_shop",
+        "line": 1333,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "QT7HD-W4MTQ": [
+      {
+        "args": "__func__, bcb->bcb_bcm->bcm_type",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: unhandled message type: %d",
+        "func": "control_read",
+        "line": 506,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QV7KP-RSBE6": [
+      {
+        "args": "vrf->name, vrf->vrf_id",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "VRF enable add %s id %u",
+        "func": "bfd_vrf_enable",
+        "line": 1957,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QYHZX-18F2E": [
+      {
+        "args": "__func__, (*__errno_location ()), strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: loopback failure: (%d) %s",
+        "func": "bp_udp_send",
+        "line": 1198,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, (*__errno_location ()), strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: loopback failure: (%d) %s",
+        "func": "bp_udp_send_fp",
+        "line": 1131,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QZ9AG-2FKS0": [
+      {
+        "args": "bs_to_string(bs)",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-del-session: [%s] session refcount is zero but it was configured by CLI",
+        "func": "_ptm_bfd_session_del",
+        "line": 162,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "R3C6W-HRDXG": [
+      {
+        "args": "__func__, bdc->sock",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: terminating data plane client %d",
+        "func": "bfd_dplane_ctx_free",
+        "line": 683,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R3YC6-S2870": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: TCP_NODELAY: %s",
+        "func": "bfd_dplane_client_connect",
+        "line": 936,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "R3ZE6-E33DP": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: listen: %s",
+        "func": "control_init",
+        "line": 132,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "RAF1S-AZR55": [
+      {
+        "args": "ipv6_pktinfo, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-ipv6opts: setsockopt(IPV6_PKTINFO, %d): %s",
+        "func": "bp_set_ipv6opts",
+        "line": 1538,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "RB3RM-ERB5W": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: config_notify: failed to get JSON str",
+        "func": "_control_notify",
+        "line": 733,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "REBPX-DKCCG": [
+      {
+        "args": "__func__, value, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: setsockopt(IP_TTL, %d): %s",
+        "func": "bp_set_ttl",
+        "line": 1225,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "RNNA2-9DRVF": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "ipv6-recv: recv failed: %s",
+        "func": "bfd_recv_ipv6",
+        "line": 671,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "RSFKM-C65YZ": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: failed to initialize socket: %s",
+        "func": "bfd_dplane_init",
+        "line": 1053,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: failed to initialize socket: %s",
+        "func": "bfd_dplane_client_connect",
+        "line": 925,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "S1GCP-CZ124": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: socket failed: %s",
+        "func": "bfd_dplane_expect",
+        "line": 546,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: socket failed: %s",
+        "func": "bfd_dplane_flush",
+        "line": 297,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "S5HNB-1XW3Z": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "ipv4-new: failed to bind port: %s",
+        "func": "bp_peer_socket",
+        "line": 1408,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "S8BT0-80H50": [
+      {
+        "args": "bpc->bpc_echo ? \"true\" : \"false\"",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        echo-mode: %s",
+        "func": "parse_peer_config",
+        "line": 275,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "S90NE-M306A": [
+      {
+        "args": "1, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-ipv6opts: setsockopt(IPV6_HOPLIMIT, %d): %s",
+        "func": "bp_set_ipv6opts",
+        "line": 1534,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "SD0CD-EJ4W2": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: fcntl F_SETFL: %s",
+        "func": "sock_set_nonblock",
+        "line": 95,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "SDAXH-PKSXR": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: counters request failed",
+        "func": "bfd_dplane_update_session_counters",
+        "line": 1178,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SDQ9X-24Z4D": [
+      {
+        "args": "bs->key.vrfname",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "session-enable: specified VRF %s doesn't exists.",
+        "func": "bfd_session_enable",
+        "line": 317,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "SEY1D-NT8EQ": [
+      {
+        "args": "bs_to_string(bfd), state_list[old_state].str, state_list[bfd->ses_state].str, get_diag_str(bfd->local_diag)",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "state-change: [%s] %s -> %s reason:%s",
+        "func": "ptm_bfd_sess_dn",
+        "line": 572,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SHWNS-RA2CZ": [
+      {
+        "args": "vrf_id",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-read: vrf id %u could not be identified",
+        "func": "_ptm_msg_read",
+        "line": 440,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "SQ43G-YHGQS": [
+      {
+        "args": "bpc->bpc_echotxinterval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        echo-transmit-interval: %llu",
+        "func": "parse_peer_config",
+        "line": 263,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SSYGJ-9ZAE0": [
+      {
+        "args": "cmd == ZEBRA_INTERFACE_ADDRESS_ADD ? \"add\" : \"delete\", ifc->address, vrf_id",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "zclient: %s local address %pFX (VRF %u)",
+        "func": "bfdd_interface_address_update",
+        "line": 821,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SWNQW-VD4QN": [
+      {
+        "args": "family",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-read-address: invalid family: %d",
+        "func": "_ptm_msg_read_address",
+        "line": 300,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "SXBDS-DK10R": [
+      {
+        "args": "rcmd",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-replay: invalid message type %u",
+        "func": "bfdd_replay",
+        "line": 629,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "T06T2-JP010": [
+      {
+        "args": "__func__, 298",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "%s:%d no peer address provided",
+        "func": "parse_peer_config",
+        "line": 298,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "T0JEZ-8JGSE": [
+      {
+        "args": "__func__, bs_to_string(bs)",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "%s: %s",
+        "func": "ptm_bfd_sess_del",
+        "line": 955,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "T1T9C-7QKFR": [
+      {
+        "args": "bpc->bpc_shutdown ? \"true\" : \"false\"",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        shutdown: %s",
+        "func": "parse_peer_config",
+        "line": 271,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "T87XK-ETHNJ": [
+      {
+        "args": "sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        label: %s",
+        "func": "parse_peer_config",
+        "line": 286,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "T8H6T-838P7": [
+      {
+        "args": "pid",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-del-client: failed to find client: %u",
+        "func": "bfdd_client_deregister",
+        "line": 590,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TF9YP-K8K97": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: connection closed",
+        "func": "bfd_dplane_flush",
+        "line": 303,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "TKZZK-D80R3": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "initializing distributed BFD",
+        "func": "bfd_dplane_init",
+        "line": 1026,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "TMR0M-BFGTR": [
+      {
+        "args": "ipv6_only, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-ipv6opts: setsockopt(IPV6_V6ONLY, %d): %s",
+        "func": "bp_set_ipv6opts",
+        "line": 1544,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "TP511-2QSGK": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: read: %s",
+        "func": "control_read",
+        "line": 476,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: read: %s",
+        "func": "control_read",
+        "line": 424,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "TS6Z0-NE3R4": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: fcntl F_GETFL: %s",
+        "func": "sock_set_nonblock",
+        "line": 89,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "TTQ3T-DZJWA": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "ipv6-new: failed to bind port: %s",
+        "func": "bp_peer_socketv6",
+        "line": 1476,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "V1VYK-RQ9DH": [
+      {
+        "args": "msg->header.version, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (msg->header.length); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), bfd_dplane_messagetype2str(bmt), bmt",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "dplane-packet: [version=%d length=%d type=%s (%d)]",
+        "func": "bfd_dplane_debug_message",
+        "line": 154,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V6ZJB-7B5ZR": [
+      {
+        "args": "bpc->bpc_echorecvinterval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        echo-receive-interval: %llu",
+        "func": "parse_peer_config",
+        "line": 258,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V7EAM-WMM89": [
+      {
+        "args": "__bswap_32 (msg->data.session_counters.lid), ({ _uint64_t r = __builtin_bswap64(msg->data.session_counters.control_input_bytes); r; }), ({ _uint64_t r = __builtin_bswap64(msg->data.session_counters .control_input_packets); r; }), ({ _uint64_t r = __builtin_bswap64(msg->data.session_counters .control_output_bytes); r; }), ({ _uint64_t r = __builtin_bswap64(msg->data.session_counters .control_output_packets); r; }), ({ _uint64_t r = __builtin_bswap64(msg->data.session_counters.echo_input_bytes); r; }), ({ _uint64_t r = __builtin_bswap64(msg->data.session_counters.echo_input_packets); r; }), ({ _uint64_t r = __builtin_bswap64(msg->data.session_counters.echo_output_bytes); r; }), ({ _uint64_t r = __builtin_bswap64(msg->data.session_counters .echo_output_packets); r; })",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "  [lid=%u control{in %llu bytes (%llu packets), out %llu bytes (%llu packets)} echo{in %llu bytes (%llu packets), out %llu bytes (%llu packets)}]",
+        "func": "bfd_dplane_debug_message",
+        "line": 259,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V9HZY-59VBB": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "udp6-shop: V6 is not supported, continuing",
+        "func": "bp_udp6_shop",
+        "line": 1574,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VKW67-11DT6": [
+      {
+        "args": "__func__, value, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: setsockopt(IP_TOS, %d): %s",
+        "func": "bp_set_tos",
+        "line": 1238,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VPK12-QR4F8": [
+      {
+        "args": "vrf->name, vrf->vrf_id",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "VRF Deletion: %s(%u)",
+        "func": "bfd_vrf_delete",
+        "line": 1929,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VV7KF-4ZJN0": [
+      {
+        "args": "__func__, salen, bdc->addrlen",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: server address truncated (from %d to %d)",
+        "func": "bfd_dplane_client_init",
+        "line": 985,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VV9SS-4N293": [
+      {
+        "args": "sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        peer-label: %s",
+        "func": "parse_peer_label_config",
+        "line": 322,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VXFN3-19H05": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: bind: %s",
+        "func": "control_init",
+        "line": 125,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "W1AS8-QQP90": [
+      {
+        "args": "allen",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "label peers %d:",
+        "func": "parse_list",
+        "line": 151,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W36K9-T6KB5": [
+      {
+        "args": "sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        local-interface: %s",
+        "func": "parse_peer_config",
+        "line": 224,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W5N9D-Y92Q3": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-del-client: failed to deregister client",
+        "func": "bfdd_client_deregister",
+        "line": 602,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "WDST3-48E79": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: write: %s",
+        "func": "control_write",
+        "line": 541,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WJMQE-SVGRJ": [
+      {
+        "args": "bs->key.ifname, vrf->name",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "session-enable: specified interface %s (VRF %s) doesn't exist.",
+        "func": "bfd_session_enable",
+        "line": 331,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "WMNEE-HAWV5": [
+      {
+        "args": "__func__, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: recv failed: %s",
+        "func": "bfd_recv_ipv4_fp",
+        "line": 476,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "WP2Q1-73DVN": [
+      {
+        "args": "vrf->name, vrf->vrf_id",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "VRF Created: %s(%u)",
+        "func": "bfd_vrf_new",
+        "line": 1921,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WSEJH-GW3P5": [
+      {
+        "args": "value, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-tosv6: setsockopt(IPV6_TCLASS, %d): %s",
+        "func": "bp_set_tosv6",
+        "line": 1509,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WVFRE-H3TZQ": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: new data plane client connected",
+        "func": "bfd_dplane_accept",
+        "line": 853,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WVV8E-0JD77": [
+      {
+        "args": "allen",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "ipv6 peers %d:",
+        "func": "parse_list",
+        "line": 147,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WXJFX-DQPQX": [
+      {
+        "args": "__func__, sock",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "%s: server connection: %d",
+        "func": "bfd_dplane_client_connect",
+        "line": 958,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WXX4V-6GYT2": [
+      {
+        "args": "({ _uint64_t r = __builtin_bswap64(msg->data.echo.dp_time); r; }), ({ _uint64_t r = __builtin_bswap64(msg->data.echo.bfdd_time); r; })",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "  [dp_time=%llu bfdd_time=%llu]",
+        "func": "bfd_dplane_debug_message",
+        "line": 161,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "X9CK6-XZ8W0": [
+      {
+        "args": "__func__, bs_to_string(bs)",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfdd_vty.c",
+        "fmtstring": "%s: failed to update BFD session counters (%s)",
+        "func": "__display_peer_counters_json",
+        "line": 407,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, bs_to_string(bs)",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfdd_vty.c",
+        "fmtstring": "%s: failed to update BFD session counters (%s)",
+        "func": "_display_peer_counter",
+        "line": 381,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XC60T-M4HMV": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-replay: failed to find command",
+        "func": "bfdd_replay",
+        "line": 636,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XCQPZ-40HX4": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "echov6-socket: socket: %s",
+        "func": "bp_echov6_socket",
+        "line": 1688,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XE0P5-CV8RQ": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "udp6-shop: socket: %s",
+        "func": "bp_udp6_shop",
+        "line": 1572,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XMQWA-WD42W": [
+      {
+        "args": "__func__, 161",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "%s:%d: unsupported peer type",
+        "func": "parse_list",
+        "line": 161,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XR90B-8H75E": [
+      {
+        "args": "bpc->bpc_detectmultiplier",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        detect-multiplier: %u",
+        "func": "parse_peer_config",
+        "line": 243,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XRJBR-3M4DX": [
+      {
+        "args": "flags, buf, addrs, msg->data.session.ttl, msg->data.session.detect_mult, __bswap_32 (msg->data.session.ifindex), msg->data.session.ifname",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/dplane.c",
+        "fmtstring": "  [flags=0x%08x{%s} %s ttl=%d detect_mult=%d ifindex=%d ifname=%s]",
+        "func": "bfd_dplane_debug_message",
+        "line": 203,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XXXQR-H3WGZ": [
+      {
+        "args": "__func__, ttlval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: invalid TTL: %u",
+        "func": "bfd_recv_ipv6",
+        "line": 690,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, ttlval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: invalid TTL: %u",
+        "func": "bfd_recv_ipv4",
+        "line": 582,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, *ttl",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "%s: invalid TTL: %u",
+        "func": "bfd_recv_ipv4_fp",
+        "line": 504,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y1ZZF-YJPJ8": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "bind-ipv6: bind: %s",
+        "func": "bp_bind_ipv6",
+        "line": 1559,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "YA0Q5-C0BPV": [
+      {
+        "args": "buf, mhop ? \"yes\" : \"no\", peerstr, localstr, portstr, vrfstr",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "control-packet: %s [mhop:%s%s%s%s%s]",
+        "func": "cp_debug",
+        "line": 786,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YAAN7-G1RCH": [
+      {
+        "args": "strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "ipv6-new: failed to create socket: %s",
+        "func": "bp_peer_socketv6",
+        "line": 1445,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "YAD6K-6ZCEB": [
+      {
+        "args": "sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        local-address: %s",
+        "func": "parse_peer_config",
+        "line": 212,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YKPXD-J1MW9": [
+      {
+        "args": "bs_to_string(bfd), my_discr",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "echo-packet: echo disabled [%s] (id:%u)",
+        "func": "ptm_bfd_process_echo_pkt",
+        "line": 366,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YM9EA-TCWVG": [
+      {
+        "args": "bpc->bpc_mhop ? \"true\" : \"false\"",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "        multihop: %s",
+        "func": "parse_peer_config",
+        "line": 191,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YMWJ7-JJRSB": [
+      {
+        "args": "__func__, bcb->bcb_left",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: not enough memory for message size: %zu",
+        "func": "control_read",
+        "line": 455,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "YTTXF-W7HN6": [
+      {
+        "args": "__func__, 209, sval",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/config.c",
+        "fmtstring": "%s:%d failed to parse local-address '%s'",
+        "func": "parse_peer_config",
+        "line": 209,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YWJRP-969BS": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd.c",
+        "fmtstring": "%s: previous socket open",
+        "func": "bfd_session_enable",
+        "line": 351,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YXM9D-0CPZ0": [
+      {
+        "args": "255, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-ipv6opts: setsockopt(IPV6_UNICAST_HOPS, %d): %s",
+        "func": "bp_set_ipv6opts",
+        "line": 1530,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "Z3ENG-PZPWN": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/ptm_adapter.c",
+        "fmtstring": "ptm-read: peer family doesn't match local type",
+        "func": "_ptm_msg_read",
+        "line": 463,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Z7Z2H-BQQ2R": [
+      {
+        "args": "__func__, bcm.bcm_length",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: client closed due small message length: %d",
+        "func": "control_read",
+        "line": 433,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZH911-7B11Y": [
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-reuse-port: failed",
+        "func": "bp_set_ipv6opts",
+        "line": 1525,
+        "priority": 3,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-reuse-port: failed",
+        "func": "bp_set_ipopts",
+        "line": 1278,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "ZKYH2-V824Y": [
+      {
+        "args": "value, strerror((*__errno_location ()))",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/bfd_packet.c",
+        "fmtstring": "set-ttlv6: setsockopt(IPV6_UNICAST_HOPS, %d): %s",
+        "func": "bp_set_ttlv6",
+        "line": 1495,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZRCW5-02E1Q": [
+      {
+        "args": "__func__",
+        "binary": "bfdd/bfdd",
+        "file": "bfdd/control.c",
+        "fmtstring": "%s: config_notify_config: failed to get JSON str",
+        "func": "_control_notify_config",
+        "line": 796,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

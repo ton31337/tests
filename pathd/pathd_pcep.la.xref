@@ -1,0 +1,2161 @@
+{
+  "cli": {
+    "pcep_cli_clear_srte_pcep_session_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_clear_srte_pcep_session",
+          "line": 2001
+        },
+        "doc": "Reset functions\nSR-TE\nPCEP\nReset PCEP connection\nPCE name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2063
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear sr-te pcep session [WORD]$pce"
+      }
+    },
+    "pcep_cli_debug_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_debug",
+          "line": 1734
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\npathd debugging\npcep module debugging\nmodule basic debugging\npath structures debugging\npcep message debugging\npceplib debugging\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2057
+            },
+            "node": 3
+          },
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2056
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] debug pathd pcep [basic]$basic_str [path]$path_str [message]$message_str [pceplib]$pceplib_str"
+      }
+    },
+    "pcep_cli_no_pcc_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_no_pcc",
+          "line": 1939
+        },
+        "doc": "Negate a command or set its defaults\nPCC configuration\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2051
+            },
+            "node": 72
+          }
+        ],
+        "string": "no pcc"
+      }
+    },
+    "pcep_cli_no_pce_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_no_pce",
+          "line": 1809
+        },
+        "doc": "Negate a command or set its defaults\nPCE configuration, address sub-config is mandatory\nPCE name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2039
+            },
+            "node": 72
+          }
+        ],
+        "string": "no pce WORD$name"
+      }
+    },
+    "pcep_cli_pcc_cmd": {
+      "pathd/pathd_pcep.la": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_pcc",
+          "line": 1930
+        },
+        "doc": "PCC configuration\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2050
+            },
+            "node": 72
+          }
+        ],
+        "string": "pcc"
+      }
+    },
+    "pcep_cli_pcc_pcc_msd_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_pcc_pcc_msd",
+          "line": 1948
+        },
+        "doc": "PCC maximum SID depth \nPCC maximum SID depth value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2053
+            },
+            "node": 75
+          }
+        ],
+        "string": "msd (1-32)"
+      }
+    },
+    "pcep_cli_pcc_pcc_peer_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_pcc_pcc_peer",
+          "line": 1960
+        },
+        "doc": "Negate a command or set its defaults\nPCC PCE peer\nPCC PCE name\nPCC Multi-PCE precedence\nPCE precedence\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2052
+            },
+            "node": 75
+          }
+        ],
+        "string": "[no] peer WORD [precedence (1-255)]"
+      }
+    },
+    "pcep_cli_pce_cmd": {
+      "pathd/pathd_pcep.la": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_pce",
+          "line": 1799
+        },
+        "doc": "PCE configuration, address sub-config is mandatory\nPCE name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2038
+            },
+            "node": 72
+          }
+        ],
+        "string": "pce WORD$name"
+      }
+    },
+    "pcep_cli_pcep_cmd": {
+      "pathd/pathd_pcep.la": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_pcep",
+          "line": 1755
+        },
+        "doc": "PCEP configuration\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2025
+            },
+            "node": 68
+          }
+        ],
+        "string": "pcep"
+      }
+    },
+    "pcep_cli_pcep_no_pce_config_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_pcep_no_pce_config",
+          "line": 1776
+        },
+        "doc": "Negate a command or set its defaults\nShared configuration\nShared configuration name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2029
+            },
+            "node": 72
+          }
+        ],
+        "string": "no pce-config WORD$name"
+      }
+    },
+    "pcep_cli_pcep_pce_config_cmd": {
+      "pathd/pathd_pcep.la": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_pcep_pce_config",
+          "line": 1766
+        },
+        "doc": "Shared configuration\nShared configuration name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2028
+            },
+            "node": 72
+          }
+        ],
+        "string": "pce-config WORD$name"
+      }
+    },
+    "pcep_cli_peer_address_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_peer_address",
+          "line": 1860
+        },
+        "doc": "PCE IP Address configuration, mandatory configuration\nPCE IPv4 address\nRemote PCE server IPv4 address\nPCE IPv6 address\nRemote PCE server IPv6 address\nRemote PCE server port\nRemote PCE server port value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2040
+            },
+            "node": 74
+          }
+        ],
+        "string": "address <ip A.B.C.D | ipv6 X:X::X:X> [port (1024-65535)]"
+      }
+    },
+    "pcep_cli_peer_pce_initiated_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_peer_pce_initiated",
+          "line": 1837
+        },
+        "doc": "Configure PCC to accept PCE initiated LSPs\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2045
+            },
+            "node": 74
+          },
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2034
+            },
+            "node": 73
+          }
+        ],
+        "string": "pce-initiated"
+      }
+    },
+    "pcep_cli_peer_pcep_pce_config_ref_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_peer_pcep_pce_config_ref",
+          "line": 1885
+        },
+        "doc": "PCE shared configuration to use\nShared configuration name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2042
+            },
+            "node": 74
+          }
+        ],
+        "string": "config WORD$name"
+      }
+    },
+    "pcep_cli_peer_source_address_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_peer_source_address",
+          "line": 1875
+        },
+        "doc": "PCE source IP Address configuration\nPCE source IPv4 address\nPCE source IPv4 address value\nPCE source IPv6 address\nPCE source IPv6 address value\nSource PCE server port\nSource PCE server port value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2041
+            },
+            "node": 74
+          },
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2031
+            },
+            "node": 73
+          }
+        ],
+        "string": "source-address [ip A.B.C.D | ipv6 X:X::X:X] [port (1024-65535)]"
+      }
+    },
+    "pcep_cli_peer_sr_draft07_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_peer_sr_draft07",
+          "line": 1829
+        },
+        "doc": "Configure PCC to send PCEP Open with SR draft07\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2044
+            },
+            "node": 74
+          },
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2033
+            },
+            "node": 73
+          }
+        ],
+        "string": "sr-draft07"
+      }
+    },
+    "pcep_cli_peer_tcp_md5_auth_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_peer_tcp_md5_auth",
+          "line": 1846
+        },
+        "doc": "Configure PCC TCP-MD5 RFC2385 Authentication\nTCP-MD5 Authentication string\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2046
+            },
+            "node": 74
+          },
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2035
+            },
+            "node": 73
+          }
+        ],
+        "string": "tcp-md5-auth WORD"
+      }
+    },
+    "pcep_cli_peer_timers_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_peer_timers",
+          "line": 1913
+        },
+        "doc": "PCE PCEP Session Timers configuration\nPCC Keep Alive Timer\nPCC Keep Alive Timer value in seconds\nMin Acceptable PCE Keep Alive Timer\nMin Acceptable PCE Keep Alive Timer value in seconds\nMax Acceptable PCE Keep Alive Timer\nMax Acceptable PCE Keep Alive Timer value in seconds\nPCC Dead Timer\nPCC Dead Timer value in seconds\nMin Acceptable PCE Dead Timer\nMin Acceptable PCE Dead Timer value in seconds\nMax Acceptable PCE Dead Timer\nMax Acceptable PCE Dead Timer value in seconds\nPCC PCEP Request Timer\nPCC PCEP Request Timer value in seconds\nPCC Session Timeout Interval\nPCC Session Timeout Interval value in seconds\nMulti-PCE delegation timeout\nMulti-PCE delegation timeout value in seconds\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2043
+            },
+            "node": 74
+          },
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2032
+            },
+            "node": 73
+          }
+        ],
+        "string": "timer [keep-alive (1-63)] [min-peer-keep-alive (1-255)] [max-peer-keep-alive (1-255)] [dead-timer (4-255)] [min-peer-dead-timer (4-255)] [max-peer-dead-timer (4-255)] [pcep-request (1-120)] [session-timeout-interval (1-120)] [delegation-timeout (1-60)]"
+      }
+    },
+    "pcep_cli_show_srte_pcc_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_show_srte_pcc",
+          "line": 1977
+        },
+        "doc": "Show running system information\nSR-TE info\nPCEP info\nShow current PCC configuration\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2049
+            },
+            "node": 3
+          }
+        ],
+        "string": "show sr-te pcep pcc"
+      }
+    },
+    "pcep_cli_show_srte_pcep_counters_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_show_srte_pcep_counters",
+          "line": 1746
+        },
+        "doc": "Show running system information\nSR-TE info\nPCEP info\nPCEP counters\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2059
+            },
+            "node": 3
+          }
+        ],
+        "string": "show sr-te pcep counters"
+      }
+    },
+    "pcep_cli_show_srte_pcep_pce_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_show_srte_pcep_pce",
+          "line": 1821
+        },
+        "doc": "Show running system information\nSR-TE info\nPCEP info\nShow detailed pce values\npce name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2061
+            },
+            "node": 3
+          }
+        ],
+        "string": "show sr-te pcep pce [WORD$name]"
+      }
+    },
+    "pcep_cli_show_srte_pcep_pce_config_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_show_srte_pcep_pce_config",
+          "line": 1789
+        },
+        "doc": "Show running system information\nSR-TE info\nPCEP info\nShow shared PCE configuration\nShow default hard-coded values\nShared configuration name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2060
+            },
+            "node": 3
+          }
+        ],
+        "string": "show sr-te pcep pce-config [<default|WORD>$name]"
+      }
+    },
+    "pcep_cli_show_srte_pcep_session_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "pcep_cli_show_srte_pcep_session",
+          "line": 1989
+        },
+        "doc": "Show running system information\nSR-TE info\nPCEP info\nShow PCEP Session information\nPCE name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2062
+            },
+            "node": 3
+          }
+        ],
+        "string": "show sr-te pcep session [WORD]$pce"
+      }
+    },
+    "show_debugging_pathd_pcep_cmd": {
+      "pathd/pathd_pcep.la": {
+        "defun": {
+          "file": "pathd/path_pcep_cli.c",
+          "func": "show_debugging_pathd_pcep",
+          "line": 1703
+        },
+        "doc": "Show running system information\nState of each debugging option\npathd pcep module debugging\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_pcep_cli.c",
+              "func": "pcep_cli_init",
+              "line": 2058
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging pathd-pcep"
+      }
+    }
+  },
+  "refs": {
+    "G3JW7-FSQ2E": [
+      {
+        "args": "key->nbkey.color, endpoint, path->plsp_id",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212682,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "FOR_EACH MATCH nbkey [color (%d) endpoint (%s)] path [plsp_id (%d)] ",
+        "func": "handle_pcep_lsp_initiate",
+        "line": 1258,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "G7M29-X8S7K": [
+      {
+        "args": "i + 1",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "(disconnected) best pce (default) (%i) ",
+        "func": "pcep_pcc_calculate_best_pce",
+        "line": 997,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "G8W64-FH1C9": [
+      {
+        "args": "__func__, path->no_path ? \"TRUE\" : \"FALSE\"",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Purge pending reqid: no_path(%s)",
+        "func": "has_pending_req_for",
+        "line": 1922,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GMFMW-Y911K": [
+      {
+        "args": "&pcc_state->pce_opts->addr, pcc_state->pce_opts->port, &pcc_state->pcc_addr_tr, pcc_state->pcc_opts->port",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212678,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "failed to connect to PCE %pIA:%d from %pIA:%d",
+        "func": "pcep_pcc_enable",
+        "line": 418,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "GR8XY-JD966": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Path : no_path|!first_hop",
+        "func": "has_pending_req_for",
+        "line": 1915,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GTP67-K83HV": [
+      {
+        "args": "best_pcc_state->tag, best_pcc_state->id, best_pcc_state->previous_best",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep:  %s Resynch best (%i) previous best (%i)",
+        "func": "update_best_pce",
+        "line": 772,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "H4M8T-0Y1ZB": [
+      {
+        "args": "pcc_state->tag, path->req_id, path->no_path ? \"true\" : \"false\"",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Received computation reply %d (no-path: %s)",
+        "func": "handle_pcep_comp_reply",
+        "line": 1374,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "H849R-WYW1E": [
+      {
+        "args": "originator",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: schedule candidate path segments removal for originator %s",
+        "func": "pcep_thread_remove_candidate_path_segments",
+        "line": 387,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HEDP8-ZR9ZS": [
+      {
+        "args": "pcc_state->tag, req->path->name, pcc_state->originator",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Delegating undefined dynamic path %s to PCE %s",
+        "func": "handle_pcep_comp_reply",
+        "line": 1403,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "pcc_state->tag, req->path->name, pcc_state->originator",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Delegating undefined dynamic path %s to PCE %s",
+        "func": "pcep_pcc_timeout_handler",
+        "line": 610,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HHCVB-1PDXX": [
+      {
+        "args": "pcc_state->tag, req->path->name, format_path(req->path)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Computation request path %s: %s",
+        "func": "send_comp_request",
+        "line": 1703,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HMWF5-Q2NRA": [
+      {
+        "args": "pcc_state->tag, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Candidate path %s removed",
+        "func": "pcep_pcc_pathd_event_handler",
+        "line": 669,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HQKVY-BKZK0": [
+      {
+        "args": "path->originator",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_config.c",
+        "fmtstring": "PCE %s tried to REMOVE pce-initiate a path ",
+        "func": "path_pcep_config_initiate_path",
+        "line": 288,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "HV0D3-QD2VK": [
+      {
+        "args": "pcc_state->tag, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Computation for path %s did not find any result",
+        "func": "handle_pcep_comp_reply",
+        "line": 1379,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HVEAM-91YVP": [
+      {
+        "args": "timer_type_name(data->timer_type), timeout_type_name(data->timeout_type)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: Timer %s / %s canceled",
+        "func": "pcep_thread_cancel_timer",
+        "line": 409,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HZBH8-640TQ": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: cancel_session_timeout timer thread NULL",
+        "func": "cancel_session_timeout",
+        "line": 1556,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J1AQV-QBNPD": [
+      {
+        "args": "&pcc_state->pce_opts->addr, pcc_state->pce_opts->port",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212680,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "skipping connection to PCE %pIA:%d due to missing PCC address",
+        "func": "pcep_pcc_enable",
+        "line": 401,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "J7QC4-45JXA": [
+      {
+        "args": "__func__, pcc_state->tag, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: (%s)%s Send report for candidate path (!DOWN) %s",
+        "func": "pcep_pcc_send_report",
+        "line": 562,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JAZMW-WTQBY": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep.c",
+        "fmtstring": "(%s)PCE tried to REMOVE unknown error!",
+        "func": "pcep_main_event_initiate_candidate",
+        "line": 261,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "JMV4H-VJKBX": [
+      {
+        "args": "of_code",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Ignoring unexpected objective function with code %u",
+        "func": "pcep_lib_parse_open_objfun_list",
+        "line": 887,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "JMW84-7T81H": [
+      {
+        "args": "timer_type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212681,
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "Unknown controller timer triggered: %u",
+        "func": "pcep_thread_timer_handler",
+        "line": 608,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "JN5SY-FMVYE": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s PCC finalizing...",
+        "func": "pcep_pcc_finalize",
+        "line": 189,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JWG22-C0JBB": [
+      {
+        "args": "pcc[idx]->id, idx",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "found pcc_id (%d) idx (%d)",
+        "func": "pcep_pcc_get_pcc_id_by_ip_port",
+        "line": 1024,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K6M9R-RABQT": [
+      {
+        "args": "pcc_state->tag, format_pcep_message(event->message)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Received PCEP message: %s",
+        "func": "pcep_pcc_pcep_event_handler",
+        "line": 740,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K816D-ZNC90": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep:  recalculating pce precedence ",
+        "func": "update_best_pce",
+        "line": 765,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KAKZQ-1NZ2R": [
+      {
+        "args": "pcep_object_class_name(obj->object_class), obj->object_class, pcep_object_type_name(obj->object_class, obj->object_type), obj->object_type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212685,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected PCEP object %s (%u) / %s (%u)",
+        "func": "pcep_lib_parse_capabilities",
+        "line": 553,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "pcep_object_class_name(obj->object_class), obj->object_class, pcep_object_type_name(obj->object_class, obj->object_type), obj->object_type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212685,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected PCEP object %s (%u) / %s (%u)",
+        "func": "pcep_lib_parse_path",
+        "line": 521,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "KE63A-1H8TN": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: (%s) Send error after PcInitiated ",
+        "func": "pcep_pcc_send_error",
+        "line": 576,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KN2YA-QNMPM": [
+      {
+        "args": "pcc_state->tag, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Candidate path %s created, computation request already sent",
+        "func": "pcep_pcc_pathd_event_handler",
+        "line": 649,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KR1K2-X63XY": [
+      {
+        "args": "pcc_state->tag, ipaddr_type_name(&path->nbkey.endpoint), path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Skipping %s candidate path %s synchronization",
+        "func": "pcep_pcc_sync_path",
+        "line": 493,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KSNV2-MC04F": [
+      {
+        "args": "one_connected_pce + 1",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "multi-pce: one connected best pce (default) (%i) ",
+        "func": "pcep_pcc_calculate_best_pce",
+        "line": 989,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "M18X9-1HZMT": [
+      {
+        "args": "type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212681,
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "Unexpected event received in controller thread: %u",
+        "func": "pcep_thread_event_handler",
+        "line": 829,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "M1HQ1-S3C7C": [
+      {
+        "args": "(const char *)payload",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212681,
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "Cannot reset state for PCE: %s",
+        "func": "pcep_thread_event_handler",
+        "line": 792,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "M6RMJ-PGTWC": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Sent invalid OPEN message",
+        "func": "pcep_pcc_pcep_event_handler",
+        "line": 706,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "M6XQX-1ES0V": [
+      {
+        "args": "pcep_ro_type_name(obj->ro_subobj_type), obj->ro_subobj_type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212687,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected ERO sub-object %s (%u)",
+        "func": "pcep_lib_parse_ero",
+        "line": 1088,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "MGVHN-TZB7Z": [
+      {
+        "args": "pcc_state->tag, type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212681,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "Unexpected pathd event received by pcc %s: %u",
+        "func": "pcep_pcc_pathd_event_handler",
+        "line": 680,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "MHNWP-M7837": [
+      {
+        "args": "pcc_state->tag, pcep_event_type_name(event->event_type)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Received PCEP event: %s",
+        "func": "pcep_pcc_pcep_event_handler",
+        "line": 692,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MY9HZ-86JHK": [
+      {
+        "args": "pcc[idx]->id, idx",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "found pcc_id (%d) array_idx (%d)",
+        "func": "pcep_pcc_get_pcc_idx_by_id",
+        "line": 1090,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MZ4N0-PFGGY": [
+      {
+        "args": "path->originator",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_config.c",
+        "fmtstring": "PCE %s tried to initiate a path created localy",
+        "func": "path_pcep_config_initiate_path",
+        "line": 360,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "N9W79-DGBEE": [
+      {
+        "args": "pcep_tlv_type_name(tlv->type), tlv->type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212686,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected RP's TLV %s (%u)",
+        "func": "pcep_lib_parse_rp",
+        "line": 920,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NG9ZT-MDAQ6": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_config.c",
+        "fmtstring": "(%s)PCE tried to REMOVE but it's not Delegated!",
+        "func": "path_pcep_config_initiate_path",
+        "line": 294,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NSHDA-NYBS9": [
+      {
+        "args": "pcc_state->tag, path->name, format_path(path)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Sending path %s: %s",
+        "func": "send_report",
+        "line": 1594,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NVNJP-RG8TJ": [
+      {
+        "args": "pcc[i]->id, i",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "found id (%d) pcc_idx (%d)",
+        "func": "pcep_pcc_get_pcc_by_id",
+        "line": 1051,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NYJSJ-164B1": [
+      {
+        "args": "delay",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: Schedule session_timeout interval for %us",
+        "func": "pcep_thread_schedule_session_timeout",
+        "line": 459,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P2QEP-14VJ9": [
+      {
+        "args": "buffer",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "pcep: pceplib: %s",
+        "func": "pceplib_logging_cb",
+        "line": 596,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "P6YZE-F6A19": [
+      {
+        "args": "pcc_state->tag, ipaddr_type_name(&path->nbkey.endpoint), path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Skipping %s candidate path %s event",
+        "func": "pcep_pcc_pathd_event_handler",
+        "line": 640,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P8KKJ-3Z5KD": [
+      {
+        "args": "__func__, pcc_state->tag, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: (%s)%s Send report for candidate path %s",
+        "func": "pcep_pcc_send_report",
+        "line": 548,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P8RZZ-XN1EC": [
+      {
+        "args": "key->nbkey.color, endpoint, path->plsp_id",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212682,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "FOR_EACH nbkey [color (%d) endpoint (%s)] path [plsp_id (%d)] ",
+        "func": "handle_pcep_lsp_initiate",
+        "line": 1252,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PB9AV-H37WH": [
+      {
+        "args": "timeout_type_name(timeout_type), delay",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: Schedule timeout %s for %us",
+        "func": "pcep_thread_schedule_timeout",
+        "line": 439,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PE811-VK5MP": [
+      {
+        "args": "pcc_state->tag, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Synchronizing path %s",
+        "func": "pcep_pcc_sync_path",
+        "line": 486,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PF5AB-RDBCF": [
+      {
+        "args": "path ? (int32_t)path->plsp_id : -1",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212686,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected Empty RP's TLV plsp-id:(%d)",
+        "func": "pcep_lib_parse_rp",
+        "line": 903,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PMRPW-N4K14": [
+      {
+        "args": "path ? (int32_t)path->plsp_id : -1",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212686,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected Empty ERO's sub_obj plsp-id:(%d)",
+        "func": "pcep_lib_parse_ero",
+        "line": 1074,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PVWB1-EXET6": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212680,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "missing IPv4 PCC address, IPv4 candidate paths will be ignored",
+        "func": "pcep_pcc_enable",
+        "line": 375,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Q2YKJ-X61TG": [
+      {
+        "args": "format_pcep_message(msg)",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212679,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "PCE initiated path without symbolic name: %s",
+        "func": "handle_pcep_lsp_initiate",
+        "line": 1304,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Q2ZGS-HH5WY": [
+      {
+        "args": "req->path->req_id",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212689,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "Computation request %d timeout",
+        "func": "pcep_pcc_timeout_handler",
+        "line": 598,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Q89MC-J7QT0": [
+      {
+        "args": "previous_best_pce + 1",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "multi-pce: previous best pce (%i) ",
+        "func": "pcep_pcc_calculate_best_pce",
+        "line": 975,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QDT00-TJ31B": [
+      {
+        "args": "pcep_pcc_get_pcc_id(pcc_state)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: removed pce pcc_id (%d)",
+        "func": "remove_pcc_state",
+        "line": 1054,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QP8MC-QQC1Y": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212676,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "failed to finalize pceplib",
+        "func": "pcep_lib_finalize",
+        "line": 148,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "QTY9J-F4G01": [
+      {
+        "args": "format_pcep_message(msg)",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212683,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "Unexpected pcep message from pceplib: %s",
+        "func": "handle_pcep_message",
+        "line": 1185,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "QZ82N-R332S": [
+      {
+        "args": "pcc_state->tag, format_pcep_message(msg)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Sending PCEP message: %s",
+        "func": "send_pcep_message",
+        "line": 1569,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R6EZV-ZK94T": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Purge pending reqid: DONE ",
+        "func": "has_pending_req_for",
+        "line": 1925,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RBG5C-6QTYW": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Connection established",
+        "func": "pcep_pcc_pcep_event_handler",
+        "line": 696,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RCHMJ-86GPX": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212680,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "missing IPv6 PCC address, IPv6 candidate paths will be ignored",
+        "func": "pcep_pcc_enable",
+        "line": 391,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "RHH05-AQA87": [
+      {
+        "args": "best_pce + 1",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "multi-pce: best pce (%i) ",
+        "func": "pcep_pcc_calculate_best_pce",
+        "line": 982,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RQQV2-WH9ZS": [
+      {
+        "args": "type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212681,
+        "file": "pathd/path_pcep.c",
+        "fmtstring": "Unexpected event received in the main thread: %u",
+        "func": "pcep_main_event_handler",
+        "line": 216,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "RR4AB-5NNKQ": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212674,
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "failed to create PCEP thread",
+        "func": "pcep_ctrl_initialize",
+        "line": 193,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "S1MAZ-ME85T": [
+      {
+        "args": "format_path(path), __func__",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: (%s) %s",
+        "func": "has_pending_req_for",
+        "line": 1912,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "S1QQY-YCYWN": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: Finalizing pcep module controller",
+        "func": "pcep_ctrl_finalize",
+        "line": 223,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "S3EQS-518AD": [
+      {
+        "args": "path ? (int32_t)path->plsp_id : -1",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212686,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected Empty LSP's TLV plsp-id:(%d)",
+        "func": "pcep_lib_parse_lsp",
+        "line": 975,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "S8E50-895QR": [
+      {
+        "args": "pcc_state->tag, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Scheduling computation request for path %s",
+        "func": "pcep_pcc_sync_path",
+        "line": 476,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SBKVW-GKGGP": [
+      {
+        "args": "format_pcep_message(msg)",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212679,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "PCE initiated path with non-zero PLSP ID: %s",
+        "func": "handle_pcep_lsp_initiate",
+        "line": 1288,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "SDBAM-RVFG3": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212677,
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "failed to update PCC configuration",
+        "func": "pcep_thread_event_update_pce_options",
+        "line": 874,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "SMTS5-6SDK2": [
+      {
+        "args": "pcc_state->caps.is_stateful ? \"stateful\" : \"stateless\", pcc_state->caps.supported_ofs_are_known ? (pcc_state->caps.supported_ofs == 0 ? \"no objective functions supported\" : \"supported objective functions are \") : \"supported objective functions are unknown\", format_objfun_set(pcc_state->caps.supported_ofs)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: PCE capabilities: %s, %s%s",
+        "func": "handle_pcep_open",
+        "line": 1163,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SNQGS-YJTCJ": [
+      {
+        "args": "pcep_tlv_type_name(tlv_header->type), tlv_header->type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212686,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected OPEN's TLV %s (%u)",
+        "func": "pcep_lib_parse_open",
+        "line": 860,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "T0GY8-DE1MH": [
+      {
+        "args": "err",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212682,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "Unsupported PCEP protocol feature: %s",
+        "func": "handle_pcep_comp_reply",
+        "line": 1392,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "err",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212682,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "Unsupported PCEP protocol feature: %s",
+        "func": "handle_pcep_lsp_initiate",
+        "line": 1328,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "err",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212682,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "Unsupported PCEP protocol feature: %s",
+        "func": "continue_pcep_lsp_update",
+        "line": 1217,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "T1HP4-EZSM9": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Synchronization done",
+        "func": "pcep_pcc_sync_done",
+        "line": 529,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "T3NQT-VRTQB": [
+      {
+        "args": "buffer",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "pcep: pceplib: %s",
+        "func": "pceplib_logging_cb",
+        "line": 596,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TCD95-9H2D6": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s PCC initialized",
+        "func": "pcep_pcc_initialize",
+        "line": 181,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TD8DQ-P8FX6": [
+      {
+        "args": "pcc_state->tag, req->path->req_id, req->path->name, &req->path->nbkey.endpoint, req->retry_count",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Canceling computation request %d for path %s to %pIA (retry %d)",
+        "func": "cancel_comp_request",
+        "line": 1742,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TN0HJ-24HNA": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: schedule_session_timeout not setting timer for multi-pce mode",
+        "func": "schedule_session_timeout",
+        "line": 1539,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TPNEV-SZXXD": [
+      {
+        "args": "pcc_state->tag, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Candidate path %s created",
+        "func": "pcep_pcc_pathd_event_handler",
+        "line": 653,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TS7RR-EQ02F": [
+      {
+        "args": "pcep_tlv_type_name(tlv->type), tlv->type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212686,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected SRP's TLV %s (%u)",
+        "func": "pcep_lib_parse_srp",
+        "line": 950,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "TSY07-PP0Z0": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Received LSP update",
+        "func": "continue_pcep_lsp_update",
+        "line": 1208,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TVZ70-YS37F": [
+      {
+        "args": "delay, retry_count",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: Schedule RECONNECT_PCC for %us (retry %u)",
+        "func": "pcep_thread_schedule_reconnect",
+        "line": 426,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TWQCC-WAS62": [
+      {
+        "args": "best_pcc_state->tag, best_pcc_state->id, best_pcc_state->previous_best",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep:  %s No Resynch best (%i) previous best (%i)",
+        "func": "update_best_pce",
+        "line": 778,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TWR38-HZNPE": [
+      {
+        "args": "format_pcep_event(event)",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212684,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "Unexpected event from pceplib: %s",
+        "func": "pcep_pcc_pcep_event_handler",
+        "line": 754,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "TX882-G8B3Q": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_config.c",
+        "fmtstring": "(%s)PCE tried to REMOVE but it's not PCE origin!",
+        "func": "path_pcep_config_initiate_path",
+        "line": 300,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "V2QXC-BAZVF": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "pcep: Finalizing pceplib",
+        "func": "pcep_lib_finalize",
+        "line": 146,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V4BBG-MW7SX": [
+      {
+        "args": "&pcc_state->pce_opts->addr, pcc_state->pce_opts->port",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212680,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "skipping connection to PCE %pIA:%d due to missing PCC IPv4 address",
+        "func": "pcep_pcc_enable",
+        "line": 370,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "V5NEN-RXVZJ": [
+      {
+        "args": "format_pcep_message(msg)",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212682,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "ERO object missing or incomplete : %s",
+        "func": "handle_pcep_lsp_initiate",
+        "line": 1272,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "V7V8Q-YHTPM": [
+      {
+        "args": "&pcc_state->pce_opts->addr, pcc_state->pce_opts->port",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212680,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "skipping connection to PCE %pIA:%d due to missing PCC IPv6 address",
+        "func": "pcep_pcc_enable",
+        "line": 386,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "V7ZT1-BMX8C": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Received LSP initiate",
+        "func": "handle_pcep_lsp_initiate",
+        "line": 1319,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V99WF-47VFW": [
+      {
+        "args": "pcep_tlv_type_name(tlv->type), tlv->type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212686,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected LSP TLV %s (%u)",
+        "func": "pcep_lib_parse_lsp",
+        "line": 996,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VD6YJ-1803X": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Received invalid OPEN message",
+        "func": "pcep_pcc_pcep_event_handler",
+        "line": 723,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VG6PJ-E1ERD": [
+      {
+        "args": "step_0_best, step_0_previous, one_connected_pce, best_pce",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "multi-pce: calculate data : sb (%i) sp (%i) oc (%i) b (%i)  ",
+        "func": "pcep_pcc_calculate_best_pce",
+        "line": 954,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VS1E7-R553G": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: Cancel session_timeout timer",
+        "func": "cancel_session_timeout",
+        "line": 1560,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VS67J-PQ16Z": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s PCC connecting",
+        "func": "pcep_pcc_enable",
+        "line": 406,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W48KQ-7XTM1": [
+      {
+        "args": "path ? (int32_t)path->plsp_id : -1",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212686,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected Empty SRP's TLV plsp-id:(%d)",
+        "func": "pcep_lib_parse_srp",
+        "line": 938,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "W5Q07-GKHM7": [
+      {
+        "args": "format_path(path)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s",
+        "func": "handle_pcep_comp_reply",
+        "line": 1375,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "format_path(path)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s",
+        "func": "handle_pcep_comp_reply",
+        "line": 1356,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "format_path(path)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s",
+        "func": "handle_pcep_lsp_initiate",
+        "line": 1320,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "format_path(path)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s",
+        "func": "continue_pcep_lsp_update",
+        "line": 1209,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W6876-6DVR0": [
+      {
+        "args": "buffer",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "pcep: pceplib: %s",
+        "func": "pceplib_logging_cb",
+        "line": 596,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "WBTRG-EKTCB": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep:  No best pce available, all pce seem disconnected",
+        "func": "update_best_pce",
+        "line": 781,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WGN17-VYPJM": [
+      {
+        "args": "pcep_nai_type_name(sr->nai_type), sr->nai_type",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212688,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "Unexpected SR segment NAI type %s (%u)",
+        "func": "pcep_lib_parse_ero_sr",
+        "line": 1188,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WGSJV-ZBEXW": [
+      {
+        "args": "pcc_state->tag, pcep_error_type_name(error_type), error_type, pcep_error_value_name(error_type, error_value), error_value",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Sending PCEP error type %s (%d) value %s (%d)",
+        "func": "send_pcep_error",
+        "line": 1582,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WKB75-B6K0J": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212675,
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "failed to initialize pceplib",
+        "func": "pcep_lib_initialize",
+        "line": 137,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "WQZK8-8YR13": [
+      {
+        "args": "pcep_pcc_get_pcc_id(pcc_state), current_pcc_idx",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: added pce pcc_id (%d) idx (%d)",
+        "func": "set_pcc_state",
+        "line": 1033,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WTWG0-MFVPH": [
+      {
+        "args": "__func__, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212681,
+        "file": "pathd/path_pcep.c",
+        "fmtstring": "(%s) Send report for candidate path %s",
+        "func": "notify_status",
+        "line": 183,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WXWGQ-TFY6J": [
+      {
+        "args": "format_pcep_message(msg)",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212682,
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "Not allowed PCE initiated path received: %s",
+        "func": "handle_pcep_lsp_initiate",
+        "line": 1235,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "X6K7N-S2XGJ": [
+      {
+        "args": "path->originator, candidate->originator",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_config.c",
+        "fmtstring": "PCE %s tried to initiate a path already initiated by PCE %s",
+        "func": "path_pcep_config_initiate_path",
+        "line": 349,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "X8SR2-G6GTH": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_lib.c",
+        "fmtstring": "pcep: Initializing pceplib",
+        "func": "pcep_lib_initialize",
+        "line": 112,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XHQ08-NHTQX": [
+      {
+        "args": "idx",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "new pcc_idx (%d)",
+        "func": "pcep_pcc_get_free_pcc_idx",
+        "line": 1105,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XNHAZ-VHMHY": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "ec": 285212674,
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "failed to initialize PCEP thread",
+        "func": "pcep_ctrl_initialize",
+        "line": 188,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XWKHW-EZEVD": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_config.c",
+        "fmtstring": "(%s)PCE tried to REMOVE found candidate!, let's remove",
+        "func": "path_pcep_config_initiate_path",
+        "line": 305,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Y6P7Q-6NPN9": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Starting PCE synchronization",
+        "func": "pcep_pcc_pcep_event_handler",
+        "line": 700,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YFYFN-X96KB": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: Max number of pce ",
+        "func": "set_pcc_state",
+        "line": 1036,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YPJCH-JAW0R": [
+      {
+        "args": "pcc_state->tag, path->req_id",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Received computation reply for unknown request %d",
+        "func": "handle_pcep_comp_reply",
+        "line": 1355,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YQ7DQ-V3N7Q": [
+      {
+        "args": "pcc_state->tag, req->path->name, format_path(req->path)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Canceled computation request path %s: %s",
+        "func": "cancel_comp_request",
+        "line": 1745,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YYM7K-79T8S": [
+      {
+        "args": "pcc_state->tag, path->name",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Candidate path %s updated",
+        "func": "pcep_pcc_pathd_event_handler",
+        "line": 663,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z62AZ-TNEP8": [
+      {
+        "args": "pcc_state->tag",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Disconnecting PCC...",
+        "func": "pcep_pcc_disable",
+        "line": 442,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z8C2N-MNYTE": [
+      {
+        "args": "",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: Initializing pcep module controller",
+        "func": "pcep_ctrl_initialize",
+        "line": 182,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z8V9Z-BQBH2": [
+      {
+        "args": "pcc_state->tag, format_pcep_message(event->message)",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s PCEP message: %s",
+        "func": "pcep_pcc_pcep_event_handler",
+        "line": 725,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZG87N-RBGY8": [
+      {
+        "args": "pcc_state->tag, req->path->req_id, req->path->name, &req->path->nbkey.endpoint, req->retry_count",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Sending computation request %d for path %s to %pIA (retry %d)",
+        "func": "send_comp_request",
+        "line": 1701,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZT69M-EDPC8": [
+      {
+        "args": "i, pcc[i]->is_best, pcc[i]->previous_best",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "multi-pce: calculate all : i (%i) is_best (%i) previous_best (%i)   ",
+        "func": "pcep_pcc_calculate_best_pce",
+        "line": 906,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZXKXS-A5T55": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_config.c",
+        "fmtstring": "(%s)PCE tried to REMOVE not existing LSP!",
+        "func": "path_pcep_config_initiate_path",
+        "line": 311,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZY0A1-DMAP9": [
+      {
+        "args": "pcc_state->tag, pcc_state->sess->pcc_config .keep_alive_pce_negotiated_timer_seconds, pcc_state->sess->pcc_config .dead_timer_pce_negotiated_seconds",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_pcc.c",
+        "fmtstring": "pcep: %s Reconciling values: keep alive (%d) dead timer (%d) seconds ",
+        "func": "pcep_pcc_pcep_event_handler",
+        "line": 713,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZY9VF-DE85T": [
+      {
+        "args": "delay",
+        "binary": "pathd/pathd_pcep.la",
+        "file": "pathd/path_pcep_controller.c",
+        "fmtstring": "pcep: Schedule PCEPLIB_TIMER for %us",
+        "func": "pcep_thread_schedule_pceplib_timer",
+        "line": 449,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

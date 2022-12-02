@@ -1,0 +1,577 @@
+{
+  "cli": {
+    "bmp_acl_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "bmp_acl",
+          "line": 2177
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nIPv6 information\nAccess list to restrict BMP sessions\nAccess list name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2557
+            },
+            "node": 91
+          }
+        ],
+        "string": "[no] <ip|ipv6>$af access-list ACCESSLIST_NAME$access_list"
+      }
+    },
+    "bmp_connect_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "bmp_connect",
+          "line": 2134
+        },
+        "doc": "Negate a command or set its defaults\nBGP Monitoring Protocol\nActively establish connection to monitoring station\nMonitoring station hostname or address\nTCP port\nTCP port\nMinimum connection retry interval\nMinimum connection retry interval (milliseconds)\nMaximum connection retry interval\nMaximum connection retry interval (milliseconds)\nSource interface to use\nDefine an interface\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2556
+            },
+            "node": 91
+          }
+        ],
+        "string": "[no] bmp connect HOSTNAME port (1-65535) {min-retry (100-86400000)|max-retry (100-86400000)} [source-interface <WORD$srcif>]"
+      }
+    },
+    "bmp_listener_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "bmp_listener_main",
+          "line": 2084
+        },
+        "doc": "BGP Monitoring Protocol\nListen for inbound BMP connections\nIPv6 address to listen on\nIPv4 address to listen on\nTCP Port number\nTCP Port number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2554
+            },
+            "node": 91
+          }
+        ],
+        "string": "bmp listener <X:X::X:X|A.B.C.D> port (1-65535)"
+      }
+    },
+    "bmp_mirror_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "bmp_mirror_cfg",
+          "line": 2284
+        },
+        "doc": "Negate a command or set its defaults\nBGP Monitoring Protocol\nSend BMP route mirroring messages\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2560
+            },
+            "node": 91
+          }
+        ],
+        "string": "[no] bmp mirror"
+      }
+    },
+    "bmp_mirror_limit_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "bmp_mirror_limit_cfg",
+          "line": 2312
+        },
+        "doc": "BGP Monitoring Protocol\nRoute Mirroring settings\nConfigure maximum memory used for buffered mirroring messages\nLimit in bytes\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2562
+            },
+            "node": 25
+          }
+        ],
+        "string": "bmp mirror buffer-limit (0-4294967294)"
+      }
+    },
+    "bmp_monitor_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "bmp_monitor_cfg",
+          "line": 2235
+        },
+        "doc": "Negate a command or set its defaults\nBGP Monitoring Protocol\nSend BMP route monitoring messages\nAddress Family\nAddress Family\nAddress Family\nAddress Family\nAddress Family\nAddress Family\nAddress Family\nSend state before policy and filter processing\nSend state with policy and filters applied\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2559
+            },
+            "node": 91
+          }
+        ],
+        "string": "[no] bmp monitor <ipv4|ipv6|l2vpn> <unicast|multicast|evpn|vpn> <pre-policy|post-policy>$policy"
+      }
+    },
+    "bmp_stats_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "bmp_stats_cfg",
+          "line": 2203
+        },
+        "doc": "Negate a command or set its defaults\nBGP Monitoring Protocol\nSend BMP statistics messages\nSpecify BMP stats interval\nInterval (milliseconds) to send BMP Stats in\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2558
+            },
+            "node": 91
+          }
+        ],
+        "string": "[no] bmp stats [interval (100-86400000)]"
+      }
+    },
+    "bmp_targets_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "bmp_targets_main",
+          "line": 2045
+        },
+        "doc": "BGP Monitoring Protocol\nCreate BMP target group\nName of the BMP target group\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2551
+            },
+            "node": 25
+          }
+        ],
+        "string": "bmp targets BMPTARGETS"
+      }
+    },
+    "no_bmp_listener_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "no_bmp_listener_main",
+          "line": 2105
+        },
+        "doc": "Negate a command or set its defaults\nBGP Monitoring Protocol\nCreate BMP listener\nIPv6 address to listen on\nIPv4 address to listen on\nTCP Port number\nTCP Port number\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2555
+            },
+            "node": 91
+          }
+        ],
+        "string": "no bmp listener <X:X::X:X|A.B.C.D> port (1-65535)"
+      }
+    },
+    "no_bmp_mirror_limit_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "no_bmp_mirror_limit_cfg",
+          "line": 2330
+        },
+        "doc": "Negate a command or set its defaults\nBGP Monitoring Protocol\nRoute Mirroring settings\nConfigure maximum memory used for buffered mirroring messages\nLimit in bytes\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2563
+            },
+            "node": 25
+          }
+        ],
+        "string": "no bmp mirror buffer-limit [(0-4294967294)]"
+      }
+    },
+    "no_bmp_targets_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "no_bmp_targets_main",
+          "line": 2062
+        },
+        "doc": "Negate a command or set its defaults\nBGP Monitoring Protocol\nDelete BMP target group\nName of the BMP target group\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2552
+            },
+            "node": 25
+          }
+        ],
+        "string": "no bmp targets BMPTARGETS"
+      }
+    },
+    "show_bmp_cmd": {
+      "bgpd/bgpd_bmp.la": {
+        "defun": {
+          "file": "bgpd/bgp_bmp.c",
+          "func": "show_bmp",
+          "line": 2346
+        },
+        "doc": "Show running system information\nBGP Monitoring Protocol\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "bgpd/bgp_bmp.c",
+              "func": "bgp_bmp_init",
+              "line": 2565
+            },
+            "node": 1
+          }
+        ],
+        "string": "show bmp"
+      }
+    }
+  },
+  "refs": {
+    "GEBCN-KHPJQ": [
+      {
+        "args": "ba->hostname, &ba->addrs[ba->addrpos], ba->port",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: outbound connection to %pSU:%d",
+        "func": "bmp_active_thread",
+        "line": 1956,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "GYVVZ-KJVZJ": [
+      {
+        "args": "safe_strerror((*__errno_location ()))",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp: accept_sock failed: %s",
+        "func": "bmp_accept",
+        "line": 1521,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "HTA6H-FQ429": [
+      {
+        "args": "ba->hostname, &ba->addrs[ba->addrpos], ba->port, ba->last_err",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: failed to connect to %pSU:%d: %s",
+        "func": "bmp_active_thread",
+        "line": 1951,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "J8B28-ZB41S": [
+      {
+        "args": "ba->ifsrc",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: failed to find interface",
+        "func": "bmp_active_connect",
+        "line": 1821,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "JG6DB-HKNCG": [
+      {
+        "args": "",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp: skipping queued item for deleted peer",
+        "func": "bmp_wrqueue",
+        "line": 1180,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "JXZ56-DW5JM": [
+      {
+        "args": "",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp: skipping mirror message for deleted peer",
+        "func": "bmp_wrmirror",
+        "line": 664,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "K3RM9-4A4HY": [
+      {
+        "args": "peer->host",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp: missing RX OPEN message for peer %s",
+        "func": "bmp_peerstate",
+        "line": 433,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "K7CCK-47P38": [
+      {
+        "args": "bmp->remote",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s] disconnected",
+        "func": "bmp_wrerr",
+        "line": 1257,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "KXFT6-AKP4X": [
+      {
+        "args": "buf",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s] connection established",
+        "func": "bmp_open",
+        "line": 1491,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "MFM04-FJRX1": [
+      {
+        "args": "bmp->remote, afi2str(afi), safi2str(safi)",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s] %s %s table completed (EoR)",
+        "func": "bmp_wrsync",
+        "line": 1051,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "MSKS2-QY8X5": [
+      {
+        "args": "ba->hostname, &ba->addrs[ba->addrpos], ba->port",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: connected to  %pSU:%d",
+        "func": "bmp_active_connect",
+        "line": 1873,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "MTE4R-FF4M3": [
+      {
+        "args": "buf",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s] connection refused by access-list",
+        "func": "bmp_open",
+        "line": 1478,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "NG83P-CX4W5": [
+      {
+        "args": "bmp_sock, safe_strerror(errno), errno",
+        "binary": "bgpd/bgpd_bmp.la",
+        "ec": 100663299,
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp: %d can't setsockopt TCP_NODELAY: %s(%d)",
+        "func": "bmp_open",
+        "line": 1489,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "NMCS7-VN5G4": [
+      {
+        "args": "ba->hostname",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: failed to create socket",
+        "func": "bmp_active_connect",
+        "line": 1838,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "P9C0V-NVNM7": [
+      {
+        "args": "ba->hostname, &ba->addrs[ba->addrpos], ba->port",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: failed to connect to %pSU:%d",
+        "func": "bmp_active_connect",
+        "line": 1865,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PDEA1-VB9YW": [
+      {
+        "args": "ba->ifsrc",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: failed to find matching address",
+        "func": "bmp_active_connect",
+        "line": 1828,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PK81S-8856H": [
+      {
+        "args": "ba->ifsrc, &ba->addrsrc",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: selected source address : %pSU",
+        "func": "bmp_active_connect",
+        "line": 1832,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "RE92K-AKDBN": [
+      {
+        "args": "bmp->remote",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s] lost mirror messages due to buffer size limit",
+        "func": "bmp_mirror_cull",
+        "line": 560,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "RXBVR-CA97W": [
+      {
+        "args": "bmp_sock, safe_strerror(errno), errno",
+        "binary": "bgpd/bgpd_bmp.la",
+        "ec": 100663299,
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp: %d can't setsockopt SO_KEEPALIVE: %s(%d)",
+        "func": "bmp_open",
+        "line": 1486,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "S2J8M-KF5H8": [
+      {
+        "args": "ba->hostname, &ba->addrs[ba->addrpos], ba->port",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: connect in progress  %pSU:%d",
+        "func": "bmp_active_connect",
+        "line": 1878,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VTCF0-ZHP6C": [
+      {
+        "args": "peer->host",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp: missing TX OPEN message for peer %s",
+        "func": "bmp_peerstate",
+        "line": 426,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WT0H1-E7MMJ": [
+      {
+        "args": "bmp->remote, n",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: unexpectedly received %zu bytes",
+        "func": "bmp_read",
+        "line": 1413,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "XBE1S-WQR6T": [
+      {
+        "args": "bmp->remote, strerror(errno)",
+        "binary": "bgpd/bgpd_bmp.la",
+        "ec": 100663303,
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s] connection error: %s",
+        "func": "bmp_wrerr",
+        "line": 1260,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "XCZM7-F75DM": [
+      {
+        "args": "ba->hostname, &ba->addrsrc, ba->port",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: no bind currently to source address %pSU:%d",
+        "func": "bmp_active_connect",
+        "line": 1850,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "YTDAZ-ZM070": [
+      {
+        "args": "bmp->remote, afi2str(bmp->syncafi), safi2str(bmp->syncsafi)",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s] %s %s sending table",
+        "func": "bmp_wrsync",
+        "line": 974,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "ZZNJN-95GQ3": [
+      {
+        "args": "ba->hostname, errstr",
+        "binary": "bgpd/bgpd_bmp.la",
+        "file": "bgpd/bgp_bmp.c",
+        "fmtstring": "bmp[%s]: hostname resolution failed: %s",
+        "func": "bmp_active_resolved",
+        "line": 1897,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

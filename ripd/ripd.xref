@@ -1,0 +1,2515 @@
+{
+  "cli": {
+    "clear_ip_rip_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "clear_ip_rip",
+          "line": 1006
+        },
+        "doc": "Reset functions\nIP information\nClear IP RIP database\nSpecify the VRF\nThe VRF name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1111
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear ip rip [vrf WORD]"
+      }
+    },
+    "debug_rip_events_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_debug.c",
+          "func": "debug_rip_events",
+          "line": 68
+        },
+        "doc": "Debugging functions\nRIP information\nRIP events\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 231
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 222
+            },
+            "node": 3
+          }
+        ],
+        "string": "debug rip events"
+      }
+    },
+    "debug_rip_packet_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_debug.c",
+          "func": "debug_rip_packet",
+          "line": 79
+        },
+        "doc": "Debugging functions\nRIP information\nRIP packet\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 232
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 223
+            },
+            "node": 3
+          }
+        ],
+        "string": "debug rip packet"
+      }
+    },
+    "debug_rip_packet_direct_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_debug.c",
+          "func": "debug_rip_packet_direct",
+          "line": 94
+        },
+        "doc": "Debugging functions\nRIP information\nRIP packet\nRIP receive packet\nRIP send packet\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 233
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 224
+            },
+            "node": 3
+          }
+        ],
+        "string": "debug rip packet <recv|send>"
+      }
+    },
+    "debug_rip_zebra_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_debug.c",
+          "func": "debug_rip_zebra",
+          "line": 110
+        },
+        "doc": "Debugging functions\nRIP information\nRIP and ZEBRA communication\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 234
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 225
+            },
+            "node": 3
+          }
+        ],
+        "string": "debug rip zebra"
+      }
+    },
+    "ip_rip_authentication_key_chain_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "ip_rip_authentication_key_chain",
+          "line": 958
+        },
+        "doc": "IP information\nRouting Information Protocol\nAuthentication control\nAuthentication key-chain\nname of key-chain\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1107
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip rip authentication key-chain LINE$keychain"
+      }
+    },
+    "ip_rip_authentication_mode_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "ip_rip_authentication_mode",
+          "line": 824
+        },
+        "doc": "IP information\nRouting Information Protocol\nAuthentication control\nAuthentication mode\nKeyed message digest\nMD5 authentication data length\nRFC compatible\nOld ripd compatible\nClear text authentication\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1103
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip rip authentication mode <md5$mode [auth-length <rfc|old-ripd>$auth_length]|text$mode>"
+      }
+    },
+    "ip_rip_authentication_string_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "ip_rip_authentication_string",
+          "line": 903
+        },
+        "doc": "IP information\nRouting Information Protocol\nAuthentication control\nAuthentication string\nAuthentication string\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1105
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip rip authentication string LINE$password"
+      }
+    },
+    "ip_rip_receive_version_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "ip_rip_receive_version",
+          "line": 683
+        },
+        "doc": "IP information\nRouting Information Protocol\nAdvertisement reception\nVersion control\nRIP version 1\nRIP version 2\nNone\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1099
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip rip receive version <{1$v1|2$v2}|none>"
+      }
+    },
+    "ip_rip_send_version_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "ip_rip_send_version",
+          "line": 753
+        },
+        "doc": "IP information\nRouting Information Protocol\nAdvertisement transmission\nVersion control\nRIP version 1\nRIP version 2\nNone\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1101
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip rip send version <{1$v1|2$v2}|none>"
+      }
+    },
+    "ip_rip_split_horizon_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "ip_rip_split_horizon",
+          "line": 609
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nRouting Information Protocol\nPerform split horizon\nWith poisoned-reverse\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1097
+            },
+            "node": 17
+          }
+        ],
+        "string": "[no] ip rip split-horizon [poisoned-reverse$poisoned_reverse]"
+      }
+    },
+    "ip_rip_v2_broadcast_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "ip_rip_v2_broadcast",
+          "line": 654
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nRouting Information Protocol\nSend ip broadcast v2 update\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1098
+            },
+            "node": 17
+          }
+        ],
+        "string": "[no] ip rip v2-broadcast"
+      }
+    },
+    "no_debug_rip_events_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_debug.c",
+          "func": "no_debug_rip_events",
+          "line": 122
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nRIP information\nRIP events\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 235
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 226
+            },
+            "node": 3
+          }
+        ],
+        "string": "no debug rip events"
+      }
+    },
+    "no_debug_rip_packet_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_debug.c",
+          "func": "no_debug_rip_packet",
+          "line": 134
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nRIP information\nRIP packet\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 236
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 227
+            },
+            "node": 3
+          }
+        ],
+        "string": "no debug rip packet"
+      }
+    },
+    "no_debug_rip_packet_direct_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_debug.c",
+          "func": "no_debug_rip_packet_direct",
+          "line": 148
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nRIP information\nRIP packet\nRIP option set for receive packet\nRIP option set for send packet\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 237
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 228
+            },
+            "node": 3
+          }
+        ],
+        "string": "no debug rip packet <recv|send>"
+      }
+    },
+    "no_debug_rip_zebra_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_debug.c",
+          "func": "no_debug_rip_zebra",
+          "line": 171
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nRIP information\nRIP and ZEBRA communication\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 238
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 229
+            },
+            "node": 3
+          }
+        ],
+        "string": "no debug rip zebra"
+      }
+    },
+    "no_ip_rip_authentication_key_chain_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_ip_rip_authentication_key_chain",
+          "line": 981
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nRouting Information Protocol\nAuthentication control\nAuthentication key-chain\nname of key-chain\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1109
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip rip authentication key-chain [LINE]"
+      }
+    },
+    "no_ip_rip_authentication_mode_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_ip_rip_authentication_mode",
+          "line": 857
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nRouting Information Protocol\nAuthentication control\nAuthentication mode\nKeyed message digest\nMD5 authentication data length\nRFC compatible\nOld ripd compatible\nClear text authentication\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1104
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip rip authentication mode [<md5 [auth-length <rfc|old-ripd>]|text>]"
+      }
+    },
+    "no_ip_rip_authentication_string_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_ip_rip_authentication_string",
+          "line": 932
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nRouting Information Protocol\nAuthentication control\nAuthentication string\nAuthentication string\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1106
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip rip authentication string [LINE]"
+      }
+    },
+    "no_ip_rip_receive_version_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_ip_rip_receive_version",
+          "line": 711
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nRouting Information Protocol\nAdvertisement reception\nVersion control\nRIP version 1\nRIP version 2\nNone\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1100
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip rip receive version [<{1|2}|none>]"
+      }
+    },
+    "no_ip_rip_send_version_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_ip_rip_send_version",
+          "line": 781
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nRouting Information Protocol\nAdvertisement transmission\nVersion control\nRIP version 1\nRIP version 2\nNone\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1102
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip rip send version [<{1|2}|none>]"
+      }
+    },
+    "no_rip_default_metric_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_rip_default_metric",
+          "line": 170
+        },
+        "doc": "Negate a command or set its defaults\nSet a metric of redistribute routes\nDefault metric\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1080
+            },
+            "node": 21
+          }
+        ],
+        "string": "no default-metric [(1-16)]"
+      }
+    },
+    "no_rip_distance_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_rip_distance",
+          "line": 204
+        },
+        "doc": "Negate a command or set its defaults\nAdministrative distance\nDistance value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1082
+            },
+            "node": 21
+          }
+        ],
+        "string": "no distance [(1-255)]"
+      }
+    },
+    "no_rip_timers_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_rip_timers",
+          "line": 532
+        },
+        "doc": "Negate a command or set its defaults\nAdjust routing timers\nBasic routing protocol update timers\nRouting table update timer value in second. Default is 30.\nRouting information timeout timer. Default is 180.\nGarbage collection timer. Default is 120.\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1093
+            },
+            "node": 21
+          }
+        ],
+        "string": "no timers basic [(5-2147483647) (5-2147483647) (5-2147483647)]"
+      }
+    },
+    "no_rip_version_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_rip_version",
+          "line": 571
+        },
+        "doc": "Negate a command or set its defaults\nSet routing protocol version\nversion\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1095
+            },
+            "node": 21
+          }
+        ],
+        "string": "no version [(1-2)]"
+      }
+    },
+    "no_router_rip_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "no_router_rip",
+          "line": 71
+        },
+        "doc": "Negate a command or set its defaults\nEnable a routing process\nRouting Information Protocol (RIP)\nSpecify the VRF\nThe VRF name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1072
+            },
+            "node": 4
+          }
+        ],
+        "string": "no router rip [vrf NAME]"
+      }
+    },
+    "rip_allow_ecmp_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_allow_ecmp",
+          "line": 107
+        },
+        "doc": "Negate a command or set its defaults\nAllow Equal Cost MultiPath\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1077
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] allow-ecmp"
+      }
+    },
+    "rip_default_information_originate_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_default_information_originate",
+          "line": 132
+        },
+        "doc": "Negate a command or set its defaults\nControl distribution of default route\nDistribute a default route\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1078
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] default-information originate"
+      }
+    },
+    "rip_default_metric_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_default_metric",
+          "line": 157
+        },
+        "doc": "Set a metric of redistribute routes\nDefault metric\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1079
+            },
+            "node": 21
+          }
+        ],
+        "string": "default-metric (1-16)"
+      }
+    },
+    "rip_distance_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_distance",
+          "line": 191
+        },
+        "doc": "Administrative distance\nDistance value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1081
+            },
+            "node": 21
+          }
+        ],
+        "string": "distance (1-255)"
+      }
+    },
+    "rip_distance_source_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_distance_source",
+          "line": 231
+        },
+        "doc": "Negate a command or set its defaults\nAdministrative distance\nDistance value\nIP source prefix\nAccess list name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1083
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] distance (1-255) A.B.C.D/M$prefix [WORD$acl]"
+      }
+    },
+    "rip_distribute_list_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_distribute_list",
+          "line": 1035
+        },
+        "doc": "Filter networks in routing updates\nSpecify a prefix\nAccess-list name\nFilter incoming routing updates\nFilter outgoing routing updates\nInterface name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1074
+            },
+            "node": 21
+          }
+        ],
+        "string": "distribute-list [prefix] ACCESSLIST4_NAME <in|out> [WORD]"
+      }
+    },
+    "rip_neighbor_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_neighbor",
+          "line": 266
+        },
+        "doc": "Negate a command or set its defaults\nSpecify a neighbor router\nNeighbor address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1084
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] neighbor A.B.C.D"
+      }
+    },
+    "rip_network_if_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_network_if",
+          "line": 310
+        },
+        "doc": "Negate a command or set its defaults\nEnable routing on an IP network\nInterface name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1086
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] network WORD"
+      }
+    },
+    "rip_network_prefix_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_network_prefix",
+          "line": 288
+        },
+        "doc": "Negate a command or set its defaults\nEnable routing on an IP network\nIP prefix <network>/<length>, e.g., 35.0.0.0/8\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1085
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] network A.B.C.D/M"
+      }
+    },
+    "rip_no_distribute_list_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_no_distribute_list",
+          "line": 1056
+        },
+        "doc": "Negate a command or set its defaults\nFilter networks in routing updates\nSpecify a prefix\nAccess-list name\nFilter incoming routing updates\nFilter outgoing routing updates\nInterface name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1075
+            },
+            "node": 21
+          }
+        ],
+        "string": "no distribute-list [prefix] ACCESSLIST4_NAME <in|out> [WORD]"
+      }
+    },
+    "rip_offset_list_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_offset_list",
+          "line": 337
+        },
+        "doc": "Negate a command or set its defaults\nModify RIP metric\nAccess-list name\nFor incoming updates\nFor outgoing updates\nMetric value\nInterface to match\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1087
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] offset-list ACCESSLIST4_NAME$acl <in|out>$direction (0-16)$metric [IFNAME]"
+      }
+    },
+    "rip_passive_default_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_passive_default",
+          "line": 376
+        },
+        "doc": "Negate a command or set its defaults\nSuppress routing updates on an interface\ndefault for all interfaces\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1088
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] passive-interface default"
+      }
+    },
+    "rip_passive_interface_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_passive_interface",
+          "line": 402
+        },
+        "doc": "Negate a command or set its defaults\nSuppress routing updates on an interface\nInterface name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1089
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] passive-interface IFNAME"
+      }
+    },
+    "rip_redistribute_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_redistribute",
+          "line": 449
+        },
+        "doc": "Negate a command or set its defaults\nRedistribute information from another routing protocol\nKernel routes (not installed via the zebra RIB)\nConnected routes (directly attached subnet or host)\nStatically configured routes\nOpen Shortest Path First (OSPFv2)\nIntermediate System to Intermediate System (IS-IS)\nBorder Gateway Protocol (BGP)\nEnhanced Interior Gateway Routing Protocol (EIGRP)\nNext Hop Resolution Protocol (NHRP)\nNon-main Kernel Routing Table\nVirtual Network Control (VNC)\nBabel routing protocol (Babel)\nSuper Happy Advanced Routing Protocol (sharpd)\nOpenFabric Routing Protocol\nMetric\nMetric value\nRoute map reference\nPointer to route-map entries\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1090
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] redistribute <kernel|connected|static|ospf|isis|bgp|eigrp|nhrp|table|vnc|babel|sharp|openfabric>$protocol [{metric (0-16)|route-map RMAP_NAME$route_map}]"
+      }
+    },
+    "rip_route_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_route",
+          "line": 488
+        },
+        "doc": "Negate a command or set its defaults\nRIP static route configuration\nIP prefix <network>/<length>\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1091
+            },
+            "node": 21
+          }
+        ],
+        "string": "[no] route A.B.C.D/M"
+      }
+    },
+    "rip_timers_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_timers",
+          "line": 512
+        },
+        "doc": "Adjust routing timers\nBasic routing protocol update timers\nRouting table update timer value in second. Default is 30.\nRouting information timeout timer. Default is 180.\nGarbage collection timer. Default is 120.\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1092
+            },
+            "node": 21
+          }
+        ],
+        "string": "timers basic (5-2147483647)$update (5-2147483647)$timeout (5-2147483647)$garbage"
+      }
+    },
+    "rip_version_cmd": {
+      "ripd/ripd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "rip_version",
+          "line": 557
+        },
+        "doc": "Set routing protocol version\nversion\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1094
+            },
+            "node": 21
+          }
+        ],
+        "string": "version (1-2)"
+      }
+    },
+    "router_rip_cmd": {
+      "ripd/ripd": {
+        "attr": 9,
+        "attrs": [
+          "yang",
+          "nosh"
+        ],
+        "defun": {
+          "file": "ripd/rip_cli.c",
+          "func": "router_rip",
+          "line": 45
+        },
+        "doc": "Enable a routing process\nRouting Information Protocol (RIP)\nSpecify the VRF\nThe VRF name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_cli.c",
+              "func": "rip_cli_init",
+              "line": 1071
+            },
+            "node": 4
+          }
+        ],
+        "string": "router rip [vrf NAME]"
+      }
+    },
+    "show_debugging_rip_cmd": {
+      "ripd/ripd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "ripd/rip_debug.c",
+          "func": "show_debugging_rip",
+          "line": 35
+        },
+        "doc": "Show running system information\nDebugging functions\nRIP information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/rip_debug.c",
+              "func": "rip_debug_init",
+              "line": 221
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging [rip]"
+      }
+    },
+    "show_ip_rip_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/ripd.c",
+          "func": "show_ip_rip",
+          "line": 2980
+        },
+        "doc": "Show running system information\nIP information\nShow RIP routes\nSpecify the VRF\nThe VRF name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/ripd.c",
+              "func": "rip_init",
+              "line": 3632
+            },
+            "node": 1
+          }
+        ],
+        "string": "show ip rip [vrf NAME]"
+      }
+    },
+    "show_ip_rip_status_cmd": {
+      "ripd/ripd": {
+        "defun": {
+          "file": "ripd/ripd.c",
+          "func": "show_ip_rip_status",
+          "line": 3094
+        },
+        "doc": "Show running system information\nIP information\nShow RIP routes\nSpecify the VRF\nThe VRF name\nIP routing protocol process parameters and statistics\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ripd/ripd.c",
+              "func": "rip_init",
+              "line": 3633
+            },
+            "node": 1
+          }
+        ],
+        "string": "show ip rip [vrf NAME] status"
+      }
+    }
+  },
+  "refs": {
+    "G2Q3B-5S1CE": [
+      {
+        "args": "&rte->nexthop",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv1 packet with nexthop value %pI4",
+        "func": "rip_response_process",
+        "line": 1212,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "G4HZH-53B3V": [
+      {
+        "args": "sndrcv, command_str, packet->version, size",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s %s version %d packet size %d",
+        "func": "rip_packet_dump",
+        "line": 704,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GH8RR-P08MB": [
+      {
+        "args": "nexthop",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Nexthop address %pI4 is myself",
+        "func": "rip_rte_process",
+        "line": 499,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GX93N-GE691": [
+      {
+        "args": "len, 512",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "packet size %d is larger than max size %d",
+        "func": "rip_read",
+        "line": 1802,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "GZHT4-3KF9V": [
+      {
+        "args": "p[0], p[1], p[2], p[3], p[4], p[5], p[6], p[7], p[8], p[9], p[10], p[11], p[12], p[13], p[14], p[15]",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "    MD5: %02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",
+        "func": "rip_packet_dump",
+        "line": 751,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GZR24-FCQGG": [
+      {
+        "args": "ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "multicast request on %s",
+        "func": "rip_request_interface_send",
+        "line": 137,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "H3EH9-CE8Q4": [
+      {
+        "args": "__func__, vrf->name, vrf->vrf_id",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_zebra.c",
+        "fmtstring": "%s: register VRF %s(%u) to zebra",
+        "func": "rip_zebra_vrf_register",
+        "line": 211,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "H3SHM-GA0FZ": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_main.c",
+        "fmtstring": "SIGHUP received",
+        "func": "sighup",
+        "line": 72,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "H41AJ-WDP7Z": [
+      {
+        "args": "p",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIP %pFX is filtered by route-map out",
+        "func": "rip_output_process",
+        "line": 2230,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "H975N-7WEMH": [
+      {
+        "args": "rip->vrf_name, safe_strerror((*__errno_location ()))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "recvfrom failed (VRF %s): %s",
+        "func": "rip_read",
+        "line": 1746,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "HA3BQ-JKTP1": [
+      {
+        "args": "ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "broadcast request to %s",
+        "func": "rip_request_interface_send",
+        "line": 149,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HJRPG-3VZWA": [
+      {
+        "args": "&rte->prefix",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Subnetted route %pI4",
+        "func": "rip_response_process",
+        "line": 1320,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HMK8E-NJBQY": [
+      {
+        "args": "(cmd == ZEBRA_ROUTE_ADD) ? \"Install into zebra\" : \"Delete from zebra\", &rp->p",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_zebra.c",
+        "fmtstring": "%s: %pFX",
+        "func": "rip_zebra_ipv4_send",
+        "line": 100,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J60FD-CMRYF": [
+      {
+        "args": "safe_strerror(errno)",
+        "binary": "ripd/ripd",
+        "ec": 100663299,
+        "file": "ripd/ripd.c",
+        "fmtstring": "Cannot create UDP socket: %s",
+        "func": "rip_create_socket",
+        "line": 1389,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "J8EZ2-G6VJJ": [
+      {
+        "args": "p",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Redistribute new prefix %pFX",
+        "func": "rip_redistribute_add",
+        "line": 1584,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JDDZX-6B300": [
+      {
+        "args": "md5->packet_len, length",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 MD5 authentication, packet length field %d greater than received length %d!",
+        "func": "rip_auth_md5",
+        "line": 899,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JEJ1H-ZE96E": [
+      {
+        "args": "ifc->ifp->name, ifc->ifp->ifindex",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "update routes on interface %s ifindex %d",
+        "func": "rip_output_process",
+        "line": 2063,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JRENT-C3G18": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (md5->packet_len); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), md5->keyid, md5->auth_len",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "    RIP-2 packet len %d Key ID %d Auth Data len %d",
+        "func": "rip_packet_dump",
+        "line": 735,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JYPPW-S871N": [
+      {
+        "args": "md5->auth_len",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 MD5 authentication, strange authentication length field %d",
+        "func": "rip_auth_md5",
+        "line": 888,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K06JA-HCEZZ": [
+      {
+        "args": "&rp->p",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv1 mask check, %pFX made it through",
+        "func": "rip_output_process",
+        "line": 2152,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K6D14-SXGD9": [
+      {
+        "args": "__func__, &from.sin_addr, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (from.sin_port); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), ifp->name, rip->vrf_name",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s: cannot find connected address for packet from %pI4 port %d on interface %s (VRF %s)",
+        "func": "rip_read",
+        "line": 1789,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "KA32J-YM35X": [
+      {
+        "args": "safe_strerror((*__errno_location ()))",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "can't setsockopt IP_ADD_MEMBERSHIP %s",
+        "func": "ipv4_multicast_join",
+        "line": 76,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "KFFWN-25YSM": [
+      {
+        "args": "p, inout",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%pFX filtered by prefix-list %s",
+        "func": "rip_filter",
+        "line": 377,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "p, inout",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%pFX filtered by prefix-list %s",
+        "func": "rip_filter",
+        "line": 345,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KHNV8-37WS7": [
+      {
+        "args": "ifp->name, ifp->vrf->name, ifp->vrf->vrf_id, ifp->ifindex, (unsigned long long)ifp->flags, ifp->metric, ifp->mtu",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "interface add %s vrf %s(%u) index %d flags %#llx metric %d mtu %d",
+        "func": "rip_ifp_create",
+        "line": 364,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KKSKA-W3M38": [
+      {
+        "args": "&rte->prefix, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->family); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (route_tag_t)(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->tag); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (unsigned long)__bswap_32 (rte->metric)",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "  %pI4 family %d tag %u metric %ld",
+        "func": "rip_packet_dump",
+        "line": 771,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KNX20-SHQHD": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "can't setsockopt IP_DROP_MEMBERSHIP",
+        "func": "ipv4_multicast_leave",
+        "line": 91,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "KPDY0-PB37V": [
+      {
+        "args": "&to.sin_addr",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "SEND request to %pI4",
+        "func": "rip_request_interface_send",
+        "line": 176,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KQRFA-9A2E8": [
+      {
+        "args": "__func__, &from.sin_addr, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (from.sin_port); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), rip->vrf_name",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s: cannot find interface for packet from %pI4 port %d (VRF %s)",
+        "func": "rip_read",
+        "line": 1775,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "M1C24-GA3VQ": [
+      {
+        "args": "p",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "connected address %pFX is added",
+        "func": "rip_interface_address_add",
+        "line": 566,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MAKVA-5WM5P": [
+      {
+        "args": "&rte->nexthop",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Nexthop %pI4 is multicast address, skip this rte",
+        "func": "rip_response_process",
+        "line": 1230,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "ME5CS-JH4JZ": [
+      {
+        "args": "lookup_msg(rip_msg, packet->command, ((void *)0))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Obsolete command %s received, please sent it to routed",
+        "func": "rip_read",
+        "line": 1988,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "MN63D-F28Y7": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Network is net 0 or net 127 or it is not unicast network",
+        "func": "rip_response_process",
+        "line": 1193,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "N1CM7-FAS1J": [
+      {
+        "args": "ifp->name, ifp->vrf->name, ifp->vrf->vrf_id, ifp->ifindex, (unsigned long long)ifp->flags, ifp->metric, ifp->mtu",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "interface delete %s vrf %s(%u) index %d flags %#llx metric %d mtu %d",
+        "func": "rip_ifp_destroy",
+        "line": 395,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "N4CEB-XCAK5": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_main.c",
+        "fmtstring": "Terminating on signal",
+        "func": "sigint",
+        "line": 81,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "NCPTX-V1V4H": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->family); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->tag); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), p",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "  family 0x%X type %d auth string: %s",
+        "func": "rip_packet_dump",
+        "line": 721,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NDAGH-Z85V7": [
+      {
+        "args": "__func__, &ifc->address->u.prefix4, dst, ifc->ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s %pI4 > %s (%s)",
+        "func": "rip_send_packet",
+        "line": 1454,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NDT20-X2S9H": [
+      {
+        "args": "p, ifindex2ifname( ifindex, rip->vrf->vrf_id)",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Poison %pFX on the interface %s with an infinity metric [delete]",
+        "func": "rip_redistribute_delete",
+        "line": 1625,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NPDFV-ZCCA7": [
+      {
+        "args": "&rp->p",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv1 mask check, %pFX considered for output",
+        "func": "rip_output_process",
+        "line": 2132,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NPJP9-BFQW9": [
+      {
+        "args": "packet->command",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Unknown RIP command %d received",
+        "func": "rip_read",
+        "line": 1997,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "NTA2E-2YBA0": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 dropped because authentication enabled",
+        "func": "rip_read",
+        "line": 1932,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NV3Q6-5S5XW": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (md5->family); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (md5->type); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "  family 0x%X type %d (MD5 authentication)",
+        "func": "rip_packet_dump",
+        "line": 731,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NY2P1-CEGRR": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->family); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), &from->sin_addr",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Unsupported family %d from %pI4",
+        "func": "rip_response_process",
+        "line": 1185,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "P2JVH-8PCQ6": [
+      {
+        "args": "auth_desc",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 %s authentication success",
+        "func": "rip_read",
+        "line": 1964,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P3Z30-BSS03": [
+      {
+        "args": "ifp->name, ri->passive",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "interface %s: passive = %d",
+        "func": "rip_passive_interface_apply",
+        "line": 1032,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PBZW7-XNFHQ": [
+      {
+        "args": "p",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%pFX is filtered by route-map",
+        "func": "rip_output_process",
+        "line": 2246,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PRS2R-5F5M8": [
+      {
+        "args": "&rte->mask",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Resultant mask %pI4",
+        "func": "rip_response_process",
+        "line": 1331,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PYB7S-80D89": [
+      {
+        "args": "ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "multicast join at %s",
+        "func": "rip_multicast_join",
+        "line": 219,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PZWWX-1R2FP": [
+      {
+        "args": "__func__, vrf->name, vrf->vrf_id",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_zebra.c",
+        "fmtstring": "%s: deregister VRF %s(%u) from zebra.",
+        "func": "rip_zebra_vrf_deregister",
+        "line": 223,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QA3YG-H0K9M": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (packet->rte->tag); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 Unknown authentication type %d",
+        "func": "rip_read",
+        "line": 1958,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R0P5P-YHT5T": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 authentication failed: no auth RTE in packet",
+        "func": "rip_read",
+        "line": 1922,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R1TKH-R34XJ": [
+      {
+        "args": "sock",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "can't set sockopt SO_BROADCAST to socket %d",
+        "func": "sockopt_broadcast",
+        "line": 111,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "R3498-BPZZS": [
+      {
+        "args": "p, inout",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%pFX filtered by distribute %s",
+        "func": "rip_filter",
+        "line": 363,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "p, inout",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%pFX filtered by distribute %s",
+        "func": "rip_filter",
+        "line": 337,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R9TQK-S54Q6": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->family); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->tag); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "  family 0x%X type %d (Unknown auth type)",
+        "func": "rip_packet_dump",
+        "line": 756,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RDKCB-7NMQT": [
+      {
+        "args": "ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "multicast announce on %s ",
+        "func": "rip_update_interface",
+        "line": 2376,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "REJJT-ABVQ2": [
+      {
+        "args": "packet->version",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "packet RIPv%d is dropped because authentication disabled",
+        "func": "rip_read",
+        "line": 1873,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RG149-CQVW5": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "update timer fire!",
+        "func": "rip_update",
+        "line": 2501,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RMWA5-6YYPE": [
+      {
+        "args": "lookup_msg(rip_msg, packet->command, ((void *)0))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Obsolete command %s received",
+        "func": "rip_read",
+        "line": 1993,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "RQWCW-8AH7D": [
+      {
+        "args": "&from->sin_addr",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 simple password authentication from %pI4",
+        "func": "rip_auth_simple_password",
+        "line": 820,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "S0H3D-YQR5Q": [
+      {
+        "args": "(cmd == ZEBRA_ROUTE_ADD) ? \"Install into zebra\" : \"Delete from zebra\", &rp->p, count",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_zebra.c",
+        "fmtstring": "%s: %pFX nexthops %d",
+        "func": "rip_zebra_ipv4_send",
+        "line": 95,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "S59DA-38NXM": [
+      {
+        "args": "&p",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIP %pFX is filtered by route-map in",
+        "func": "rip_rte_process",
+        "line": 463,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "S789Z-QRHFF": [
+      {
+        "args": "__func__, len",
+        "binary": "ripd/ripd",
+        "ec": 201326593,
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s: packet length %ld is less than minimum length.",
+        "func": "rip_auth_md5_set",
+        "line": 1087,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "SA92Q-EHQAK": [
+      {
+        "args": "packet->version",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "  packet's v%d doesn't fit to if version spec",
+        "func": "rip_read",
+        "line": 1859,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SGK92-K28KV": [
+      {
+        "args": "__func__, vrf->name, vrf->vrf_id",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s: VRF created: %s(%u)",
+        "func": "rip_vrf_new",
+        "line": 3547,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SNCEY-C2BJ9": [
+      {
+        "args": "&rte->nexthop",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Next hop %pI4 is not directly reachable. Treat it as 0.0.0.0",
+        "func": "rip_response_process",
+        "line": 1267,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "&rte->nexthop",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Next hop %pI4 is not directly reachable. Treat it as 0.0.0.0",
+        "func": "rip_response_process",
+        "line": 1257,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TG012-62HBR": [
+      {
+        "args": "&p->u.prefix4",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Neighbor %pI4 doesn't have connected interface!",
+        "func": "rip_update_process",
+        "line": 2480,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "TGJDC-F1CKC": [
+      {
+        "args": "&rte->nexthop",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Next hop %pI4 is on RIP network.  Set nexthop to the packet's originator",
+        "func": "rip_response_process",
+        "line": 1251,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TYHBB-Z8HTB": [
+      {
+        "args": "__func__, vrf->name, vrf->vrf_id",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s: VRF deleted: %s(%u)",
+        "func": "rip_vrf_delete",
+        "line": 3558,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V19ZJ-CH6H5": [
+      {
+        "args": "ifp->name, ifp->ifindex",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "SEND UPDATE to %s ifindex %d",
+        "func": "rip_update_process",
+        "line": 2452,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V5DZQ-BF1AA": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv1 dropped because authentication enabled",
+        "func": "rip_read",
+        "line": 1909,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VC4J1-NN2NX": [
+      {
+        "args": "from->sin_port",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "response doesn't come from RIP port: %d",
+        "func": "rip_response_process",
+        "line": 1140,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "VDKHT-ZYC2X": [
+      {
+        "args": "ifp->name, ifp->vrf->name, ifp->vrf->vrf_id, ifp->ifindex, (unsigned long long)ifp->flags, ifp->metric, ifp->mtu",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "interface %s vrf %s(%u) index %d flags %#llx metric %d mtu %d is up",
+        "func": "rip_ifp_up",
+        "line": 338,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VEJY5-67P5X": [
+      {
+        "args": "&sin.sin_addr, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (sin.sin_port); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "SEND to  %pI4%d",
+        "func": "rip_send_packet",
+        "line": 1519,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VER1M-YZK0G": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->family); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->tag); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "  family 0x%X type %d (MD5 data)",
+        "func": "rip_packet_dump",
+        "line": 745,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VGWKX-Z8XR8": [
+      {
+        "args": "&rte->prefix",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Resultant route %pI4",
+        "func": "rip_response_process",
+        "line": 1329,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VJZR7-2CD0Y": [
+      {
+        "args": "__func__, vrf->name, vrf->vrf_id",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s: VRF %s(%u) disabled",
+        "func": "rip_vrf_disable",
+        "line": 3604,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VRVKC-PY6YG": [
+      {
+        "args": "ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "turn off %s",
+        "func": "rip_if_down",
+        "line": 503,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W8JYG-16VPD": [
+      {
+        "args": "ifp->name, ifp->vrf->name, vrf_id, nvrf ? nvrf->name : \"Unknown\", new_vrf_id",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "interface %s VRF change vrf %s(%u) new vrf %s(%u)",
+        "func": "rip_interface_vrf_update",
+        "line": 416,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WCDTN-XR74W": [
+      {
+        "args": "__func__, vrf->name, vrf->vrf_id",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s: VRF %s(%u) enabled",
+        "func": "rip_vrf_enable",
+        "line": 3580,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WF0TF-9TPJW": [
+      {
+        "args": "rip->vrf_name",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "ignore packet comes from myself (VRF %s)",
+        "func": "rip_read",
+        "line": 1754,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WK10W-DXS5J": [
+      {
+        "args": "len, 4",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "packet size %d is smaller than minimum size %d",
+        "func": "rip_read",
+        "line": 1796,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WKXTG-05F8M": [
+      {
+        "args": "ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIP is not enabled on interface %s.",
+        "func": "rip_read",
+        "line": 1845,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WQRV8-746MD": [
+      {
+        "args": "&from->sin_addr",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "This datagram doesn't come from a valid neighbor: %pI4",
+        "func": "rip_response_process",
+        "line": 1154,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "X93D4-GHJR8": [
+      {
+        "args": "safe_strerror((*__errno_location ()))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "can't send packet : %s",
+        "func": "rip_send_packet",
+        "line": 1522,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "XHCQJ-PBD83": [
+      {
+        "args": "&rte->prefix, netmask, &rte->nexthop, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->family); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (route_tag_t)(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (rte->tag); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (unsigned long)__bswap_32 (rte->metric)",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "  %pI4/%d -> %pI4 family %d tag %u metric %ld",
+        "func": "rip_packet_dump",
+        "line": 765,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XK46S-EXRK1": [
+      {
+        "args": "__func__, sock, &addr.sin_addr, (int)(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (addr.sin_port); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), safe_strerror((*__errno_location ()))",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s: Can't bind socket %d to %pI4 port %d: %s",
+        "func": "rip_create_socket",
+        "line": 1409,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XP8WJ-ZST8D": [
+      {
+        "args": "packet->command",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "version 0 with command %d received.",
+        "func": "rip_read",
+        "line": 1824,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "XTDHX-BRNNF": [
+      {
+        "args": "ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "multicast leave from %s",
+        "func": "rip_multicast_leave",
+        "line": 250,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XWEZX-XZDKB": [
+      {
+        "args": "auth_desc",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 %s authentication failure",
+        "func": "rip_read",
+        "line": 1968,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y3R5B-JEC27": [
+      {
+        "args": "len",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "packet size %d is wrong for RIP packet alignment",
+        "func": "rip_read",
+        "line": 1810,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Y55WS-JJ0CY": [
+      {
+        "args": "(unsigned long)__bswap_32 (md5->sequence)",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "    Sequence Number %ld",
+        "func": "rip_packet_dump",
+        "line": 738,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y8TK7-J2AVW": [
+      {
+        "args": "ifp->name, ifp->vrf->name, ifp->vrf->vrf_id, ifp->ifindex, (unsigned long long)ifp->flags, ifp->metric, ifp->mtu",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "interface %s vrf %s(%u) index %d flags %llx metric %d mtu %d is down",
+        "func": "rip_ifp_down",
+        "line": 325,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y9PPD-W0Q14": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Default route with non-zero netmask.  Set zero to netmask",
+        "func": "rip_response_process",
+        "line": 1354,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YBVQK-Q1286": [
+      {
+        "args": "p",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "connected address %pFX is deleted",
+        "func": "rip_interface_address_delete",
+        "line": 616,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YG3RM-PRK07": [
+      {
+        "args": "&to->sin_addr",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "update routes to neighbor %pI4",
+        "func": "rip_output_process",
+        "line": 2060,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YGN53-EQ38J": [
+      {
+        "args": "rip->vrf_name",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_nb_rpcs.c",
+        "fmtstring": "Clearing all RIP routes (VRF %s)",
+        "func": "clear_rip_route",
+        "line": 45,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YGZ46-CQTYW": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Route's metric is not in the 1-16 range.",
+        "func": "rip_response_process",
+        "line": 1203,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "YQJMB-04KBC": [
+      {
+        "args": "&rte->prefix, ip_masklen(rte->mask)",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 address %pI4 is not mask /%d applied one",
+        "func": "rip_response_process",
+        "line": 1343,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "YTA4T-444BD": [
+      {
+        "args": "(((ifc)->flags) & ((1 << 1))) ? \"unicast\" : \"broadcast\", &to.sin_addr, ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "%s announce to %pI4 on %s",
+        "func": "rip_update_interface",
+        "line": 2406,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YXA0K-3PYGC": [
+      {
+        "args": "ifp->name",
+        "binary": "ripd/ripd",
+        "ec": 100663299,
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "multicast join failed, interface %s not running",
+        "func": "rip_interface_wakeup",
+        "line": 806,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "Z43KJ-Z1FGH": [
+      {
+        "args": "&from->sin_addr",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RIPv2 MD5 authentication from %pI4",
+        "func": "rip_auth_md5",
+        "line": 868,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z4AVM-3CV5V": [
+      {
+        "args": "sock, connected->ifp->ifindex, connected->ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "Can't setsockopt IP_MULTICAST_IF on fd %d to ifindex %d for interface %s",
+        "func": "rip_interface_multicast_set",
+        "line": 122,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Z9K02-0465P": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "triggered update!",
+        "func": "rip_triggered_update",
+        "line": 2560,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZBV54-ES15E": [
+      {
+        "args": "",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "duplicate dropped",
+        "func": "rip_send_packet",
+        "line": 1472,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZG173-BHW0K": [
+      {
+        "args": "ifp->name",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_interface.c",
+        "fmtstring": "turn on %s",
+        "func": "rip_enable_apply",
+        "line": 900,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZJJX9-FZ4RZ": [
+      {
+        "args": "__func__, metric",
+        "binary": "ripd/ripd",
+        "file": "ripd/rip_routemap.c",
+        "fmtstring": "%s: Metric specified: %ld is greater than RIP_METRIC_INFINITY, using INFINITY instead",
+        "func": "route_set_metric_compile",
+        "line": 438,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "ZQFJY-ZWS7A": [
+      {
+        "args": "p, ifindex2ifname(rinfo->nh.ifindex, rip->vrf->vrf_id)",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "Poisone %pFX on the interface %s with an infinity metric [withdraw]",
+        "func": "rip_redistribute_withdraw",
+        "line": 2615,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZSVDP-D63B3": [
+      {
+        "args": "&from.sin_addr, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (from.sin_port); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), ifp ? ifp->name : \"unknown\", rip->vrf_name",
+        "binary": "ripd/ripd",
+        "file": "ripd/ripd.c",
+        "fmtstring": "RECV packet from %pI4 port %d on %s (VRF %s)",
+        "func": "rip_read",
+        "line": 1768,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "cli": {},
+  "refs": {
+    "G25HM-MQDYG": [
+      {
+        "args": "__func__",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "%s: Cannot write API message",
+        "func": "msg_write",
+        "line": 448,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "G8PT9-RDQ9A": [
+      {
+        "args": "",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_dump_api.c",
+        "fmtstring": "  LSA Header",
+        "func": "ospf_lsa_header_dump",
+        "line": 124,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GDXRB-XNVPW": [
+      {
+        "args": "&lsah->id",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_dump_api.c",
+        "fmtstring": "    Link State ID %pI4",
+        "func": "ospf_lsa_header_dump",
+        "line": 130,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GR3K5-57XXA": [
+      {
+        "args": "ospf_api_typename(msg->hdr.msgtype), msg->hdr.msgtype, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (msg->hdr.msglen); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), (unsigned long)__bswap_32 (msg->hdr.msgseq), ((msg->s)->data), ((msg->s)->size)",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "API-msg [%s]: type(%d),len(%d),seq(%lu),data(%p),size(%zd)",
+        "func": "msg_print",
+        "line": 264,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GXTQS-N6Z8C": [
+      {
+        "args": "",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "msg_read: Cannot read message body!",
+        "func": "msg_read",
+        "line": 407,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "HH2KS-F1TEW": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (lsah->length); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_dump_api.c",
+        "fmtstring": "    length %d",
+        "func": "ospf_lsa_header_dump",
+        "line": 135,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HJHS2-1B6SZ": [
+      {
+        "args": "",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": " ",
+        "func": "api_opaque_lsa_print",
+        "line": 83,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HVHYZ-WW6Q9": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (lsah->ls_age); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_dump_api.c",
+        "fmtstring": "    LS age %d",
+        "func": "ospf_lsa_header_dump",
+        "line": 125,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J0WR5-5M6FR": [
+      {
+        "args": "__func__, safe_strerror((*__errno_location ()))",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "%s: writen %s",
+        "func": "msg_write",
+        "line": 442,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "K3R45-4G3MX": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (lsah->checksum); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_dump_api.c",
+        "fmtstring": "    LS checksum 0x%x",
+        "func": "ospf_lsa_header_dump",
+        "line": 134,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KZCVC-EMY4S": [
+      {
+        "args": "__func__",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "%s: Body Length of message greater than what we can read",
+        "func": "msg_read",
+        "line": 393,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "N1XW4-TKW4T": [
+      {
+        "args": "__func__",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "%s: Connection closed by peer",
+        "func": "msg_write",
+        "line": 445,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "N96E4-YRDJ3": [
+      {
+        "args": "lsah->type, (lsah->type ? lsah_type : \"unknown type\")",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_dump_api.c",
+        "fmtstring": "    LS type %d (%s)",
+        "func": "ospf_lsa_header_dump",
+        "line": 129,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PAXFF-DAS53": [
+      {
+        "args": "opaquelen",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "apiserver_lsa_print: opaquelen=%d",
+        "func": "api_opaque_lsa_print",
+        "line": 78,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q4FH7-DE7VA": [
+      {
+        "args": "",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "msg_read: Connection closed by peer",
+        "func": "msg_read",
+        "line": 404,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "msg_read: Connection closed by peer",
+        "func": "msg_read",
+        "line": 376,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "QM54J-HDPWG": [
+      {
+        "args": "lsah->options, ospf_options_dump(lsah->options)",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_dump_api.c",
+        "fmtstring": "    Options %d (%s)",
+        "func": "ospf_lsa_header_dump",
+        "line": 127,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RC320-6Y5QP": [
+      {
+        "args": "(unsigned long)__bswap_32 (lsah->ls_seqnum)",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_dump_api.c",
+        "fmtstring": "    LS sequence number 0x%lx",
+        "func": "ospf_lsa_header_dump",
+        "line": 133,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RRK2X-AGX88": [
+      {
+        "args": "",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "msg_read: Cannot read message header!",
+        "func": "msg_read",
+        "line": 379,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WEBAW-Y0YE3": [
+      {
+        "args": "safe_strerror((*__errno_location ()))",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "msg_read: readn %s",
+        "func": "msg_read",
+        "line": 401,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "safe_strerror((*__errno_location ()))",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "msg_read: readn %s",
+        "func": "msg_read",
+        "line": 373,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "XAZ29-Q1C41": [
+      {
+        "args": "",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "msg_read: OSPF API protocol version mismatch",
+        "func": "msg_read",
+        "line": 385,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "XJ6SE-9B6VX": [
+      {
+        "args": "__func__, lsalen, OSPF_MAX_LSA_SIZE",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "ec": 134217742,
+        "file": "ospfclient/ospf_apiclient.c",
+        "fmtstring": "%s: message received size: %d is greater than a LSA size: %d",
+        "func": "ospf_apiclient_handle_lsa_delete",
+        "line": 623,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, lsalen, OSPF_MAX_LSA_SIZE",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "ec": 134217742,
+        "file": "ospfclient/ospf_apiclient.c",
+        "fmtstring": "%s: message received size: %d is greater than a LSA size: %d",
+        "func": "ospf_apiclient_handle_lsa_update",
+        "line": 588,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "XTTVD-QY2KH": [
+      {
+        "args": "",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "msg_print msg=NULL!",
+        "func": "msg_print",
+        "line": 255,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Y9DQ2-FSYHN": [
+      {
+        "args": "olsa->mydata[i]",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "0x%x ",
+        "func": "api_opaque_lsa_print",
+        "line": 81,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YGJ0K-AC79X": [
+      {
+        "args": "&lsah->adv_router",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_dump_api.c",
+        "fmtstring": "    Advertising Router %pI4",
+        "func": "ospf_lsa_header_dump",
+        "line": 131,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z60WW-2CS2M": [
+      {
+        "args": "__func__, l",
+        "binary": "ospfclient/libfrrospfapiclient.la",
+        "file": "./ospfd/ospf_api.c",
+        "fmtstring": "%s: wrong LSA size %d",
+        "func": "msg_write",
+        "line": 430,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

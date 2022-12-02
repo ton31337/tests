@@ -1,0 +1,2391 @@
+{
+  "cli": {
+    "clear_ip_eigrp_neighbors_IP_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "clear_ip_eigrp_neighbors_IP",
+          "line": 452
+        },
+        "doc": "Reset functions\nIP information\nClear IP-EIGRP\nSpecify the VRF\nThe VRF name\nClear IP-EIGRP neighbors\nIP-EIGRP neighbor address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_init",
+              "line": 599
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear ip eigrp [vrf NAME] neighbors A.B.C.D$nbr_addr"
+      }
+    },
+    "clear_ip_eigrp_neighbors_IP_soft_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "clear_ip_eigrp_neighbors_IP_soft",
+          "line": 555
+        },
+        "doc": "Reset functions\nIP information\nClear IP-EIGRP\nSpecify the VRF\nThe VRF name\nClear IP-EIGRP neighbors\nIP-EIGRP neighbor address\nResync with peer without adjacency reset\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_init",
+              "line": 603
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear ip eigrp [vrf NAME] neighbors A.B.C.D$nbr_addr soft"
+      }
+    },
+    "clear_ip_eigrp_neighbors_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "clear_ip_eigrp_neighbors",
+          "line": 336
+        },
+        "doc": "Reset functions\nIP information\nClear IP-EIGRP\nSpecify the VRF\nThe VRF name\nClear IP-EIGRP neighbors\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_init",
+              "line": 597
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear ip eigrp [vrf NAME] neighbors"
+      }
+    },
+    "clear_ip_eigrp_neighbors_int_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "clear_ip_eigrp_neighbors_int",
+          "line": 392
+        },
+        "doc": "Reset functions\nIP information\nClear IP-EIGRP\nSpecify the VRF\nThe VRF name\nClear IP-EIGRP neighbors\nInterface's name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_init",
+              "line": 598
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear ip eigrp [vrf NAME] neighbors IFNAME"
+      }
+    },
+    "clear_ip_eigrp_neighbors_int_soft_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "clear_ip_eigrp_neighbors_int_soft",
+          "line": 519
+        },
+        "doc": "Reset functions\nIP information\nClear IP-EIGRP\nSpecify the VRF\nThe VRF name\nClear IP-EIGRP neighbors\nInterface's name\nResync with peer without adjacency reset\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_init",
+              "line": 602
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear ip eigrp [vrf NAME] neighbors IFNAME soft"
+      }
+    },
+    "clear_ip_eigrp_neighbors_soft_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "clear_ip_eigrp_neighbors_soft",
+          "line": 490
+        },
+        "doc": "Reset functions\nIP information\nClear IP-EIGRP\nSpecify the VRF\nThe VRF name\nClear IP-EIGRP neighbors\nResync with peers without adjacency reset\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_init",
+              "line": 601
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear ip eigrp [vrf NAME] neighbors soft"
+      }
+    },
+    "debug_eigrp_packets_all_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_dump.c",
+          "func": "debug_eigrp_packets",
+          "line": 425
+        },
+        "doc": "Debugging functions\nEIGRP information\nEIGRP packets\nEIGRP SIA-Query packets\nEIGRP SIA-Reply packets\nEIGRP ack packets\nEIGRP hello packets\nEIGRP probe packets\nEIGRP query packets\nEIGRP reply packets\nEIGRP request packets\nEIGRP retransmissions\nEIGRP stub packets\nDisplay all EIGRP packets except Hellos\nEIGRP update packets\nDisplay all EIGRP packets\nSend Packets\nReceive Packets\nDetail Information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 577
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 571
+            },
+            "node": 3
+          }
+        ],
+        "string": "debug eigrp packets <siaquery|siareply|ack|hello|probe|query|reply|request|retry|stub|terse|update|all> [send|receive] [detail]"
+      }
+    },
+    "debug_eigrp_transmit_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_dump.c",
+          "func": "debug_eigrp_transmit",
+          "line": 344
+        },
+        "doc": "Debugging functions\nEIGRP information\nEIGRP transmission events\npacket sent\npacket received\nall packets\nDetailed Information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 579
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 573
+            },
+            "node": 3
+          }
+        ],
+        "string": "debug eigrp transmit <send|recv|all> [detail]"
+      }
+    },
+    "eigrp_authentication_keychain_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_authentication_keychain",
+          "line": 797
+        },
+        "doc": "Interface Internet Protocol config commands\nAuthentication subcommands\nKey-chain\nEIGRP information\nAS number\nName of key-chain\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 912
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip authentication key-chain eigrp (1-65535)$as WORD$name"
+      }
+    },
+    "eigrp_authentication_mode_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_authentication_mode",
+          "line": 733
+        },
+        "doc": "Interface Internet Protocol config commands\nAuthentication subcommands\nMode\nEIGRP information\nAS number\nKeyed message digest\nHMAC SHA256 algorithm \n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 910
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip authentication mode eigrp (1-65535)$as <md5|hmac-sha-256>$crypt"
+      }
+    },
+    "eigrp_if_bandwidth_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_if_bandwidth",
+          "line": 541
+        },
+        "doc": "EIGRP information\nSet bandwidth informational parameter\nBandwidth in kilobits\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 902
+            },
+            "node": 17
+          }
+        ],
+        "string": "eigrp bandwidth (1-10000000)$bw"
+      }
+    },
+    "eigrp_if_delay_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_if_delay",
+          "line": 504
+        },
+        "doc": "Specify interface throughput delay\nThroughput delay (tens of microseconds)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 900
+            },
+            "node": 17
+          }
+        ],
+        "string": "delay (1-16777215)$delay"
+      }
+    },
+    "eigrp_if_ip_hellointerval_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_if_ip_hellointerval",
+          "line": 580
+        },
+        "doc": "Interface Internet Protocol config commands\nConfigures EIGRP hello interval\nEIGRP information\nSeconds between hello transmissions\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 904
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip hello-interval eigrp (1-65535)$hello"
+      }
+    },
+    "eigrp_if_ip_holdinterval_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_if_ip_holdinterval",
+          "line": 622
+        },
+        "doc": "Interface Internet Protocol config commands\nConfigures EIGRP IPv4 hold time\nEIGRP information\nSeconds before neighbor is considered down\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 906
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip hold-time eigrp (1-65535)$hold"
+      }
+    },
+    "eigrp_ip_summary_address_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_ip_summary_address",
+          "line": 669
+        },
+        "doc": "Interface Internet Protocol config commands\nPerform address summarization\nEIGRP information\nAS number\nSummary <network>/<length>, e.g. 192.168.0.0/16\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 908
+            },
+            "node": 17
+          }
+        ],
+        "string": "ip summary-address eigrp (1-65535)$as A.B.C.D/M$prefix"
+      }
+    },
+    "eigrp_maximum_paths_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_maximum_paths",
+          "line": 254
+        },
+        "doc": "Forward packets over multiple paths\nNumber of paths\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 888
+            },
+            "node": 24
+          }
+        ],
+        "string": "maximum-paths (1-32)$maximum_paths"
+      }
+    },
+    "eigrp_metric_weights_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_metric_weights",
+          "line": 300
+        },
+        "doc": "Modify metrics and parameters for advertisement\nModify metric coefficients\nK1\nK2\nK3\nK4\nK5\nK6\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 890
+            },
+            "node": 24
+          }
+        ],
+        "string": "metric weights (0-255)$k1 (0-255)$k2 (0-255)$k3 (0-255)$k4 (0-255)$k5 [(0-255)$k6]"
+      }
+    },
+    "eigrp_neighbor_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_neighbor",
+          "line": 400
+        },
+        "doc": "Negate a command or set its defaults\nSpecify a neighbor router\nNeighbor address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 893
+            },
+            "node": 24
+          }
+        ],
+        "string": "[no] neighbor A.B.C.D$addr"
+      }
+    },
+    "eigrp_network_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_network",
+          "line": 371
+        },
+        "doc": "Negate a command or set its defaults\nEnable routing on an IP network\nEIGRP network prefix\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 892
+            },
+            "node": 24
+          }
+        ],
+        "string": "[no] network A.B.C.D/M$prefix"
+      }
+    },
+    "eigrp_passive_interface_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_passive_interface",
+          "line": 148
+        },
+        "doc": "Negate a command or set its defaults\nSuppress routing updates on an interface\nInterface to suppress on\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 883
+            },
+            "node": 24
+          }
+        ],
+        "string": "[no] passive-interface IFNAME"
+      }
+    },
+    "eigrp_redistribute_source_metric_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_redistribute_source_metric",
+          "line": 442
+        },
+        "doc": "Negate a command or set its defaults\nRedistribute information from another routing protocol\nKernel routes (not installed via the zebra RIB)\nConnected routes (directly attached subnet or host)\nStatically configured routes\nRouting Information Protocol (RIP)\nOpen Shortest Path First (OSPFv2)\nIntermediate System to Intermediate System (IS-IS)\nBorder Gateway Protocol (BGP)\nNext Hop Resolution Protocol (NHRP)\nNon-main Kernel Routing Table\nVirtual Network Control (VNC)\nBabel routing protocol (Babel)\nSuper Happy Advanced Routing Protocol (sharpd)\nOpenFabric Routing Protocol\nMetric for redistributed routes\nBandwidth metric in Kbits per second\nEIGRP delay metric, in 10 microsecond units\nEIGRP reliability metric where 255 is 100% reliable2 ?\nEIGRP Effective bandwidth metric (Loading) where 255 is 100% loaded\nEIGRP MTU of the path\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 894
+            },
+            "node": 24
+          }
+        ],
+        "string": "[no] redistribute <kernel|connected|static|rip|ospf|isis|bgp|nhrp|table|vnc|babel|sharp|openfabric>$proto [metric (1-4294967295)$bw (0-4294967295)$delay (0-255)$rlbt (1-255)$load (1-65535)$mtu]"
+      }
+    },
+    "eigrp_router_id_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_router_id",
+          "line": 112
+        },
+        "doc": "EIGRP information\nRouter ID for this EIGRP process\nEIGRP Router-ID in IP address format\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 881
+            },
+            "node": 24
+          }
+        ],
+        "string": "eigrp router-id A.B.C.D$addr"
+      }
+    },
+    "eigrp_timers_active_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_timers_active",
+          "line": 179
+        },
+        "doc": "Adjust routing timers\nTime limit for active state\nActive state time limit in seconds\nDisable time limit for active state\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 884
+            },
+            "node": 24
+          }
+        ],
+        "string": "timers active-time <(1-65535)$timer|disabled$disabled>"
+      }
+    },
+    "eigrp_variance_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "eigrp_variance",
+          "line": 220
+        },
+        "doc": "Control load balancing variance\nMetric variance multiplier\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 886
+            },
+            "node": 24
+          }
+        ],
+        "string": "variance (1-128)$variance"
+      }
+    },
+    "no_debug_eigrp_packets_all_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_dump.c",
+          "func": "no_debug_eigrp_packets",
+          "line": 503
+        },
+        "doc": "Negate a command or set its defaults\nDisable debugging functions (see also 'debug')\nEIGRP information\nEIGRP packets\nEIGRP SIA-Query packets\nEIGRP SIA-Reply packets\nEIGRP ack packets\nEIGRP hello packets\nEIGRP probe packets\nEIGRP query packets\nEIGRP reply packets\nEIGRP request packets\nEIGRP retransmissions\nEIGRP stub packets\nDisplay all EIGRP packets except Hellos\nEIGRP update packets\nDisplay all EIGRP packets\nSend Packets\nReceive Packets\nDetailed Information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 578
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 572
+            },
+            "node": 3
+          }
+        ],
+        "string": "no debug eigrp packets <siaquery|siareply|ack|hello|probe|query|reply|request|retry|stub|terse|update|all> [send|receive] [detail]"
+      }
+    },
+    "no_debug_eigrp_transmit_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_dump.c",
+          "func": "no_debug_eigrp_transmit",
+          "line": 379
+        },
+        "doc": "Negate a command or set its defaults\nDisable debugging functions (see also 'debug')\nEIGRP information\nEIGRP transmission events\npacket sent\npacket received\nall packets\nDetailed Information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 580
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 574
+            },
+            "node": 3
+          }
+        ],
+        "string": "no debug eigrp transmit <send|recv|all> [detail]"
+      }
+    },
+    "no_eigrp_authentication_keychain_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_authentication_keychain",
+          "line": 821
+        },
+        "doc": "Negate a command or set its defaults\nInterface Internet Protocol config commands\nAuthentication subcommands\nKey-chain\nEIGRP information\nAS number\nName of key-chain\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 913
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip authentication key-chain eigrp (1-65535)$as [WORD]"
+      }
+    },
+    "no_eigrp_authentication_mode_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_authentication_mode",
+          "line": 758
+        },
+        "doc": "Negate a command or set its defaults\nInterface Internet Protocol config commands\nAuthentication subcommands\nMode\nEIGRP information\nAS number\nKeyed message digest\nHMAC SHA256 algorithm \n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 911
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip authentication mode eigrp (1-65535)$as [<md5|hmac-sha-256>]"
+      }
+    },
+    "no_eigrp_if_bandwidth_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_if_bandwidth",
+          "line": 555
+        },
+        "doc": "Negate a command or set its defaults\nEIGRP information\nSet bandwidth informational parameter\nBandwidth in kilobits\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 903
+            },
+            "node": 17
+          }
+        ],
+        "string": "no eigrp bandwidth [(1-10000000)]"
+      }
+    },
+    "no_eigrp_if_delay_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_if_delay",
+          "line": 517
+        },
+        "doc": "Negate a command or set its defaults\nSpecify interface throughput delay\nThroughput delay (tens of microseconds)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 901
+            },
+            "node": 17
+          }
+        ],
+        "string": "no delay [(1-16777215)]"
+      }
+    },
+    "no_eigrp_if_ip_hellointerval_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_if_ip_hellointerval",
+          "line": 595
+        },
+        "doc": "Negate a command or set its defaults\nInterface Internet Protocol config commands\nConfigures EIGRP hello interval\nEIGRP information\nSeconds between hello transmissions\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 905
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip hello-interval eigrp [(1-65535)]"
+      }
+    },
+    "no_eigrp_if_ip_holdinterval_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_if_ip_holdinterval",
+          "line": 637
+        },
+        "doc": "Negate a command or set its defaults\nInterface Internet Protocol config commands\nConfigures EIGRP IPv4 hold time\nEIGRP information\nSeconds before neighbor is considered down\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 907
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip hold-time eigrp [(1-65535)]"
+      }
+    },
+    "no_eigrp_ip_summary_address_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_ip_summary_address",
+          "line": 692
+        },
+        "doc": "Negate a command or set its defaults\nInterface Internet Protocol config commands\nPerform address summarization\nEIGRP information\nAS number\nSummary <network>/<length>, e.g. 192.168.0.0/16\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 909
+            },
+            "node": 17
+          }
+        ],
+        "string": "no ip summary-address eigrp (1-65535)$as A.B.C.D/M$prefix"
+      }
+    },
+    "no_eigrp_maximum_paths_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_maximum_paths",
+          "line": 267
+        },
+        "doc": "Negate a command or set its defaults\nForward packets over multiple paths\nNumber of paths\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 889
+            },
+            "node": 24
+          }
+        ],
+        "string": "no maximum-paths [(1-32)]"
+      }
+    },
+    "no_eigrp_metric_weights_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_metric_weights",
+          "line": 326
+        },
+        "doc": "Negate a command or set its defaults\nModify metrics and parameters for advertisement\nModify metric coefficients\nK1\nK2\nK3\nK4\nK5\nK6\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 891
+            },
+            "node": 24
+          }
+        ],
+        "string": "no metric weights [(0-255) (0-255) (0-255) (0-255) (0-255) (0-255)]"
+      }
+    },
+    "no_eigrp_router_id_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_router_id",
+          "line": 125
+        },
+        "doc": "Negate a command or set its defaults\nEIGRP information\nRouter ID for this EIGRP process\nEIGRP Router-ID in IP address format\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 882
+            },
+            "node": 24
+          }
+        ],
+        "string": "no eigrp router-id [A.B.C.D]"
+      }
+    },
+    "no_eigrp_timers_active_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_timers_active",
+          "line": 198
+        },
+        "doc": "Negate a command or set its defaults\nAdjust routing timers\nTime limit for active state\nActive state time limit in seconds\nDisable time limit for active state\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 885
+            },
+            "node": 24
+          }
+        ],
+        "string": "no timers active-time [<(1-65535)|disabled>]"
+      }
+    },
+    "no_eigrp_variance_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_eigrp_variance",
+          "line": 232
+        },
+        "doc": "Negate a command or set its defaults\nControl load balancing variance\nMetric variance multiplier\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 887
+            },
+            "node": 24
+          }
+        ],
+        "string": "no variance [(1-128)]"
+      }
+    },
+    "no_router_eigrp_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "no_router_eigrp",
+          "line": 73
+        },
+        "doc": "Negate a command or set its defaults\nEnable a routing process\nEIGRP information\nAS number\nSpecify the VRF\nThe VRF name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 876
+            },
+            "node": 4
+          }
+        ],
+        "string": "no router eigrp (1-65535)$as [vrf NAME]"
+      }
+    },
+    "router_eigrp_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 9,
+        "attrs": [
+          "yang",
+          "nosh"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_cli.c",
+          "func": "router_eigrp",
+          "line": 48
+        },
+        "doc": "Enable a routing process\nEIGRP information\nAS number\nSpecify the VRF\nThe VRF name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_cli.c",
+              "func": "eigrp_cli_init",
+              "line": 875
+            },
+            "node": 4
+          }
+        ],
+        "string": "router eigrp (1-65535)$as [vrf NAME]"
+      }
+    },
+    "show_debugging_eigrp_cmd": {
+      "eigrpd/eigrpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "eigrpd/eigrp_dump.c",
+          "func": "show_debugging_eigrp",
+          "line": 283
+        },
+        "doc": "Show running system information\nDebugging functions\nEIGRP information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 576
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "eigrpd/eigrp_dump.c",
+              "func": "eigrp_debug_init",
+              "line": 570
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging [eigrp]"
+      }
+    },
+    "show_ip_eigrp_interfaces_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "show_ip_eigrp_interfaces",
+          "line": 238
+        },
+        "doc": "Show running system information\nIP information\nIP-EIGRP show commands\nSpecify the VRF\nThe VRF name\nIP-EIGRP interfaces\nInterface name to look at\nDetailed information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_show_init",
+              "line": 585
+            },
+            "node": 1
+          }
+        ],
+        "string": "show ip eigrp [vrf NAME] interfaces [IFNAME] [detail]$detail"
+      }
+    },
+    "show_ip_eigrp_neighbors_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "show_ip_eigrp_neighbors",
+          "line": 297
+        },
+        "doc": "Show running system information\nIP information\nIP-EIGRP show commands\nSpecify the VRF\nThe VRF name\nIP-EIGRP neighbors\nInterface to show on\nDetailed Information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_show_init",
+              "line": 587
+            },
+            "node": 1
+          }
+        ],
+        "string": "show ip eigrp [vrf NAME] neighbors [IFNAME] [detail]$detail"
+      }
+    },
+    "show_ip_eigrp_topology_all_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "show_ip_eigrp_topology_all",
+          "line": 126
+        },
+        "doc": "Show running system information\nIP information\nIP-EIGRP show commands\nSpecify the VRF\nThe VRF name\nIP-EIGRP topology\nShow all links in topology table\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_show_init",
+              "line": 590
+            },
+            "node": 1
+          }
+        ],
+        "string": "show ip eigrp [vrf NAME] topology [all-links$all]"
+      }
+    },
+    "show_ip_eigrp_topology_cmd": {
+      "eigrpd/eigrpd": {
+        "defun": {
+          "file": "eigrpd/eigrp_vty.c",
+          "func": "show_ip_eigrp_topology",
+          "line": 164
+        },
+        "doc": "Show running system information\nIP information\nIP-EIGRP show commands\nSpecify the VRF\nThe VRF name\nIP-EIGRP topology\nFor a specific address\nFor a specific prefix\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "eigrpd/eigrp_vty.c",
+              "func": "eigrp_vty_show_init",
+              "line": 589
+            },
+            "node": 1
+          }
+        ],
+        "string": "show ip eigrp [vrf NAME] topology <A.B.C.D$address|A.B.C.D/M$prefix>"
+      }
+    }
+  },
+  "refs": {
+    "G4ARK-7QP54": [
+      {
+        "args": "__func__",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "%s: failed to get SO_SNDBUF",
+        "func": "eigrp_adjust_sndbuflen",
+        "line": 132,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "G60KW-YZ0BT": [
+      {
+        "args": "&srcaddr",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "eigrp_read[%pI4]: Dropping self-originated packet",
+        "func": "eigrp_read",
+        "line": 555,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GF2ZC-86NFF": [
+      {
+        "args": "(uint32_t)iph->ip_id",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_id %u",
+        "func": "eigrp_ip_header_dump",
+        "line": 120,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GNHKC-0WRYA": [
+      {
+        "args": "eigrp_if_name_string ((ei)), opcode",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "interface %s: EIGRP packet header type %d unsupported",
+        "func": "eigrp_read",
+        "line": 698,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "GQ71J-5GQV9": [
+      {
+        "args": "&iph->ip_src",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_src %pI4",
+        "func": "eigrp_ip_header_dump",
+        "line": 125,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GXPPF-SEV47": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Neighbor %pI4 (%s) is down: Peer Termination received",
+        "func": "eigrp_peer_termination_decode",
+        "line": 277,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "GXQ0Y-QT1CV": [
+      {
+        "args": "&dest_addr->u.prefix4",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Filtered prefix %pI4 will be removed.",
+        "func": "eigrp_update_send_GR_part",
+        "line": 838,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "GXXTH-G4TT2": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (eigrph->ASNumber); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "eigrp_AS %u",
+        "func": "eigrp_header_dump",
+        "line": 142,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GYHGX-EDQQP": [
+      {
+        "args": "__func__, pe->destination",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_topology.c",
+        "fmtstring": "%s: %pFX Should we have found this entry in the topo table?",
+        "func": "eigrp_prefix_descriptor_add",
+        "line": 143,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "HA2WH-3E3HG": [
+      {
+        "args": "ifp->name",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_interface.c",
+        "fmtstring": "Zebra: got delete of %s, but interface is still up",
+        "func": "eigrp_ifp_destroy",
+        "line": 202,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "HFBVK-NBBVN": [
+      {
+        "args": "top->fd, &p->u.prefix4, ifindex, safe_strerror((*__errno_location ()))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "can't setsockopt IP_ADD_MEMBERSHIP (fd %d, addr %pI4, ifindex %u, AllSPFRouters): %s; perhaps a kernel limit on # of multicast group memberships has been exceeded?",
+        "func": "eigrp_if_add_allspfrouters",
+        "line": 181,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "HJ833-CJJKF": [
+      {
+        "args": "__func__, ip_len, ret",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "%s read length mismatch: ip_len is %d, but recvmsg returned %d",
+        "func": "eigrp_recv_packet",
+        "line": 776,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "HQ4W9-KNNG2": [
+      {
+        "args": "&p->u.prefix4, ifindex",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "interface %pI4 [%u] leave EIGRP Multicast group.",
+        "func": "eigrp_if_drop_allspfrouters",
+        "line": 203,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J1CWY-039CB": [
+      {
+        "args": "__func__",
+        "binary": "eigrpd/eigrpd",
+        "ec": 50331649,
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "%s: Packet just has a header?",
+        "func": "eigrp_write",
+        "line": 364,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "J1YSZ-RC94R": [
+      {
+        "args": "&nbr->src, ifindex2ifname(ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Neighbor %pI4 (%s) is resync: manually cleared",
+        "func": "eigrp_update_send_GR",
+        "line": 973,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "J23DV-ZRZJT": [
+      {
+        "args": "eigrp_if_name_string ((ei)), &iph->ip_src",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "interface %s: eigrp_read network address is not same [%pI4]",
+        "func": "eigrp_verify_header",
+        "line": 954,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "J7WK0-RHY9B": [
+      {
+        "args": "iph->ip_len",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_len %u",
+        "func": "eigrp_ip_header_dump",
+        "line": 119,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JMTZS-JPVKR": [
+      {
+        "args": "eigrph->version",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "eigrp_version %u",
+        "func": "eigrp_header_dump",
+        "line": 135,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JQ3XY-BR9P4": [
+      {
+        "args": "eigrp_if_name_string ((ei)), ei->params.v_hello",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Start Hello Timer (%s) Expire [%u]",
+        "func": "eigrp_hello_timer",
+        "line": 92,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JXM6E-P1P6V": [
+      {
+        "args": "msg->eigrp->AS, prefix_state2str(msg->prefix->state), fsm_state2str(event), &msg->prefix->destination->u.prefix4, packet_type2str(msg->packet_type), msg->prefix->rij->count, change2str(msg->change)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_fsm.c",
+        "fmtstring": "EIGRP AS: %d State: %s Event: %s Network: %pI4 Packet Type: %s Reply RIJ Count: %d change: %s",
+        "func": "eigrp_fsm_event",
+        "line": 426,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "K457B-F0JAW": [
+      {
+        "args": "eigrph->opcode",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "eigrp_opcode %u",
+        "func": "eigrp_header_dump",
+        "line": 136,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KB771-J8HCS": [
+      {
+        "args": "c->ifp->name, c->address",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_zebra.c",
+        "fmtstring": "Zebra: interface %s address delete %pFX",
+        "func": "eigrp_interface_address_delete",
+        "line": 182,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KBA81-9ZBKR": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Neighbor %pI4 (%s) is down: Interface PEER-TERMINATION received",
+        "func": "eigrp_hello_parameter_decode",
+        "line": 171,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "KCEXG-QXEP2": [
+      {
+        "args": "iph->ip_ttl",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_ttl %u",
+        "func": "eigrp_ip_header_dump",
+        "line": 122,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KS6QQ-Z0X0S": [
+      {
+        "args": "__bswap_32 (eigrph->ack)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "eigrp_ack %u",
+        "func": "eigrp_header_dump",
+        "line": 140,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KYK7A-SGJ83": [
+      {
+        "args": "iph->ip_v",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_v %u",
+        "func": "eigrp_ip_header_dump",
+        "line": 116,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KZGWT-BX9HT": [
+      {
+        "args": "",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_query.c",
+        "fmtstring": "EIGRP Routing Process not enabled",
+        "func": "eigrp_query_send_all",
+        "line": 64,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "M08YJ-QX9AJ": [
+      {
+        "args": "top->fd, &p->u.prefix4, ifindex, safe_strerror((*__errno_location ()))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "can't setsockopt IP_DROP_MEMBERSHIP (fd %d, addr %pI4, ifindex %u, AllSPFRouters): %s",
+        "func": "eigrp_if_drop_allspfrouters",
+        "line": 200,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "M9W9D-JW75F": [
+      {
+        "args": "top->fd, safe_strerror((*__errno_location ()))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "can't setsockopt IP_MULTICAST_LOOP (0) for fd %d: %s",
+        "func": "eigrp_if_ipmulticast",
+        "line": 150,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "MCZ2C-ARZ31": [
+      {
+        "args": "&dest_addr->u.prefix4",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Filtered prefix %pI4 won't be sent out.",
+        "func": "eigrp_update_send_GR_part",
+        "line": 823,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "MGCS5-E6T4H": [
+      {
+        "args": "__func__, &dest_addr",
+        "binary": "eigrpd/eigrpd",
+        "ec": 50331649,
+        "file": "eigrpd/eigrp_reply.c",
+        "fmtstring": "%s: Received prefix %pFX which we do not know about",
+        "func": "eigrp_reply_receive",
+        "line": 174,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "MJQ7T-SYA3M": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_vty.c",
+        "fmtstring": "Neighbor %pI4 (%s) is down: manually cleared",
+        "func": "clear_ip_eigrp_neighbors_int_magic",
+        "line": 423,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_vty.c",
+        "fmtstring": "Neighbor %pI4 (%s) is down: manually cleared",
+        "func": "clear_ip_eigrp_neighbors_magic",
+        "line": 362,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MVRXE-E97NF": [
+      {
+        "args": "iph->ip_p",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_p %u",
+        "func": "eigrp_ip_header_dump",
+        "line": 123,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MYQBE-NTVKH": [
+      {
+        "args": "&nbr->src",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "Neighbor(%pI4) adjacency became full",
+        "func": "eigrp_read",
+        "line": 647,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "MZVFR-MDGXK": [
+      {
+        "args": "",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_fsm.c",
+        "fmtstring": "All reply received",
+        "func": "eigrp_get_fsm_event",
+        "line": 395,
+        "priority": 6,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_fsm.c",
+        "fmtstring": "All reply received",
+        "func": "eigrp_get_fsm_event",
+        "line": 371,
+        "priority": 6,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_fsm.c",
+        "fmtstring": "All reply received",
+        "func": "eigrp_get_fsm_event",
+        "line": 349,
+        "priority": 6,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_fsm.c",
+        "fmtstring": "All reply received",
+        "func": "eigrp_get_fsm_event",
+        "line": 319,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "N89KD-CTZWH": [
+      {
+        "args": "__func__, pe->destination->prefixlen",
+        "binary": "eigrpd/eigrpd",
+        "ec": 100663307,
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "%s: Unexpected prefix length: %d",
+        "func": "eigrp_add_internalTLV_to_stream",
+        "line": 1195,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "N8FJ8-NXWG3": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (eigrph->checksum); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "eigrp_checksum 0x%x",
+        "func": "eigrp_header_dump",
+        "line": 137,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NK2S3-1QBZJ": [
+      {
+        "args": "top->fd, &p->u.prefix4, ifindex, safe_strerror((*__errno_location ()))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "can't setsockopt IP_MULTICAST_IF (fd %d, addr %pI4, ifindex %u): %s",
+        "func": "eigrp_if_ipmulticast",
+        "line": 164,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NQ3WJ-JXVD5": [
+      {
+        "args": "length, ep->sequence_number",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Enqueuing Update length[%u] Seq [%u]",
+        "func": "eigrp_update_send",
+        "line": 702,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NV9S2-W6FH3": [
+      {
+        "args": "(uint32_t)iph->ip_off",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_off %u",
+        "func": "eigrp_ip_header_dump",
+        "line": 121,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NXHNF-ZTQJR": [
+      {
+        "args": "size, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id), &nbr->src",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Processing Hello size[%u] int(%s) nbr(%pI4)",
+        "func": "eigrp_hello_receive",
+        "line": 354,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P1A75-2ZAP3": [
+      {
+        "args": "size, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id), &nbr->src, nbr->recv_sequence_number, flags",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Processing Update size[%u] int(%s) nbr(%pI4) seq [%u] flags [%0x]",
+        "func": "eigrp_update_receive",
+        "line": 215,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PAVNT-SE69J": [
+      {
+        "args": "",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_main.c",
+        "fmtstring": "Terminating on signal",
+        "func": "sigint",
+        "line": 111,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "PDD5A-H83BN": [
+      {
+        "args": "lookup_msg(eigrp_packet_type_str, opcode, ((void *)0)), __bswap_32 (eigrph->sequence), __bswap_32 (eigrph->ack), length, eigrp_if_name_string ((ei)), &iph->ip_src, &iph->ip_dst",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "Received [%s][%d/%d] length [%u] via [%s] src [%pI4] dst [%pI4]",
+        "func": "eigrp_read",
+        "line": 622,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PE6D0-V9DX9": [
+      {
+        "args": "eigrp_if_name_string ((nbr->ei)), __bswap_32 (authTLV->key_sequence), __bswap_32 (nbr->crypt_seqnum)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "interface %s: eigrp_check_md5 bad sequence %d (expect %d)",
+        "func": "eigrp_check_md5_digest",
+        "line": 187,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PJZJK-ZJZAF": [
+      {
+        "args": "prefix->destination",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "GR receive: Neighbor not advertised %pFX",
+        "func": "eigrp_update_receive_GR_ask",
+        "line": 147,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PPNCA-YDWGV": [
+      {
+        "args": "__func__, ei->ifp->name",
+        "binary": "eigrpd/eigrpd",
+        "ec": 100663307,
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "%s: Interface %s no packet on queue?",
+        "func": "eigrp_write",
+        "line": 359,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "PTN30-HNJWF": [
+      {
+        "args": "&iph.ip_dst, iph.ip_id, iph.ip_off, iph.ip_len, ei->ifp->name, ei->ifp->mtu, safe_strerror((*__errno_location ()))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "*** sendmsg in eigrp_write failed to %pI4, id %d, off %d, len %d, interface %s, mtu %u: %s",
+        "func": "eigrp_write",
+        "line": 458,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Q6G8T-GAG87": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Neighbor %pI4 (%s) is pending: new adjacency",
+        "func": "eigrp_update_receive",
+        "line": 291,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "Q72HM-233ZP": [
+      {
+        "args": "top->fd, safe_strerror((*__errno_location ()))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "can't setsockopt IP_MULTICAST_TTL (1) for fd %d: %s",
+        "func": "eigrp_if_ipmulticast",
+        "line": 158,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Q7TEW-002TS": [
+      {
+        "args": "iph->ip_hl",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_hl %u",
+        "func": "eigrp_ip_header_dump",
+        "line": 117,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "QGWAW-G8B56": [
+      {
+        "args": "__func__, ret, (unsigned int)sizeof(*iph)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "%s: discarding runt packet of length %d (ip header size is %u)",
+        "func": "eigrp_recv_packet",
+        "line": 731,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "QNR4Z-596Y6": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Neighbor %pI4 (%s) going down: Kvalue mismatch",
+        "func": "eigrp_hello_parameter_decode",
+        "line": 179,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "QQW4C-NVWMB": [
+      {
+        "args": "iph->ip_tos",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_tos %u",
+        "func": "eigrp_ip_header_dump",
+        "line": 118,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R1YAJ-SC3H1": [
+      {
+        "args": "&iph->ip_dst",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_dst %pI4",
+        "func": "eigrp_ip_header_dump",
+        "line": 126,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R3AHA-61455": [
+      {
+        "args": "&iph->ip_src",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "eigrp_read[%pI4]: Header check failed, dropping.",
+        "func": "eigrp_read",
+        "line": 609,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R4FX8-9S5E6": [
+      {
+        "args": "eigrp_if_name_string ((nbr->ei))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "interface %s: eigrp_check_md5 checksum mismatch",
+        "func": "eigrp_check_md5_digest",
+        "line": 245,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "RE194-8Y70X": [
+      {
+        "args": "ep->length, ep->sequence_number, &ep->dst",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Enqueuing Update Init Len [%u] Seq [%u] Dest [%pI4]",
+        "func": "eigrp_update_send_GR_part",
+        "line": 889,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "ep->length, ep->sequence_number, &ep->dst",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Enqueuing Update Init Len [%u] Seq [%u] Dest [%pI4]",
+        "func": "eigrp_update_place_on_nbr_queue",
+        "line": 488,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "ep->length, ep->sequence_number, &ep->dst",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Enqueuing Update Init Len [%u] Seq [%u] Dest [%pI4]",
+        "func": "eigrp_update_send_init",
+        "line": 457,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RWMKK-VQ4ZE": [
+      {
+        "args": "__func__",
+        "binary": "eigrpd/eigrpd",
+        "ec": 100663299,
+        "file": "eigrpd/eigrpd.c",
+        "fmtstring": "%s: fatal error: eigrp_sock_init was unable to open a socket",
+        "func": "eigrp_new",
+        "line": 167,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "S952A-FCHKT": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Neighbor %pI4 (%s) is pending: new adjacency",
+        "func": "eigrp_hello_parameter_decode",
+        "line": 151,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "SWHKG-Q9TKE": [
+      {
+        "args": "(uint32_t)iph->ip_sum",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "ip_sum 0x%x",
+        "func": "eigrp_ip_header_dump",
+        "line": 124,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SYVGY-RN196": [
+      {
+        "args": "eigrp_sock",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "Can't set pktinfo option for fd %d",
+        "func": "eigrp_sock_init",
+        "line": 104,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "T2AWW-J875C": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (eigrph->vrid); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), &iph->ip_dst, &ei->address.u.prefix4",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "ignoring packet from router %u sent to %pI4, received on a passive interface, %pI4",
+        "func": "eigrp_read",
+        "line": 584,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "T2BKS-YRQ3N": [
+      {
+        "args": "lookup_msg(eigrp_general_tlv_type_str, type, ((void *)0))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "  General TLV(%s)",
+        "func": "eigrp_hello_receive",
+        "line": 375,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "T2FXP-7F1NZ": [
+      {
+        "args": "eigrp_sock, safe_strerror((*__errno_location ()))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "Can't set IP_HDRINCL option for fd %d: %s",
+        "func": "eigrp_sock_init",
+        "line": 83,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "T2S62-GC5P1": [
+      {
+        "args": "VERSION",
+        "binary": "eigrpd/eigrpd",
+        "ec": 50331649,
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Did not Properly parse %s, please fix VERSION string",
+        "func": "eigrp_sw_version_initialize",
+        "line": 449,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "T6888-VVP0Y": [
+      {
+        "args": "ifp->name",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_interface.c",
+        "fmtstring": "Zebra: Interface[%s] state change to down.",
+        "func": "eigrp_ifp_down",
+        "line": 190,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TJ2N8-VMXJ5": [
+      {
+        "args": "__func__, safe_strerror((*__errno_location ()))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "%s: socket: %s",
+        "func": "eigrp_sock_init",
+        "line": 73,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "TVJRH-FQ77D": [
+      {
+        "args": "ifp->name",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_interface.c",
+        "fmtstring": "Zebra: Interface[%s] state change to up.",
+        "func": "eigrp_ifp_up",
+        "line": 152,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TZSE8-5MQRS": [
+      {
+        "args": "nbr->recv_sequence_number, &nbr->src",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Queueing [Hello] Ack Seq [%u] nbr [%pI4]",
+        "func": "eigrp_hello_send_ack",
+        "line": 734,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VAXN0-ECR20": [
+      {
+        "args": "&iph->ip_src, ifp->name",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "Packet from [%pI4] received on wrong link %s",
+        "func": "eigrp_read",
+        "line": 599,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VBVZQ-DNRGH": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (eigrph->vrid); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; })), &iph->ip_dst, (__extension__ ({ unsigned short int __v, __x = (unsigned short int) (eigrph->ASNumber); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "ignoring packet from router %u sent to %pI4, wrong AS Number received: %u",
+        "func": "eigrp_read",
+        "line": 574,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VCG3Y-Z43TN": [
+      {
+        "args": "&nbr->src, ifindex2ifname(ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Neighbor %pI4 (%s) is resync: route configuration changed",
+        "func": "eigrp_update_send_GR",
+        "line": 968,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "VCWJR-KW80K": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Neighbor %pI4 (%s) is resync: peer graceful-restart",
+        "func": "eigrp_update_receive",
+        "line": 236,
+        "priority": 6,
+        "type": "logmsg"
+      },
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Neighbor %pI4 (%s) is resync: peer graceful-restart",
+        "func": "eigrp_update_receive",
+        "line": 224,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "VHKGX-GT4J8": [
+      {
+        "args": "safe_strerror((*__errno_location ()))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "stream_recvmsg failed: %s",
+        "func": "eigrp_recv_packet",
+        "line": 724,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VZJWZ-7CSJW": [
+      {
+        "args": "&nbr->src",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Hello Packet received from %pI4",
+        "func": "eigrp_hello_receive",
+        "line": 429,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "W5GD0-HDJPS": [
+      {
+        "args": "lookup_msg(eigrp_packet_type_str, eigrph->opcode, ((void *)0)), seqno, ack, &ep->dst, eigrp_if_name_string ((ei)), ret",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "Sending [%s][%d/%d] to [%pI4] via [%s] ret [%d].",
+        "func": "eigrp_write",
+        "line": 451,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WD7G5-SZ2JT": [
+      {
+        "args": "ifp->name",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "Setting up %s",
+        "func": "eigrp_network_set",
+        "line": 231,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WE7XN-NA9C7": [
+      {
+        "args": "__bswap_32 (eigrph->sequence), __bswap_32 (eigrph->ack)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "Packet Header Init Seq [%u] Ack [%u]",
+        "func": "eigrp_packet_header_init",
+        "line": 898,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WF003-RSHAY": [
+      {
+        "args": "ifp->name, ei->curr_mtu, ifp->mtu",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_interface.c",
+        "fmtstring": "Zebra: Interface[%s] MTU change %u -> %u.",
+        "func": "eigrp_ifp_up",
+        "line": 172,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WNXRD-QFC5A": [
+      {
+        "args": "",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_main.c",
+        "fmtstring": "SIGHUP received",
+        "func": "sighup",
+        "line": 102,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "WT6SR-XBA41": [
+      {
+        "args": "__bswap_32 (eigrph->flags)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "eigrp_flags 0x%x",
+        "func": "eigrp_header_dump",
+        "line": 138,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WY3PW-5RZQ6": [
+      {
+        "args": "",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_reply.c",
+        "fmtstring": "REPLY SEND: Setting Metric to max",
+        "func": "eigrp_send_reply",
+        "line": 81,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "X21P0-DJ5TP": [
+      {
+        "args": "&p->u.prefix4, ifindex",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "interface %pI4 [%u] join EIGRP Multicast group.",
+        "func": "eigrp_if_add_allspfrouters",
+        "line": 184,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "X3XHN-MCC5F": [
+      {
+        "args": "__func__, buflen, newbuflen",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_network.c",
+        "fmtstring": "%s: tried to set SO_SNDBUF to %u, but got %d",
+        "func": "eigrp_adjust_sndbuflen",
+        "line": 128,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "XBEHV-ZG492": [
+      {
+        "args": "p",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_zebra.c",
+        "fmtstring": "Zebra: Route del %pFX",
+        "func": "eigrp_zebra_route_delete",
+        "line": 259,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "XJ36T-RAAYR": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_neighbor.c",
+        "fmtstring": "Neighbor %pI4 (%s) is down: holding time expired",
+        "func": "holddown_timer_expired",
+        "line": 198,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "XJEME-6XCQ4": [
+      {
+        "args": "ei->ifp->name",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "Interface %s: Expected key value not found in config",
+        "func": "eigrp_make_sha256_digest",
+        "line": 287,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "nbr->ei->ifp->name",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_packet.c",
+        "fmtstring": "Interface %s: Expected key value not found in config",
+        "func": "eigrp_check_md5_digest",
+        "line": 210,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Y0SG6-C0QZM": [
+      {
+        "args": "ifp->name, ei->curr_bandwidth, ifp->bandwidth",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_interface.c",
+        "fmtstring": "Zebra: Interface[%s] bandwidth change %d -> %d.",
+        "func": "eigrp_ifp_up",
+        "line": 162,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YQBC8-DK05F": [
+      {
+        "args": "p",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_zebra.c",
+        "fmtstring": "Zebra: Route add %pFX",
+        "func": "eigrp_zebra_route_add",
+        "line": 238,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YQZDG-AAZG5": [
+      {
+        "args": "__bswap_32 (eigrph->sequence)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "eigrp_sequence %u",
+        "func": "eigrp_header_dump",
+        "line": 139,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YSEX6-EXK1X": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_neighbor.c",
+        "fmtstring": "Neighbor %pI4 (%s) is down: manually cleared",
+        "func": "eigrp_nbr_hard_restart",
+        "line": 328,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z18KD-82E2E": [
+      {
+        "args": "(__extension__ ({ unsigned short int __v, __x = (unsigned short int) (eigrph->vrid); if (__builtin_constant_p (__x)) __v = ((unsigned short int) ((((__x) >> 8) & 0xff) | (((__x) & 0xff) << 8))); else __asm__ (\"rorw $8, %w0\" : \"=r\" (__v) : \"0\" (__x) : \"cc\"); __v; }))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_dump.c",
+        "fmtstring": "eigrp_vrid %u",
+        "func": "eigrp_header_dump",
+        "line": 141,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z2GT4-N0NS4": [
+      {
+        "args": "nbr->ei->eigrp->sequence_number, nbr->recv_sequence_number",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Enqueuing Update Init Seq [%u] Ack [%u]",
+        "func": "eigrp_update_send_init",
+        "line": 431,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z33HB-J93H7": [
+      {
+        "args": "&nbr->src, ifindex2ifname(nbr->ei->ifp->ifindex, eigrp->vrf_id)",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_update.c",
+        "fmtstring": "Neighbor %pI4 (%s) is down: peer restarted",
+        "func": "eigrp_update_receive",
+        "line": 285,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "Z3HMC-SRN4E": [
+      {
+        "args": "c->ifp->name, c->address",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_zebra.c",
+        "fmtstring": "Zebra: interface %s address add %pFX",
+        "func": "eigrp_interface_address_add",
+        "line": 162,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZB7Q6-KJD6P": [
+      {
+        "args": "__func__",
+        "binary": "eigrpd/eigrpd",
+        "ec": 100663307,
+        "file": "eigrpd/eigrp_topology.c",
+        "fmtstring": "%s: Please implement handler",
+        "func": "eigrp_topology_update_distance",
+        "line": 407,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "ZHZ14-9ZS6J": [
+      {
+        "args": "eigrp_if_name_string ((ei))",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_hello.c",
+        "fmtstring": "Queueing [Hello] Interface(%s)",
+        "func": "eigrp_hello_send",
+        "line": 770,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ZNQW6-A3MDH": [
+      {
+        "args": "ifp->name, ifp->ifindex, (unsigned long long)ifp->flags, ifp->metric, ifp->mtu",
+        "binary": "eigrpd/eigrpd",
+        "file": "eigrpd/eigrp_interface.c",
+        "fmtstring": "Zebra: interface delete %s index %d flags %llx metric %d mtu %d",
+        "func": "eigrp_ifp_destroy",
+        "line": 208,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

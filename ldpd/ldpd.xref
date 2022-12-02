@@ -1,0 +1,1494 @@
+{
+  "cli": {
+    "ldp_address_family_cmd": {
+      "ldpd/ldpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_address_family",
+          "line": 79
+        },
+        "doc": "Configure Address Family and its parameters\nIPv4\nIPv6\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 833
+            },
+            "node": 43
+          }
+        ],
+        "string": "address-family <ipv4|ipv6>$af"
+      }
+    },
+    "ldp_allow_broken_lsps_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_allow_broken_lsps",
+          "line": 249
+        },
+        "doc": "Negate a command or set its defaults\ninstall lsps\nif no remote-label install with imp-null\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 847
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] install allow-broken-lsps"
+      }
+    },
+    "ldp_bridge_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_bridge",
+          "line": 414
+        },
+        "doc": "Negate a command or set its defaults\nBridge interface\nInterface's name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 889
+            },
+            "node": 48
+          }
+        ],
+        "string": "[no] bridge IFNAME$ifname"
+      }
+    },
+    "ldp_clear_mpls_ldp_neighbor_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_clear_mpls_ldp_neighbor",
+          "line": 535
+        },
+        "doc": "Reset functions\nReset MPLS statistical information\nClear LDP state\nClear LDP neighbor sessions\nIPv4 address\nIPv6 address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 902
+            },
+            "node": 3
+          }
+        ],
+        "string": "clear mpls ldp neighbor [<A.B.C.D|X:X::X:X>]$address"
+      }
+    },
+    "ldp_control_word_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_control_word",
+          "line": 479
+        },
+        "doc": "Negate a command or set its defaults\nControl-word options\nExclude control-word in pseudowire packets\nInclude control-word in pseudowire packets\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 896
+            },
+            "node": 49
+          }
+        ],
+        "string": "[no] control-word <exclude|include>$preference"
+      }
+    },
+    "ldp_debug_mpls_ldp_discovery_hello_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_debug_mpls_ldp_discovery_hello",
+          "line": 550
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nMPLS information\nLabel Distribution Protocol\nDiscovery messages\nDiscovery hello message\nReceived messages\nSent messages\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 903
+            },
+            "node": 3
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 828
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] debug mpls ldp discovery hello <recv|sent>$dir"
+      }
+    },
+    "ldp_debug_mpls_ldp_messages_recv_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_debug_mpls_ldp_messages_recv",
+          "line": 580
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nMPLS information\nLabel Distribution Protocol\nMessages\nReceived messages, excluding periodic Keep Alives\nReceived messages, including periodic Keep Alives\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 905
+            },
+            "node": 3
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 830
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] debug mpls ldp messages recv [all]$all"
+      }
+    },
+    "ldp_debug_mpls_ldp_messages_sent_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_debug_mpls_ldp_messages_sent",
+          "line": 594
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nMPLS information\nLabel Distribution Protocol\nMessages\nSent messages, excluding periodic Keep Alives\nSent messages, including periodic Keep Alives\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 906
+            },
+            "node": 3
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 831
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] debug mpls ldp messages sent [all]$all"
+      }
+    },
+    "ldp_debug_mpls_ldp_type_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_debug_mpls_ldp_type",
+          "line": 566
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nMPLS information\nLabel Distribution Protocol\nErrors\nLDP event information\nLDP label allocation information\nLDP sync information\nLDP zebra information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 904
+            },
+            "node": 3
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 829
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] debug mpls ldp <errors|event|labels|sync|zebra>$type"
+      }
+    },
+    "ldp_discovery_link_holdtime_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_discovery_link_holdtime",
+          "line": 112
+        },
+        "doc": "Negate a command or set its defaults\nConfigure discovery parameters\nLDP Link Hellos\nHello holdtime\nTime (seconds) - 65535 implies infinite\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 886
+            },
+            "node": 47
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 883
+            },
+            "node": 46
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 866
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 849
+            },
+            "node": 44
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 835
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] discovery hello holdtime (1-65535)$holdtime"
+      }
+    },
+    "ldp_discovery_link_interval_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_discovery_link_interval",
+          "line": 136
+        },
+        "doc": "Negate a command or set its defaults\nConfigure discovery parameters\nLDP Link Hellos\nHello interval\nTime (seconds)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 887
+            },
+            "node": 47
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 884
+            },
+            "node": 46
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 868
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 851
+            },
+            "node": 44
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 837
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] discovery hello interval (1-65535)$interval"
+      }
+    },
+    "ldp_discovery_targeted_hello_accept_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_discovery_targeted_hello_accept",
+          "line": 262
+        },
+        "doc": "Negate a command or set its defaults\nConfigure discovery parameters\nLDP Targeted Hellos\nAccept and respond to targeted hellos\nAccess list to specify acceptable targeted hello source\nIP access-list name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 870
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 853
+            },
+            "node": 44
+          }
+        ],
+        "string": "[no] discovery targeted-hello accept [from ACCESSLIST_NAME$from_acl]"
+      }
+    },
+    "ldp_discovery_targeted_holdtime_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_discovery_targeted_holdtime",
+          "line": 124
+        },
+        "doc": "Negate a command or set its defaults\nConfigure discovery parameters\nLDP Targeted Hellos\nHello holdtime\nTime (seconds) - 65535 implies infinite\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 867
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 850
+            },
+            "node": 44
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 836
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] discovery targeted-hello holdtime (1-65535)$holdtime"
+      }
+    },
+    "ldp_discovery_targeted_interval_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_discovery_targeted_interval",
+          "line": 148
+        },
+        "doc": "Negate a command or set its defaults\nConfigure discovery parameters\nLDP Targeted Hellos\nHello interval\nTime (seconds)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 869
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 852
+            },
+            "node": 44
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 838
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] discovery targeted-hello interval (1-65535)$interval"
+      }
+    },
+    "ldp_discovery_transport_address_ipv4_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_discovery_transport_address_ipv4",
+          "line": 273
+        },
+        "doc": "Negate a command or set its defaults\nConfigure discovery parameters\nSpecify transport address for TCP connection\nIP address to be used as transport address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 854
+            },
+            "node": 44
+          }
+        ],
+        "string": "[no] discovery transport-address A.B.C.D$address"
+      }
+    },
+    "ldp_discovery_transport_address_ipv6_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_discovery_transport_address_ipv6",
+          "line": 284
+        },
+        "doc": "Negate a command or set its defaults\nConfigure discovery parameters\nSpecify transport address for TCP connection\nIPv6 address to be used as transport address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 871
+            },
+            "node": 45
+          }
+        ],
+        "string": "[no] discovery transport-address X:X::X:X$address"
+      }
+    },
+    "ldp_dual_stack_cisco_interop_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_dual_stack_cisco_interop",
+          "line": 170
+        },
+        "doc": "Negate a command or set its defaults\nConfigure dual stack parameters\nUse Cisco non-compliant format to send and interpret the Dual-Stack capability TLV\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 840
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] dual-stack cisco-interop"
+      }
+    },
+    "ldp_dual_stack_transport_connection_prefer_ipv4_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_dual_stack_transport_connection_prefer_ipv4",
+          "line": 160
+        },
+        "doc": "Negate a command or set its defaults\nConfigure dual stack parameters\nConfigure TCP transport parameters\nConfigure preferred address family for TCP transport connection with neighbor\nIPv4\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 839
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] dual-stack transport-connection prefer ipv4"
+      }
+    },
+    "ldp_exit_address_family_cmd": {
+      "ldpd/ldpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_exit_address_family",
+          "line": 98
+        },
+        "doc": "Exit from Address Family configuration mode\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 881
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 864
+            },
+            "node": 44
+          }
+        ],
+        "string": "exit-address-family"
+      }
+    },
+    "ldp_interface_cmd": {
+      "ldpd/ldpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_interface",
+          "line": 372
+        },
+        "doc": "Enable LDP on an interface and enter interface submode\nInterface's name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 877
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 860
+            },
+            "node": 44
+          }
+        ],
+        "string": "interface IFNAME$ifname"
+      }
+    },
+    "ldp_l2vpn_cmd": {
+      "ldpd/ldpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_l2vpn",
+          "line": 57
+        },
+        "doc": "Configure l2vpn commands\nL2VPN name\nL2VPN type\nVirtual Private LAN Service\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 826
+            },
+            "node": 4
+          }
+        ],
+        "string": "l2vpn WORD$l2vpn_name type vpls"
+      }
+    },
+    "ldp_label_local_advertise_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_label_local_advertise",
+          "line": 299
+        },
+        "doc": "Negate a command or set its defaults\nConfigure label control and policies\nConfigure local label control and policies\nConfigure outbound label advertisement control\nIP Access-list specifying controls on LDP Peers\nIP access-list name\nIP access-list for destination prefixes\nIP access-list name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 872
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 855
+            },
+            "node": 44
+          }
+        ],
+        "string": "[no] label local advertise [{to ACCESSLIST_NAME$to_acl|for ACCESSLIST_NAME$for_acl}]"
+      }
+    },
+    "ldp_label_local_advertise_explicit_null_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_label_local_advertise_explicit_null",
+          "line": 313
+        },
+        "doc": "Negate a command or set its defaults\nConfigure label control and policies\nConfigure local label control and policies\nConfigure outbound label advertisement control\nConfigure explicit-null advertisement\nIP access-list for destination prefixes\nIP access-list name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 873
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 856
+            },
+            "node": 44
+          }
+        ],
+        "string": "[no] label local advertise explicit-null [for ACCESSLIST_NAME$for_acl]"
+      }
+    },
+    "ldp_label_local_allocate_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_label_local_allocate",
+          "line": 327
+        },
+        "doc": "Negate a command or set its defaults\nConfigure label control and policies\nConfigure local label control and policies\nConfigure label allocation control\nallocate local label for host routes only\nIP access-list\nIP access-list name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 874
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 857
+            },
+            "node": 44
+          }
+        ],
+        "string": "[no] label local allocate <host-routes$host_routes|for ACCESSLIST_NAME$for_acl>"
+      }
+    },
+    "ldp_label_remote_accept_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_label_remote_accept",
+          "line": 342
+        },
+        "doc": "Negate a command or set its defaults\nConfigure label control and policies\nConfigure remote/peer label control and policies\nConfigure inbound label acceptance control\nNeighbor from whom to accept label advertisement\nIP access-list name\nIP access-list for destination prefixes\nIP access-list name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 875
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 858
+            },
+            "node": 44
+          }
+        ],
+        "string": "[no] label remote accept {from ACCESSLIST_NAME$from_acl|for ACCESSLIST_NAME$for_acl}"
+      }
+    },
+    "ldp_member_interface_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_member_interface",
+          "line": 435
+        },
+        "doc": "Negate a command or set its defaults\nL2VPN member configuration\nLocal interface\nInterface's name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 891
+            },
+            "node": 48
+          }
+        ],
+        "string": "[no] member interface IFNAME$ifname"
+      }
+    },
+    "ldp_member_pseudowire_cmd": {
+      "ldpd/ldpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_member_pseudowire",
+          "line": 445
+        },
+        "doc": "L2VPN member configuration\nPseudowire interface\nInterface's name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 892
+            },
+            "node": 48
+          }
+        ],
+        "string": "member pseudowire IFNAME$ifname"
+      }
+    },
+    "ldp_mpls_ldp_cmd": {
+      "ldpd/ldpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_mpls_ldp",
+          "line": 36
+        },
+        "doc": "Global MPLS configuration subcommands\nLabel Distribution Protocol\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 824
+            },
+            "node": 4
+          }
+        ],
+        "string": "mpls ldp"
+      }
+    },
+    "ldp_mtu_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_mtu",
+          "line": 424
+        },
+        "doc": "Negate a command or set its defaults\nSet Maximum Transmission Unit\nMaximum Transmission Unit value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 890
+            },
+            "node": 48
+          }
+        ],
+        "string": "[no] mtu (1500-9180)$mtu"
+      }
+    },
+    "ldp_neighbor_address_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_neighbor_address",
+          "line": 491
+        },
+        "doc": "Negate a command or set its defaults\nRemote endpoint configuration\nSpecify the IPv4 or IPv6 address of the remote endpoint\nIPv4 address\nIPv6 address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 897
+            },
+            "node": 49
+          }
+        ],
+        "string": "[no] neighbor address <A.B.C.D|X:X::X:X>$pw_address"
+      }
+    },
+    "ldp_neighbor_ipv4_targeted_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_neighbor_ipv4_targeted",
+          "line": 393
+        },
+        "doc": "Negate a command or set its defaults\nConfigure neighbor parameters\nIP address of neighbor\nEstablish targeted session\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 863
+            },
+            "node": 44
+          }
+        ],
+        "string": "[no] neighbor A.B.C.D$address targeted"
+      }
+    },
+    "ldp_neighbor_ipv6_targeted_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_neighbor_ipv6_targeted",
+          "line": 404
+        },
+        "doc": "Negate a command or set its defaults\nConfigure neighbor parameters\nIPv6 address of neighbor\nEstablish targeted session\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 880
+            },
+            "node": 45
+          }
+        ],
+        "string": "[no] neighbor X:X::X:X$address targeted"
+      }
+    },
+    "ldp_neighbor_lsr_id_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_neighbor_lsr_id",
+          "line": 502
+        },
+        "doc": "Negate a command or set its defaults\nRemote endpoint configuration\nSpecify the LSR-ID of the remote endpoint\nIPv4 address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 898
+            },
+            "node": 49
+          }
+        ],
+        "string": "[no] neighbor lsr-id A.B.C.D$address"
+      }
+    },
+    "ldp_neighbor_password_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_neighbor_password",
+          "line": 182
+        },
+        "doc": "Negate a command or set its defaults\nConfigure neighbor parameters\nLDP Id of neighbor\nConfigure password for MD5 authentication\nThe password\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 841
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] neighbor A.B.C.D$neighbor password WORD$password"
+      }
+    },
+    "ldp_neighbor_session_holdtime_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_neighbor_session_holdtime",
+          "line": 195
+        },
+        "doc": "Negate a command or set its defaults\nConfigure neighbor parameters\nLDP Id of neighbor\nConfigure session parameters\nConfigure session holdtime\nTime (seconds)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 842
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] neighbor A.B.C.D$neighbor session holdtime (15-65535)$holdtime"
+      }
+    },
+    "ldp_neighbor_ttl_security_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_neighbor_ttl_security",
+          "line": 209
+        },
+        "doc": "Negate a command or set its defaults\nConfigure neighbor parameters\nLDP Id of neighbor\nLDP ttl security check\nDisable ttl security\nIP hops\nmaximum number of hops\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 843
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] neighbor A.B.C.D$neighbor ttl-security <disable|hops (1-254)$hops>"
+      }
+    },
+    "ldp_ordered_control_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_ordered_control",
+          "line": 228
+        },
+        "doc": "Negate a command or set its defaults\nConfigure LDP ordered label distribution control mode\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 845
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] ordered-control"
+      }
+    },
+    "ldp_pw_id_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_pw_id",
+          "line": 512
+        },
+        "doc": "Negate a command or set its defaults\nSet the Virtual Circuit ID\nVirtual Circuit ID value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 899
+            },
+            "node": 49
+          }
+        ],
+        "string": "[no] pw-id (1-4294967295)$pwid"
+      }
+    },
+    "ldp_pw_status_disable_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_pw_status_disable",
+          "line": 522
+        },
+        "doc": "Negate a command or set its defaults\nConfigure PW status\nDisable PW status\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 900
+            },
+            "node": 49
+          }
+        ],
+        "string": "[no] pw-status disable"
+      }
+    },
+    "ldp_router_id_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_router_id",
+          "line": 219
+        },
+        "doc": "Negate a command or set its defaults\nConfigure router Id\nLSR Id (in form of an IPv4 address)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 844
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] router-id A.B.C.D$address"
+      }
+    },
+    "ldp_session_holdtime_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_session_holdtime",
+          "line": 363
+        },
+        "doc": "Negate a command or set its defaults\nConfigure session parameters\nConfigure session holdtime\nTime (seconds)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 879
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 862
+            },
+            "node": 44
+          }
+        ],
+        "string": "[no] session holdtime (15-65535)$holdtime"
+      }
+    },
+    "ldp_show_debugging_mpls_ldp_cmd": {
+      "ldpd/ldpd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_debugging_mpls_ldp",
+          "line": 775
+        },
+        "doc": "Show running system information\nDebugging functions\nMPLS information\nLabel Distribution Protocol\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 916
+            },
+            "node": 1
+          }
+        ],
+        "string": "show debugging [mpls ldp]"
+      }
+    },
+    "ldp_show_l2vpn_atom_binding_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_l2vpn_atom_binding",
+          "line": 736
+        },
+        "doc": "Show running system information\nShow information about Layer2 VPN\nShow Any Transport over MPLS information\nShow AToM label binding information\nDestination address of the VC\nMatch locally assigned label values\nLocally assigned label value\nMatch remotely assigned label values\nRemotely assigned label value\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 914
+            },
+            "node": 1
+          }
+        ],
+        "string": "show l2vpn atom binding\t  [{\t    A.B.C.D$peer\t    |local-label (16-1048575)$local_label\t    |remote-label (16-1048575)$remote_label\t  }]\t [json]$json"
+      }
+    },
+    "ldp_show_l2vpn_atom_vc_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_l2vpn_atom_vc",
+          "line": 764
+        },
+        "doc": "Show running system information\nShow information about Layer2 VPN\nShow Any Transport over MPLS information\nShow AToM virtual circuit information\nDestination address of the VC\nLocal interface of the pseudowire\nInterface's name\nVC ID\nVC ID\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 915
+            },
+            "node": 1
+          }
+        ],
+        "string": "show l2vpn atom vc\t  [{\t    A.B.C.D$peer\t    |interface IFNAME$ifname\t    |vc-id (1-4294967295)$vcid\t  }]\t [json]$json"
+      }
+    },
+    "ldp_show_mpls_ldp_binding_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_mpls_ldp_binding",
+          "line": 625
+        },
+        "doc": "Show running system information\nMPLS information\nLabel Distribution Protocol\nIPv4 Address Family\nIPv6 Address Family\nLabel Information Base (LIB) information\nDestination prefix (IPv4)\nDestination prefix (IPv6)\nInclude longer matches\nDisplay labels from LDP neighbor\nNeighbor LSR-ID\nMatch locally assigned label values\nLocally assigned label value\nMatch remotely assigned label values\nRemotely assigned label value\nShow detailed information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 908
+            },
+            "node": 1
+          }
+        ],
+        "string": "show mpls ldp [<ipv4|ipv6>]$af binding\t  [<A.B.C.D/M|X:X::X:X/M>$prefix [longer-prefixes$longer_prefixes]]\t  [{\t    neighbor A.B.C.D$nbr\t    |local-label (0-1048575)$local_label\t    |remote-label (0-1048575)$remote_label\t  }]\t [detail]$detail [json]$json"
+      }
+    },
+    "ldp_show_mpls_ldp_capabilities_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_mpls_ldp_capabilities",
+          "line": 673
+        },
+        "doc": "Show running system information\nMPLS information\nLabel Distribution Protocol\nDisplay LDP Capabilities information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 911
+            },
+            "node": 1
+          }
+        ],
+        "string": "show mpls ldp capabilities [json]$json"
+      }
+    },
+    "ldp_show_mpls_ldp_discovery_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_mpls_ldp_discovery",
+          "line": 647
+        },
+        "doc": "Show running system information\nMPLS information\nLabel Distribution Protocol\nIPv4 Address Family\nIPv6 Address Family\nDiscovery Hello Information\nShow detailed information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 909
+            },
+            "node": 1
+          }
+        ],
+        "string": "show mpls ldp [<ipv4|ipv6>]$af discovery [detail]$detail [json]$json"
+      }
+    },
+    "ldp_show_mpls_ldp_igp_sync_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_mpls_ldp_igp_sync",
+          "line": 713
+        },
+        "doc": "Show mpls ldp ldp-sync information\nMPLS information\nLabel Distribution Protocol\nLDP-IGP Sync information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 917
+            },
+            "node": 1
+          }
+        ],
+        "string": "show mpls ldp igp-sync [json]$json"
+      }
+    },
+    "ldp_show_mpls_ldp_interface_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_mpls_ldp_interface",
+          "line": 661
+        },
+        "doc": "Show running system information\nMPLS information\nLabel Distribution Protocol\nIPv4 Address Family\nIPv6 Address Family\ninterface information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 910
+            },
+            "node": 1
+          }
+        ],
+        "string": "show mpls ldp [<ipv4|ipv6>]$af interface [json]$json"
+      }
+    },
+    "ldp_show_mpls_ldp_neighbor_capabilities_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_mpls_ldp_neighbor_capabilities",
+          "line": 701
+        },
+        "doc": "Show running system information\nMPLS information\nLabel Distribution Protocol\nNeighbor information\nNeighbor LSR-ID\nDisplay neighbor capability information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 913
+            },
+            "node": 1
+          }
+        ],
+        "string": "show mpls ldp neighbor [A.B.C.D]$lsr_id capabilities [json]$json"
+      }
+    },
+    "ldp_show_mpls_ldp_neighbor_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_show_mpls_ldp_neighbor",
+          "line": 687
+        },
+        "doc": "Show running system information\nMPLS information\nLabel Distribution Protocol\nNeighbor information\nNeighbor LSR-ID\nShow detailed information\nJavaScript Object Notation\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 912
+            },
+            "node": 1
+          }
+        ],
+        "string": "show mpls ldp neighbor [A.B.C.D]$lsr_id [detail]$detail [json]$json"
+      }
+    },
+    "ldp_ttl_security_disable_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_ttl_security_disable",
+          "line": 352
+        },
+        "doc": "Negate a command or set its defaults\nLDP ttl security check\nDisable ttl security\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 876
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 859
+            },
+            "node": 44
+          }
+        ],
+        "string": "[no] ttl-security disable"
+      }
+    },
+    "ldp_vc_type_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_vc_type",
+          "line": 468
+        },
+        "doc": "Negate a command or set its defaults\nVirtual Circuit options\nVirtual Circuit type to use\nEthernet (type 5)\nEthernet-tagged (type 4)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 894
+            },
+            "node": 48
+          }
+        ],
+        "string": "[no] vc type <ethernet|ethernet-tagged>$vc_type"
+      }
+    },
+    "ldp_wait_for_sync_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "ldp_wait_for_sync",
+          "line": 238
+        },
+        "doc": "Negate a command or set its defaults\nTime to wait for LDP-IGP Sync to complete label exchange\nTime (seconds)\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 846
+            },
+            "node": 43
+          }
+        ],
+        "string": "[no] wait-for-sync (1-10000)$waitforsync"
+      }
+    },
+    "no_ldp_address_family_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "no_ldp_address_family",
+          "line": 90
+        },
+        "doc": "Negate a command or set its defaults\nConfigure Address Family and its parameters\nIPv4\nIPv6\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 834
+            },
+            "node": 43
+          }
+        ],
+        "string": "no address-family <ipv4|ipv6>$af"
+      }
+    },
+    "no_ldp_interface_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "no_ldp_interface",
+          "line": 382
+        },
+        "doc": "Negate a command or set its defaults\nEnable LDP on an interface and enter interface submode\nInterface's name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 878
+            },
+            "node": 45
+          },
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 861
+            },
+            "node": 44
+          }
+        ],
+        "string": "no interface IFNAME$ifname"
+      }
+    },
+    "no_ldp_l2vpn_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "no_ldp_l2vpn",
+          "line": 69
+        },
+        "doc": "Negate a command or set its defaults\nConfigure l2vpn commands\nL2VPN name\nL2VPN type\nVirtual Private LAN Service\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 827
+            },
+            "node": 4
+          }
+        ],
+        "string": "no l2vpn WORD$l2vpn_name type vpls"
+      }
+    },
+    "no_ldp_member_pseudowire_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "no_ldp_member_pseudowire",
+          "line": 456
+        },
+        "doc": "Negate a command or set its defaults\nL2VPN member configuration\nPseudowire interface\nInterface's name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 893
+            },
+            "node": 48
+          }
+        ],
+        "string": "no member pseudowire IFNAME$ifname"
+      }
+    },
+    "no_ldp_mpls_ldp_cmd": {
+      "ldpd/ldpd": {
+        "defun": {
+          "file": "ldpd/ldp_vty_cmds.c",
+          "func": "no_ldp_mpls_ldp",
+          "line": 46
+        },
+        "doc": "Negate a command or set its defaults\nGlobal MPLS configuration subcommands\nLabel Distribution Protocol\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "ldpd/ldp_vty_cmds.c",
+              "func": "ldp_vty_init",
+              "line": 825
+            },
+            "node": 4
+          }
+        ],
+        "string": "no mpls ldp"
+      }
+    }
+  },
+  "refs": {
+    "JRQR0-P6WDB": [
+      {
+        "args": "__func__, safe_strerror(errno)",
+        "binary": "ldpd/ldpd",
+        "ec": 100663303,
+        "file": "ldpd/ldpd.c",
+        "fmtstring": "%s: failed to open /dev/null: %s",
+        "func": "start_child",
+        "line": 527,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,630 @@
+{
+  "cli": {
+    "debug_staticd_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "debug_staticd",
+          "line": 1282
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\nStatic route daemon\nDebug events\nDebug route\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1338
+            },
+            "node": 4
+          },
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1337
+            },
+            "node": 3
+          }
+        ],
+        "string": "[no] debug static [{events$events|route$route}]"
+      }
+    },
+    "ip_mroute_dist_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ip_mroute_dist",
+          "line": 368
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nConfigure static unicast route into MRIB for multicast RPF lookup\nIP destination prefix (e.g. 10.0.0.0/8)\nNexthop address\nNexthop interface name\nDistance\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1320
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] ip mroute A.B.C.D/M$prefix <A.B.C.D$gate|INTERFACE$ifname> [(1-255)$distance]"
+      }
+    },
+    "ip_route_address_interface_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ip_route_address_interface",
+          "line": 489
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nEstablish static routes\nIP destination prefix (e.g. 10.0.0.0/8)\nIP destination prefix\nIP destination prefix mask\nIP gateway address\nIP gateway interface name\nNull interface\nSet tag for this route\nTag value\nDistance value for this route\nSpecify the VRF\nThe VRF name\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\nSpecify the VRF\nThe VRF name\nTreat the nexthop as directly attached to the interface\nSR-TE color\nThe SR-TE color to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1324
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] ip route\t<A.B.C.D/M$prefix|A.B.C.D$prefix A.B.C.D$mask> \tA.B.C.D$gate                                   \t<INTERFACE|Null0>$ifname                       \t[{                                             \t  tag (1-4294967295)                           \t  |(1-255)$distance                            \t  |vrf NAME                                    \t  |label WORD                                  \t  |table (1-4294967295)                        \t  |nexthop-vrf NAME                            \t  |onlink$onlink                               \t  |color (1-4294967295)                                  }]"
+      }
+    },
+    "ip_route_address_interface_vrf_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ip_route_address_interface_vrf",
+          "line": 544
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nEstablish static routes\nIP destination prefix (e.g. 10.0.0.0/8)\nIP destination prefix\nIP destination prefix mask\nIP gateway address\nIP gateway interface name\nNull interface\nSet tag for this route\nTag value\nDistance value for this route\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\nSpecify the VRF\nThe VRF name\nTreat the nexthop as directly attached to the interface\nSR-TE color\nThe SR-TE color to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1325
+            },
+            "node": 16
+          }
+        ],
+        "string": "[no] ip route\t<A.B.C.D/M$prefix|A.B.C.D$prefix A.B.C.D$mask> \tA.B.C.D$gate                                   \t<INTERFACE|Null0>$ifname                       \t[{                                             \t  tag (1-4294967295)                           \t  |(1-255)$distance                            \t  |label WORD                                  \t  |table (1-4294967295)                        \t  |nexthop-vrf NAME                            \t  |onlink$onlink                               \t  |color (1-4294967295)                        \t  }]"
+      }
+    },
+    "ip_route_blackhole_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ip_route_blackhole",
+          "line": 401
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nEstablish static routes\nIP destination prefix (e.g. 10.0.0.0/8)\nIP destination prefix\nIP destination prefix mask\nEmit an ICMP unreachable when matched\nSilently discard pkts when matched\nSet tag for this route\nTag value\nDistance value for this route\nSpecify the VRF\nThe VRF name\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1322
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] ip route\t<A.B.C.D/M$prefix|A.B.C.D$prefix A.B.C.D$mask>                        \t<reject|blackhole>$flag                                               \t[{                                                                    \t  tag (1-4294967295)                                                  \t  |(1-255)$distance                                                   \t  |vrf NAME                                                           \t  |label WORD                                                                   |table (1-4294967295)                                                         }]"
+      }
+    },
+    "ip_route_blackhole_vrf_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ip_route_blackhole_vrf",
+          "line": 431
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nEstablish static routes\nIP destination prefix (e.g. 10.0.0.0/8)\nIP destination prefix\nIP destination prefix mask\nEmit an ICMP unreachable when matched\nSilently discard pkts when matched\nSet tag for this route\nTag value\nDistance value for this route\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1323
+            },
+            "node": 16
+          }
+        ],
+        "string": "[no] ip route\t<A.B.C.D/M$prefix|A.B.C.D$prefix A.B.C.D$mask>                        \t<reject|blackhole>$flag                                               \t[{                                                                    \t  tag (1-4294967295)                                                  \t  |(1-255)$distance                                                   \t  |label WORD                                                         \t  |table (1-4294967295)                                                         }]"
+      }
+    },
+    "ip_route_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ip_route",
+          "line": 605
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nEstablish static routes\nIP destination prefix (e.g. 10.0.0.0/8)\nIP destination prefix\nIP destination prefix mask\nIP gateway address\nIP gateway interface name\nNull interface\nSet tag for this route\nTag value\nDistance value for this route\nSpecify the VRF\nThe VRF name\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\nSpecify the VRF\nThe VRF name\nSR-TE color\nThe SR-TE color to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1326
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] ip route\t<A.B.C.D/M$prefix|A.B.C.D$prefix A.B.C.D$mask> \t<A.B.C.D$gate|<INTERFACE|Null0>$ifname>        \t[{                                             \t  tag (1-4294967295)                           \t  |(1-255)$distance                            \t  |vrf NAME                                    \t  |label WORD                                  \t  |table (1-4294967295)                        \t  |nexthop-vrf NAME                            \t  |color (1-4294967295)                                  }]"
+      }
+    },
+    "ip_route_vrf_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ip_route_vrf",
+          "line": 658
+        },
+        "doc": "Negate a command or set its defaults\nIP information\nEstablish static routes\nIP destination prefix (e.g. 10.0.0.0/8)\nIP destination prefix\nIP destination prefix mask\nIP gateway address\nIP gateway interface name\nNull interface\nSet tag for this route\nTag value\nDistance value for this route\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\nSpecify the VRF\nThe VRF name\nSR-TE color\nThe SR-TE color to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1327
+            },
+            "node": 16
+          }
+        ],
+        "string": "[no] ip route\t<A.B.C.D/M$prefix|A.B.C.D$prefix A.B.C.D$mask> \t<A.B.C.D$gate|<INTERFACE|Null0>$ifname>        \t[{                                             \t  tag (1-4294967295)                           \t  |(1-255)$distance                            \t  |label WORD                                  \t  |table (1-4294967295)                        \t  |nexthop-vrf NAME                            \t  |color (1-4294967295)                                  }]"
+      }
+    },
+    "ipv6_route_address_interface_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ipv6_route_address_interface",
+          "line": 804
+        },
+        "doc": "Negate a command or set its defaults\nIPv6 information\nEstablish static routes\nIPv6 destination prefix (e.g. 3ffe:506::/32)\nIPv6 source-dest route\nIPv6 source prefix\nIPv6 gateway address\nIPv6 gateway interface name\nNull interface\nSet tag for this route\nTag value\nDistance value for this prefix\nSpecify the VRF\nThe VRF name\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\nSpecify the VRF\nThe VRF name\nTreat the nexthop as directly attached to the interface\nSR-TE color\nThe SR-TE color to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1331
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] ipv6 route X:X::X:X/M$prefix [from X:X::X:X/M]           X:X::X:X$gate                                              <INTERFACE|Null0>$ifname                                   [{                                                           tag (1-4294967295)                                         |(1-255)$distance                                          |vrf NAME                                                  |label WORD                                    \t    |table (1-4294967295)                                      |nexthop-vrf NAME                              \t    |onlink$onlink                                 \t    |color (1-4294967295)                                    }]"
+      }
+    },
+    "ipv6_route_address_interface_vrf_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ipv6_route_address_interface_vrf",
+          "line": 860
+        },
+        "doc": "Negate a command or set its defaults\nIPv6 information\nEstablish static routes\nIPv6 destination prefix (e.g. 3ffe:506::/32)\nIPv6 source-dest route\nIPv6 source prefix\nIPv6 gateway address\nIPv6 gateway interface name\nNull interface\nSet tag for this route\nTag value\nDistance value for this prefix\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\nSpecify the VRF\nThe VRF name\nTreat the nexthop as directly attached to the interface\nSR-TE color\nThe SR-TE color to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1332
+            },
+            "node": 16
+          }
+        ],
+        "string": "[no] ipv6 route X:X::X:X/M$prefix [from X:X::X:X/M]           X:X::X:X$gate                                              <INTERFACE|Null0>$ifname                                   [{                                                           tag (1-4294967295)                                         |(1-255)$distance                                          |label WORD                                    \t    |table (1-4294967295)                                      |nexthop-vrf NAME                              \t    |onlink$onlink                                 \t    |color (1-4294967295)                                    }]"
+      }
+    },
+    "ipv6_route_blackhole_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ipv6_route_blackhole",
+          "line": 714
+        },
+        "doc": "Negate a command or set its defaults\nIPv6 information\nEstablish static routes\nIPv6 destination prefix (e.g. 3ffe:506::/32)\nIPv6 source-dest route\nIPv6 source prefix\nEmit an ICMP unreachable when matched\nSilently discard pkts when matched\nSet tag for this route\nTag value\nDistance value for this prefix\nSpecify the VRF\nThe VRF name\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1329
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] ipv6 route X:X::X:X/M$prefix [from X:X::X:X/M]           <reject|blackhole>$flag                                    [{                                                           tag (1-4294967295)                                         |(1-255)$distance                                          |vrf NAME                                                  |label WORD                                                |table (1-4294967295)                                    }]"
+      }
+    },
+    "ipv6_route_blackhole_vrf_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ipv6_route_blackhole_vrf",
+          "line": 744
+        },
+        "doc": "Negate a command or set its defaults\nIPv6 information\nEstablish static routes\nIPv6 destination prefix (e.g. 3ffe:506::/32)\nIPv6 source-dest route\nIPv6 source prefix\nEmit an ICMP unreachable when matched\nSilently discard pkts when matched\nSet tag for this route\nTag value\nDistance value for this prefix\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1330
+            },
+            "node": 16
+          }
+        ],
+        "string": "[no] ipv6 route X:X::X:X/M$prefix [from X:X::X:X/M]           <reject|blackhole>$flag                                    [{                                                           tag (1-4294967295)                                         |(1-255)$distance                                          |label WORD                                                |table (1-4294967295)                                    }]"
+      }
+    },
+    "ipv6_route_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ipv6_route",
+          "line": 921
+        },
+        "doc": "Negate a command or set its defaults\nIPv6 information\nEstablish static routes\nIPv6 destination prefix (e.g. 3ffe:506::/32)\nIPv6 source-dest route\nIPv6 source prefix\nIPv6 gateway address\nIPv6 gateway interface name\nNull interface\nSet tag for this route\nTag value\nDistance value for this prefix\nSpecify the VRF\nThe VRF name\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\nSpecify the VRF\nThe VRF name\nSR-TE color\nThe SR-TE color to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1333
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] ipv6 route X:X::X:X/M$prefix [from X:X::X:X/M]           <X:X::X:X$gate|<INTERFACE|Null0>$ifname>                   [{                                                           tag (1-4294967295)                                         |(1-255)$distance                                          |vrf NAME                                                  |label WORD                                    \t    |table (1-4294967295)                                      |nexthop-vrf NAME                                          |color (1-4294967295)                                    }]"
+      }
+    },
+    "ipv6_route_vrf_cmd": {
+      "staticd/staticd": {
+        "attr": 1,
+        "attrs": [
+          "yang"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "ipv6_route_vrf",
+          "line": 973
+        },
+        "doc": "Negate a command or set its defaults\nIPv6 information\nEstablish static routes\nIPv6 destination prefix (e.g. 3ffe:506::/32)\nIPv6 source-dest route\nIPv6 source prefix\nIPv6 gateway address\nIPv6 gateway interface name\nNull interface\nSet tag for this route\nTag value\nDistance value for this prefix\nSpecify label(s) for this route\nOne or more labels in the range (16-1048575) separated by '/'\nTable to configure\nThe table number to configure\nSpecify the VRF\nThe VRF name\nSR-TE color\nThe SR-TE color to configure\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1334
+            },
+            "node": 16
+          }
+        ],
+        "string": "[no] ipv6 route X:X::X:X/M$prefix [from X:X::X:X/M]           <X:X::X:X$gate|<INTERFACE|Null0>$ifname>                           [{                                                           tag (1-4294967295)                                         |(1-255)$distance                                          |label WORD                                    \t    |table (1-4294967295)                                      |nexthop-vrf NAME                              \t    |color (1-4294967295)                                    }]"
+      }
+    },
+    "show_debugging_static_cmd": {
+      "staticd/staticd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "staticd/static_vty.c",
+          "func": "show_debugging_static",
+          "line": 1298
+        },
+        "doc": "Show running system information\nDebugging functions\nStatic Information\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "staticd/static_vty.c",
+              "func": "static_vty_init",
+              "line": 1336
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging [static]"
+      }
+    }
+  },
+  "refs": {
+    "GH3PB-C7X4Y": [
+      {
+        "args": "&rn->p",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_routes.c",
+        "fmtstring": "Static Route to %pFX not installed currently because dependent config not fully available",
+        "func": "static_add_nexthop",
+        "line": 326,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "K32YH-0RHMH": [
+      {
+        "args": "&lookup.nh, rn",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "Registering nexthop(%pFX) for %pRN",
+        "func": "static_zebra_nht_register",
+        "line": 371,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "K4R3G-FBCAH": [
+      {
+        "args": "yang_dnode_get_string(args->dnode, \"./prefix\")",
+        "binary": "staticd/staticd",
+        "ec": 100663334,
+        "file": "staticd/static_nb_config.c",
+        "fmtstring": "route node %s creation failed",
+        "func": "routing_control_plane_protocols_control_plane_protocol_staticd_route_list_create",
+        "line": 487,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "MHG7X-3SV2Z": [
+      {
+        "args": "&lookup.nh, rn, nhtd->nh_num",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "Reusing registered nexthop(%pFX) for %pRN %d",
+        "func": "static_zebra_nht_register",
+        "line": 343,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MRN6F-AYZC4": [
+      {
+        "args": "",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_main.c",
+        "fmtstring": "Terminating on signal",
+        "func": "sigint",
+        "line": 78,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "NZTXV-H7AQ5": [
+      {
+        "args": "__func__, &p, table_id",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "%s: Route %pFX over-ridden by better route for table: %u",
+        "func": "route_notify_owner",
+        "line": 162,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PBD55-H3KM0": [
+      {
+        "args": "&lookup.nh, rn",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "Unregistering nexthop(%pFX) for %pRN",
+        "func": "static_zebra_nht_register",
+        "line": 386,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PNYPZ-BCP8Y": [
+      {
+        "args": "ifname",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_routes.c",
+        "fmtstring": "Static Route using %s interface not installed because the interface does not exist in specified vrf",
+        "func": "static_add_nexthop",
+        "line": 345,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "Q5FVR-1KFAN": [
+      {
+        "args": "yang_dnode_get_string(args->dnode, \"./gateway\")",
+        "binary": "staticd/staticd",
+        "ec": 100663334,
+        "file": "staticd/static_nb_config.c",
+        "fmtstring": "Warning!! Local connected address is configured as Gateway IP((%s))",
+        "func": "static_nexthop_create",
+        "line": 196,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "RHJK1-M5FAR": [
+      {
+        "args": "__func__, &lookup.nh, rn",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "%s: Failure to send nexthop %pFX for %pRN to zebra",
+        "func": "static_zebra_nht_register",
+        "line": 392,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "S4MGP-4WQTA": [
+      {
+        "args": "__func__, &p, table_id",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "%s: Route %pFX failed to install for table: %u",
+        "func": "route_notify_owner",
+        "line": 156,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "TB88C-EZ2TK": [
+      {
+        "args": "",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "Failure to decode nexthop update message",
+        "func": "static_zebra_nexthop_update",
+        "line": 210,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "WW51K-YKJ8A": [
+      {
+        "args": "",
+        "binary": "staticd/staticd",
+        "ec": 100663337,
+        "file": "staticd/static_nb_config.c",
+        "fmtstring": "libyang returns invalid label position",
+        "func": "static_nexthop_mpls_label_modify",
+        "line": 305,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "staticd/staticd",
+        "ec": 100663337,
+        "file": "staticd/static_nb_config.c",
+        "fmtstring": "libyang returns invalid label position",
+        "func": "nexthop_mpls_label_stack_entry_destroy",
+        "line": 278,
+        "priority": 4,
+        "type": "logmsg"
+      },
+      {
+        "args": "",
+        "binary": "staticd/staticd",
+        "ec": 100663337,
+        "file": "staticd/static_nb_config.c",
+        "fmtstring": "libyang returns invalid label position",
+        "func": "nexthop_mpls_label_stack_entry_create",
+        "line": 247,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "X7F1N-NBX5Z": [
+      {
+        "args": "",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_main.c",
+        "fmtstring": "SIGHUP received",
+        "func": "sighup",
+        "line": 71,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "XB55R-K2WRM": [
+      {
+        "args": "__func__, &p, table_id",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "%s: Route %pFX failure to remove for table: %u",
+        "func": "route_notify_owner",
+        "line": 173,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "YT4EE-Y49DP": [
+      {
+        "args": "&rn->p, nexthop_str, nh->nh_vrfname",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_routes.c",
+        "fmtstring": "Static Route %pFX not installed for %s vrf %s is unknown",
+        "func": "static_install_nexthop",
+        "line": 364,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YVE0Z-3R42V": [
+      {
+        "args": "&lookup.nh",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "trying to unregister nexthop %pFX twice",
+        "func": "static_zebra_nht_register",
+        "line": 347,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZX9HH-068HA": [
+      {
+        "args": "",
+        "binary": "staticd/staticd",
+        "file": "staticd/static_zebra.c",
+        "fmtstring": "No nhtd?",
+        "func": "static_zebra_nexthop_update",
+        "line": 238,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

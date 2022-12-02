@@ -1,0 +1,111 @@
+{
+  "cli": {},
+  "refs": {
+    "GAMZ9-19S8E": [
+      {
+        "args": "__func__, len",
+        "binary": "zebra/zebra_cumulus_mlag.la",
+        "file": "zebra/zebra_mlag_private.c",
+        "fmtstring": "%s: Writing %d length Data to clag",
+        "func": "zebra_mlag_private_write_data",
+        "line": 62,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "GEH97-Z0XQG": [
+      {
+        "args": "mlag_socket, tot_len",
+        "binary": "zebra/zebra_cumulus_mlag.la",
+        "file": "zebra/zebra_mlag_private.c",
+        "fmtstring": "Received a MLAG Message from socket: %d, len:%u ",
+        "func": "zebra_mlag_read",
+        "line": 151,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JC7NP-KCF6C": [
+      {
+        "args": "__func__",
+        "binary": "zebra/zebra_cumulus_mlag.la",
+        "file": "zebra/zebra_mlag_private.c",
+        "fmtstring": "%s: Zebra already connected to MLAGD",
+        "func": "zebra_mlag_private_open_channel",
+        "line": 225,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Q28WD-2TDXV": [
+      {
+        "args": "__func__, zrouter.mlag_info.clients_interested_cnt",
+        "binary": "zebra/zebra_cumulus_mlag.la",
+        "file": "zebra/zebra_mlag_private.c",
+        "fmtstring": "%s: still %d clients are connected, skip",
+        "func": "zebra_mlag_private_close_channel",
+        "line": 256,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "V7DMV-SZ58F": [
+      {
+        "args": "mlag_socket",
+        "binary": "zebra/zebra_cumulus_mlag.la",
+        "file": "zebra/zebra_mlag_private.c",
+        "fmtstring": "MLAG connection closed socket : %d",
+        "func": "zebra_mlag_read",
+        "line": 136,
+        "priority": 7,
+        "type": "logmsg"
+      },
+      {
+        "args": "mlag_socket",
+        "binary": "zebra/zebra_cumulus_mlag.la",
+        "file": "zebra/zebra_mlag_private.c",
+        "fmtstring": "MLAG connection closed socket : %d",
+        "func": "zebra_mlag_read",
+        "line": 98,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VZTNV-G5Y09": [
+      {
+        "args": "__func__",
+        "binary": "zebra/zebra_cumulus_mlag.la",
+        "file": "zebra/zebra_mlag_private.c",
+        "fmtstring": "%s: Connection retry is in progress for MLAGD",
+        "func": "zebra_mlag_private_open_channel",
+        "line": 233,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YGMG2-C7JYT": [
+      {
+        "args": "svr.sun_path",
+        "binary": "zebra/zebra_cumulus_mlag.la",
+        "file": "zebra/zebra_mlag_private.c",
+        "fmtstring": "Unable to connect to %s try again in 10 secs",
+        "func": "zebra_mlag_connect",
+        "line": 186,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YKWZ2-0STDW": [
+      {
+        "args": "__func__",
+        "binary": "zebra/zebra_cumulus_mlag.la",
+        "file": "zebra/zebra_mlag_private.c",
+        "fmtstring": "%s: Connection with MLAG is established ",
+        "func": "zebra_mlag_connect",
+        "line": 198,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ]
+  }
+}

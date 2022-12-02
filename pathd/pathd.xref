@@ -1,0 +1,1563 @@
+{
+  "cli": {
+    "debug_path_ted_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_ted.c",
+          "func": "debug_path_ted",
+          "line": 345
+        },
+        "doc": "Negate a command or set its defaults\nDebugging functions\npath debugging\nted debugging\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_ted.c",
+              "func": "path_ted_register_vty",
+              "line": 548
+            },
+            "node": 3
+          },
+          {
+            "install": {
+              "file": "pathd/path_ted.c",
+              "func": "path_ted_register_vty",
+              "line": 547
+            },
+            "node": 4
+          }
+        ],
+        "string": "[no] debug pathd mpls-te"
+      }
+    },
+    "no_path_ted_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_ted.c",
+          "func": "no_path_ted",
+          "line": 385
+        },
+        "doc": "Negate a command or set its defaults\nNegate a command or set its defaults\nDisable the TE Database functionality\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_ted.c",
+              "func": "path_ted_register_vty",
+              "line": 543
+            },
+            "node": 68
+          }
+        ],
+        "string": "no mpls-te [on]"
+      }
+    },
+    "no_path_ted_import_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_ted.c",
+          "func": "no_path_ted_import",
+          "line": 432
+        },
+        "doc": "Negate a command or set its defaults\nNegate a command or set its defaults\nDisable the TE Database fill with remote igp data\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_ted.c",
+              "func": "path_ted_register_vty",
+              "line": 545
+            },
+            "node": 68
+          }
+        ],
+        "string": "no mpls-te import"
+      }
+    },
+    "path_ted_import_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_ted.c",
+          "func": "path_ted_import",
+          "line": 414
+        },
+        "doc": "Enable the TE database (TED) fill with remote igp data\nimport\nOrigin ospfv2\nOrigin ospfv3\nOrigin isis\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_ted.c",
+              "func": "path_ted_register_vty",
+              "line": 544
+            },
+            "node": 68
+          }
+        ],
+        "string": "mpls-te import <ospfv2|ospfv3|isis>$import_daemon"
+      }
+    },
+    "path_ted_on_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_ted.c",
+          "func": "path_ted_on",
+          "line": 363
+        },
+        "doc": "Negate a command or set its defaults\nEnable the TE database (TED) functionality\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_ted.c",
+              "func": "path_ted_register_vty",
+              "line": 542
+            },
+            "node": 68
+          }
+        ],
+        "string": "mpls-te on"
+      }
+    },
+    "segment_routing_cmd": {
+      "pathd/pathd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "segment_routing_list",
+          "line": 233
+        },
+        "doc": "Configure segment routing\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1313
+            },
+            "node": 4
+          }
+        ],
+        "string": "segment-routing"
+      }
+    },
+    "show_debugging_pathd_cmd": {
+      "pathd/pathd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "show_debugging_pathd",
+          "line": 1093
+        },
+        "doc": "Show running system information\nState of each debugging option\npathd module debugging\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1309
+            },
+            "node": 3
+          }
+        ],
+        "string": "show debugging [pathd]"
+      }
+    },
+    "show_pathd_ted_db_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_ted.c",
+          "func": "show_pathd_ted_db",
+          "line": 458
+        },
+        "doc": "show command\npathd daemon\ntraffic eng\ndatabase\nverbose output\nShow complete received TED database\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_ted.c",
+              "func": "path_ted_register_vty",
+              "line": 541
+            },
+            "node": 1
+          }
+        ],
+        "string": "show pathd ted database <verbose|json>$ver_json "
+      }
+    },
+    "show_srte_policy_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "show_srte_policy",
+          "line": 111
+        },
+        "doc": "Show running system information\nSR-TE info\nSR-TE Policy\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1310
+            },
+            "node": 3
+          }
+        ],
+        "string": "show sr-te policy"
+      }
+    },
+    "show_srte_policy_detail_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "show_srte_policy_detail",
+          "line": 166
+        },
+        "doc": "Show running system information\nSR-TE info\nSR-TE Policy\nShow a detailed summary\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1311
+            },
+            "node": 3
+          }
+        ],
+        "string": "show sr-te policy detail"
+      }
+    },
+    "sr_traffic_eng_cmd": {
+      "pathd/pathd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "sr_traffic_eng_list",
+          "line": 243
+        },
+        "doc": "Configure SR traffic engineering\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1314
+            },
+            "node": 67
+          }
+        ],
+        "string": "traffic-eng"
+      }
+    },
+    "srte_candidate_affinity_filter_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_candidate_affinity_filter",
+          "line": 842
+        },
+        "doc": "Affinity constraint\nExclude any matching link\nInclude any matching link\nInclude all matching links\nAttribute filter bit pattern as an hexadecimal value from 0x00000000 to 0xFFFFFFFF\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1335
+            },
+            "node": 71
+          }
+        ],
+        "string": "affinity <exclude-any|include-any|include-all>$type BITPATTERN$value"
+      }
+    },
+    "srte_candidate_bandwidth_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_candidate_bandwidth",
+          "line": 814
+        },
+        "doc": "Define a bandwidth constraint\nBandwidth value\nRequired constraint\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1331
+            },
+            "node": 71
+          }
+        ],
+        "string": "bandwidth BANDWIDTH$value [required$required]"
+      }
+    },
+    "srte_candidate_metric_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_candidate_metric",
+          "line": 903
+        },
+        "doc": "Define a metric constraint\nIf the metric is bounded\nIGP metric\nTE metric\nHop Counts\nAggregate bandwidth consumption\nLoad of the most loaded link\nCumulative IGP cost\nCumulative TE cost\nP2MP IGP metric\nP2MP TE metric\nP2MP hop count metric\nSegment-ID (SID) Depth.\nPath Delay metric\nPath Delay Variation metric\nPath Loss metric\nP2MP Path Delay metric\nP2MP Path Delay variation metric\nP2MP Path Loss metric\nNumber of adaptations on a path\nNumber of layers on a path\nDomain Count metric\nBorder Node Count metric\nMetric value\nRequired constraint\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1339
+            },
+            "node": 71
+          }
+        ],
+        "string": "metric [bound$bound] <igp|te|hc|abc|lmll|cigp|cte|pigp|pte|phc|msd|pd|pdv|pl|ppd|ppdv|ppl|nap|nlp|dc|bnc>$type METRIC$value [required$required]"
+      }
+    },
+    "srte_candidate_no_affinity_filter_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_candidate_no_affinity_filter",
+          "line": 867
+        },
+        "doc": "Negate a command or set its defaults\nAffinity constraint\nExclude any matching link\nInclude any matching link\nInclude all matching links\nAttribute filter bit pattern as an hexadecimal value from 0x00000000 to 0xFFFFFFFF\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1337
+            },
+            "node": 71
+          }
+        ],
+        "string": "no affinity <exclude-any|include-any|include-all>$type [BITPATTERN$value]"
+      }
+    },
+    "srte_candidate_no_bandwidth_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_candidate_no_bandwidth",
+          "line": 829
+        },
+        "doc": "Negate a command or set its defaults\nRemove a bandwidth constraint\nBandwidth value\nRequired constraint\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1333
+            },
+            "node": 71
+          }
+        ],
+        "string": "no bandwidth [BANDWIDTH$value] [required$required]"
+      }
+    },
+    "srte_candidate_no_metric_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_candidate_no_metric",
+          "line": 948
+        },
+        "doc": "Negate a command or set its defaults\nRemove a metric constraint\nIf the metric is bounded\nIGP metric\nTE metric\nHop Counts\nAggregate bandwidth consumption\nLoad of the most loaded link\nCumulative IGP cost\nCumulative TE cost\nP2MP IGP metric\nP2MP TE metric\nP2MP hop count metric\nSegment-ID (SID) Depth.\nPath Delay metric\nPath Delay Variation metric\nPath Loss metric\nP2MP Path Delay metric\nP2MP Path Delay variation metric\nP2MP Path Loss metric\nNumber of adaptations on a path\nNumber of layers on a path\nDomain Count metric\nBorder Node Count metric\nMetric value\nRequired constraint\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1341
+            },
+            "node": 71
+          }
+        ],
+        "string": "no metric [bound] <igp|te|hc|abc|lmll|cigp|cte|pigp|pte|phc|msd|pd|pdv|pl|ppd|ppdv|ppl|nap|nlp|dc|bnc>$type [METRIC$value] [required$required]"
+      }
+    },
+    "srte_candidate_no_objfun_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_candidate_no_objfun",
+          "line": 1040
+        },
+        "doc": "Negate a command or set its defaults\nRemove an objective function constraint\nMinimum Cost Path\nMinimum Load Path\nMaximum residual Bandwidth Path\nMinimize aggregate Bandwidth Consumption\nMinimize the Load of the most loaded Link\nMinimize the Cumulative Cost of a set of paths\nShortest Path Tree\nMinimum Cost Tree\nMinimum Packet Loss Path\nMaximum Under-Utilized Path\nMaximum Reserved Under-Utilized Path\nMinimize the number of Transit Domains\nMinimize the number of Border Nodes\nMinimize the number of Common Transit Domains\nMinimize the number of Shared Links\nMinimize the number of Shared SRLGs\nMinimize the number of Shared Nodes\nRequired constraint\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1345
+            },
+            "node": 71
+          }
+        ],
+        "string": "no objective-function [<mcp|mlp|mbp|mbc|mll|mcc|spt|mct|mplp|mup|mrup|mtd|mbn|mctd|msl|mss|msn>] [required$required]"
+      }
+    },
+    "srte_candidate_objfun_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_candidate_objfun",
+          "line": 1004
+        },
+        "doc": "Define an objective function constraint\nMinimum Cost Path\nMinimum Load Path\nMaximum residual Bandwidth Path\nMinimize aggregate Bandwidth Consumption\nMinimize the Load of the most loaded Link\nMinimize the Cumulative Cost of a set of paths\nShortest Path Tree\nMinimum Cost Tree\nMinimum Packet Loss Path\nMaximum Under-Utilized Path\nMaximum Reserved Under-Utilized Path\nMinimize the number of Transit Domains\nMinimize the number of Border Nodes\nMinimize the number of Common Transit Domains\nMinimize the number of Shared Links\nMinimize the number of Shared SRLGs\nMinimize the number of Shared Nodes\nRequired constraint\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1343
+            },
+            "node": 71
+          }
+        ],
+        "string": "objective-function <mcp|mlp|mbp|mbc|mll|mcc|spt|mct|mplp|mup|mrup|mtd|mbn|mctd|msl|mss|msn>$type [required$required]"
+      }
+    },
+    "srte_no_policy_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_no_policy",
+          "line": 660
+        },
+        "doc": "Negate a command or set its defaults\nSegment Routing Policy\nSR Policy color\nSR Policy color value\nSR Policy endpoint\nSR Policy endpoint IPv4 address\nSR Policy endpoint IPv6 address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1322
+            },
+            "node": 68
+          }
+        ],
+        "string": "no policy color (0-4294967295)$num endpoint <A.B.C.D|X:X::X:X>$endpoint"
+      }
+    },
+    "srte_no_segment_list_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_no_segment_list",
+          "line": 290
+        },
+        "doc": "Negate a command or set its defaults\nSegment List\nSegment List Name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1316
+            },
+            "node": 68
+          }
+        ],
+        "string": "no segment-list WORD$name"
+      }
+    },
+    "srte_policy_binding_sid_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_policy_binding_sid",
+          "line": 725
+        },
+        "doc": "Segment Routing Policy Binding-SID\nSR Policy Binding-SID label\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1325
+            },
+            "node": 70
+          }
+        ],
+        "string": "binding-sid (16-1048575)$label"
+      }
+    },
+    "srte_policy_candidate_dyn_cmd": {
+      "pathd/pathd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_policy_candidate_dyn",
+          "line": 787
+        },
+        "doc": "Segment Routing Policy Candidate Path\nSegment Routing Policy Candidate Path Preference\nAdministrative Preference\nSegment Routing Policy Candidate Path Name\nSymbolic Name\nDynamic Path\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1328
+            },
+            "node": 70
+          }
+        ],
+        "string": "candidate-path preference (0-4294967295)$preference name WORD$name dynamic"
+      }
+    },
+    "srte_policy_candidate_exp_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_policy_candidate_exp",
+          "line": 765
+        },
+        "doc": "Segment Routing Policy Candidate Path\nSegment Routing Policy Candidate Path Preference\nAdministrative Preference\nSegment Routing Policy Candidate Path Name\nSymbolic Name\nExplicit Path\nList of SIDs\nName of the Segment List\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1327
+            },
+            "node": 70
+          }
+        ],
+        "string": "candidate-path preference (0-4294967295)$preference name WORD$name \t explicit segment-list WORD$list_name"
+      }
+    },
+    "srte_policy_cmd": {
+      "pathd/pathd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_policy",
+          "line": 634
+        },
+        "doc": "Segment Routing Policy\nSR Policy color\nSR Policy color value\nSR Policy endpoint\nSR Policy endpoint IPv4 address\nSR Policy endpoint IPv6 address\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1321
+            },
+            "node": 68
+          }
+        ],
+        "string": "policy color (0-4294967295)$num endpoint <A.B.C.D|X:X::X:X>$endpoint"
+      }
+    },
+    "srte_policy_name_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_policy_name",
+          "line": 692
+        },
+        "doc": "Segment Routing Policy name\nSR Policy name value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1323
+            },
+            "node": 70
+          }
+        ],
+        "string": "name WORD$name"
+      }
+    },
+    "srte_policy_no_binding_sid_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_policy_no_binding_sid",
+          "line": 737
+        },
+        "doc": "Negate a command or set its defaults\nSegment Routing Policy Binding-SID\nSR Policy Binding-SID label\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1326
+            },
+            "node": 70
+          }
+        ],
+        "string": "no binding-sid [(16-1048575)]"
+      }
+    },
+    "srte_policy_no_candidate_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_policy_no_candidate",
+          "line": 975
+        },
+        "doc": "Negate a command or set its defaults\nSegment Routing Policy Candidate Path\nSegment Routing Policy Candidate Path Preference\nAdministrative Preference\nSegment Routing Policy Candidate Path Name\nSymbolic Name\nExplicit Path\nList of SIDs\nName of the Segment List\nDynamic Path\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1329
+            },
+            "node": 70
+          }
+        ],
+        "string": "no candidate-path\tpreference (0-4294967295)$preference\t[name WORD\t<\t  explicit segment-list WORD\t  |dynamic\t>]"
+      }
+    },
+    "srte_policy_no_name_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_policy_no_name",
+          "line": 704
+        },
+        "doc": "Negate a command or set its defaults\nSegment Routing Policy name\nSR Policy name value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1324
+            },
+            "node": 70
+          }
+        ],
+        "string": "no name [WORD]"
+      }
+    },
+    "srte_segment_list_cmd": {
+      "pathd/pathd": {
+        "attr": 8,
+        "attrs": [
+          "nosh"
+        ],
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_segment_list",
+          "line": 257
+        },
+        "doc": "Segment List\nSegment List Name\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1315
+            },
+            "node": 68
+          }
+        ],
+        "string": "segment-list WORD$name"
+      }
+    },
+    "srte_segment_list_no_segment_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_segment_list_no_segment",
+          "line": 550
+        },
+        "doc": "Negate a command or set its defaults\nIndex\nIndex Value\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1320
+            },
+            "node": 69
+          }
+        ],
+        "string": "no index (0-4294967295)$index"
+      }
+    },
+    "srte_segment_list_segment_cmd": {
+      "pathd/pathd": {
+        "defun": {
+          "file": "pathd/path_cli.c",
+          "func": "srte_segment_list_segment",
+          "line": 508
+        },
+        "doc": "Index\nIndex Value\nMPLS or IP Label\nLabel\nLabel Value\nSegment NAI\nNAI prefix identifier\nNAI IPv4 prefix identifier\nNAI IPv6 prefix identifier\nIGP Algorithm\nAlgorithm Value SPF or Strict-SPF\nInterface Id\nInterface Value\nADJ identifier\nADJ IPv4 src identifier\nADJ IPv4 dst identifier\nADJ IPv6 src identifier\nADJ IPv6 dst identifier\n",
+        "nodes": [
+          {
+            "install": {
+              "file": "pathd/path_cli.c",
+              "func": "path_cli_init",
+              "line": 1318
+            },
+            "node": 69
+          }
+        ],
+        "string": "index (0-4294967295)$index <[mpls$has_mpls_label label (16-1048575)$label] |[nai$has_nai <prefix <A.B.C.D/M$prefix_ipv4|X:X::X:X/M$prefix_ipv6><algorithm$has_algo (0-1)$algo| iface$has_iface_id (0-4294967295)$iface_id>| adjacency$has_adj <A.B.C.D$adj_src_ipv4 A.B.C.D$adj_dst_ipv4|X:X::X:X$adj_src_ipv6 X:X::X:X$adj_dst_ipv6>>]>"
+      }
+    }
+  },
+  "refs": {
+    "G7XCE-ENVP6": [
+      {
+        "args": "segment_list->name",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "Cannot unset segment list %s because it was created locally",
+        "func": "srte_candidate_unset_segment_list",
+        "line": 1182,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "G902Y-G0R12": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "%s: error getting label range!",
+        "func": "path_zebra_request_label",
+        "line": 230,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "GGA79-HSVDR": [
+      {
+        "args": "__func__, ted_sid",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": " %s: PATHD-TED: SL: ERROR query E : ted-sid (%d)",
+        "func": "srte_ted_do_query_type_e",
+        "line": 1378,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "H3MS9-N4JWJ": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: OFF -> OFF",
+        "func": "no_path_ted",
+        "line": 389,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "H6DBF-TYT7Z": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "%s: error releasing label range!",
+        "func": "path_zebra_release_label",
+        "line": 249,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "H8FYY-8J1DX": [
+      {
+        "args": "__func__, ted_sid",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "%s: PATHD-TED: SL: Success query C : ted-sid (%d)",
+        "func": "srte_ted_do_query_type_c",
+        "line": 1351,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J03RQ-XAAC8": [
+      {
+        "args": "__func__, ted_sid",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "%s:SL: Success query F : ted-sid (%d)",
+        "func": "srte_ted_do_query_type_f",
+        "line": 1410,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J1GE9-9FVGJ": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Refresh sid from current TED",
+        "func": "path_ted_timer_handler_refresh",
+        "line": 647,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "J6ABG-ASJFH": [
+      {
+        "args": "__func__, &pre_ipaddr, prefix_cli.prefixlen, iface_id, ted_sid",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_cli.c",
+        "fmtstring": "%s: [rcv ted] CLI NOT FOUND Continue query_type_e PREFIX (%pIA/%d) IFACE (%ld) sid:(%d)!",
+        "func": "segment_list_has_prefix",
+        "line": 472,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "J8WPE-7JEBK": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: [rcv ted] TED received NULL message ",
+        "func": "path_ted_rcvd_message",
+        "line": 187,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "J9XYS-VS4G5": [
+      {
+        "args": "endpoint, policy->color, candidate->name",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s lsp bandwidth unset",
+        "func": "srte_lsp_unset_bandwidth",
+        "line": 798,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JQNCS-2CMEM": [
+      {
+        "args": "segment_list->name",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "Unset segment list %s",
+        "func": "srte_candidate_unset_segment_list",
+        "line": 1194,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "JTYEQ-JJR58": [
+      {
+        "args": "__func__, ted_state_g.import == IMPORT_OSPFv2?\"OSPFv2\" : ted_state_g.import == IMPORT_OSPFv3?\"OSPFv3\" : ted_state_g.import == IMPORT_ISIS?\"ISIS\" : \"none\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Importing %s data ON",
+        "func": "path_ted_start_importing_igp",
+        "line": 106,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "KC81M-VZTE2": [
+      {
+        "args": "__func__, ted_sid",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": " %s: PATHD-TED: SL: ERROR query C : ted-sid (%d)",
+        "func": "srte_ted_do_query_type_c",
+        "line": 1348,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "MQFF9-S9WWM": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: ON -> OFF",
+        "func": "no_path_ted",
+        "line": 396,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MS7GY-1BKSG": [
+      {
+        "args": "endpoint, policy->color, status",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): zebra updated status to %d",
+        "func": "srte_candidate_status_update",
+        "line": 1099,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MVMDM-2160X": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Importing igp data OFF",
+        "func": "path_ted_stop_importing_igp",
+        "line": 136,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MWDWH-347ZK": [
+      {
+        "args": "segment->index, segment->segment_list->name",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_nb_config.c",
+        "fmtstring": " Segment list name (%d) index (%s) ",
+        "func": "pathd_srte_segment_list_segment_nai_apply_finish",
+        "line": 247,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "MZM4D-CK7C0": [
+      {
+        "args": "",
+        "binary": "pathd/pathd",
+        "ec": 100663334,
+        "file": "pathd/path_nb_config.c",
+        "fmtstring": "The candidate name is fixed!",
+        "func": "pathd_srte_policy_candidate_path_name_modify",
+        "line": 437,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "N6BFS-RS3H8": [
+      {
+        "args": "__func__, info.type == LINK_STATE_UPDATE ? \"LINK_STATE_UPDATE\" : \"LINK_STATE_SYNC\", msg->type == 1?\"node\" : msg->type == 2?\"att\" : msg->type == 3?\"pre\" : \"none\", msg->event == 2?\"add\" : msg->event == 4?\"del\" : msg->event == 3?\"upd\" : msg->event == 1?\"syn\" : msg->event == 1?\"und\" : \"none\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "%s: [rcv ted] ls (%s) msg (%s)-(%s) !",
+        "func": "path_zebra_opaque_msg_handler",
+        "line": 301,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "N9RJW-CEKWZ": [
+      {
+        "args": "endpoint, policy->color, candidate->name",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s objective functions preferences unset",
+        "func": "srte_candidate_unset_objfun",
+        "line": 973,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NAWTM-JC065": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "%s: error connecting synchronous zclient!",
+        "func": "path_zebra_label_manager_connect",
+        "line": 257,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NB5HQ-KJ27S": [
+      {
+        "args": "__func__, 1, 1, \"PATHD TED\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s Initialize TED Key [%d] ASN [%d] Name [%s]",
+        "func": "path_ted_create_ted",
+        "line": 174,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "NFY59-WA682": [
+      {
+        "args": "",
+        "binary": "pathd/pathd",
+        "ec": 100663334,
+        "file": "pathd/path_nb_config.c",
+        "fmtstring": "The candidate type is fixed!",
+        "func": "pathd_srte_policy_candidate_path_type_modify",
+        "line": 685,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "NN4XW-E4M3V": [
+      {
+        "args": "family, vrf_id, buf",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "%s Router Id updated for VRF %u: %s",
+        "func": "path_zebra_router_id_update",
+        "line": 167,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "NRQQN-26PCY": [
+      {
+        "args": "endpoint, policy->color, candidate->name, srte_candidate_metric_name(type), type",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s config metric %s (%u) unset",
+        "func": "srte_candidate_unset_metric",
+        "line": 896,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "NSYM2-VKXAA": [
+      {
+        "args": "endpoint, policy->color, candidate->name, required ? \"required \" : \"\", objfun_type_name(type)",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s %sobjective function set to %s",
+        "func": "srte_candidate_set_objfun",
+        "line": 953,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "P73TP-6VCHA": [
+      {
+        "args": "endpoint, policy->color, candidate->name, required ? \"required \" : \"\", srte_candidate_metric_name(type), type, value, is_bound ? \"true\" : \"false\", is_computed ? \"true\" : \"false\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s %slsp metric %s (%u) set to %f (is-bound: %s; is_computed: %s)",
+        "func": "srte_lsp_set_metric",
+        "line": 864,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "PHR4T-VM10T": [
+      {
+        "args": "",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: PATHD TED ls_ted not initialized",
+        "func": "path_ted_is_initialized",
+        "line": 151,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "PKKEV-3K0XV": [
+      {
+        "args": "",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_main.c",
+        "fmtstring": "Unregisterfrom opaque,etc ",
+        "func": "sigint",
+        "line": 74,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "PQYSP-NEBTP": [
+      {
+        "args": "policy->name",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "Unset segment lists checking policy %s",
+        "func": "srte_candidate_unset_segment_list",
+        "line": 1158,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "R7ENA-4VQ5A": [
+      {
+        "args": "endpoint, policy->color, candidate->name, required ? \"required\" : \"\", bandwidth",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s %slsp bandwidth set to %f B/s",
+        "func": "srte_lsp_set_bandwidth",
+        "line": 757,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RCTPY-KB5RH": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "%s: [rcv ted] Could not parse LinkState stream message.",
+        "func": "path_zebra_opaque_msg_handler",
+        "line": 305,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "RTDS8-2ZWGX": [
+      {
+        "args": "endpoint, policy->color, candidate->name, filter_type_name(type), filter",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s affinity filter %s set to 0x%08x",
+        "func": "srte_candidate_set_affinity_filter",
+        "line": 1027,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "RXBW3-HQ5B7": [
+      {
+        "args": "__func__, ted_state_g.import == IMPORT_OSPFv2?\"OSPFv2\" : ted_state_g.import == IMPORT_OSPFv3?\"OSPFv3\" : ted_state_g.import == IMPORT_ISIS?\"ISIS\" : \"none\", igp == ISIS_L1?\"ISIS_L1\" : igp == ISIS_L2?\"ISIS_L2\" : igp == DIRECT?\"DIRECT\" : igp == STATIC?\"STATIC\" : igp == OSPFv2?\"OSPFv2\" : \"none\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: [rcv ted] Incorrect igp origin wait (%s) got (%s) ",
+        "func": "path_ted_get_current_igp",
+        "line": 713,
+        "priority": 3,
+        "type": "logmsg"
+      },
+      {
+        "args": "__func__, ted_state_g.import == IMPORT_OSPFv2?\"OSPFv2\" : ted_state_g.import == IMPORT_OSPFv3?\"OSPFv3\" : ted_state_g.import == IMPORT_ISIS?\"ISIS\" : \"none\", igp == ISIS_L1?\"ISIS_L1\" : igp == ISIS_L2?\"ISIS_L2\" : igp == DIRECT?\"DIRECT\" : igp == STATIC?\"STATIC\" : igp == OSPFv2?\"OSPFv2\" : \"none\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: [rcv ted] Incorrect igp origin wait (%s) got (%s) ",
+        "func": "path_ted_get_current_igp",
+        "line": 703,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "SEF8F-PWP1Q": [
+      {
+        "args": "__func__, s_list->name, s_entry->index, s_entry->sid_value, s_entry->nai_local_prefix_len, s_entry->nai_local_iface, s_entry->nai_algorithm",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "mpls-te: %s:PATHD-TED: SL: Name: %s index:(%d) sid:(%d) prefix_len:(%d) local iface:(%d) algorithm:(%d)",
+        "func": "srte_policy_update_ted_sid",
+        "line": 392,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SRD3E-EC9JM": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Unable to register Link State",
+        "func": "path_ted_start_importing_igp",
+        "line": 99,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "ST2DT-NX5ST": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Opaque asked for TED sync ",
+        "func": "path_ted_link_state_sync",
+        "line": 589,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "ST4Q3-5YGDV": [
+      {
+        "args": "originator",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "Unset segment lists for originator %s",
+        "func": "srte_candidate_unset_segment_list",
+        "line": 1151,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SYDWC-31RDN": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Enabled ON -> ON.",
+        "func": "path_ted_on",
+        "line": 368,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SYV7J-YQ106": [
+      {
+        "args": "endpoint, policy->color, old_best_candidate ? old_best_candidate->name : \"none\", new_best_candidate ? new_best_candidate->name : \"none\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): best candidate changed from %s to %s",
+        "func": "srte_policy_apply_changes",
+        "line": 582,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SZ4WW-JS2RC": [
+      {
+        "args": "__func__, msg->type",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: [rcv ted] TED received unknown message type [%d]",
+        "func": "path_ted_rcvd_message",
+        "line": 210,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "SZCBJ-CXV9W": [
+      {
+        "args": "",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_main.c",
+        "fmtstring": "SIGHUP received",
+        "func": "sighup",
+        "line": 64,
+        "priority": 6,
+        "type": "logmsg"
+      }
+    ],
+    "TCME6-224AD": [
+      {
+        "args": "",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_main.c",
+        "fmtstring": "Terminating on signal",
+        "func": "sigint",
+        "line": 73,
+        "priority": 5,
+        "type": "logmsg"
+      }
+    ],
+    "TDG0B-K0MX5": [
+      {
+        "args": "endpoint, policy->color",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): policy is UP",
+        "func": "srte_candidate_status_update",
+        "line": 1124,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TE7M3-1ZS5V": [
+      {
+        "args": "endpoint, policy->color, candidate->name, required ? \"required \" : \"\", srte_candidate_metric_name(type), type, value, is_bound ? \"true\" : \"false\", is_computed ? \"true\" : \"false\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s %sconfig metric %s (%u) set to %f (is-bound: %s; is_computed: %s)",
+        "func": "srte_candidate_set_metric",
+        "line": 830,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "TMN6E-BMBHE": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Importing igp data already OFF",
+        "func": "no_path_ted_import",
+        "line": 443,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VC655-89MXM": [
+      {
+        "args": "endpoint, policy->color, new_best_candidate->name",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): best candidate %s changed",
+        "func": "srte_policy_apply_changes",
+        "line": 623,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "VKYCC-96A3C": [
+      {
+        "args": "",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "Cannot unset segment list because originator is NULL",
+        "func": "srte_candidate_unset_segment_list",
+        "line": 1147,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "VSBHE-S9VTA": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Opaque error asking for TED sync ",
+        "func": "path_ted_link_state_sync",
+        "line": 585,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "WA5YY-SBFGA": [
+      {
+        "args": "endpoint, policy->color, candidate->name",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s config bandwidth unset",
+        "func": "srte_candidate_unset_bandwidth",
+        "line": 776,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WBEVV-V9WE6": [
+      {
+        "args": "__func__, info.type",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "%s: [rcv ted] unknown opaque event (%d) !",
+        "func": "path_zebra_opaque_msg_handler",
+        "line": 316,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WGXJY-NK8NN": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "%s: Error sending hello for synchronous zclient!",
+        "func": "path_zebra_label_manager_connect",
+        "line": 265,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WKM44-SGC0P": [
+      {
+        "args": "__func__, ted_state_g.import == IMPORT_OSPFv2?\"OSPFv2\" : ted_state_g.import == IMPORT_OSPFv3?\"OSPFv3\" : ted_state_g.import == IMPORT_ISIS?\"ISIS\" : \"none\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Importing %s data OFF",
+        "func": "path_ted_start_importing_igp",
+        "line": 110,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WRDM9-NMZD5": [
+      {
+        "args": "__func__, ted_sid",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "%s:SL:  ERROR query F : ted-sid (%d)",
+        "func": "srte_ted_do_query_type_f",
+        "line": 1407,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "WWFN5-H060H": [
+      {
+        "args": "__func__, ted_sid",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "%s: PATHD-TED: SL: Success query E : ted-sid (%d)",
+        "func": "srte_ted_do_query_type_e",
+        "line": 1381,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "WYCM1-STJKC": [
+      {
+        "args": "vrf_id, pref.family",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "Unexpected router ID address family for vrf %u: %u",
+        "func": "path_zebra_router_id_update",
+        "line": 164,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "X2KXQ-PY9JS": [
+      {
+        "args": "endpoint, policy->color",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): policy is DOWN",
+        "func": "srte_candidate_status_update",
+        "line": 1113,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "X8JM2-99DTC": [
+      {
+        "args": "endpoint, policy->color, candidate->name, required ? \"required \" : \"\", bandwidth",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s %sconfig bandwidth set to %f B/s",
+        "func": "srte_candidate_set_bandwidth",
+        "line": 731,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "X9W3W-543EG": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Unable to unregister Link State",
+        "func": "path_ted_stop_importing_igp",
+        "line": 131,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "XPP7N-JTSKZ": [
+      {
+        "args": "endpoint, policy->color, candidate->name, filter_type_name(type)",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s affinity filter %s unset",
+        "func": "srte_candidate_unset_affinity_filter",
+        "line": 1051,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "YEGVC-0PAAD": [
+      {
+        "args": "__func__, &pre_ipaddr, prefix_cli.prefixlen, algo, ted_sid",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_cli.c",
+        "fmtstring": "%s: [rcv ted] CLI NOT FOUND Continue query_type_c PREFIX (%pIA/%d) ALGO (%ld) sid:(%d)!",
+        "func": "segment_list_has_prefix",
+        "line": 463,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "YJDY6-4T9EB": [
+      {
+        "args": "__func__, 1, 1, \"PATHD TED\"",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s Unable to initialize TED Key [%d] ASN [%d] Name [%s]",
+        "func": "path_ted_create_ted",
+        "line": 171,
+        "priority": 3,
+        "type": "logmsg"
+      }
+    ],
+    "YPV91-C1C00": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_zebra.c",
+        "fmtstring": "%s: error connecting to label manager!",
+        "func": "path_zebra_label_manager_connect",
+        "line": 270,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "YVZXA-CJ01W": [
+      {
+        "args": "__func__",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s: PATHD-TED: Enabled OFF -> ON.",
+        "func": "path_ted_on",
+        "line": 374,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z1TPX-K9S1Q": [
+      {
+        "args": "endpoint, policy->color, candidate->name, srte_candidate_metric_name(type), type",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "SR-TE(%s, %u): candidate %s lsp metric %s (%u) unset",
+        "func": "srte_lsp_unset_metric",
+        "line": 920,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z23E7-Z8AY4": [
+      {
+        "args": "candidate->name",
+        "binary": "pathd/pathd",
+        "file": "pathd/pathd.c",
+        "fmtstring": "Unset segment lists checking candidate %s",
+        "func": "srte_candidate_unset_segment_list",
+        "line": 1163,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z9EAX-CVV9D": [
+      {
+        "args": "__func__, ted_state_g.ted",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_ted.c",
+        "fmtstring": "mpls-te: %s : TED [%p]",
+        "func": "path_ted_teardown",
+        "line": 66,
+        "priority": 7,
+        "type": "logmsg"
+      }
+    ],
+    "Z9ZPA-7V55D": [
+      {
+        "args": "",
+        "binary": "pathd/pathd",
+        "ec": 100663334,
+        "file": "pathd/path_nb_config.c",
+        "fmtstring": "The SR Policy name is fixed!",
+        "func": "pathd_srte_policy_name_modify",
+        "line": 307,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ],
+    "ZZEVH-HYAC5": [
+      {
+        "args": "__func__, &ip_src, &ip_dst",
+        "binary": "pathd/pathd",
+        "file": "pathd/path_cli.c",
+        "fmtstring": "%s: [rcv ted] CLI NOT FOUND Continue query_type_f SRC (%pIA) DST (%pIA)!",
+        "func": "segment_list_has_src_dst",
+        "line": 343,
+        "priority": 4,
+        "type": "logmsg"
+      }
+    ]
+  }
+}
