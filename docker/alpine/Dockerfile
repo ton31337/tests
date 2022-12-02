@@ -33,6 +33,7 @@ RUN cd /src \
 	&& ./bootstrap.sh \
 	&& ./configure \
 		--enable-numeric-version \
+        --with-pkg-extra-version="" \
 	&& make dist
 
 # This stage builds an APK from the dist tarball
