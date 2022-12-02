@@ -23,6 +23,7 @@ checkdepends="pytest py-setuptools"
 install="$pkgname.pre-install $pkgname.pre-deinstall $pkgname.post-deinstall"
 subpackages="$pkgname-dev $pkgname-doc $pkgname-dbg"
 source="$pkgname-$pkgver.tar.gz"
+options="!check"
 
 builddir="$srcdir"/$pkgname-$pkgver
 
