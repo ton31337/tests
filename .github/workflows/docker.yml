@@ -33,7 +33,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push
+      - name: Build and push (amd64)
         uses: docker/build-push-action@v3
         with:
           context: .
@@ -41,5 +41,54 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/frr:master
           build-args: PKGVER=${{ steps.vars.outputs.date }}
-          platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v6,linux/arm/v7
+          platforms: linux/amd64
 
+      - name: Build and push (arm64)
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./docker/alpine/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frr:master
+          build-args: PKGVER=${{ steps.vars.outputs.date }}
+          platforms: linux/arm64
+
+      - name: Build and push (arm/v6)
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./docker/alpine/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frr:master
+          build-args: PKGVER=${{ steps.vars.outputs.date }}
+          platforms: linux/arm/v6
+
+      - name: Build and push (arm/v7)
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./docker/alpine/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frr:master
+          build-args: PKGVER=${{ steps.vars.outputs.date }}
+          platforms: linux/arm/v7
+
+      - name: Build and push (ppc64le)
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./docker/alpine/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frr:master
+          build-args: PKGVER=${{ steps.vars.outputs.date }}
+          platforms: linux/ppc64le
+
+      - name: Build and push (s390x)
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./docker/alpine/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frr:master
+          build-args: PKGVER=${{ steps.vars.outputs.date }}
+          platforms: linux/s390x
