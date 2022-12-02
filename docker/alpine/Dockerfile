@@ -44,6 +44,7 @@ RUN chown -R builder /dist /pkgs
 USER builder
 RUN cd /dist \
 	&& abuild checksum \
+    && git init \
 	&& abuild -r -P /pkgs/apk
 
 # This stage installs frr from the apk
