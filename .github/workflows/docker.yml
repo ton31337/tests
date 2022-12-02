@@ -40,6 +40,6 @@ jobs:
           file: ./docker/alpine/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/frr:master
-          build-args: ARCH=arm32v6 ARCH=arm32v7 ARCH=amd64 PKGVER=${{ steps.vars.outputs.date }}
-          platforms: linux/amd64,linux/386,linux/arm/v6,linux/arm/v7
+          build-args: PKGVER=${{ steps.vars.outputs.date }}
+          platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v6,linux/arm/v7
 
