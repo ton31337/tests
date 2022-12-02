@@ -28,4 +28,4 @@ jobs:
           file: ./docker/alpine/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/frr:master
-          build-args: PKGVER=${{ GITHUB_SHA::6 }}
+          build-args: PKGVER=$GITHUB_SHA::6
