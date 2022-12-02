@@ -45,7 +45,8 @@ USER builder
 RUN cd /dist \
 	&& abuild checksum \
 #	&& git init \
-	&& abuild -r -P /pkgs/apk
+#	&& abuild -r -P /pkgs/apk
+	&& abuild -r
 
 # This stage installs frr from the apk
 FROM alpine:3.16
