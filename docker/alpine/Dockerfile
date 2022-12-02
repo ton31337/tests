@@ -33,7 +33,6 @@ RUN cd /src \
 	&& ./bootstrap.sh \
 	&& ./configure \
 		--enable-numeric-version \
-		--with-pkg-extra-version="_git$PKGVER" \
 	&& make dist
 
 # This stage builds an APK from the dist tarball
@@ -44,9 +43,7 @@ RUN chown -R builder /dist /pkgs
 USER builder
 RUN cd /dist \
 	&& abuild checksum \
-#	&& git init \
-#	&& abuild -r -P /pkgs/apk
-	&& abuild -r
+	&& abuild -r -P /pkgs/apk
 
 # This stage installs frr from the apk
 FROM alpine:3.16
