@@ -1,9 +1,5 @@
-name: Build daily 'master' image for Docker
+name: Build daily 'master' images for Docker
 
-#on:
-#  schedule:
-#    - cron: "59 23 * * *"
-#    - timezone: UTC
 on: push
 
 concurrency:
@@ -11,13 +7,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  buildx:
+  docker_daily_master:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - name: Some vars
+      - name: Custom variables
         id: vars
         run: |
-          echo ::set-output name=commit_hash::${GITHUB_SHA::8}
+          # To package a specific git commit, the date of the commit gets
+          # appended to the latest release, e.g. 1.0.0_git20180204.
+          # This is the requirement by APKBUILD (abuild).
+          # More details: https://wiki.alpinelinux.org/wiki/APKBUILD_Reference.
           echo ::set-output name=date::$(date +'%Y%m%d')
 
       - name: Checkout
@@ -34,8 +35,9 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          registry: quay.io
+          username: ton31337+github
+          password: MP2680XX30GTTII1N7MZKC3RXQLMGY4E713351O3EZAH7V90OM658325JWZCTA86
 
       - name: Build and push
         uses: docker/build-push-action@v3
@@ -43,6 +45,6 @@ jobs:
           context: .
           file: ./docker/alpine/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frr:master
+          tags: quay.io/ton31337/tests:master
           build-args: PKGVER=${{ steps.vars.outputs.date }}
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64
