@@ -23,4 +23,4 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: need-rebase
-        if: ${{ steps.commits.outputs.behind_by > 1 }}
+        if: ${{ steps.commits.outputs.behind_by > 50 }}
