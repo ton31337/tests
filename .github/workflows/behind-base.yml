@@ -19,7 +19,7 @@ jobs:
           echo ::set-output name=behind_by::$(git log --oneline origin/${{ github.base_ref }} ^${{ github.event.pull_request.head.sha }} | wc -l)
         id: commits
       - run: |
-          echo "The job_id is: ${{ steps.commits }}" 
+          echo ${{ steps.commits }}
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: need-rebase
