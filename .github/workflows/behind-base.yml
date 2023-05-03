@@ -12,6 +12,9 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v3                                               
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
       - run: |
           echo ::set-output name=behind_by::$(git log --oneline ${{ github.event.pull_request.base.ref }} ${{ github.head_ref }} | wc -l)
       - uses: actions-ecosystem/action-add-labels@v1
