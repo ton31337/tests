@@ -6,7 +6,6 @@ on:
 
 jobs:
   behind:
-    if: github.repository == 'frrouting/frr'
     runs-on: ubuntu-latest
     permissions:
       contents: read
