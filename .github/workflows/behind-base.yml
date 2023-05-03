@@ -14,7 +14,7 @@ jobs:
       - uses: jessicalostinspace/commit-difference-action@v1.0.0
         with:
           base-branch: ${{ github.event.pull_request.base.ref }}
-          secondary-branch: ${{ github.ref }}
+          secondary-branch: ${{ github.event.pull_request.base.head_ref }}
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: need-rebase
