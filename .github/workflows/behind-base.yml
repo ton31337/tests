@@ -12,13 +12,8 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v3                                               
-        with:                                                                   
-          ref: master     
-      - uses: jessicalostinspace/commit-difference-action@v1.0.0
-        with:
-          base-branch: ${{ github.event.pull_request.base.ref }}
-          secondary-branch: ${{ github.head_ref }}
+      - run: |
+          echo ::set-output name=behind_by::$(git log --oneline ${{ github.event.pull_request.base.ref }} ${{ github.head_ref }} | wc -l)
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: need-rebase
-        if: ${{ steps.commit-difference-count > 1 }}
