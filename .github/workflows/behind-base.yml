@@ -1,0 +1,22 @@
+name: Add need-rebase label if the branch is >= 50 commits behind
+
+on:
+  pull_request_target:
+    types: [synchronize, opened, reopened, labeled, unlabeled]
+
+jobs:
+  behind:
+    if: github.repository == 'frrouting/frr'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: jessicalostinspace/commit-difference-action@v1.0.0
+        with:
+          base-branch: ${{ github.event.pull_request.base.ref }}
+          secondary-branch: ${{ github.ref }}
+      - uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: need-rebase
+        if: ${{ steps.commit-difference-count > 1 }}
