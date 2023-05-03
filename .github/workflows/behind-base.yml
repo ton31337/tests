@@ -1,4 +1,4 @@
-name: Add need-rebase label if the branch is >= 50 commits behind
+name: Add rebase label if the branch is > 50 commits behind
 
 on:
   pull_request_target:
@@ -11,14 +11,17 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - uses: actions/checkout@v3                                               
+      - name: Checkout
+        uses: actions/checkout@v3                                               
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
-      - run: |
-          echo ::set-output name=behind_by::$(git log --oneline origin/${{ github.base_ref }} ^${{ github.event.pull_request.head.sha }} | wc -l)
-        id: commits
-      - uses: actions-ecosystem/action-add-labels@v1
+      - name: Set custom variables
+        id: vars
+        run: |
+          echo "behind_by=$(git log --oneline origin/${{ github.base_ref }} ^${{ github.event.pull_request.head.sha }} | wc -l)" >> $GITHUB_OUTPUT
+      - name: Add rebase label if needed
+        if: ${{ steps.vars.outputs.behind_by > 10 }}
+        uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: need-rebase
-        if: ${{ steps.commits.outputs.behind_by > 50 }}
