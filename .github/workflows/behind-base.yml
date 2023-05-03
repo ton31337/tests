@@ -16,7 +16,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
       - run: |
-          echo ::set-output name=behind_by::$(git log --oneline ${{ github.ref }} ^${{ github.event.pull_request.head.sha }} | wc -l)
+          echo ::set-output name=behind_by::$(git log --oneline origin/${{ github.base_ref }} ^${{ github.event.pull_request.head.sha }} | wc -l)
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: need-rebase
